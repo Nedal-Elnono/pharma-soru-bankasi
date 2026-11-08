@@ -1,0 +1,873 @@
+{
+ "pdf": "lessons/17-anjiyotensin/17-anjiyotensin-sorular.pdf",
+ "pdfName": "Anjiyotensin.pdf",
+ "pages": 29,
+ "questions": [
+  {
+   "id": "K3-26-14",
+   "exam": "K3-26",
+   "qno": 14,
+   "stem": "Hipertansiyon + kalp yetmezliği (HFrEF) olan hastada mortaliteyi azaltan antihipertansif ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "ACEi/ARB"
+   },
+   "img": "lessons/17-anjiyotensin/img/K3-26-14.png",
+   "w": 265.0,
+   "h": 116.0,
+   "mark": [
+    0.1547,
+    0.4094,
+    0.1476,
+    0.0713
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K3-26-14-ev1.jpg",
+     "slide": 46,
+     "title": "Angiotensin receptor blocker"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/K3-26-14-ev2.jpg",
+     "slide": 27,
+     "title": "Anjiotensin Reseptör Blokerleri"
+    }
+   ]
+  },
+  {
+   "id": "F26-18",
+   "exam": "F26",
+   "qno": 18,
+   "stem": "İki taraflı renal arter stenozu olan hipertansif hastada akut böbrek yetmezliği riskini artıran ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Enalapril"
+   },
+   "img": "lessons/17-anjiyotensin/img/F26-18.png",
+   "w": 291.0,
+   "h": 115.0,
+   "mark": [
+    0.1345,
+    0.3374,
+    0.1233,
+    0.103
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/F26-18-ev1.jpg",
+     "slide": 21,
+     "title": "Anjiyotensin Sentez İnhibitörleri"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/F26-18-ev2.jpg",
+     "slide": 36,
+     "title": "Renal Arter Stenozunda ACE Inhibitörü"
+    }
+   ]
+  },
+  {
+   "id": "F26-20",
+   "exam": "F26",
+   "qno": 20,
+   "stem": "ACE inhibitörlerinin sık yan etkisi olan kuru öksürük hangi mediatörle ilişkilidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Bradikinin"
+   },
+   "img": "lessons/17-anjiyotensin/img/F26-20.png",
+   "w": 272.0,
+   "h": 127.0,
+   "mark": [
+    0.1581,
+    0.4081,
+    0.152,
+    0.0933
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/F26-20-ev1.jpg",
+     "slide": 26,
+     "title": "Anjiotensin Reseptör Blokerleri"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/F26-20-ev2.jpg",
+     "slide": 20,
+     "title": "Anjiotensin Etkisini Bloke Etmek"
+    }
+   ]
+  },
+  {
+   "id": "K26-18",
+   "exam": "K26",
+   "qno": 18,
+   "stem": "Anjiyotensin AT1 reseptörlerinin etkilerinden yanlış olanı işaretleyiniz.",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Fetusta böbrek gelişimi"
+   },
+   "img": "lessons/17-anjiyotensin/img/K26-18.png",
+   "w": 272.0,
+   "h": 113.0,
+   "mark": [
+    0.1581,
+    0.3433,
+    0.3605,
+    0.1048
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K26-18-ev1.jpg",
+     "slide": 8,
+     "title": "AT-1 AT-2"
+    }
+   ]
+  },
+  {
+   "id": "F23-8",
+   "exam": "F23",
+   "qno": 8,
+   "stem": "Aşağıdaki hastaların hangisinde ACE inhibitörü kullanmak uygun değildir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [
+    {
+     "exam": "K3-23",
+     "qno": 63
+    }
+   ],
+   "answer": {
+    "letter": "E",
+    "text": "Gebe olan hipertansif hasta"
+   },
+   "img": "lessons/17-anjiyotensin/img/F23-8.png",
+   "w": 223.0,
+   "h": 154.0,
+   "mark": [
+    0.1599,
+    0.8925,
+    0.5538,
+    0.0816
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/F23-8-ev1.jpg",
+     "slide": 23,
+     "title": "Anjiotensin Sentez İnhibitörleri"
+    }
+   ]
+  },
+  {
+   "id": "K3-23-63",
+   "exam": "K3-23",
+   "qno": 63,
+   "stem": "Aşağıdaki hastaların hangisinde ACE inhibitörü kullanmak uygun değildir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [
+    {
+     "exam": "F23",
+     "qno": 8
+    }
+   ],
+   "answer": {
+    "letter": "E",
+    "text": "Gebe olan hipertansif hasta"
+   },
+   "img": "lessons/17-anjiyotensin/img/K3-23-63.png",
+   "w": 212.0,
+   "h": 151.0,
+   "mark": [
+    0.2128,
+    0.8812,
+    0.5663,
+    0.0809
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K3-23-63-ev1.jpg",
+     "slide": 23,
+     "title": "Anjiotensin Sentez İnhibitörleri"
+    }
+   ]
+  },
+  {
+   "id": "K3-23-84",
+   "exam": "K3-23",
+   "qno": 84,
+   "stem": "ACE inhibitörü veya ARB düşünülen kalp yetmezlikli hastada sadece ACE inhibitörlerinde görülen yan etki hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Kuru öksürük"
+   },
+   "img": "lessons/17-anjiyotensin/img/K3-23-84.png",
+   "w": 212.0,
+   "h": 259.0,
+   "mark": [
+    0.2128,
+    0.797,
+    0.2874,
+    0.0472
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K3-23-84-ev1.jpg",
+     "slide": 26,
+     "title": "Anjiotensin Reseptör Blokerleri"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/K3-23-84-ev2.jpg",
+     "slide": 23,
+     "title": "Anjiotensin Sentez İnhibitörleri"
+    }
+   ]
+  },
+  {
+   "id": "B21-2-85",
+   "exam": "B21-2",
+   "qno": 85,
+   "stem": "Aşağıdakilerden hangisi otakoid peptidler için doğrudur?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Bradikinin ağrı ve ödemi indükleyici etkileri bulunan potent bir vazodilatördür"
+   },
+   "img": "lessons/17-anjiyotensin/img/B21-2-85.png",
+   "w": 360.0,
+   "h": 156.0,
+   "mark": [
+    0.0222,
+    0.4782,
+    0.6417,
+    0.0679
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/B21-2-85-ev1.jpg",
+     "slide": 5,
+     "title": "BRADİKİNİN SİSTEMİ kallikrein"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/B21-2-85-ev2.jpg",
+     "slide": 26,
+     "title": "Anjiotensin Reseptör Blokerleri"
+    }
+   ]
+  },
+  {
+   "id": "K3-21-62",
+   "exam": "K3-21",
+   "qno": 62,
+   "stem": "Hipertansiyonda kullanılan ADE inhibitörleri için hangisi yanlıştır? (gebelerde tercih edilir)",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "ace-yanlis",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Gebelerde tercih edilir"
+   },
+   "img": "lessons/17-anjiyotensin/img/K3-21-62.png",
+   "w": 592.0,
+   "h": 147.0,
+   "mark": [
+    0.1029,
+    0.3408,
+    0.1923,
+    0.0973
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K3-21-62-ev1.jpg",
+     "slide": 23,
+     "title": "Anjiotensin Sentez İnhibitörleri"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/K3-21-62-ev2.jpg",
+     "slide": 20,
+     "title": "Anjiotensin Etkisini Bloke Etmek"
+    }
+   ]
+  },
+  {
+   "id": "K3-21-79",
+   "exam": "K3-21",
+   "qno": 79,
+   "stem": "Aşağıdakilerden hangisi ADE inhibitörleri ile gelişebilecek advers reaksiyonlardır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "E",
+    "text": "Kuru öksürük – Cilt döküntüleri – Hiperkalemi"
+   },
+   "img": "lessons/17-anjiyotensin/img/K3-21-79.png",
+   "w": 592.0,
+   "h": 149.0,
+   "mark": [
+    0.1029,
+    0.8811,
+    0.3606,
+    0.096
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K3-21-79-ev1.jpg",
+     "slide": 23,
+     "title": "Anjiotensin Sentez İnhibitörleri"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/K3-21-79-ev2.jpg",
+     "slide": 20,
+     "title": "Anjiotensin Etkisini Bloke Etmek"
+    }
+   ]
+  },
+  {
+   "id": "K3-21-95",
+   "exam": "K3-21",
+   "qno": 95,
+   "stem": "Aşağıdakilerden hangisi anjiotensin-2'nin kalp yetersizliği gelişmesindeki rollerinden değildir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Aldosteron sekresyonunu azaltmak"
+   },
+   "img": "lessons/17-anjiyotensin/img/K3-21-95.png",
+   "w": 592.0,
+   "h": 148.0,
+   "mark": [
+    0.1041,
+    0.7539,
+    0.2983,
+    0.0967
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K3-21-95-ev1.jpg",
+     "slide": 12,
+     "title": "Anjiotensinin Etkileri"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/K3-21-95-ev2.jpg",
+     "slide": 13,
+     "title": "Anjiotensinin Etkileri"
+    }
+   ]
+  },
+  {
+   "id": "F21-1-62",
+   "exam": "F21-1",
+   "qno": 62,
+   "stem": "Hipertansiyon, konjestif kalp yetmezliği ve tip I diyabeti olan yaşlı hastada en uygun antihipertansif ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Kaptopril"
+   },
+   "img": "lessons/17-anjiyotensin/img/F21-1-62.png",
+   "w": 592.0,
+   "h": 163.0,
+   "mark": [
+    0.1041,
+    0.5297,
+    0.078,
+    0.0878
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/F21-1-62-ev1.jpg",
+     "slide": 23,
+     "title": "Anjiotensin Sentez İnhibitörleri"
+    }
+   ]
+  },
+  {
+   "id": "F20-94",
+   "exam": "F20",
+   "qno": 94,
+   "stem": "Hipertansiyonda kullanılan ACE inhibitörleri ile ilgili bilgilerden yanlış olanı işaretleyiniz.",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "ace-yanlis",
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Hipokalemi yapması nedeniyle tedaviye potasyum eklenmesi gerekir"
+   },
+   "img": "lessons/17-anjiyotensin/img/F20-94.png",
+   "w": 592.0,
+   "h": 160.0,
+   "mark": [
+    0.0626,
+    0.4746,
+    0.6552,
+    0.0921
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/F20-94-ev1.jpg",
+     "slide": 20,
+     "title": "Anjiotensin Etkisini Bloke Etmek"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/F20-94-ev2.jpg",
+     "slide": 23,
+     "title": "Anjiotensin Sentez İnhibitörleri"
+    }
+   ]
+  },
+  {
+   "id": "K1-20-17",
+   "exam": "K1-20",
+   "qno": 17,
+   "stem": "Hipertansiyonda kullanılan ADE inhibitörleri ile ilgili bilgilerden yanlış olanı işaretleyiniz. (renal arter stenozunda tercih edilir)",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "ace-yanlis",
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Bilateral renal arter stenozu olanlarda tercih edilir"
+   },
+   "img": "lessons/17-anjiyotensin/img/K1-20-17.png",
+   "w": 435.0,
+   "h": 101.0,
+   "mark": [
+    0.0377,
+    0.7225,
+    0.5556,
+    0.121
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K1-20-17-ev1.jpg",
+     "slide": 21,
+     "title": "Anjiyotensin Sentez İnhibitörleri"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/K1-20-17-ev2.jpg",
+     "slide": 36,
+     "title": "Renal Arter Stenozunda ACE Inhibitörü"
+    }
+   ]
+  },
+  {
+   "id": "K1-20-25",
+   "exam": "K1-20",
+   "qno": 25,
+   "stem": "ACE inhibitörleri hipertansiyonla birlikte bulunan hastalıklarda tercih edilir; yanlış olanı işaretleyiniz.",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Migren"
+   },
+   "img": "lessons/17-anjiyotensin/img/K1-20-25.png",
+   "w": 440.0,
+   "h": 101.0,
+   "mark": [
+    0.0373,
+    0.4702,
+    0.0794,
+    0.121
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K1-20-25-ev1.jpg",
+     "slide": 23,
+     "title": "Anjiotensin Sentez İnhibitörleri"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/K1-20-25-ev2.jpg",
+     "slide": 22,
+     "title": "Migren Tedavisi",
+     "lesson": 16
+    }
+   ]
+  },
+  {
+   "id": "K1-20-26",
+   "exam": "K1-20",
+   "qno": 26,
+   "stem": "Hipertansiyonla birlikte bulunan hastalıklarda tercih edilen ilaç grubu eşleştirmelerinden yanlış olanı işaretleyiniz.",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Hamile olan → ACE reseptör antagonisti"
+   },
+   "img": "lessons/17-anjiyotensin/img/K1-20-26.png",
+   "w": 445.0,
+   "h": 100.0,
+   "mark": [
+    0.2019,
+    0.7239,
+    0.2689,
+    0.1222
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K1-20-26-ev1.jpg",
+     "slide": 23,
+     "title": "Anjiotensin Sentez İnhibitörleri"
+    }
+   ]
+  },
+  {
+   "id": "K1-19-3",
+   "exam": "K1-19",
+   "qno": 3,
+   "stem": "ADE inhibitörlerinin anjiotensin reseptör blokerlerinden etki mekanizması farkı hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Kininaz II inhibisyonu"
+   },
+   "img": "lessons/17-anjiyotensin/img/K1-19-3.png",
+   "w": 455.0,
+   "h": 104.0,
+   "mark": [
+    0.1614,
+    0.5726,
+    0.2388,
+    0.1277
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K1-19-3-ev1.jpg",
+     "slide": 29,
+     "title": "ANJİOTENSİN"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/K1-19-3-ev2.jpg",
+     "slide": 26,
+     "title": "Anjiotensin Reseptör Blokerleri"
+    }
+   ]
+  },
+  {
+   "id": "K1-19-22",
+   "exam": "K1-19",
+   "qno": 22,
+   "stem": "Direkt renin inhibitörlerini ADE inhibitörlerinden ayıran özellik hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Plazma renin aktivitesini düşürmeleri"
+   },
+   "img": "lessons/17-anjiyotensin/img/K1-19-22.png",
+   "w": 455.0,
+   "h": 107.5,
+   "mark": [
+    0.1614,
+    0.4604,
+    0.3948,
+    0.1236
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K1-19-22-ev1.jpg",
+     "slide": 43,
+     "title": "SUMMARY Drugs That Interact with Vasoactive Peptide Systems"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/K1-19-22-ev2.jpg",
+     "slide": 20,
+     "title": "Anjiotensin Etkisini Bloke Etmek"
+    }
+   ]
+  },
+  {
+   "id": "K1-19-23",
+   "exam": "K1-19",
+   "qno": 23,
+   "stem": "Hipertansiyonda kullanılan ADE inhibitörleri ile ilgili bilgilerden yanlış olanı işaretleyiniz. (renal arter stenozunda öncelikle kullanılır)",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "ace-yanlis",
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Bilateral renal arter stenozu olanlarda öncelikle kullanılır"
+   },
+   "img": "lessons/17-anjiyotensin/img/K1-19-23.png",
+   "w": 460.0,
+   "h": 102.0,
+   "mark": [
+    0.1597,
+    0.7081,
+    0.6033,
+    0.1302
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K1-19-23-ev1.jpg",
+     "slide": 21,
+     "title": "Anjiyotensin Sentez İnhibitörleri"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/K1-19-23-ev2.jpg",
+     "slide": 36,
+     "title": "Renal Arter Stenozunda ACE Inhibitörü"
+    }
+   ]
+  },
+  {
+   "id": "K3-26-15",
+   "exam": "K3-26",
+   "qno": 15,
+   "stem": "Gebelikte kontrendike olan antihipertansif ilaç hangisidir? (Losartan, Metildopa, Labetalol, Nifedipin, Hidralazin)",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "نفس فكرة سؤال F25-10 بصيغة واختيارات تانية (من محاضرة أدوية الضغط). سلايد 23 بيقول إن مثبطات ACE ممنوعة في الحمل لأنها بتأذي كلى الجنين، وسلايد 25 بيقول إن اللوسارتان بيقفل مستقبلات الأنجيوتنسين، فهو كمان ممنوع في الحمل. بس الملف مش كاتب المنع ده عن اللوسارتان بالاسم.",
+   "group": "losartan-gebelik",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Losartan"
+   },
+   "img": "lessons/17-anjiyotensin/img/K3-26-15.png",
+   "w": 265.0,
+   "h": 103.0,
+   "mark": [
+    0.1547,
+    0.3376,
+    0.1373,
+    0.0803
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K3-26-15-ev1.jpg",
+     "slide": 23,
+     "title": "Anjiotensin Sentez İnhibitörleri"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/K3-26-15-ev2.jpg",
+     "slide": 25,
+     "title": "Anjiotensin Etkisini Bloke Etmek"
+    }
+   ]
+  },
+  {
+   "id": "K26-6",
+   "exam": "K26",
+   "qno": 6,
+   "stem": "Ameliyat sonrası bulantı-kusmanın profilaksisinde sık kullanılan NK1 antagonisti antiemetik hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة مضادات القيء (درس 6، وموجود هناك). بس سلايد 44 في الدرس ده (جدول الأدوية اللي بتأثر على الببتيدات الفعّالة وعائيًا) فيه صف «Substance P antagonists»: الأبريبيتانت بيغلق مستقبلات NK1 (tachykinin NK1) وبيتستخدم في الوقاية من القيء والغثيان بتاع الكيماوي. (الجدول بيقول قيء الكيماوي؛ استخدامه بعد العمليات مش مذكور هنا، بس المطلوب هو مضاد NK1.)",
+   "group": "aprepitant-nk1",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Aprepitant"
+   },
+   "img": "lessons/17-anjiyotensin/img/K26-6.png",
+   "w": 272.0,
+   "h": 128.0,
+   "mark": [
+    0.1581,
+    0.4036,
+    0.1643,
+    0.0925
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K26-6-ev1.jpg",
+     "slide": 44,
+     "title": "Vazoaktif peptid sistemleri ile etkileşen ilaçlar (özet tablo)"
+    }
+   ]
+  },
+  {
+   "id": "F25-10",
+   "exam": "F25",
+   "qno": 10,
+   "stem": "Hipertansiyonu olan 32 yaşında hamile bir kadında kesinlikle kontrendike olan ilaç hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة أدوية الضغط (YUSUF SARIOĞLU). الدرس بيقول صراحةً إن مثبطات ACE ممنوعة في الحمل لأنها بتأذي كلى الجنين (سلايد 23)، واللوسارتان بيقفل نفس النظام لأنه حاصر لمستقبل AT1 (سلايد 25)، فهو كمان ممنوع في الحمل. بس الملف مش كاتب المنع ده عن الـARB بالاسم.",
+   "group": "losartan-gebelik",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Losartan"
+   },
+   "img": "lessons/17-anjiyotensin/img/F25-10.png",
+   "w": 537.0,
+   "h": 252.0,
+   "mark": [
+    0.4755,
+    0.3611,
+    0.0972,
+    0.0616
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/F25-10-ev1.jpg",
+     "slide": 23,
+     "title": "Anjiotensin Sentez İnhibitörleri"
+    },
+    {
+     "img": "lessons/17-anjiyotensin/img/F25-10-ev2.jpg",
+     "slide": 25,
+     "title": "Anjiotensin Etkisini Bloke Etmek"
+    }
+   ]
+  },
+  {
+   "id": "BF24-33",
+   "exam": "BF24",
+   "qno": 33,
+   "stem": "Antiemetik ilaçlardan hangisi bir nörokinin 1 (NK1) reseptör antagonistidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة مضادات القيء (درس 6، وموجود هناك). بس سلايد 44 في الدرس ده (جدول الأدوية اللي بتأثر على الببتيدات الفعّالة وعائيًا) فيه صف «Substance P antagonists»: الأبريبيتانت بيغلق مستقبلات NK1 (tachykinin NK1) وبيتستخدم في الوقاية من القيء والغثيان بتاع الكيماوي.",
+   "group": "aprepitant-nk1",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Aprepitant"
+   },
+   "img": "lessons/17-anjiyotensin/img/BF24-33.png",
+   "w": 265.0,
+   "h": 105.0,
+   "mark": [
+    0.1547,
+    0.341,
+    0.164,
+    0.0788
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/BF24-33-ev1.jpg",
+     "slide": 44,
+     "title": "Vazoaktif peptid sistemleri ile etkileşen ilaçlar (özet tablo)"
+    }
+   ]
+  },
+  {
+   "id": "K3-24-1",
+   "exam": "K3-24",
+   "qno": 1,
+   "stem": "Kalp yetmezliğinde kalp hızındaki ve renin salgısındaki kompensatuvar artışı hangi ilaç düşürebilir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال من محاضرة أدوية القلب. سلايد 15 بيقول إن السمبثاوي بيزوّد إفراز الرينين عن طريق مستقبلات β وإن البروبرانولول بيقلله؛ والكارفيديلول β-blocker برضه.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Karvedilol"
+   },
+   "img": "lessons/17-anjiyotensin/img/K3-24-1.png",
+   "w": 240.0,
+   "h": 117.0,
+   "mark": [
+    0.15,
+    0.3932,
+    0.2292,
+    0.1197
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/K3-24-1-ev1.jpg",
+     "slide": 15,
+     "title": "Böbrekte jukstaglomerüler hücrelerden renin salgılanmasının düzenlenmesi"
+    }
+   ]
+  },
+  {
+   "id": "BF23-72",
+   "exam": "BF23",
+   "qno": 72,
+   "stem": "Kemoterapiye bağlı bulantı ve kusmayı azaltan bir peptid (substans P / NK1) antagonisti hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة مضادات القيء (درس 6، وموجود هناك). بس سلايد 44 في الدرس ده (جدول الأدوية اللي بتأثر على الببتيدات الفعّالة وعائيًا) فيه صف «Substance P antagonists»: الأبريبيتانت بيغلق مستقبلات NK1 (tachykinin NK1) وبيتستخدم في الوقاية من القيء والغثيان بتاع الكيماوي. وخلّي بالك إن الإينالابريل اللي في الاختيارات من أدوية الدرس ده: مثبط ACE مش مضاد قيء.",
+   "group": "aprepitant-nk1",
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Aprepitant"
+   },
+   "img": "lessons/17-anjiyotensin/img/BF23-72.png",
+   "w": 220.0,
+   "h": 111.0,
+   "mark": [
+    0.2092,
+    0.4879,
+    0.214,
+    0.1101
+   ],
+   "evidence": [
+    {
+     "img": "lessons/17-anjiyotensin/img/BF23-72-ev1.jpg",
+     "slide": 44,
+     "title": "Vazoaktif peptid sistemleri ile etkileşen ilaçlar (özet tablo)"
+    }
+   ]
+  }
+ ]
+}

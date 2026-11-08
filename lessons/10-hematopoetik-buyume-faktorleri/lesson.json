@@ -1,0 +1,297 @@
+{
+ "pdf": "lessons/10-hematopoetik-buyume-faktorleri/10-hematopoetik-buyume-faktorleri-sorular.pdf",
+ "pdfName": "Hematopoetik Büyüme Faktörleri.pdf",
+ "pages": 11,
+ "questions": [
+  {
+   "id": "F26-11",
+   "exam": "F26",
+   "qno": 11,
+   "stem": "Kemik iliği nakli öncesinde kemik iliği mobilizasyonu için hangi ilaç kullanılabilir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Lenograstim"
+   },
+   "img": "lessons/10-hematopoetik-buyume-faktorleri/img/F26-11.png",
+   "w": 295.0,
+   "h": 139.0,
+   "mark": [
+    0.1463,
+    0.4667,
+    0.1805,
+    0.0852
+   ],
+   "evidence": [
+    {
+     "img": "lessons/10-hematopoetik-buyume-faktorleri/img/F26-11-ev1.jpg",
+     "slide": 6,
+     "title": "Hematopoetik Büyüme Faktörleri"
+    }
+   ]
+  },
+  {
+   "id": "K26-12",
+   "exam": "K26",
+   "qno": 12,
+   "stem": "Siklofosfamide bağlı miyelotoksisite sonucu gelişebilecek şiddetli nötropeni tedavisinde hangi ilaç kullanılabilir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Filgrastim"
+   },
+   "img": "lessons/10-hematopoetik-buyume-faktorleri/img/K26-12.png",
+   "w": 295.0,
+   "h": 152.0,
+   "mark": [
+    0.1463,
+    0.5132,
+    0.1401,
+    0.0779
+   ],
+   "evidence": [
+    {
+     "img": "lessons/10-hematopoetik-buyume-faktorleri/img/K26-12-ev1.jpg",
+     "slide": 4,
+     "title": "Hematopoetik Büyüme Faktörleri"
+    }
+   ]
+  },
+  {
+   "id": "K26-16",
+   "exam": "K26",
+   "qno": 16,
+   "stem": "Kemoterapiye bağlı ciddi lökopenide kemik iliğinin nötrofil üretimini hızlandırmak için hangi ajan tercih edilir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "G-CSF"
+   },
+   "img": "lessons/10-hematopoetik-buyume-faktorleri/img/K26-16.png",
+   "w": 295.0,
+   "h": 126.0,
+   "mark": [
+    0.1463,
+    0.4098,
+    0.0948,
+    0.094
+   ],
+   "evidence": [
+    {
+     "img": "lessons/10-hematopoetik-buyume-faktorleri/img/K26-16-ev1.jpg",
+     "slide": 6,
+     "title": "Hematopoetik Büyüme Faktörleri"
+    },
+    {
+     "img": "lessons/10-hematopoetik-buyume-faktorleri/img/K26-16-ev2.jpg",
+     "slide": 4,
+     "title": "Hematopoetik Büyüme Faktörleri"
+    }
+   ]
+  },
+  {
+   "id": "F25-15",
+   "exam": "F25",
+   "qno": 15,
+   "stem": "Kemik iliği transplantasyonunda yardımcı ilaç olarak ve kanser hastalarında nötropeninin hafifletilmesinde kullanılan immünomodülatör hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Filgrastim"
+   },
+   "img": "lessons/10-hematopoetik-buyume-faktorleri/img/F25-15.png",
+   "w": 554.0,
+   "h": 276.0,
+   "mark": [
+    0.4448,
+    0.3913,
+    0.1379,
+    0.0563
+   ],
+   "evidence": [
+    {
+     "img": "lessons/10-hematopoetik-buyume-faktorleri/img/F25-15-ev1.jpg",
+     "slide": 6,
+     "title": "Hematopoetik Büyüme Faktörleri"
+    },
+    {
+     "img": "lessons/10-hematopoetik-buyume-faktorleri/img/F25-15-ev2.jpg",
+     "slide": 4,
+     "title": "Hematopoetik Büyüme Faktörleri"
+    }
+   ]
+  },
+  {
+   "id": "K25-65",
+   "exam": "K25",
+   "qno": 65,
+   "stem": "Kronik böbrek yetmezliği, kanser ya da prematüreye bağlı anemilerde kullanılan eritropoietin reseptör agonisti hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Epoetin alfa"
+   },
+   "img": "lessons/10-hematopoetik-buyume-faktorleri/img/K25-65.png",
+   "w": 295.0,
+   "h": 128.0,
+   "mark": [
+    0.1463,
+    0.4059,
+    0.1682,
+    0.0925
+   ],
+   "evidence": [
+    {
+     "img": "lessons/10-hematopoetik-buyume-faktorleri/img/K25-65-ev1.jpg",
+     "slide": 4,
+     "title": "Hematopoetik Büyüme Faktörleri"
+    },
+    {
+     "img": "lessons/10-hematopoetik-buyume-faktorleri/img/K25-65-ev2.jpg",
+     "slide": 11,
+     "title": "Hematopoetik Büyüme Faktörleri"
+    }
+   ]
+  },
+  {
+   "id": "B21-2-92",
+   "exam": "B21-2",
+   "qno": 92,
+   "stem": "Şiddetli kemoterapi kaynaklı nötropeni gelişen hastada hangisi kullanılabilir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Sargramostim"
+   },
+   "img": "lessons/10-hematopoetik-buyume-faktorleri/img/B21-2-92.png",
+   "w": 295.0,
+   "h": 157.0,
+   "mark": [
+    0.0441,
+    0.4841,
+    0.2,
+    0.0892
+   ],
+   "evidence": [
+    {
+     "img": "lessons/10-hematopoetik-buyume-faktorleri/img/B21-2-92-ev1.jpg",
+     "slide": 11,
+     "title": "Hematopoetik Büyüme Faktörleri"
+    },
+    {
+     "img": "lessons/10-hematopoetik-buyume-faktorleri/img/B21-2-92-ev2.jpg",
+     "slide": 7,
+     "title": "4.2. Diğer Hematopoetik Faktörler"
+    }
+   ]
+  },
+  {
+   "id": "F19-14",
+   "exam": "F19",
+   "qno": 14,
+   "stem": "Trombositopenik hastalarda trombopoietin reseptörlerini aktive ederek trombosit sayısını artıran ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Romiplostim"
+   },
+   "img": "lessons/10-hematopoetik-buyume-faktorleri/img/F19-14.png",
+   "w": 260.0,
+   "h": 115.0,
+   "mark": [
+    0.107,
+    0.6375,
+    0.2279,
+    0.1092
+   ],
+   "evidence": [
+    {
+     "img": "lessons/10-hematopoetik-buyume-faktorleri/img/F19-14-ev1.jpg",
+     "slide": 9,
+     "title": "Diğer Hematopoetik Faktörler"
+    },
+    {
+     "img": "lessons/10-hematopoetik-buyume-faktorleri/img/F19-14-ev2.jpg",
+     "slide": 10,
+     "title": "4.2. Diğer Hematopoetik Faktörler"
+    }
+   ]
+  },
+  {
+   "id": "K19-12",
+   "exam": "K19",
+   "qno": 12,
+   "stem": "Aşağıdakilerden hangisi eritropoetin endikasyonları arasında yer almaz?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Akut demir eksikliği anemisi"
+   },
+   "img": "lessons/10-hematopoetik-buyume-faktorleri/img/K19-12.png",
+   "w": 465.0,
+   "h": 121.0,
+   "mark": [
+    0.1116,
+    0.7078,
+    0.2833,
+    0.1039
+   ],
+   "evidence": [
+    {
+     "img": "lessons/10-hematopoetik-buyume-faktorleri/img/K19-12-ev1.jpg",
+     "slide": 11,
+     "title": "Hematopoetik Büyüme Faktörleri"
+    }
+   ]
+  },
+  {
+   "id": "K26-7",
+   "exam": "K26",
+   "qno": 7,
+   "stem": "Zidovudin kullanan hastada kemoterapiye bağlı anemi için başlanan epoetin alfaya 10. günde yanıt görülmemesi neyi gösterir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "إسلام كاتب جنبه 10 والسؤال عن الإريثروبويتين، فهو تبع الدرس ده، بس ملف الشرح مفيهوش إن الـEPO بياخد كام أسبوع لحد ما الهيموجلوبين يزيد. سلايد 11 بس بيقول إنه بيتدي لمرضى الـHIV اللي بياخدوا زيدوفودين. في مفتاح الكتيّب ده الإجابة هي A، يعني لسه الوقت اللي المفروض الاستجابة تبان فيه مخلصش، لأن أثر الـEPO بيبان بعد كذا أسبوع مش 10 أيام.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/10-hematopoetik-buyume-faktorleri/img/K26-7.png",
+   "w": 272.0,
+   "h": 139.0,
+   "mark": null,
+   "evidence": []
+  }
+ ]
+}

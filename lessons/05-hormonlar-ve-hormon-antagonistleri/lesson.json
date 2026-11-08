@@ -1,0 +1,856 @@
+{
+ "pdf": "lessons/05-hormonlar-ve-hormon-antagonistleri/05-hormonlar-ve-hormon-antagonistleri-sorular.pdf",
+ "pdfName": "Hormonlar ve Hormon Antagonistleri.pdf",
+ "pages": 31,
+ "questions": [
+  {
+   "id": "K6-26-45",
+   "exam": "K6-26",
+   "qno": 45,
+   "stem": "ÖR (+) meme kanseri olan postmenopozal hastada tamoksifen kullanılmasının temel nedeni nedir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "tamoksifen",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Selektif östrojen reseptör modülatörü olması"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-26-45.png",
+   "w": 293.0,
+   "h": 117.0,
+   "mark": [
+    0.1353,
+    0.411,
+    0.6234,
+    0.0707
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-26-45-ev1.jpg",
+     "slide": 14,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K6-26-46",
+   "exam": "K6-26",
+   "qno": 46,
+   "stem": "Prostat kanseri tedavisinde kullanılan \"androjen reseptör antagonisti\" antiandrojen ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "antiandrojen",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Bikalutamid"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-26-46.png",
+   "w": 293.0,
+   "h": 116.0,
+   "mark": [
+    0.1353,
+    0.4132,
+    0.1619,
+    0.0713
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-26-46-ev1.jpg",
+     "slide": 15,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K26-4",
+   "exam": "K26",
+   "qno": 4,
+   "stem": "\"Metastatik kastrasyon dirençli prostat kanseri\" tedavisinde kullanılan androjen biyosentez inhibitörü hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Abirateron"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K26-4.png",
+   "w": 291.0,
+   "h": 128.0,
+   "mark": [
+    0.1345,
+    0.4062,
+    0.1543,
+    0.0925
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K26-4-ev1.jpg",
+     "slide": 18,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K6-25-52",
+   "exam": "K6-25",
+   "qno": 52,
+   "stem": "Androjen reseptör antagonisti olup prostat kanseri tedavisinde kullanılan ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "antiandrojen",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Flutamid"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-25-52.png",
+   "w": 506.0,
+   "h": 270.0,
+   "mark": [
+    0.1581,
+    0.4222,
+    0.1087,
+    0.0593
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-25-52-ev1.jpg",
+     "slide": 15,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K6-25-58",
+   "exam": "K6-25",
+   "qno": 58,
+   "stem": "Selektif östrojen reseptör modülatörleri (SERM) hakkında hangisi doğrudur?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "tamoksifen",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Tamoksifen meme dokusunda östrojen antagonisti olarak etki gösterir"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-25-58.png",
+   "w": 506.0,
+   "h": 290.0,
+   "mark": [
+    0.1581,
+    0.3931,
+    0.7332,
+    0.1241
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-25-58-ev1.jpg",
+     "slide": 14,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K25-69",
+   "exam": "K25",
+   "qno": 69,
+   "stem": "Östrojen reseptörü pozitif (ÖR (+)) meme kanseri tanısı konulan 60 yaşında kadın hastanın tedavisi için en uygun ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "tamoksifen",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Tamoksifen"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K25-69.png",
+   "w": 272.0,
+   "h": 152.0,
+   "mark": [
+    0.1581,
+    0.5092,
+    0.1793,
+    0.0779
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K25-69-ev1.jpg",
+     "slide": 14,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K6-24-57",
+   "exam": "K6-24",
+   "qno": 57,
+   "stem": "İlerlemiş prostat kanseri tedavisinde kullanılan GnRH analoğu hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Löprolid"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-24-57.png",
+   "w": 270.0,
+   "h": 116.0,
+   "mark": [
+    0.1577,
+    0.3319,
+    0.1293,
+    0.1021
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-24-57-ev1.jpg",
+     "slide": 17,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K23-89",
+   "exam": "K23",
+   "qno": 89,
+   "stem": "Hem östrojenik hem antiöstrojenik aktiviteye sahip, ÖR(+) meme kanserinde kullanılan Selektif Östrojen Reseptörü Modülatörü (SERM) antineoplastik ajan hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "tamoksifen",
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Tamoksifen"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K23-89.png",
+   "w": 218.0,
+   "h": 155.0,
+   "mark": [
+    0.2005,
+    0.634,
+    0.2482,
+    0.0811
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K23-89-ev1.jpg",
+     "slide": 14,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K6-22-56",
+   "exam": "K6-22",
+   "qno": 56,
+   "stem": "İlerlemiş prostat kanserinde GnRH reseptörlerinin yarışmalı antagonisti olan ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Degareliks"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-22-56.png",
+   "w": 249.0,
+   "h": 163.0,
+   "mark": [
+    0.1485,
+    0.5351,
+    0.2085,
+    0.0815
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-22-56-ev1.jpg",
+     "slide": 18,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    },
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-22-56-ev2.jpg",
+     "slide": 16,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "B21-2-64",
+   "exam": "B21-2",
+   "qno": 64,
+   "stem": "Hormon pozitif meme kanserinde tamoksifen altında akciğer metastazı gelişen hastada tamoksifen yerine başlanan östrojen reseptör antagonisti hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [
+    {
+     "exam": "K6-22",
+     "qno": 64
+    }
+   ],
+   "answer": {
+    "letter": "E",
+    "text": "Fulvestrant"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/B21-2-64.png",
+   "w": 363.0,
+   "h": 184.0,
+   "mark": [
+    0.0331,
+    0.8913,
+    0.1405,
+    0.0761
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/B21-2-64-ev1.jpg",
+     "slide": 14,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K6-22-64",
+   "exam": "K6-22",
+   "qno": 64,
+   "stem": "Hormon pozitif meme kanserinde tamoksifen altında akciğer metastazı gelişen hastada tamoksifen yerine başlanan östrojen reseptör antagonisti hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [
+    {
+     "exam": "B21-2",
+     "qno": 64
+    }
+   ],
+   "answer": {
+    "letter": "E",
+    "text": "Fulvestrant"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-22-64.png",
+   "w": 245.0,
+   "h": 238.0,
+   "mark": [
+    0.1773,
+    0.9181,
+    0.2198,
+    0.0558
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-22-64-ev1.jpg",
+     "slide": 14,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K6-21-52",
+   "exam": "K6-21",
+   "qno": 52,
+   "stem": "Östrojen ve progesteron reseptörü pozitif meme karsinomu çıkarılan 50 yaşındaki kadın hangi ilacı alabilir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "tamoksifen",
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Tamoksifen"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-21-52.png",
+   "w": 600.0,
+   "h": 280.0,
+   "mark": [
+    0.0617,
+    0.6393,
+    0.095,
+    0.0643
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-21-52-ev1.jpg",
+     "slide": 14,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "F20-83",
+   "exam": "F20",
+   "qno": 83,
+   "stem": "Aşağıdaki antiandrojenlerden hangisi androjen reseptör antagonistidir ve prostat kanserinin tedavisinde kullanılır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "antiandrojen",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Flutamid"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/F20-83.png",
+   "w": 454.0,
+   "h": 165.0,
+   "mark": [
+    0.0803,
+    0.3916,
+    0.1869,
+    0.0893
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/F20-83-ev1.jpg",
+     "slide": 15,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "F19-16",
+   "exam": "F19",
+   "qno": 16,
+   "stem": "Uzun süre düzenli olarak tedavi dozunda prednizolon kullanımı aşağıdakilerden hangisi ile sonuçlanabilir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "prednizolon-osteoporoz",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Kemik yoğunluğunda azalma"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/F19-16.png",
+   "w": 260.0,
+   "h": 126.0,
+   "mark": [
+    0.107,
+    0.3522,
+    0.5112,
+    0.0997
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/F19-16-ev1.jpg",
+     "slide": 13,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K6-26-44",
+   "exam": "K6-26",
+   "qno": 44,
+   "stem": "Romatoid artrit için oral prednizolon alan hastada hangi yan etkinin görülmesi en az olasıdır?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة الكورتيكوستيرويدات في كورول 6. سلايد 13 هنا بيعدّ آثار البريدنيزولون الجانبية: ارتفاع الضغط (مش هبوطه)، وهشاشة العظام، وتهيج المعدة، والعدوى. فالأقل احتمالاً هو هبوط الضغط.",
+   "group": "prednizolon-en-az",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Hipotansiyon"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-26-44.png",
+   "w": 293.0,
+   "h": 140.0,
+   "mark": [
+    0.1353,
+    0.5181,
+    0.185,
+    0.0591
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-26-44-ev1.jpg",
+     "slide": 13,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K6-25-54",
+   "exam": "K6-25",
+   "qno": 54,
+   "stem": "Romatoid artrit için prednizolon kullanan 60 yaşındaki kadında hangi yan etkinin görülmesi en az olasıdır?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة الكورتيكوستيرويدات في كورول 6. سلايد 13 هنا بيقول إن البريدنيزولون بيعمل ارتفاع ضغط وارتفاع سكر وتهيج معدة وهشاشة عظام، فالأقل احتمالاً هو هبوط الضغط.",
+   "group": "prednizolon-en-az",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Hipotansiyon"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-25-54.png",
+   "w": 506.0,
+   "h": 290.0,
+   "mark": [
+    0.1581,
+    0.4586,
+    0.1621,
+    0.0586
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-25-54-ev1.jpg",
+     "slide": 13,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K6-24-51",
+   "exam": "K6-24",
+   "qno": 51,
+   "stem": "Glukokortikoidler için hangisi yanlıştır?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "السؤال ده عن الجلوكوكورتيكويدات عموماً (من محاضرة الكورتيكوستيرويدات في كورول 6، وموجود كمان في درس 12). سلايد 13 هنا بيقول إن أشهرهم البريدنيزولون وإنهم بيعملوا ارتفاع سكر (يعني B و E صح)، بس مفيش كلام عن التأثير المينرالوكورتيكويد. الغلط هو A: الجلوكوكورتيكويدات الصناعية اتعملت عشان تقلّل التأثير المينرالوكورتيكويد مش تزوّده.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-24-51.png",
+   "w": 275.0,
+   "h": 164.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K5-24-58",
+   "exam": "K5-24",
+   "qno": 58,
+   "stem": "Yüksek dozlarda vagotomi ve dumping sendromuna bağlı diyareye karşı etkili antidiyareik hangisidir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "الأوكتريوتيد متشرح في سلايد 19 (أورام الغدة النخامية، الكارسينويد، دوالي المريء، القيء…)، بس استخدامه في إسهال الـ dumping مش مكتوب.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K5-24-58.png",
+   "w": 280.0,
+   "h": 146.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "BF23-76",
+   "exam": "BF23",
+   "qno": 76,
+   "stem": "Osteoporoz tedavisinde kullanılan selektif östrojen reseptör modülatörü (SERM) hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة أدوية هشاشة العظام. بس سلايد 14 هنا بيقول صراحة إن الرالوكسيفين من مجموعة الـ SERM.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Raloksifen"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/BF23-76.png",
+   "w": 206.0,
+   "h": 122.0,
+   "mark": [
+    0.1428,
+    0.4452,
+    0.2316,
+    0.1002
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/BF23-76-ev1.jpg",
+     "slide": 14,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "BF23-77",
+   "exam": "BF23",
+   "qno": 77,
+   "stem": "Adrenal tümöre bağlı Cushing sendromlu 46 yaşındaki erkek hasta için uygun tedavi seçeneği hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة أدوية الغدة الكظرية في فاينال الترم التاني. بس سلايد 8 هنا بيقول إن الميتوتان بيموّت خلايا قشرة الكظر، وبيتستخدم في سرطان قشرة الكظر المتقدم وفي علاج متلازمة كوشينج.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Mitotan"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/BF23-77.png",
+   "w": 206.0,
+   "h": 123.0,
+   "mark": [
+    0.1428,
+    0.754,
+    0.1694,
+    0.0994
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/BF23-77-ev1.jpg",
+     "slide": 8,
+     "title": "1. Farklı Etki Mekanizmalı İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K6-23-72",
+   "exam": "K6-23",
+   "qno": 72,
+   "stem": "Overi baskılayarak östrojen ve progesteronu azaltan ve endometriozis tedavisinde kullanılan ilaç hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة الهرمونات الجنسية في كورول 6. سلايد 17 هنا بيقول إن اللوبروليد شبيه الـ GnRH وإنه مفيد في بطانة الرحم المهاجرة (endometriozis)، وسلايد 16 بيقول إن استعماله المستمر بيقلل الـ LH والإستروجين.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Löprolid"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-23-72.png",
+   "w": 204.0,
+   "h": 146.0,
+   "mark": [
+    0.1819,
+    0.5469,
+    0.1894,
+    0.0837
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-23-72-ev1.jpg",
+     "slide": 17,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    },
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-23-72-ev2.jpg",
+     "slide": 16,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K6-21-44",
+   "exam": "K6-21",
+   "qno": 44,
+   "stem": "Pankreas tümörü (VIPoma) olan hastada sulu diyareyi kontrol altına almak için hangi ilaç uygundur?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة الغدد في كورول 6. الـ VIPoma ورم نيوروإندوكرين في البنكرياس، وسلايد 19 هنا بيقول إن الأوكتريوتيد بيتستخدم في علاج الأورام النيوروإندوكرين زي الكارسينويد.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Oktreotid"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-21-44.png",
+   "w": 600.0,
+   "h": 290.0,
+   "mark": [
+    0.0617,
+    0.6586,
+    0.0833,
+    0.0586
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-21-44-ev1.jpg",
+     "slide": 19,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K6-21-50",
+   "exam": "K6-21",
+   "qno": 50,
+   "stem": "Kas güçsüzlüğü, karında yağ birikimi, ciltte incelme ve osteoporozu olan hastada hangi ilacın uzun süreli kullanımı bu tabloya neden olmuştur?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة الكورتيكوستيرويدات في كورول 6 (وموجود كمان في درس 12). سلايد 13 هنا بيقول إن الجلوكوكورتيكويدات بالجرعات العالية بتعمل وش قمري (aydede yüz)، هشاشة عظام، وتغيّر في المزاج — وده وصف الحالة بالظبط، والديكساميثازون جلوكوكورتيكويد.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Deksametazon"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-21-50.png",
+   "w": 605.0,
+   "h": 295.0,
+   "mark": [
+    0.0248,
+    0.6644,
+    0.1769,
+    0.0814
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K6-21-50-ev1.jpg",
+     "slide": 13,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K3-20-11",
+   "exam": "K3-20",
+   "qno": 11,
+   "stem": "Postmenopozal osteoporozlu kadında hangi ilacın kronik kullanımının osteoporoza katkısı en olasıdır?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة أدوية هشاشة العظام. سلايد 13 هنا بيقول إن أشهر كورتيزون مستعمل هو البريدنيزولون، وإن من آثاره الجانبية هشاشة العظام. ونفس السؤال بنفس الاختيارات اتسأل كمان في K3-19 (سؤال 14).",
+   "group": "prednizolon-osteoporoz",
+   "also": [
+    {
+     "exam": "K3-19",
+     "qno": 14
+    }
+   ],
+   "answer": {
+    "letter": "C",
+    "text": "Prednizolon"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K3-20-11.png",
+   "w": 252.0,
+   "h": 173.0,
+   "mark": [
+    0.0565,
+    0.7976,
+    0.1726,
+    0.0576
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K3-20-11-ev1.jpg",
+     "slide": 13,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K3-19-14",
+   "exam": "K3-19",
+   "qno": 14,
+   "stem": "Postmenopozal osteoporozlu kadında hangi ilacın kronik kullanımının osteoporoza katkısı en olasıdır?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة أدوية هشاشة العظام. سلايد 13 هنا بيقول إن أشهر كورتيزون مستعمل هو البريدنيزولون، وإن من آثاره الجانبية هشاشة العظام. ونفس السؤال بنفس الاختيارات اتسأل كمان في K3-20 (سؤال 11).",
+   "group": "prednizolon-osteoporoz",
+   "also": [
+    {
+     "exam": "K3-20",
+     "qno": 11
+    }
+   ],
+   "answer": {
+    "letter": "C",
+    "text": "Prednizolon"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K3-19-14.png",
+   "w": 418.0,
+   "h": 101.0,
+   "mark": [
+    0.0579,
+    0.5735,
+    0.1272,
+    0.121
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K3-19-14-ev1.jpg",
+     "slide": 13,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K5-19-18",
+   "exam": "K5-19",
+   "qno": 18,
+   "stem": "Cerrahiye kısmen yanıt veren hipofizer tümörlü akromegali hastasında farmakolojik tedavide en olası ilaç hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة أدوية الغدة النخامية. سلايد 19 هنا بيقول إن الأوكتريوتيد بيتستخدم في أورام النخامية اللي بتفرز هرمون النمو (الأكروميجالي). ونفس السؤال بنفس الاختيارات اتسأل كمان في K3-20 (سؤال 19).",
+   "group": null,
+   "also": [
+    {
+     "exam": "K3-20",
+     "qno": 19
+    }
+   ],
+   "answer": {
+    "letter": "D",
+    "text": "Oktreotid"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K5-19-18.png",
+   "w": 451.0,
+   "h": 130.0,
+   "mark": [
+    0.042,
+    0.7544,
+    0.0935,
+    0.094
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K5-19-18-ev1.jpg",
+     "slide": 19,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K3-20-19",
+   "exam": "K3-20",
+   "qno": 19,
+   "stem": "Cerrahiye kısmen yanıt veren hipofizer tümörlü akromegali hastasında farmakolojik tedavide en olası ilaç hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة أدوية الغدة النخامية. سلايد 19 هنا بيقول إن الأوكتريوتيد بيتستخدم في أورام النخامية اللي بتفرز هرمون النمو (الأكروميجالي). ونفس السؤال بنفس الاختيارات اتسأل كمان في K5-19 (سؤال 18).",
+   "group": null,
+   "also": [
+    {
+     "exam": "K5-19",
+     "qno": 18
+    }
+   ],
+   "answer": {
+    "letter": "D",
+    "text": "Oktreotid"
+   },
+   "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K3-20-19.png",
+   "w": 234.0,
+   "h": 120.0,
+   "mark": [
+    0.063,
+    0.8082,
+    0.1474,
+    0.083
+   ],
+   "evidence": [
+    {
+     "img": "lessons/05-hormonlar-ve-hormon-antagonistleri/img/K3-20-19-ev1.jpg",
+     "slide": 19,
+     "title": "2. Hormonlar ve Hormon Antagonistleri"
+    }
+   ]
+  }
+ ]
+}

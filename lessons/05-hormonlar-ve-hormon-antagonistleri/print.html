@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head><meta charset="utf-8"><title>5. Hormonlar ve Hormon Antagonistleri · Sorular</title>
+<link rel="stylesheet" href="../../assets/folks.css"><style>/* Print layout for one lesson's question PDF. Tokens come from folks.css. */
+@page { size: A4 landscape; margin: 0; }
+html, body { margin: 0; background: var(--f-surface); }
+body.f { font-size: 13px; line-height: 1.45; }
+[lang="tr"] { font-family: var(--f-font-ui); }
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+.sheet {
+  width: 297mm; height: 210mm; padding: 11mm 13mm 9mm;
+  display: flex; flex-direction: column; gap: 14px;
+  overflow: hidden; break-after: page; position: relative;
+  background: var(--f-surface);
+}
+.sheet:last-child { break-after: auto; }
+
+.kicker { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; color: var(--f-dim); }
+.kicker i { width: 10px; height: 10px; border-radius: 3px; background: var(--f-ink); }
+
+/* ---------- cover ---------- */
+.cover { flex-direction: row; gap: 34px; }
+.cv-main { width: 43%; flex: none; display: flex; flex-direction: column; }
+.cv-main .legend { margin-top: auto; }
+.cover .toc { flex: 1; padding-top: 2px; }
+.cover .big {
+  font-family: var(--f-font-ui); font-size: 190px; font-weight: 800; line-height: .82;
+  letter-spacing: -9px; font-variant-numeric: tabular-nums; margin: 30px 0 16px; direction: ltr; text-align: left;
+}
+.cover h1 { font-size: 36px; line-height: 1.12; font-weight: 700; margin: 0; text-align: left; letter-spacing: -.3px; }
+.cover .who { margin: 8px 0 0; color: var(--f-dim); font-size: 14px; text-align: left; }
+.stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 26px 0 22px; }
+.stats div { background: var(--f-chip); border-radius: 18px; padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 2px; }
+.stats b { font-family: var(--f-font-ui); font-size: 34px; line-height: 1; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stats span { font-size: 12px; color: var(--f-dim); font-weight: 600; }
+.toc { flex: 1; min-height: 0; overflow: hidden; }
+.toc h3 { display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; color: var(--f-mute); margin: 16px 2px 6px; }
+.toc h3:first-child { margin-top: 0; }
+.toc ol { list-style: none; margin: 0; padding: 0; border-radius: 18px; box-shadow: inset 0 0 0 1px var(--f-line); overflow: hidden; }
+.toc li { display: grid; grid-template-columns: 26px 66px 1fr; gap: 10px; align-items: center; padding: 7px 14px; font-size: 12px; }
+.toc li + li { border-top: 1px solid var(--f-line); }
+.toc .n { font-family: var(--f-font-ui); font-variant-numeric: tabular-nums; color: var(--f-mute); font-weight: 600; }
+.toc .ex { font-family: var(--f-font-ui); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.toc .st { color: var(--f-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; }
+.legend { display: flex; gap: 14px; align-items: center; padding-top: 12px; border-top: 1px solid var(--f-line); font-size: 11px; color: var(--f-mute); }
+.legend b { color: var(--f-ink); font-family: var(--f-font-ui); margin-inline-end: 3px; }
+.legend .sp { flex: 1; }
+
+.toc-next { margin: 4px 2px 0; font-size: 13px; color: var(--f-mute); }
+.tocpage { gap: 14px; }
+.tocpage .toc h3:first-child { margin-top: 4px; }
+
+/* ---------- divider ---------- */
+.divider { justify-content: center; gap: 0; }
+.divider h2 { font-size: 64px; line-height: 1.1; margin: 14px 0 12px; font-weight: 800; }
+.divider p { font-size: 16px; color: var(--f-dim); margin: 0 0 30px; max-width: 520px; }
+.divider ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; max-width: 560px; }
+.divider li { background: var(--f-chip); border-radius: 18px; padding: 14px 16px; display: grid; gap: 4px; }
+.divider li b { font-size: 14px; }
+.divider li span { font-size: 13px; color: var(--f-dim); }
+
+/* ---------- question page (landscape) ---------- */
+.top { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--f-dim); flex: none; }
+.crumb { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.crumb b { font-family: var(--f-font-ui); display: inline-grid; place-items: center; min-width: 26px; height: 26px; padding: 0 6px; border-radius: 8px; background: var(--f-ink); color: var(--f-on-ink); font-size: 12px; font-variant-numeric: tabular-nums; }
+.crumb span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160mm; }
+.count { white-space: nowrap; }
+.count b { color: var(--f-ink); font-family: var(--f-font-ui); font-variant-numeric: tabular-nums; }
+
+.src { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex: none; }
+.exam { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px 6px 6px; border-radius: 999px; background: var(--f-chip); font-size: 13px; font-weight: 600; color: var(--f-dim); align-self: flex-start; }
+.exam b { background: var(--f-ink); color: var(--f-on-ink); border-radius: 999px; padding: 3px 10px; font-size: 12px; font-variant-numeric: tabular-nums; }
+.exam i { width: 3px; height: 3px; border-radius: 50%; background: var(--f-mute); }
+.tag.also b { font-weight: 700; color: var(--f-ink); }
+.tag { font-size: 11px; font-weight: 600; color: var(--f-dim); padding: 4px 10px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--f-line2); align-self: flex-start; }
+
+.note { flex: none; background: var(--f-chip); border-radius: 16px; padding: 10px 14px; }
+.note b { display: block; font-size: 12px; margin-bottom: 2px; }
+.note p { margin: 0; font-size: 12px; color: var(--f-dim); line-height: 1.55; }
+
+/* question and answer on the left 80% of the page; the right fifth stays blank for the student's notes */
+.sheet.q { padding-right: calc(59.4mm + 6mm); }
+.notes {
+  position: absolute; top: 0; bottom: 0; right: 0; width: 59.4mm; box-sizing: border-box;
+  padding: 11mm 7mm 9mm; border-left: 1px solid var(--f-line);
+}
+.notes span { font-size: 11px; font-weight: 600; color: var(--f-mute); }
+
+.q .body { flex: 1; min-height: 0; display: flex; gap: 16px; }
+.q .qside { display: flex; gap: 16px; flex: none; min-width: 0; }
+.q .meta { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.q.wide .body { flex-direction: column; }
+.q.wide .qside { flex-direction: row; align-items: flex-start; }
+.q.wide .meta { width: 240px; flex: none; }
+.q.tall .body { flex-direction: row; }
+.q.tall .qside { width: 390px; flex-direction: column; }
+
+.qcard { flex: none; margin: 0; padding: 12px; border-radius: 20px; box-shadow: inset 0 0 0 1px var(--f-line); display: flex; justify-content: center; }
+.q.wide .qcard { flex: 1; min-width: 0; }
+.qimg { position: relative; max-width: 100%; }
+.qimg img { display: block; width: 100%; height: 100%; }
+.mark { position: absolute; border-radius: 8px; box-shadow: inset 0 0 0 2px var(--f-ink); }
+.mark::after {
+  content: ""; position: absolute; left: 100%; top: 50%; translate: 6px -50%;
+  width: 18px; height: 18px; border-radius: 50%; background: var(--f-ink) no-repeat center / 11px
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+
+.ans { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; flex: none; }
+.lbl { font-size: 12px; font-weight: 600; color: var(--f-mute); }
+.pill { display: inline-flex; align-items: center; gap: 10px; padding: 7px 16px 7px 7px; border-radius: 999px; background: var(--f-ink); color: var(--f-on-ink); font-size: 14px; font-weight: 700; max-width: 100%; }
+.pill b { display: inline-grid; place-items: center; width: 24px; height: 24px; flex: none; border-radius: 50%; background: var(--f-on-ink); color: var(--f-ink); font-size: 12px; }
+.pill.none { background: none; color: var(--f-dim); box-shadow: inset 0 0 0 1.5px var(--f-line2); padding: 7px 16px; font-size: 13px; font-weight: 600; border: 0; }
+
+/* the answer: whole slides, as large as the page allows */
+.evs { flex: 1; min-height: 0; min-width: 0; display: flex; gap: 14px; }
+.q.wide .evs { flex-direction: row; }
+.q.tall .evs { flex-direction: column; }
+.ev { flex: 1 1 0; min-height: 0; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+.ev figcaption { display: flex; align-items: baseline; gap: 8px; font-size: 12px; color: var(--f-mute); flex: none; white-space: nowrap; overflow: hidden; }
+.ev figcaption b { color: var(--f-ink); }
+.ev figcaption .t { margin-inline-start: auto; color: var(--f-dim); overflow: hidden; text-overflow: ellipsis; }
+.evimg { flex: 1; min-height: 0; display: flex; align-items: flex-start; justify-content: center; }
+.evimg img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 0 0 1px var(--f-line); }
+
+.foot { display: flex; justify-content: space-between; font-size: 10.5px; color: var(--f-mute); flex: none; padding-top: 8px; border-top: 1px solid var(--f-line); }
+body { counter-reset: pg; }
+.sheet { counter-increment: pg; }
+.pg::before { content: counter(pg); font-variant-numeric: tabular-nums; }
+</style></head>
+<body class="f">
+<section class="sheet cover">
+  <div class="cv-main">
+    <div class="kicker"><i></i>بنك أسئلة السنين اللي فاتت · فارماكولوجي</div>
+    <div class="big">5</div>
+    <h1 dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</h1>
+    <p class="who" dir="ltr" lang="tr">Dr. Öğr. Üyesi Sinan ŞERMET</p>
+    <div class="stats">
+      <div><b>27</b><span>سؤال</span></div>
+      <div><b>14</b><span>أساسي</span></div>
+      <div><b>13</b><span>للمراجعة</span></div>
+      <div><b>17</b><span>امتحان</span></div>
+    </div>
+    <footer class="legend">
+      <span><b dir="ltr">K</b> كورول</span><span><b dir="ltr">F</b> فاينال</span><span><b dir="ltr">B</b> بوتونلمه</span>
+      <span class="sp"></span><span>الأحدث الأول · الإجابة من ملف الشرح نفسه</span>
+    </footer>
+  </div>
+  <div class="toc"><p class="toc-next">فهرس الأسئلة في الصفحة الجاية</p></div>
+</section><section class="sheet tocpage"><div class="kicker"><i></i>فهرس الأسئلة</div><div class="toc"><h3><span>الأسئلة</span><span>14</span></h3><ol><li><span class="n">01</span><span class="ex" dir="ltr">K6-26 · 45</span><span class="st" dir="ltr" lang="tr">ÖR (+) meme kanseri olan postmenopozal hastada tamoksifen kullanılmasının temel nedeni nedir?</span></li><li><span class="n">02</span><span class="ex" dir="ltr">K6-26 · 46</span><span class="st" dir="ltr" lang="tr">Prostat kanseri tedavisinde kullanılan &quot;androjen reseptör antagonisti&quot; antiandrojen ilaç hangisidir?</span></li><li><span class="n">03</span><span class="ex" dir="ltr">K26 · 4</span><span class="st" dir="ltr" lang="tr">&quot;Metastatik kastrasyon dirençli prostat kanseri&quot; tedavisinde kullanılan androjen biyosentez inhibitörü hangisidir?</span></li><li><span class="n">04</span><span class="ex" dir="ltr">K6-25 · 52</span><span class="st" dir="ltr" lang="tr">Androjen reseptör antagonisti olup prostat kanseri tedavisinde kullanılan ilaç hangisidir?</span></li><li><span class="n">05</span><span class="ex" dir="ltr">K6-25 · 58</span><span class="st" dir="ltr" lang="tr">Selektif östrojen reseptör modülatörleri (SERM) hakkında hangisi doğrudur?</span></li><li><span class="n">06</span><span class="ex" dir="ltr">K25 · 69</span><span class="st" dir="ltr" lang="tr">Östrojen reseptörü pozitif (ÖR (+)) meme kanseri tanısı konulan 60 yaşında kadın hastanın tedavisi için en uygun ilaç hangisidir?</span></li><li><span class="n">07</span><span class="ex" dir="ltr">K6-24 · 57</span><span class="st" dir="ltr" lang="tr">İlerlemiş prostat kanseri tedavisinde kullanılan GnRH analoğu hangisidir?</span></li><li><span class="n">08</span><span class="ex" dir="ltr">K23 · 89</span><span class="st" dir="ltr" lang="tr">Hem östrojenik hem antiöstrojenik aktiviteye sahip, ÖR(+) meme kanserinde kullanılan Selektif Östrojen Reseptörü Modülatörü (SERM) antineoplastik ajan hangisidir?</span></li><li><span class="n">09</span><span class="ex" dir="ltr">K6-22 · 56</span><span class="st" dir="ltr" lang="tr">İlerlemiş prostat kanserinde GnRH reseptörlerinin yarışmalı antagonisti olan ilaç hangisidir?</span></li><li><span class="n">10</span><span class="ex" dir="ltr">B21-2 · 64</span><span class="st" dir="ltr" lang="tr">Hormon pozitif meme kanserinde tamoksifen altında akciğer metastazı gelişen hastada tamoksifen yerine başlanan östrojen reseptör antagonisti hangisidir?</span></li><li><span class="n">11</span><span class="ex" dir="ltr">K6-22 · 64</span><span class="st" dir="ltr" lang="tr">Hormon pozitif meme kanserinde tamoksifen altında akciğer metastazı gelişen hastada tamoksifen yerine başlanan östrojen reseptör antagonisti hangisidir?</span></li><li><span class="n">12</span><span class="ex" dir="ltr">K6-21 · 52</span><span class="st" dir="ltr" lang="tr">Östrojen ve progesteron reseptörü pozitif meme karsinomu çıkarılan 50 yaşındaki kadın hangi ilacı alabilir?</span></li><li><span class="n">13</span><span class="ex" dir="ltr">F20 · 83</span><span class="st" dir="ltr" lang="tr">Aşağıdaki antiandrojenlerden hangisi androjen reseptör antagonistidir ve prostat kanserinin tedavisinde kullanılır?</span></li><li><span class="n">14</span><span class="ex" dir="ltr">F19 · 16</span><span class="st" dir="ltr" lang="tr">Uzun süre düzenli olarak tedavi dozunda prednizolon kullanımı aşağıdakilerden hangisi ile sonuçlanabilir?</span></li></ol><h3><span>للمراجعة · آخر الملف</span><span>13</span></h3><ol><li><span class="n">15</span><span class="ex" dir="ltr">K6-26 · 44</span><span class="st" dir="ltr" lang="tr">Romatoid artrit için oral prednizolon alan hastada hangi yan etkinin görülmesi en az olasıdır?</span></li><li><span class="n">16</span><span class="ex" dir="ltr">K6-25 · 54</span><span class="st" dir="ltr" lang="tr">Romatoid artrit için prednizolon kullanan 60 yaşındaki kadında hangi yan etkinin görülmesi en az olasıdır?</span></li><li><span class="n">17</span><span class="ex" dir="ltr">K6-24 · 51</span><span class="st" dir="ltr" lang="tr">Glukokortikoidler için hangisi yanlıştır?</span></li><li><span class="n">18</span><span class="ex" dir="ltr">K5-24 · 58</span><span class="st" dir="ltr" lang="tr">Yüksek dozlarda vagotomi ve dumping sendromuna bağlı diyareye karşı etkili antidiyareik hangisidir?</span></li></ol></div></section><section class="sheet tocpage"><div class="kicker"><i></i>فهرس الأسئلة</div><div class="toc"><ol><li><span class="n">19</span><span class="ex" dir="ltr">BF23 · 76</span><span class="st" dir="ltr" lang="tr">Osteoporoz tedavisinde kullanılan selektif östrojen reseptör modülatörü (SERM) hangisidir?</span></li><li><span class="n">20</span><span class="ex" dir="ltr">BF23 · 77</span><span class="st" dir="ltr" lang="tr">Adrenal tümöre bağlı Cushing sendromlu 46 yaşındaki erkek hasta için uygun tedavi seçeneği hangisidir?</span></li><li><span class="n">21</span><span class="ex" dir="ltr">K6-23 · 72</span><span class="st" dir="ltr" lang="tr">Overi baskılayarak östrojen ve progesteronu azaltan ve endometriozis tedavisinde kullanılan ilaç hangisidir?</span></li><li><span class="n">22</span><span class="ex" dir="ltr">K6-21 · 44</span><span class="st" dir="ltr" lang="tr">Pankreas tümörü (VIPoma) olan hastada sulu diyareyi kontrol altına almak için hangi ilaç uygundur?</span></li><li><span class="n">23</span><span class="ex" dir="ltr">K6-21 · 50</span><span class="st" dir="ltr" lang="tr">Kas güçsüzlüğü, karında yağ birikimi, ciltte incelme ve osteoporozu olan hastada hangi ilacın uzun süreli kullanımı bu tabloya neden olmuştur?</span></li><li><span class="n">24</span><span class="ex" dir="ltr">K3-20 · 11</span><span class="st" dir="ltr" lang="tr">Postmenopozal osteoporozlu kadında hangi ilacın kronik kullanımının osteoporoza katkısı en olasıdır?</span></li><li><span class="n">25</span><span class="ex" dir="ltr">K3-19 · 14</span><span class="st" dir="ltr" lang="tr">Postmenopozal osteoporozlu kadında hangi ilacın kronik kullanımının osteoporoza katkısı en olasıdır?</span></li><li><span class="n">26</span><span class="ex" dir="ltr">K5-19 · 18</span><span class="st" dir="ltr" lang="tr">Cerrahiye kısmen yanıt veren hipofizer tümörlü akromegali hastasında farmakolojik tedavide en olası ilaç hangisidir?</span></li><li><span class="n">27</span><span class="ex" dir="ltr">K3-20 · 19</span><span class="st" dir="ltr" lang="tr">Cerrahiye kısmen yanıt veren hipofizer tümörlü akromegali hastasında farmakolojik tedavide en olası ilaç hangisidir?</span></li></ol></div></section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>1</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-26</b>Kurul 2025–2026<i></i>Soru 45</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 5 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Selektif östrojen reseptör modülatörü olması</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:218px"><img src="img/K6-26-45.png" alt=""><span class="mark" style="left:calc(13.53% - 6px);top:calc(41.10% - 3px);width:calc(62.34% + 12px);height:calc(7.07% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 14</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K6-26-45-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>2</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-26</b>Kurul 2025–2026<i></i>Soru 46</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 3 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Bikalutamid</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:216px"><img src="img/K6-26-46.png" alt=""><span class="mark" style="left:calc(13.53% - 6px);top:calc(41.32% - 3px);width:calc(16.19% + 12px);height:calc(7.13% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 15</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K6-26-46-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>3</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K26</b>Kurul 2025–2026<i></i>Soru 4</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Abirateron</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:240px"><img src="img/K26-4.png" alt=""><span class="mark" style="left:calc(13.45% - 6px);top:calc(40.62% - 3px);width:calc(15.43% + 12px);height:calc(9.25% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 18</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K26-4-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>4</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-25</b>Kurul 2024–2025<i></i>Soru 52</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 3 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Flutamid</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:469px;height:250px"><img src="img/K6-25-52.png" alt=""><span class="mark" style="left:calc(15.81% - 6px);top:calc(42.22% - 3px);width:calc(10.87% + 12px);height:calc(5.93% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 15</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K6-25-52-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>5</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-25</b>Kurul 2024–2025<i></i>Soru 58</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 5 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Tamoksifen meme dokusunda östrojen antagonisti olarak etki gösterir</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:436px;height:250px"><img src="img/K6-25-58.png" alt=""><span class="mark" style="left:calc(15.81% - 6px);top:calc(39.31% - 3px);width:calc(73.32% + 12px);height:calc(12.41% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 14</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K6-25-58-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>6</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K25</b>Kurul 2024–2025<i></i>Soru 69</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 5 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Tamoksifen</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:447px;height:250px"><img src="img/K25-69.png" alt=""><span class="mark" style="left:calc(15.81% - 6px);top:calc(50.92% - 3px);width:calc(17.93% + 12px);height:calc(7.79% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 14</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K25-69-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>7</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-24</b>Kurul 2023–2024<i></i>Soru 57</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Löprolid</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:526px;height:226px"><img src="img/K6-24-57.png" alt=""><span class="mark" style="left:calc(15.77% - 6px);top:calc(33.19% - 3px);width:calc(12.93% + 12px);height:calc(10.21% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 17</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K6-24-57-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>8</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K23</b>Kurul 2022–2023<i></i>Soru 89</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 5 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>Tamoksifen</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:352px;height:250px"><img src="img/K23-89.png" alt=""><span class="mark" style="left:calc(20.05% - 6px);top:calc(63.40% - 3px);width:calc(24.82% + 12px);height:calc(8.11% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 14</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K23-89-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>9</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-22</b>Kurul 2021–2022<i></i>Soru 56</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Degareliks</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:382px;height:250px"><img src="img/K6-22-56.png" alt=""><span class="mark" style="left:calc(14.85% - 6px);top:calc(53.51% - 3px);width:calc(20.85% + 12px);height:calc(8.15% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 18</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K6-22-56-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 16</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K6-22-56-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>10</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>B21-2</b>Bütünleme 2020–2021<i></i>Soru 64</span>
+        <span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>K6-22</b> Kurul 2021–2022 · Soru 64</span></span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>E</b>Fulvestrant</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:493px;height:250px"><img src="img/B21-2-64.png" alt=""><span class="mark" style="left:calc(3.31% - 6px);top:calc(89.13% - 3px);width:calc(14.05% + 12px);height:calc(7.61% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 14</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/B21-2-64-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q tall">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>11</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-22</b>Kurul 2021–2022<i></i>Soru 64</span>
+        <span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>B21-2</b> Bütünleme 2020–2021 · Soru 64</span></span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>E</b>Fulvestrant</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:366px;height:356px"><img src="img/K6-22-64.png" alt=""><span class="mark" style="left:calc(17.73% - 6px);top:calc(91.81% - 3px);width:calc(21.98% + 12px);height:calc(5.58% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 14</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K6-22-64-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>12</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-21</b>Kurul 2020–2021<i></i>Soru 52</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 5 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Tamoksifen</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:536px;height:250px"><img src="img/K6-21-52.png" alt=""><span class="mark" style="left:calc(6.17% - 6px);top:calc(63.93% - 3px);width:calc(9.50% + 12px);height:calc(6.43% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 14</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K6-21-52-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>13</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F20</b>Final 2019–2020<i></i>Soru 83</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 3 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Flutamid</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:198px"><img src="img/F20-83.png" alt=""><span class="mark" style="left:calc(8.03% - 6px);top:calc(39.16% - 3px);width:calc(18.69% + 12px);height:calc(8.93% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 15</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/F20-83-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>14</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F19</b>Final 2018–2019<i></i>Soru 16</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 3 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Kemik yoğunluğunda azalma</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:507px;height:246px"><img src="img/F19-16.png" alt=""><span class="mark" style="left:calc(10.70% - 6px);top:calc(35.22% - 3px);width:calc(51.12% + 12px);height:calc(9.97% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 13</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/F19-16-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet divider">
+  <div class="kicker"><i></i>آخر الملف</div>
+  <h2>للمراجعة</h2>
+  <p>13 أسئلة مش متأكد إنها تبع الدرس ده بنسبة 100%، أو تبعه بس ملهاش إجابة في ملف الشرح.</p>
+  <ul>
+    <li><b>من محاضرة تانية</b><span>السؤال جاي من مادة أو محاضرة تانية، بس إجابته موجودة في سلايدات الدرس ده.</span></li>
+    <li><b>مفيش إجابة في الشرح</b><span>السؤال تبع موضوع الدرس، بس ملف الشرح مفيهوش إجابته، فمحطوط من غير إجابة.</span></li>
+  </ul>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>15</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-26</b>Kurul 2025–2026<i></i>Soru 44</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 2 امتحانات</span>
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من محاضرة الكورتيكوستيرويدات في كورول 6. سلايد 13 هنا بيعدّ آثار البريدنيزولون الجانبية: ارتفاع الضغط (مش هبوطه)، وهشاشة العظام، وتهيج المعدة، والعدوى. فالأقل احتمالاً هو هبوط الضغط.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Hipotansiyon</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:523px;height:250px"><img src="img/K6-26-44.png" alt=""><span class="mark" style="left:calc(13.53% - 6px);top:calc(51.81% - 3px);width:calc(18.50% + 12px);height:calc(5.91% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 13</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K6-26-44-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>16</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-25</b>Kurul 2024–2025<i></i>Soru 54</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 2 امتحانات</span>
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من محاضرة الكورتيكوستيرويدات في كورول 6. سلايد 13 هنا بيقول إن البريدنيزولون بيعمل ارتفاع ضغط وارتفاع سكر وتهيج معدة وهشاشة عظام، فالأقل احتمالاً هو هبوط الضغط.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Hipotansiyon</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:436px;height:250px"><img src="img/K6-25-54.png" alt=""><span class="mark" style="left:calc(15.81% - 6px);top:calc(45.86% - 3px);width:calc(16.21% + 12px);height:calc(5.86% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 13</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K6-25-54-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>17</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-24</b>Kurul 2023–2024<i></i>Soru 51</span>
+        
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>السؤال ده عن الجلوكوكورتيكويدات عموماً (من محاضرة الكورتيكوستيرويدات في كورول 6، وموجود كمان في درس 12). سلايد 13 هنا بيقول إن أشهرهم البريدنيزولون وإنهم بيعملوا ارتفاع سكر (يعني B و E صح)، بس مفيش كلام عن التأثير المينرالوكورتيكويد. الغلط هو A: الجلوكوكورتيكويدات الصناعية اتعملت عشان تقلّل التأثير المينرالوكورتيكويد مش تزوّده.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:419px;height:250px"><img src="img/K6-24-51.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>18</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K5-24</b>Kurul 2023–2024<i></i>Soru 58</span>
+        
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>الأوكتريوتيد متشرح في سلايد 19 (أورام الغدة النخامية، الكارسينويد، دوالي المريء، القيء…)، بس استخدامه في إسهال الـ dumping مش مكتوب.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:479px;height:250px"><img src="img/K5-24-58.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>19</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>BF23</b>Bahar Final 2022–2023<i></i>Soru 76</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من محاضرة أدوية هشاشة العظام. بس سلايد 14 هنا بيقول صراحة إن الرالوكسيفين من مجموعة الـ SERM.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Raloksifen</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:402px;height:238px"><img src="img/BF23-76.png" alt=""><span class="mark" style="left:calc(14.28% - 6px);top:calc(44.52% - 3px);width:calc(23.16% + 12px);height:calc(10.02% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 14</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/BF23-76-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>20</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>BF23</b>Bahar Final 2022–2023<i></i>Soru 77</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من محاضرة أدوية الغدة الكظرية في فاينال الترم التاني. بس سلايد 8 هنا بيقول إن الميتوتان بيموّت خلايا قشرة الكظر، وبيتستخدم في سرطان قشرة الكظر المتقدم وفي علاج متلازمة كوشينج.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>D</b>Mitotan</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:402px;height:240px"><img src="img/BF23-77.png" alt=""><span class="mark" style="left:calc(14.28% - 6px);top:calc(75.40% - 3px);width:calc(16.94% + 12px);height:calc(9.94% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 8</b><span class="t" dir="ltr" lang="tr">1. Farklı Etki Mekanizmalı İlaçlar</span></figcaption><div class="evimg"><img src="img/BF23-77-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>21</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-23</b>Kurul 2022–2023<i></i>Soru 72</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من محاضرة الهرمونات الجنسية في كورول 6. سلايد 17 هنا بيقول إن اللوبروليد شبيه الـ GnRH وإنه مفيد في بطانة الرحم المهاجرة (endometriozis)، وسلايد 16 بيقول إن استعماله المستمر بيقلل الـ LH والإستروجين.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Löprolid</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:349px;height:250px"><img src="img/K6-23-72.png" alt=""><span class="mark" style="left:calc(18.19% - 6px);top:calc(54.69% - 3px);width:calc(18.94% + 12px);height:calc(8.37% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 17</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K6-23-72-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 16</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K6-23-72-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>22</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-21</b>Kurul 2020–2021<i></i>Soru 44</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من محاضرة الغدد في كورول 6. الـ VIPoma ورم نيوروإندوكرين في البنكرياس، وسلايد 19 هنا بيقول إن الأوكتريوتيد بيتستخدم في علاج الأورام النيوروإندوكرين زي الكارسينويد.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Oktreotid</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:517px;height:250px"><img src="img/K6-21-44.png" alt=""><span class="mark" style="left:calc(6.17% - 6px);top:calc(65.86% - 3px);width:calc(8.33% + 12px);height:calc(5.86% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 19</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K6-21-44-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>23</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-21</b>Kurul 2020–2021<i></i>Soru 50</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من محاضرة الكورتيكوستيرويدات في كورول 6 (وموجود كمان في درس 12). سلايد 13 هنا بيقول إن الجلوكوكورتيكويدات بالجرعات العالية بتعمل وش قمري (aydede yüz)، هشاشة عظام، وتغيّر في المزاج — وده وصف الحالة بالظبط، والديكساميثازون جلوكوكورتيكويد.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Deksametazon</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:513px;height:250px"><img src="img/K6-21-50.png" alt=""><span class="mark" style="left:calc(2.48% - 6px);top:calc(66.44% - 3px);width:calc(17.69% + 12px);height:calc(8.14% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 13</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K6-21-50-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>24</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-20</b>Kurul 2019–2020<i></i>Soru 11</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 3 امتحانات</span><span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>K3-19</b> Kurul 2018–2019 · Soru 14</span></span>
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من محاضرة أدوية هشاشة العظام. سلايد 13 هنا بيقول إن أشهر كورتيزون مستعمل هو البريدنيزولون، وإن من آثاره الجانبية هشاشة العظام. ونفس السؤال بنفس الاختيارات اتسأل كمان في K3-19 (سؤال 14).</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Prednizolon</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:364px;height:250px"><img src="img/K3-20-11.png" alt=""><span class="mark" style="left:calc(5.65% - 6px);top:calc(79.76% - 3px);width:calc(17.26% + 12px);height:calc(5.76% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 13</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K3-20-11-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>25</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-19</b>Kurul 2018–2019<i></i>Soru 14</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 3 امتحانات</span><span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>K3-20</b> Kurul 2019–2020 · Soru 11</span></span>
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من محاضرة أدوية هشاشة العظام. سلايد 13 هنا بيقول إن أشهر كورتيزون مستعمل هو البريدنيزولون، وإن من آثاره الجانبية هشاشة العظام. ونفس السؤال بنفس الاختيارات اتسأل كمان في K3-20 (سؤال 11).</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Prednizolon</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:132px"><img src="img/K3-19-14.png" alt=""><span class="mark" style="left:calc(5.79% - 6px);top:calc(57.35% - 3px);width:calc(12.72% + 12px);height:calc(12.10% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 13</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K3-19-14-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>26</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K5-19</b>Kurul 2018–2019<i></i>Soru 18</span>
+        <span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>K3-20</b> Kurul 2019–2020 · Soru 19</span></span>
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من محاضرة أدوية الغدة النخامية. سلايد 19 هنا بيقول إن الأوكتريوتيد بيتستخدم في أورام النخامية اللي بتفرز هرمون النمو (الأكروميجالي). ونفس السؤال بنفس الاختيارات اتسأل كمان في K3-20 (سؤال 19).</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>D</b>Oktreotid</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:157px"><img src="img/K5-19-18.png" alt=""><span class="mark" style="left:calc(4.20% - 6px);top:calc(75.44% - 3px);width:calc(9.35% + 12px);height:calc(9.40% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 19</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K5-19-18-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>5</b><span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span>
+    <span class="count">سؤال <b>27</b> من 27</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-20</b>Kurul 2019–2020<i></i>Soru 19</span>
+        <span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>K5-19</b> Kurul 2018–2019 · Soru 18</span></span>
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من محاضرة أدوية الغدة النخامية. سلايد 19 هنا بيقول إن الأوكتريوتيد بيتستخدم في أورام النخامية اللي بتفرز هرمون النمو (الأكروميجالي). ونفس السؤال بنفس الاختيارات اتسأل كمان في K5-19 (سؤال 18).</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>D</b>Oktreotid</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:456px;height:234px"><img src="img/K3-20-19.png" alt=""><span class="mark" style="left:calc(6.30% - 6px);top:calc(80.82% - 3px);width:calc(14.74% + 12px);height:calc(8.30% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 19</b><span class="t" dir="ltr" lang="tr">2. Hormonlar ve Hormon Antagonistleri</span></figcaption><div class="evimg"><img src="img/K3-20-19-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>5 · <span dir="ltr" lang="tr">Hormonlar ve Hormon Antagonistleri</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section></body></html>

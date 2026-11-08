@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head><meta charset="utf-8"><title>9. Antianemik ajanlar · Sorular</title>
+<link rel="stylesheet" href="../../assets/folks.css"><style>/* Print layout for one lesson's question PDF. Tokens come from folks.css. */
+@page { size: A4 landscape; margin: 0; }
+html, body { margin: 0; background: var(--f-surface); }
+body.f { font-size: 13px; line-height: 1.45; }
+[lang="tr"] { font-family: var(--f-font-ui); }
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+.sheet {
+  width: 297mm; height: 210mm; padding: 11mm 13mm 9mm;
+  display: flex; flex-direction: column; gap: 14px;
+  overflow: hidden; break-after: page; position: relative;
+  background: var(--f-surface);
+}
+.sheet:last-child { break-after: auto; }
+
+.kicker { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; color: var(--f-dim); }
+.kicker i { width: 10px; height: 10px; border-radius: 3px; background: var(--f-ink); }
+
+/* ---------- cover ---------- */
+.cover { flex-direction: row; gap: 34px; }
+.cv-main { width: 43%; flex: none; display: flex; flex-direction: column; }
+.cv-main .legend { margin-top: auto; }
+.cover .toc { flex: 1; padding-top: 2px; }
+.cover .big {
+  font-family: var(--f-font-ui); font-size: 190px; font-weight: 800; line-height: .82;
+  letter-spacing: -9px; font-variant-numeric: tabular-nums; margin: 30px 0 16px; direction: ltr; text-align: left;
+}
+.cover h1 { font-size: 36px; line-height: 1.12; font-weight: 700; margin: 0; text-align: left; letter-spacing: -.3px; }
+.cover .who { margin: 8px 0 0; color: var(--f-dim); font-size: 14px; text-align: left; }
+.stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 26px 0 22px; }
+.stats div { background: var(--f-chip); border-radius: 18px; padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 2px; }
+.stats b { font-family: var(--f-font-ui); font-size: 34px; line-height: 1; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stats span { font-size: 12px; color: var(--f-dim); font-weight: 600; }
+.toc { flex: 1; min-height: 0; overflow: hidden; }
+.toc h3 { display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; color: var(--f-mute); margin: 16px 2px 6px; }
+.toc h3:first-child { margin-top: 0; }
+.toc ol { list-style: none; margin: 0; padding: 0; border-radius: 18px; box-shadow: inset 0 0 0 1px var(--f-line); overflow: hidden; }
+.toc li { display: grid; grid-template-columns: 26px 66px 1fr; gap: 10px; align-items: center; padding: 7px 14px; font-size: 12px; }
+.toc li + li { border-top: 1px solid var(--f-line); }
+.toc .n { font-family: var(--f-font-ui); font-variant-numeric: tabular-nums; color: var(--f-mute); font-weight: 600; }
+.toc .ex { font-family: var(--f-font-ui); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.toc .st { color: var(--f-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; }
+.legend { display: flex; gap: 14px; align-items: center; padding-top: 12px; border-top: 1px solid var(--f-line); font-size: 11px; color: var(--f-mute); }
+.legend b { color: var(--f-ink); font-family: var(--f-font-ui); margin-inline-end: 3px; }
+.legend .sp { flex: 1; }
+
+.toc-next { margin: 4px 2px 0; font-size: 13px; color: var(--f-mute); }
+.tocpage { gap: 14px; }
+.tocpage .toc h3:first-child { margin-top: 4px; }
+
+/* ---------- divider ---------- */
+.divider { justify-content: center; gap: 0; }
+.divider h2 { font-size: 64px; line-height: 1.1; margin: 14px 0 12px; font-weight: 800; }
+.divider p { font-size: 16px; color: var(--f-dim); margin: 0 0 30px; max-width: 520px; }
+.divider ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; max-width: 560px; }
+.divider li { background: var(--f-chip); border-radius: 18px; padding: 14px 16px; display: grid; gap: 4px; }
+.divider li b { font-size: 14px; }
+.divider li span { font-size: 13px; color: var(--f-dim); }
+
+/* ---------- question page (landscape) ---------- */
+.top { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--f-dim); flex: none; }
+.crumb { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.crumb b { font-family: var(--f-font-ui); display: inline-grid; place-items: center; min-width: 26px; height: 26px; padding: 0 6px; border-radius: 8px; background: var(--f-ink); color: var(--f-on-ink); font-size: 12px; font-variant-numeric: tabular-nums; }
+.crumb span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160mm; }
+.count { white-space: nowrap; }
+.count b { color: var(--f-ink); font-family: var(--f-font-ui); font-variant-numeric: tabular-nums; }
+
+.src { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex: none; }
+.exam { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px 6px 6px; border-radius: 999px; background: var(--f-chip); font-size: 13px; font-weight: 600; color: var(--f-dim); align-self: flex-start; }
+.exam b { background: var(--f-ink); color: var(--f-on-ink); border-radius: 999px; padding: 3px 10px; font-size: 12px; font-variant-numeric: tabular-nums; }
+.exam i { width: 3px; height: 3px; border-radius: 50%; background: var(--f-mute); }
+.tag.also b { font-weight: 700; color: var(--f-ink); }
+.tag { font-size: 11px; font-weight: 600; color: var(--f-dim); padding: 4px 10px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--f-line2); align-self: flex-start; }
+
+.note { flex: none; background: var(--f-chip); border-radius: 16px; padding: 10px 14px; }
+.note b { display: block; font-size: 12px; margin-bottom: 2px; }
+.note p { margin: 0; font-size: 12px; color: var(--f-dim); line-height: 1.55; }
+
+/* question and answer on the left 80% of the page; the right fifth stays blank for the student's notes */
+.sheet.q { padding-right: calc(59.4mm + 6mm); }
+.notes {
+  position: absolute; top: 0; bottom: 0; right: 0; width: 59.4mm; box-sizing: border-box;
+  padding: 11mm 7mm 9mm; border-left: 1px solid var(--f-line);
+}
+.notes span { font-size: 11px; font-weight: 600; color: var(--f-mute); }
+
+.q .body { flex: 1; min-height: 0; display: flex; gap: 16px; }
+.q .qside { display: flex; gap: 16px; flex: none; min-width: 0; }
+.q .meta { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.q.wide .body { flex-direction: column; }
+.q.wide .qside { flex-direction: row; align-items: flex-start; }
+.q.wide .meta { width: 240px; flex: none; }
+.q.tall .body { flex-direction: row; }
+.q.tall .qside { width: 390px; flex-direction: column; }
+
+.qcard { flex: none; margin: 0; padding: 12px; border-radius: 20px; box-shadow: inset 0 0 0 1px var(--f-line); display: flex; justify-content: center; }
+.q.wide .qcard { flex: 1; min-width: 0; }
+.qimg { position: relative; max-width: 100%; }
+.qimg img { display: block; width: 100%; height: 100%; }
+.mark { position: absolute; border-radius: 8px; box-shadow: inset 0 0 0 2px var(--f-ink); }
+.mark::after {
+  content: ""; position: absolute; left: 100%; top: 50%; translate: 6px -50%;
+  width: 18px; height: 18px; border-radius: 50%; background: var(--f-ink) no-repeat center / 11px
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+
+.ans { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; flex: none; }
+.lbl { font-size: 12px; font-weight: 600; color: var(--f-mute); }
+.pill { display: inline-flex; align-items: center; gap: 10px; padding: 7px 16px 7px 7px; border-radius: 999px; background: var(--f-ink); color: var(--f-on-ink); font-size: 14px; font-weight: 700; max-width: 100%; }
+.pill b { display: inline-grid; place-items: center; width: 24px; height: 24px; flex: none; border-radius: 50%; background: var(--f-on-ink); color: var(--f-ink); font-size: 12px; }
+.pill.none { background: none; color: var(--f-dim); box-shadow: inset 0 0 0 1.5px var(--f-line2); padding: 7px 16px; font-size: 13px; font-weight: 600; border: 0; }
+
+/* the answer: whole slides, as large as the page allows */
+.evs { flex: 1; min-height: 0; min-width: 0; display: flex; gap: 14px; }
+.q.wide .evs { flex-direction: row; }
+.q.tall .evs { flex-direction: column; }
+.ev { flex: 1 1 0; min-height: 0; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+.ev figcaption { display: flex; align-items: baseline; gap: 8px; font-size: 12px; color: var(--f-mute); flex: none; white-space: nowrap; overflow: hidden; }
+.ev figcaption b { color: var(--f-ink); }
+.ev figcaption .t { margin-inline-start: auto; color: var(--f-dim); overflow: hidden; text-overflow: ellipsis; }
+.evimg { flex: 1; min-height: 0; display: flex; align-items: flex-start; justify-content: center; }
+.evimg img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 0 0 1px var(--f-line); }
+
+.foot { display: flex; justify-content: space-between; font-size: 10.5px; color: var(--f-mute); flex: none; padding-top: 8px; border-top: 1px solid var(--f-line); }
+body { counter-reset: pg; }
+.sheet { counter-increment: pg; }
+.pg::before { content: counter(pg); font-variant-numeric: tabular-nums; }
+</style></head>
+<body class="f">
+<section class="sheet cover">
+  <div class="cv-main">
+    <div class="kicker"><i></i>بنك أسئلة السنين اللي فاتت · فارماكولوجي</div>
+    <div class="big">9</div>
+    <h1 dir="ltr" lang="tr">Antianemik ajanlar</h1>
+    <p class="who" dir="ltr" lang="tr">Doç. Dr. Sema Ketenci</p>
+    <div class="stats">
+      <div><b>8</b><span>سؤال</span></div>
+      <div><b>6</b><span>أساسي</span></div>
+      <div><b>2</b><span>للمراجعة</span></div>
+      <div><b>8</b><span>امتحان</span></div>
+    </div>
+    <footer class="legend">
+      <span><b dir="ltr">K</b> كورول</span><span><b dir="ltr">F</b> فاينال</span><span><b dir="ltr">B</b> بوتونلمه</span>
+      <span class="sp"></span><span>الأحدث الأول · الإجابة من ملف الشرح نفسه</span>
+    </footer>
+  </div>
+  <div class="toc"><h3><span>الأسئلة</span><span>6</span></h3><ol><li><span class="n">01</span><span class="ex" dir="ltr">F26 · 9</span><span class="st" dir="ltr" lang="tr">Aşağıdaki durumlardan hangisi parenteral demir tedavisi için endikasyon oluşturur?</span></li><li><span class="n">02</span><span class="ex" dir="ltr">K26 · 8</span><span class="st" dir="ltr" lang="tr">Parenteral demir tedavisinin doğru olduğu durum aşağıdakilerden hangisidir?</span></li><li><span class="n">03</span><span class="ex" dir="ltr">K24 · 76</span><span class="st" dir="ltr" lang="tr">Anemi tedavisinde kullanılan ilaçlarla ilgili verilen bilgilerden hangisi yanlıştır?</span></li><li><span class="n">04</span><span class="ex" dir="ltr">K23 · 93</span><span class="st" dir="ltr" lang="tr">Hipokromik mikrositik eritrositler ve düşük hemoglobin saptanan hastaya hangi ilaç verilmelidir?</span></li><li><span class="n">05</span><span class="ex" dir="ltr">F21-1 · 41</span><span class="st" dir="ltr" lang="tr">Aşağıdaki durumların hangisinde demirin kullanımına gerek yoktur?</span></li><li><span class="n">06</span><span class="ex" dir="ltr">K21 · 53</span><span class="st" dir="ltr" lang="tr">Parenteral demir, epoetin alfa, folik asit ve hidroksiüre ile ilgili ifadelerden hangileri doğrudur?</span></li></ol><h3><span>للمراجعة · آخر الملف</span><span>2</span></h3><ol><li><span class="n">07</span><span class="ex" dir="ltr">K25 · 65</span><span class="st" dir="ltr" lang="tr">Kronik böbrek yetmezliği, kanser ya da prematüreye bağlı anemilerde kullanılan eritropoietin reseptör agonisti hangisidir?</span></li><li><span class="n">08</span><span class="ex" dir="ltr">K19 · 12</span><span class="st" dir="ltr" lang="tr">Aşağıdakilerden hangisi eritropoetin endikasyonları arasında yer almaz?</span></li></ol></div>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>9</b><span dir="ltr" lang="tr">Antianemik ajanlar</span></span>
+    <span class="count">سؤال <b>1</b> من 8</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F26</b>Final 2025–2026<i></i>Soru 9</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 2 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Oral demir intoleransı</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:210px"><img src="img/F26-9.png" alt=""><span class="mark" style="left:calc(13.45% - 6px);top:calc(34.64% - 3px);width:calc(30.89% + 12px);height:calc(10.57% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 29</b><span class="t" dir="ltr" lang="tr"></span></figcaption><div class="evimg"><img src="img/F26-9-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>9 · <span dir="ltr" lang="tr">Antianemik ajanlar</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>9</b><span dir="ltr" lang="tr">Antianemik ajanlar</span></span>
+    <span class="count">سؤال <b>2</b> من 8</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K26</b>Kurul 2025–2026<i></i>Soru 8</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 2 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Oral demire intolerans</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:530px;height:218px"><img src="img/K26-8.png" alt=""><span class="mark" style="left:calc(15.81% - 6px);top:calc(35.20% - 3px);width:calc(34.22% + 12px);height:calc(10.57% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 29</b><span class="t" dir="ltr" lang="tr"></span></figcaption><div class="evimg"><img src="img/K26-8-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>9 · <span dir="ltr" lang="tr">Antianemik ajanlar</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>9</b><span dir="ltr" lang="tr">Antianemik ajanlar</span></span>
+    <span class="count">سؤال <b>3</b> من 8</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K24</b>Kurul 2023–2024<i></i>Soru 76</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Folik asit mikrokristik hipokrom tip anemi tedavisinde kullanılır</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:375px;height:250px"><img src="img/K24-76.png" alt=""><span class="mark" style="left:calc(9.72% - 6px);top:calc(18.75% - 3px);width:calc(87.50% + 12px);height:calc(14.58% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 10</b><span class="t" dir="ltr" lang="tr"></span></figcaption><div class="evimg"><img src="img/K24-76-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 31</b><span class="t" dir="ltr" lang="tr">Antianemik İlaçlar-özet</span></figcaption><div class="evimg"><img src="img/K24-76-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>9 · <span dir="ltr" lang="tr">Antianemik ajanlar</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>9</b><span dir="ltr" lang="tr">Antianemik ajanlar</span></span>
+    <span class="count">سؤال <b>4</b> من 8</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K23</b>Kurul 2022–2023<i></i>Soru 93</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Ferröz glukonat</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:322px;height:250px"><img src="img/K23-93.png" alt=""><span class="mark" style="left:calc(16.35% - 6px);top:calc(79.63% - 3px);width:calc(27.25% + 12px);height:calc(6.13% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 10</b><span class="t" dir="ltr" lang="tr"></span></figcaption><div class="evimg"><img src="img/K23-93-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 24</b><span class="t" dir="ltr" lang="tr"></span></figcaption><div class="evimg"><img src="img/K23-93-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>9 · <span dir="ltr" lang="tr">Antianemik ajanlar</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>9</b><span dir="ltr" lang="tr">Antianemik ajanlar</span></span>
+    <span class="count">سؤال <b>5</b> من 8</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F21-1</b>Final 2020–2021<i></i>Soru 41</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>E</b>Karaciğer yetmezliği olan hastalar</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:181px"><img src="img/F21-1-41.png" alt=""><span class="mark" style="left:calc(8.28% - 6px);top:calc(88.65% - 3px);width:calc(36.35% + 12px);height:calc(9.17% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 12</b><span class="t" dir="ltr" lang="tr">DEMİR EKSİKLİĞ İNİN</span></figcaption><div class="evimg"><img src="img/F21-1-41-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 29</b><span class="t" dir="ltr" lang="tr"></span></figcaption><div class="evimg"><img src="img/F21-1-41-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>9 · <span dir="ltr" lang="tr">Antianemik ajanlar</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>9</b><span dir="ltr" lang="tr">Antianemik ajanlar</span></span>
+    <span class="count">سؤال <b>6</b> من 8</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K21</b>Kurul 2020–2021<i></i>Soru 53</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>I-II-IV</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:236px"><img src="img/K21-53.png" alt=""><span class="mark" style="left:calc(6.13% - 6px);top:calc(76.98% - 3px);width:calc(11.38% + 12px);height:calc(5.76% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 29</b><span class="t" dir="ltr" lang="tr"></span></figcaption><div class="evimg"><img src="img/K21-53-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 31</b><span class="t" dir="ltr" lang="tr">Antianemik İlaçlar-özet</span></figcaption><div class="evimg"><img src="img/K21-53-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>9 · <span dir="ltr" lang="tr">Antianemik ajanlar</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet divider">
+  <div class="kicker"><i></i>آخر الملف</div>
+  <h2>للمراجعة</h2>
+  <p>2 أسئلة مش متأكد إنها تبع الدرس ده بنسبة 100%، أو تبعه بس ملهاش إجابة في ملف الشرح.</p>
+  <ul>
+    <li><b>من محاضرة تانية</b><span>السؤال جاي من مادة أو محاضرة تانية، بس إجابته موجودة في سلايدات الدرس ده.</span></li>
+    <li><b>مفيش إجابة في الشرح</b><span>السؤال تبع موضوع الدرس، بس ملف الشرح مفيهوش إجابته، فمحطوط من غير إجابة.</span></li>
+  </ul>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>9</b><span dir="ltr" lang="tr">Antianemik ajanlar</span></span>
+    <span class="count">سؤال <b>7</b> من 8</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K25</b>Kurul 2024–2025<i></i>Soru 65</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>إسلام كاتب جنبه 10، والسؤال أساساً من درس 10 (عوامل النمو). بس سلايد 31 في الدرس ده بيقول إن الإريثروبويتين (EPO) بيتستخدم في أنيميا الفشل الكلوي وبعض مرضى السرطان، وإن الهيدروكسي يوريا للأنيميا المنجلية.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Epoetin alfa</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:231px"><img src="img/K25-65.png" alt=""><span class="mark" style="left:calc(14.63% - 6px);top:calc(41.56% - 3px);width:calc(16.82% + 12px);height:calc(9.47% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 31</b><span class="t" dir="ltr" lang="tr">Antianemik İlaçlar-özet</span></figcaption><div class="evimg"><img src="img/K25-65-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>9 · <span dir="ltr" lang="tr">Antianemik ajanlar</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>9</b><span dir="ltr" lang="tr">Antianemik ajanlar</span></span>
+    <span class="count">سؤال <b>8</b> من 8</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K19</b>Kurul 2018–2019<i></i>Soru 12</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال أساساً من درس 10 (عوامل النمو)، بس سلايد 31 هنا بيعدّ استعمالات الإريثروبويتين: أنيميا الفشل الكلوي، مرضى HIV، وبعض مرضى السرطان. أنيميا نقص الحديد علاجها الحديد مش EPO (سلايد 14–29). الـprematürite مش مذكورة في الملف.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>D</b>Akut demir eksikliği anemisi</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:142px"><img src="img/K19-12.png" alt=""><span class="mark" style="left:calc(11.16% - 6px);top:calc(70.78% - 3px);width:calc(28.33% + 12px);height:calc(10.39% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 31</b><span class="t" dir="ltr" lang="tr">Antianemik İlaçlar-özet</span></figcaption><div class="evimg"><img src="img/K19-12-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>9 · <span dir="ltr" lang="tr">Antianemik ajanlar</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section></body></html>

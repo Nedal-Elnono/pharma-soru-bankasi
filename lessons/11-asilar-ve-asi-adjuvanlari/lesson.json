@@ -1,0 +1,43 @@
+{
+ "pdf": "lessons/11-asilar-ve-asi-adjuvanlari/11-asilar-ve-asi-adjuvanlari-sorular.pdf",
+ "pdfName": "Aşılar ve Aşı Adjuvanları.pdf",
+ "pages": 2,
+ "questions": [
+  {
+   "id": "K26-17",
+   "exam": "K26",
+   "qno": 17,
+   "stem": "Aşağıdaki aşılardan hangisi canlı bir aşıdır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Kızamık, kızamıkçık, kabakulak aşısı"
+   },
+   "img": "lessons/11-asilar-ve-asi-adjuvanlari/img/K26-17.png",
+   "w": 295.0,
+   "h": 101.0,
+   "mark": [
+    0.1463,
+    0.262,
+    0.4979,
+    0.1173
+   ],
+   "evidence": [
+    {
+     "img": "lessons/11-asilar-ve-asi-adjuvanlari/img/K26-17-ev1.jpg",
+     "slide": 4,
+     "title": "Aşılar"
+    },
+    {
+     "img": "lessons/11-asilar-ve-asi-adjuvanlari/img/K26-17-ev2.jpg",
+     "slide": 6,
+     "title": "Aşılar"
+    }
+   ]
+  }
+ ]
+}

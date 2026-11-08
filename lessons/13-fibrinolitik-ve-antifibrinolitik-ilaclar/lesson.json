@@ -1,0 +1,268 @@
+{
+ "pdf": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/13-fibrinolitik-ve-antifibrinolitik-ilaclar-sorular.pdf",
+ "pdfName": "Fibrinolitik ve Antifibrinolitik İlaçlar.pdf",
+ "pages": 11,
+ "questions": [
+  {
+   "id": "K26-15",
+   "exam": "K26",
+   "qno": 15,
+   "stem": "Aşağıdaki ilaçlardan hangisi akut iskemik inme (AIS) tedavisinde kullanılabilir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Alteplaz"
+   },
+   "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/K26-15.png",
+   "w": 291.0,
+   "h": 112.0,
+   "mark": [
+    0.1345,
+    0.3464,
+    0.1158,
+    0.1057
+   ],
+   "evidence": [
+    {
+     "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/K26-15-ev1.jpg",
+     "slide": 18,
+     "title": "2. Fibrinolitik İlaçlar"
+    },
+    {
+     "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/K26-15-ev2.jpg",
+     "slide": 16,
+     "title": "2. Fibrinolitik İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K3-24-3",
+   "exam": "K3-24",
+   "qno": 3,
+   "stem": "Lizin antimetaboliti gibi davranarak antifibrinolitik etki gösteren ve kanamada kullanılan ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Traneksamik asit"
+   },
+   "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/K3-24-3.png",
+   "w": 240.0,
+   "h": 129.0,
+   "mark": [
+    0.15,
+    0.4419,
+    0.3292,
+    0.1085
+   ],
+   "evidence": [
+    {
+     "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/K3-24-3-ev1.jpg",
+     "slide": 25,
+     "title": "2. Antifibrinolitik İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K3-24-7",
+   "exam": "K3-24",
+   "qno": 7,
+   "stem": "Plazminojen aktivatörü olup trombolitik tedavide kullanılan ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Reteplaz"
+   },
+   "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/K3-24-7.png",
+   "w": 298.0,
+   "h": 131.0,
+   "mark": [
+    0.0336,
+    0.4198,
+    0.1846,
+    0.1374
+   ],
+   "evidence": [
+    {
+     "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/K3-24-7-ev1.jpg",
+     "slide": 16,
+     "title": "2. Fibrinolitik İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "F21-1-50",
+   "exam": "F21-1",
+   "qno": 50,
+   "stem": "Aşağıdakilerden hangisi fibrinolizi inhibe eder?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "E",
+    "text": "Aminokaproik asit"
+   },
+   "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/F21-1-50.png",
+   "w": 330.0,
+   "h": 158.0,
+   "mark": [
+    0.1179,
+    0.8898,
+    0.2727,
+    0.0905
+   ],
+   "evidence": [
+    {
+     "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/F21-1-50-ev1.jpg",
+     "slide": 23,
+     "title": "2. Antifibrinolitik İlaçlar"
+    },
+    {
+     "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/F21-1-50-ev2.jpg",
+     "slide": 16,
+     "title": "2. Fibrinolitik İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K1-20-13",
+   "exam": "K1-20",
+   "qno": 13,
+   "stem": "Aşağıdaki ilaç etken maddelerinden hangisi kanamayı durdurma amacıyla kullanılır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "E",
+    "text": "Aprotinin"
+   },
+   "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/K1-20-13.png",
+   "w": 415.0,
+   "h": 87.0,
+   "mark": [
+    0.0415,
+    0.8393,
+    0.1119,
+    0.1405
+   ],
+   "evidence": [
+    {
+     "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/K1-20-13-ev1.jpg",
+     "slide": 26,
+     "title": "2. Antifibrinolitik İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K1-20-14",
+   "exam": "K1-20",
+   "qno": 14,
+   "stem": "Streptokinaz: antitrombotik / antikoagülan / fibrinolitik / hipolipidemik / hemostatik?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Fibrinolitiktir"
+   },
+   "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/K1-20-14.png",
+   "w": 135.0,
+   "h": 88.0,
+   "mark": [
+    0.1276,
+    0.5403,
+    0.4885,
+    0.1389
+   ],
+   "evidence": [
+    {
+     "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/K1-20-14-ev1.jpg",
+     "slide": 16,
+     "title": "2. Fibrinolitik İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K3-25-4",
+   "exam": "K3-25",
+   "qno": 4,
+   "stem": "Kanama bozukluklarında kullanılan ilaç – etki mekanizması eşleştirmelerinden hangisi yanlıştır?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "السؤال عن أدوية علاج النزيف، وده موضوع الدرس (سلايد 22–23)، والاختيار B عن الترانيكساميك أسيد صح حسب سلايد 23. بس الإجابة (A: الديزموبريسين) مش في الدرس: سلايد 22 بيذكره بالاسم بس، من غير ما يقول إنه بيزوّد إفراز فون ويلبراند (مش بيثبّطه). في الكتيب ده الإجابة الصح دايماً A.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/K3-25-4.png",
+   "w": 260.0,
+   "h": 178.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K4-21-65",
+   "exam": "K4-21",
+   "qno": 65,
+   "stem": "Prostanoid – farmakolojik etki eşleştirmelerinden hangisi yanlıştır?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال أساساً من درس 18 (البروستانويدات)، بس سلايد 9 هنا بيقول صراحة إن الـTXA2 اللي بيطلع من الصفائح المتنشطة بيزوّد التجمّع (agregasyon)، فالاختيار E (TxA2 بيقلل التجمّع) هو الغلط.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "E",
+    "text": "TxA2 – Trombosit agregasyonunda azalma"
+   },
+   "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/K4-21-65.png",
+   "w": 610.0,
+   "h": 310.0,
+   "mark": [
+    0.077,
+    0.8839,
+    0.3525,
+    0.0839
+   ],
+   "evidence": [
+    {
+     "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/K4-21-65-ev1.jpg",
+     "slide": 9,
+     "title": "1. Hemostaz ve Tromboz"
+    }
+   ]
+  },
+  {
+   "id": "K19-13",
+   "exam": "K19",
+   "qno": 13,
+   "stem": "Tıp alanı için astrenjan madde nedir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "حاسس إن السؤال ده تبع الدرس، لأن سلايد 22 بيتكلم عن المرقئات الموضعية (Lokal Hemostatikler)، بس كلمة astrenjan مش موجودة في ملف الشرح خالص، فمفيش إجابة من الدرس. الاختيار المظلل بالأصفر جاي من ورقة الامتحان نفسها.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/13-fibrinolitik-ve-antifibrinolitik-ilaclar/img/K19-13.png",
+   "w": 465.0,
+   "h": 123.0,
+   "mark": null,
+   "evidence": []
+  }
+ ]
+}

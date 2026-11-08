@@ -1,0 +1,684 @@
+{
+ "pdf": "lessons/18-prostaglandin/18-prostaglandin-sorular.pdf",
+ "pdfName": "Prostaglandin.pdf",
+ "pages": 25,
+ "questions": [
+  {
+   "id": "K5-26-28",
+   "exam": "K5-26",
+   "qno": 28,
+   "stem": "Uzun süre NSAİİ kullanan hastada mide mukozasını korumak için başlanan prostaglandin analoğu hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Misoprostol"
+   },
+   "img": "lessons/18-prostaglandin/img/K5-26-28.png",
+   "w": 265.0,
+   "h": 127.0,
+   "mark": [
+    0.1547,
+    0.4646,
+    0.1852,
+    0.0651
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K5-26-28-ev1.jpg",
+     "slide": 91,
+     "title": "E serisi prostaglandinlerin"
+    }
+   ]
+  },
+  {
+   "id": "K3-26-24",
+   "exam": "K3-26",
+   "qno": 24,
+   "stem": "Aspirin sonrası astım atağı gelişen hastada ek tedavi olarak kullanılan lökotrien antagonisti hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Montelukast"
+   },
+   "img": "lessons/18-prostaglandin/img/K3-26-24.png",
+   "w": 263.0,
+   "h": 115.0,
+   "mark": [
+    0.1559,
+    0.4091,
+    0.1933,
+    0.0719
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K3-26-24-ev1.jpg",
+     "slide": 56,
+     "title": "Bronşlar"
+    },
+    {
+     "img": "lessons/18-prostaglandin/img/K3-26-24-ev2.jpg",
+     "slide": 109,
+     "title": "Lökotrien reseptörleri ve blokörleri"
+    }
+   ]
+  },
+  {
+   "id": "K5-23-61",
+   "exam": "K5-23",
+   "qno": 61,
+   "stem": "Sitoprotektif etkili ve gebelerde kullanılması kontrendike olan prostaglandin analoğu ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Misoprostol"
+   },
+   "img": "lessons/18-prostaglandin/img/K5-23-61.png",
+   "w": 215.0,
+   "h": 122.0,
+   "mark": [
+    0.244,
+    0.7873,
+    0.2474,
+    0.1002
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K5-23-61-ev1.jpg",
+     "slide": 91,
+     "title": "E serisi prostaglandinlerin"
+    }
+   ]
+  },
+  {
+   "id": "B21-2-79",
+   "exam": "B21-2",
+   "qno": 79,
+   "stem": "Katarakt ameliyatı sonrası glokom gelişen hastada aşağıdaki ilaçlardan hangisi göz içi basıncını düşürür?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "PGF2α analogları"
+   },
+   "img": "lessons/18-prostaglandin/img/B21-2-79.png",
+   "w": 367.0,
+   "h": 165.0,
+   "mark": [
+    0.0327,
+    0.6364,
+    0.188,
+    0.097
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/B21-2-79-ev1.jpg",
+     "slide": 139,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K6-21-55",
+   "exam": "K6-21",
+   "qno": 55,
+   "stem": "Fetüs ölümü nedeniyle doğum indüksiyonunda vajinal supozituvar olarak uygulanan ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "E",
+    "text": "Dinoproston"
+   },
+   "img": "lessons/18-prostaglandin/img/K6-21-55.png",
+   "w": 600.0,
+   "h": 282.0,
+   "mark": [
+    0.06,
+    0.9043,
+    0.1117,
+    0.0638
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K6-21-55-ev1.jpg",
+     "slide": 87,
+     "title": "İlaç Olarak Kullanılan Prostaglandinler"
+    },
+    {
+     "img": "lessons/18-prostaglandin/img/K6-21-55-ev2.jpg",
+     "slide": 135,
+     "title": "Prostoglandin Analoğu İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K4-21-65",
+   "exam": "K4-21",
+   "qno": 65,
+   "stem": "Prostanoid – farmakolojik etki eşleştirmelerinden hangisi yanlıştır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "E",
+    "text": "TxA2 – Trombosit agregasyonunda azalma"
+   },
+   "img": "lessons/18-prostaglandin/img/K4-21-65.png",
+   "w": 610.0,
+   "h": 310.0,
+   "mark": [
+    0.077,
+    0.8839,
+    0.3525,
+    0.0839
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K4-21-65-ev1.jpg",
+     "slide": 132,
+     "title": "Prostanoidlerin etkileri"
+    },
+    {
+     "img": "lessons/18-prostaglandin/img/K4-21-65-ev2.jpg",
+     "slide": 130,
+     "title": "Prostaglandin Fizyolojik Etkiler"
+    }
+   ]
+  },
+  {
+   "id": "K4-21-67",
+   "exam": "K4-21",
+   "qno": 67,
+   "stem": "Eikozanoid sentezinde araşidonik asit oluşmasını sağlayan fosfolipaz A2 enzimini hangisi inhibe eder?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Glukokortikoidler"
+   },
+   "img": "lessons/18-prostaglandin/img/K4-21-67.png",
+   "w": 610.0,
+   "h": 320.0,
+   "mark": [
+    0.077,
+    0.4219,
+    0.1525,
+    0.0813
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K4-21-67-ev1.jpg",
+     "slide": 111,
+     "title": "Eikozanoid sentezini bloke eden ilaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K4-21-69",
+   "exam": "K4-21",
+   "qno": 69,
+   "stem": "PGE1 analoğu ilaçlarla (mizoprostol, alprostadil) ilgili hangisi yanlıştır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "En sık oluşturduğu yan etki konstipasyondur"
+   },
+   "img": "lessons/18-prostaglandin/img/K4-21-69.png",
+   "w": 610.0,
+   "h": 302.0,
+   "mark": [
+    0.077,
+    0.6457,
+    0.3689,
+    0.0828
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K4-21-69-ev1.jpg",
+     "slide": 134,
+     "title": "EİKOSANOİDLER"
+    }
+   ]
+  },
+  {
+   "id": "K1-20-30",
+   "exam": "K1-20",
+   "qno": 30,
+   "stem": "Lökotrienlerin patogenezinde özellikle rol oynadığı hastalıklardan hangisi yanlıştır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Peptik ülser"
+   },
+   "img": "lessons/18-prostaglandin/img/K1-20-30.png",
+   "w": 442.0,
+   "h": 101.0,
+   "mark": [
+    0.0371,
+    0.4767,
+    0.1281,
+    0.121
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K1-20-30-ev1.jpg",
+     "slide": 107,
+     "title": "Kükürtlü lökotrienler"
+    }
+   ]
+  },
+  {
+   "id": "K1-20-31",
+   "exam": "K1-20",
+   "qno": 31,
+   "stem": "PGE2'nin etkilerinden hangisi yanlıştır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Damar düz kaslarında ve bronşlarda kasılma"
+   },
+   "img": "lessons/18-prostaglandin/img/K1-20-31.png",
+   "w": 240.0,
+   "h": 88.0,
+   "mark": [
+    0.0659,
+    0.2544,
+    0.8875,
+    0.1389
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K1-20-31-ev1.jpg",
+     "slide": 129,
+     "title": "Fizyolojik etkiler"
+    }
+   ]
+  },
+  {
+   "id": "K5-19-17",
+   "exam": "K5-19",
+   "qno": 17,
+   "stem": "Hangi prostaglandin tiplerinin (E2, I2, H2) analogları gebelerde oksitosik etki için kullanılabilir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Yalnız I (E2)"
+   },
+   "img": "lessons/18-prostaglandin/img/K5-19-17.png",
+   "w": 445.0,
+   "h": 147.0,
+   "mark": [
+    0.039,
+    0.5295,
+    0.0803,
+    0.0831
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K5-19-17-ev1.jpg",
+     "slide": 132,
+     "title": "Prostanoidlerin etkileri"
+    },
+    {
+     "img": "lessons/18-prostaglandin/img/K5-19-17-ev2.jpg",
+     "slide": 87,
+     "title": "İlaç Olarak Kullanılan Prostaglandinler"
+    }
+   ]
+  },
+  {
+   "id": "F19-1",
+   "exam": "F19",
+   "qno": 1,
+   "stem": "Duktus arteriosusun açık kalmasının gerektiği durumlarda hangisi kullanılır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Alprostadil (PGE1)"
+   },
+   "img": "lessons/18-prostaglandin/img/F19-1.png",
+   "w": 252.0,
+   "h": 98.0,
+   "mark": [
+    0.0984,
+    0.4208,
+    0.3502,
+    0.1282
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/F19-1-ev1.jpg",
+     "slide": 88,
+     "title": "Alprostadil (PGE,)"
+    }
+   ]
+  },
+  {
+   "id": "K1-19-4",
+   "exam": "K1-19",
+   "qno": 4,
+   "stem": "Hemodiyaliz ve kalp cerrahisinde ekstrakorporal dolaşımda pıhtı oluşmasını ve trombosit kaybını önlemek için hangi prostaglandin analoğu kullanılır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "İloprost (PGI2)"
+   },
+   "img": "lessons/18-prostaglandin/img/K1-19-4.png",
+   "w": 415.0,
+   "h": 117.0,
+   "mark": [
+    0.177,
+    0.3941,
+    0.1775,
+    0.1135
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K1-19-4-ev1.jpg",
+     "slide": 90,
+     "title": "Epoprostenol sodyum (PGI2)"
+    },
+    {
+     "img": "lessons/18-prostaglandin/img/K1-19-4-ev2.jpg",
+     "slide": 135,
+     "title": "Prostoglandin Analoğu İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "BF26-27",
+   "exam": "BF26",
+   "qno": 27,
+   "stem": "Uzun süre diklofenak kullanan romatoid artritli hastada hangi yan etkinin görülmesi en az olasıdır?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال من محاضرة الـ NSAİİ. سلايد 78 بيقول إن الـ NSAİİ لما تقلّل البروستاجلاندين والبروستاسيكلين ممكن ترفع الضغط (وسلايد 47: بتعاكس مفعول أدوية الضغط)، فهبوط الضغط هو الأقل احتمالًا. وسلايد 60: ممكن تقلّل دم الكلى وتعمل فشل كلوي، وسلايد 54: قرحة ونزيف في المعدة.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Hipotansiyon"
+   },
+   "img": "lessons/18-prostaglandin/img/BF26-27.png",
+   "w": 265.0,
+   "h": 127.0,
+   "mark": [
+    0.1547,
+    0.4691,
+    0.2045,
+    0.0651
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/BF26-27-ev1.jpg",
+     "slide": 78,
+     "title": "Dolaşımın lokal homeostazı ve hipertansiyon"
+    },
+    {
+     "img": "lessons/18-prostaglandin/img/BF26-27-ev2.jpg",
+     "slide": 60,
+     "title": "Böbrekler ve idrar oluşumu"
+    }
+   ]
+  },
+  {
+   "id": "K26-22",
+   "exam": "K26",
+   "qno": 22,
+   "stem": "Histaminin etkilerinden yanlış olanı işaretleyiniz.",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من درس 15 (الهيستامين)، وإسلام كاتب جنبه 15. بس سلايد 51 في الدرس ده بيقول إن الهيستامين بيزوّد الـcAMP في الخلايا الجدارية فبيزوّد إفراز حمض المعدة، فالاختيار A غلط. (البروستاجلاندينات هي اللي بتقلّل الحمض.)",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Midede asit salgısını azalatır"
+   },
+   "img": "lessons/18-prostaglandin/img/K26-22.png",
+   "w": 294.0,
+   "h": 100.0,
+   "mark": [
+    0.1434,
+    0.2392,
+    0.401,
+    0.1184
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K26-22-ev1.jpg",
+     "slide": 51,
+     "title": "Gastrointestinal kanal"
+    }
+   ]
+  },
+  {
+   "id": "K4-24-26",
+   "exam": "K4-24",
+   "qno": 26,
+   "stem": "Hangisi naproksenin farmakodinamik etkilerinden değildir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "النابروكسين NSAID بيثبط الـ COX (سلايد 27). سلايد 129: الـ PGE2 بيعمل ألم وحرارة وبيقلل حمض المعدة (وسلايد 130: TXA2 بيزود تجمّع الصفائح)؛ فلما يقلّوا: مسكن وخافض حرارة، مضاد التهاب، حمض أكتر، ونزيف أطول. تسريع التئام الكسور مش منهم.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Kemik kırığı ve iskelet kası iyileşmesini hızlandırır"
+   },
+   "img": "lessons/18-prostaglandin/img/K4-24-26.png",
+   "w": 275.0,
+   "h": 164.0,
+   "mark": [
+    0.1309,
+    0.2622,
+    0.6764,
+    0.2012
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K4-24-26-ev1.jpg",
+     "slide": 27,
+     "title": "Siklooksijenaz Ürünleri(cox)"
+    },
+    {
+     "img": "lessons/18-prostaglandin/img/K4-24-26-ev2.jpg",
+     "slide": 129,
+     "title": "Prostaglandinlerin fizyolojik etkileri"
+    }
+   ]
+  },
+  {
+   "id": "K6-23-81",
+   "exam": "K6-23",
+   "qno": 81,
+   "stem": "Tecavüz sonucu oluşan gebeliği farmakolojik yoldan sonlandırmak için en uygun ilaç hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال من محاضرة أدوية الجهاز التناسلي. سلايد 134 بيقول إن الميزوبروستول بيستخدم لعمل إجهاض وإن الميفيبريستون (RU 486) بيستخدم لنفس الغرض. الإرجونوفين بيقلّص الرحم بعد الولادة، الرالوكسيفين والتاموكسيفين معدّلات لمستقبلات الإستروجين، والتيربوتالين بيرخّي الرحم.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Mifepriston"
+   },
+   "img": "lessons/18-prostaglandin/img/K6-23-81.png",
+   "w": 225.0,
+   "h": 134.0,
+   "mark": [
+    0.2467,
+    0.6187,
+    0.2313,
+    0.0912
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K6-23-81-ev1.jpg",
+     "slide": 134,
+     "title": "EİKOSANOİDLER"
+    }
+   ]
+  },
+  {
+   "id": "K6-22-63",
+   "exam": "K6-22",
+   "qno": 63,
+   "stem": "Astımlı hastalardaki endikasyonu düşünüldüğünde glukokortikoidlerin farmakolojik etkisi hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال من محاضرة الكورتيكوستيرويدات. سلايد 111 بيقول إن الجلوكوكورتيكويدات (عن طريق الليبوكورتين) بتثبّط الفوسفوليباز A2، فمفيش أراكيدونيك أسيد يتكوّن، وبالتالي بيقلّ تكوين البروستاجلاندينات واللوكوترينات. باقي الاختيارات عكس اللي بيعمله الكورتيزون (ضمور عضلات، ارتفاع سكر، تأخير التئام الجروح، احتباس ملح ومية).",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Lökotrien sentezinin inhibisyonu"
+   },
+   "img": "lessons/18-prostaglandin/img/K6-22-63.png",
+   "w": 238.0,
+   "h": 129.0,
+   "mark": [
+    0.1386,
+    0.633,
+    0.6658,
+    0.103
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K6-22-63-ev1.jpg",
+     "slide": 111,
+     "title": "Eikozanoid sentezini bloke eden ilaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K3-21-74",
+   "exam": "K3-21",
+   "qno": 74,
+   "stem": "Bronkodilatör olarak kullanılan ilaç grubu – ilaç eşleştirmelerinden hangisi yanlıştır?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال من محاضرة أدوية الربو. الغلط في C: المونتيلوكاست والزافيرلوكاست مش «لوكوترينات»، دول مضادات لمستقبلات اللوكوترينات (سلايد 109: Antagonistler)، والزيليوتون بيثبّط إنزيم 5-ليبوكسيجيناز فبيقلّل تكوين اللوكوترينات (سلايد 113). باقي المجموعات صح.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Lökotrienler – Montelukast, zafirlukast, zileuton"
+   },
+   "img": "lessons/18-prostaglandin/img/K3-21-74.png",
+   "w": 528.0,
+   "h": 151.0,
+   "mark": [
+    0.0644,
+    0.6225,
+    0.4413,
+    0.106
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K3-21-74-ev1.jpg",
+     "slide": 109,
+     "title": "Lökotrien reseptörleri ve blokörleri"
+    },
+    {
+     "img": "lessons/18-prostaglandin/img/K3-21-74-ev2.jpg",
+     "slide": 113,
+     "title": "Lökotrien sentezini bloke eden ilaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K1-20-24",
+   "exam": "K1-20",
+   "qno": 24,
+   "stem": "Bronkodilatör ilaç ve etki mekanizması eşleştirmelerinden hangisi yanlıştır?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال من محاضرة أدوية الربو، والمفتاح المعلّم في الامتحان D. سلايد 109 بيقول إن الزافيرلوكاست مضاد لمستقبلات اللوكوترينات (Antagonistler)، مش مثبّت للخلايا البدينة (ده الكروموجلايكات). خلي بالك: A (السالبوتامول β2 مش ألفا 2) و B (الأمينوفيلين مثبّط فوسفوديستيراز مش منشّط) مكتوبين غلط في الورقة برضه، بس المفتاح D.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Mast hücre stabilizatörleri → Zafirlukast"
+   },
+   "img": "lessons/18-prostaglandin/img/K1-20-24.png",
+   "w": 345.0,
+   "h": 87.0,
+   "mark": [
+    0.0435,
+    0.6667,
+    0.571,
+    0.1609
+   ],
+   "evidence": [
+    {
+     "img": "lessons/18-prostaglandin/img/K1-20-24-ev1.jpg",
+     "slide": 109,
+     "title": "Lökotrien reseptörleri ve blokörleri"
+    }
+   ]
+  },
+  {
+   "id": "K1-19-24",
+   "exam": "K1-19",
+   "qno": 24,
+   "stem": "Primer pulmoner hipertansiyon tedavisinde kullanılan ilaç eşleştirmelerinden hangisi yanlıştır? (Nifedipin, Ergotamin, İloprost–PGI2, Bosentan, Sildenafil)",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "السؤال عن أدوية ضغط الشريان الرئوي الأولي. سلايد 135 بيقول إن الإيلوبروست من نظائر الـPGI2، وإن الإيبوبروستينول بيتستخدم في علاج الـprimer pulmoner hipertansiyon، يعني اختيار c صح. بس الإجابة نفسها مش في الملف ده: الإرجوتامين قلويد إرجوت بيتستخدم في نوبة الصداع النصفي (درس 16 السيروتونين) ومش من أدوية ضغط الرئة. الإجابة المظللة في ورقة الامتحان b. السؤال ده موجود كمان في درس 19.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/18-prostaglandin/img/K1-19-24.png",
+   "w": 467.0,
+   "h": 96.0,
+   "mark": null,
+   "evidence": []
+  }
+ ]
+}

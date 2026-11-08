@@ -1,0 +1,891 @@
+{
+ "pdf": "lessons/12-immunsupresif-ajanlar/12-immunsupresif-ajanlar-sorular.pdf",
+ "pdfName": "İmmunsupresif ajanlar.pdf",
+ "pages": 32,
+ "questions": [
+  {
+   "id": "F26-12",
+   "exam": "F26",
+   "qno": 12,
+   "stem": "Pomad şeklinde topikal preparatları atopik dermatit ve psoriasis tedavisinde de kullanılan kalsinörin inhibitörü hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Takrolimus"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/F26-12.png",
+   "w": 270.0,
+   "h": 138.0,
+   "mark": [
+    0.1592,
+    0.4677,
+    0.1695,
+    0.0858
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/F26-12-ev1.jpg",
+     "slide": 20,
+     "title": "1.1. İnterlökin -2 (IL- 2) Üretimini ve Etkinliğini İnhibe Eden İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K26-13",
+   "exam": "K26",
+   "qno": 13,
+   "stem": "CD20 kodlu B lenfosit antijenine bağlanıp onları yok eden ve DMARD'a yanıt vermeyen ağır aktif romatoid artritte kullanılan immünomodülatör hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Rituksimab"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K26-13.png",
+   "w": 272.0,
+   "h": 151.0,
+   "mark": [
+    0.1581,
+    0.5126,
+    0.1711,
+    0.0784
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K26-13-ev1.jpg",
+     "slide": 41,
+     "title": "1.4. Sitokin Modülatörü Biyoteknoloji İlaçları"
+    }
+   ]
+  },
+  {
+   "id": "K26-14",
+   "exam": "K26",
+   "qno": 14,
+   "stem": "Böbrek naklinde takrolimus ve prednizona üçüncü ilaç olarak eklenebilen, inozin monofosfat dehidrogenazı inhibe eden pürin antimetaboliti hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Mikofenolat mofetil"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K26-14.png",
+   "w": 272.0,
+   "h": 176.0,
+   "mark": [
+    0.1581,
+    0.5846,
+    0.2982,
+    0.0673
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K26-14-ev1.jpg",
+     "slide": 30,
+     "title": ""
+    },
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K26-14-ev2.jpg",
+     "slide": 31,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K25-66",
+   "exam": "K25",
+   "qno": 66,
+   "stem": "Metotreksata rağmen ağır aktif seyreden romatoid artrit tedavisine hangi ilaçla devam edilebilir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Etanersept"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K25-66.png",
+   "w": 295.0,
+   "h": 177.0,
+   "mark": [
+    0.1463,
+    0.5848,
+    0.1575,
+    0.0669
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K25-66-ev1.jpg",
+     "slide": 38,
+     "title": "1.4. Sitokin Modülatörü Biyoteknoloji İlaçları"
+    }
+   ]
+  },
+  {
+   "id": "K25-67",
+   "exam": "K25",
+   "qno": 67,
+   "stem": "Allojenik böbrek naklinde idame tedavisinde takrolimus ve prednizolon ile kombine edilecek en uygun ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Mikofenolat mofetil"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K25-67.png",
+   "w": 272.0,
+   "h": 151.0,
+   "mark": [
+    0.1581,
+    0.5135,
+    0.2982,
+    0.0784
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K25-67-ev1.jpg",
+     "slide": 31,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K5-24-57",
+   "exam": "K5-24",
+   "qno": 57,
+   "stem": "İnflamatuvar barsak hastalığının tedavisinde kullanılan ilaçlar için hangisi doğrudur?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "İnfliksimab: TNF monoklonal antikoru, dirençli orta-şiddetli Crohn'da kullanılır"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K5-24-57.png",
+   "w": 282.0,
+   "h": 264.0,
+   "mark": [
+    0.1348,
+    0.2045,
+    0.844,
+    0.1667
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K5-24-57-ev1.jpg",
+     "slide": 40,
+     "title": "1.4. Sitokin Modülatörü Biyoteknoloji İlaçları"
+    }
+   ]
+  },
+  {
+   "id": "F24-17",
+   "exam": "F24",
+   "qno": 17,
+   "stem": "Aşağıdakilerden hangisi mTor enzimini inhibe ederek etkinliğini gösteren immünomodülatör bir ilaçtır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Sirolimus"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/F24-17.png",
+   "w": 255.0,
+   "h": 135.0,
+   "mark": [
+    0.0902,
+    0.3333,
+    0.2314,
+    0.1185
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/F24-17-ev1.jpg",
+     "slide": 22,
+     "title": "1.1. İnterlökin -2 (IL- 2) Üretimini ve Etkinliğini İnhibe Eden İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K24-77",
+   "exam": "K24",
+   "qno": 77,
+   "stem": "İmmünomodülatör ilaç - etki mekanizması - klinik kullanım eşleştirmelerinden hangisi yanlıştır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Leflunomid - B lenfosit blokajı yapan monoklonal antikor"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K24-77.png",
+   "w": 284.0,
+   "h": 209.0,
+   "mark": [
+    0.0845,
+    0.2679,
+    0.8803,
+    0.0861
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K24-77-ev1.jpg",
+     "slide": 34,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "F23-7",
+   "exam": "F23",
+   "qno": 7,
+   "stem": "Metotreksata yanıt vermeyen romatoid artritte verilen, rekombinant insan IgG ve TNF-α reseptör füzyonu olan biyolojik ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Etanercept"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/F23-7.png",
+   "w": 218.0,
+   "h": 178.0,
+   "mark": [
+    0.1406,
+    0.7658,
+    0.222,
+    0.0706
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/F23-7-ev1.jpg",
+     "slide": 38,
+     "title": "1.4. Sitokin Modülatörü Biyoteknoloji İlaçları"
+    }
+   ]
+  },
+  {
+   "id": "K23-94",
+   "exam": "K23",
+   "qno": 94,
+   "stem": "Böbrek transplantasyonu sonrası calcineurin’in aktivitesini modifiye ederek T-hücre aktivasyonunu engelleyen immunosupresan hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Siklosporin"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K23-94.png",
+   "w": 264.0,
+   "h": 192.0,
+   "mark": [
+    0.1635,
+    0.6428,
+    0.198,
+    0.0654
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K23-94-ev1.jpg",
+     "slide": 15,
+     "title": "1.1. İnterlökin -2 (IL- 2) Üretimini ve Etkinliğini İnhibe Eden İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K1-23-16",
+   "exam": "K1-23",
+   "qno": 16,
+   "stem": "Romatoid artrit ve ülseratif kolit tedavisinde kullanılan sulfonamid hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Sulfasalazin"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K1-23-16.png",
+   "w": 220.0,
+   "h": 100.0,
+   "mark": [
+    0.1765,
+    0.3906,
+    0.2217,
+    0.1103
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K1-23-16-ev1.jpg",
+     "slide": 55,
+     "title": "1.6. Diğer İmmünsüpresif İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "B21-2-91",
+   "exam": "B21-2",
+   "qno": 91,
+   "stem": "Aşağıdakilerden hangisi glukokortikoidlerin immünomodülatör etki mekanizmalarından biri değildir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "glukokortikoid-mekanizma",
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Kalsinörin inhibisyonu"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/B21-2-91.png",
+   "w": 295.0,
+   "h": 158.0,
+   "mark": [
+    0.0441,
+    0.6139,
+    0.278,
+    0.0886
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/B21-2-91-ev1.jpg",
+     "slide": 24,
+     "title": "1.2. Sitokin Genlerinin Ekspresyonunu İnhibe Edenler (Glukokortikoidler)"
+    },
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/B21-2-91-ev2.jpg",
+     "slide": 15,
+     "title": "1.1. İnterlökin -2 (IL- 2) Üretimini ve Etkinliğini İnhibe Eden İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K5-21-91",
+   "exam": "K5-21",
+   "qno": 91,
+   "stem": "Hastalığın seyrini değiştiren biyolojik anti-romatizmal ilaçlar için hangisi doğrudur?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Tüberküloz, fırsatçı fungal enfeksiyon ve sepsis riski yüksektir"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K5-21-91.png",
+   "w": 605.0,
+   "h": 273.0,
+   "mark": [
+    0.0248,
+    0.7143,
+    0.7884,
+    0.1282
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K5-21-91-ev1.jpg",
+     "slide": 36,
+     "title": "1.4. Sitokin Modülatörü Biyoteknoloji İlaçları"
+    }
+   ]
+  },
+  {
+   "id": "F21-1-45",
+   "exam": "F21-1",
+   "qno": 45,
+   "stem": "Aşağıdaki mekanizmalardan hangisi glukokortikoidlerin immünosüpresif etkisinde rol oynamaz?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "glukokortikoid-mekanizma",
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "mTOR inhibisyonu"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/F21-1-45.png",
+   "w": 390.0,
+   "h": 154.0,
+   "mark": [
+    0.1017,
+    0.5003,
+    0.2378,
+    0.0929
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/F21-1-45-ev1.jpg",
+     "slide": 24,
+     "title": "1.2. Sitokin Genlerinin Ekspresyonunu İnhibe Edenler (Glukokortikoidler)"
+    },
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/F21-1-45-ev2.jpg",
+     "slide": 22,
+     "title": "1.1. İnterlökin -2 (IL- 2) Üretimini ve Etkinliğini İnhibe Eden İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K21-54",
+   "exam": "K21",
+   "qno": 54,
+   "stem": "Takrolimus tedavisi sırasında aşağıdaki advers etkilerden hangisi beklenmez?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Hipotansiyon"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K21-54.png",
+   "w": 352.0,
+   "h": 160.0,
+   "mark": [
+    0.1076,
+    0.7641,
+    0.31,
+    0.0921
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K21-54-ev1.jpg",
+     "slide": 21,
+     "title": "1.1. İnterlökin -2 (IL- 2) Üretimini ve Etkinliğini İnhibe Eden İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K21-55",
+   "exam": "K21",
+   "qno": 55,
+   "stem": "CD28'in CD80/86'ya bağlanmasını engelleyen, IgG ile CTLA4 füzyonu olan ve böbrek naklinde reddi önlemek için kullanılan immünosüpresif hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Belatasept"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K21-55.png",
+   "w": 592.0,
+   "h": 182.0,
+   "mark": [
+    0.064,
+    0.5643,
+    0.1621,
+    0.081
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K21-55-ev1.jpg",
+     "slide": 43,
+     "title": "1.4. Sitokin Modülatörü Biyoteknoloji İlaçları"
+    }
+   ]
+  },
+  {
+   "id": "K4-19-13",
+   "exam": "K4-19",
+   "qno": 13,
+   "stem": "Sülfasalazin için hangisi yanlıştır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Miyorelaksan etki gösterir"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K4-19-13.png",
+   "w": 342.0,
+   "h": 92.0,
+   "mark": [
+    0.0517,
+    0.3585,
+    0.3703,
+    0.1444
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K4-19-13-ev1.jpg",
+     "slide": 55,
+     "title": "1.6. Diğer İmmünsüpresif İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "F19-16",
+   "exam": "F19",
+   "qno": 16,
+   "stem": "Uzun süre düzenli olarak tedavi dozunda prednizolon kullanımı aşağıdakilerden hangisi ile sonuçlanabilir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Kemik yoğunluğunda azalma"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/F19-16.png",
+   "w": 260.0,
+   "h": 126.0,
+   "mark": [
+    0.107,
+    0.3522,
+    0.5112,
+    0.0997
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/F19-16-ev1.jpg",
+     "slide": 26,
+     "title": "1.2. Sitokin Genlerinin Ekspresyonunu İnhibe Edenler (Glukokortikoidler)"
+    }
+   ]
+  },
+  {
+   "id": "K6-26-44",
+   "exam": "K6-26",
+   "qno": 44,
+   "stem": "6 aydır romatoid artrit için oral prednizolon alan hastada hangi yan etkinin görülmesi en az olasıdır?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال من محاضرة الكورتيكوستيرويدات في كورول 6، بس سلايد 26 بيعدّ أعراض البريدنيزولون الجانبية: العدوى، قرح ونزيف المعدة، احتباس السوايل والأوديما، وهشاشة العظام. هبوط الضغط مش منهم — احتباس السوايل بيرفع الضغط. الجلوكوما مش في الدرس (اللي فيه الكاتاراكت).",
+   "group": "prednizolon-yan-etki",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Hipotansiyon"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K6-26-44.png",
+   "w": 262.0,
+   "h": 142.0,
+   "mark": [
+    0.1475,
+    0.5108,
+    0.2069,
+    0.0582
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K6-26-44-ev1.jpg",
+     "slide": 26,
+     "title": "1.2. Sitokin Genlerinin Ekspresyonunu İnhibe Edenler (Glukokortikoidler)"
+    }
+   ]
+  },
+  {
+   "id": "F26-7",
+   "exam": "F26",
+   "qno": 7,
+   "stem": "Aşağıdaki antineoplastik ilaçlardan hangisi alkilleyici bir ajandır?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده أساساً من درس 2 (وموجود كمان في درس 1)، بس سلايد 33 هنا بيقول صراحة إن الكلورامبوسيل دوا مضاد للأورام من النوع المؤلكل (alkilleyici)، وبيتستخدم كمان كمثبط مناعة.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Klorambusil"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/F26-7.png",
+   "w": 272.0,
+   "h": 115.0,
+   "mark": [
+    0.1581,
+    0.3373,
+    0.1827,
+    0.103
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/F26-7-ev1.jpg",
+     "slide": 33,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K26-3",
+   "exam": "K26",
+   "qno": 3,
+   "stem": "Başlıca dihidrofolat redüktaz ve timidilat sentaz enzimlerini inhibe eden, çok çeşitli hematolojik ve solid tümörlerde kullanılan antimetabolit hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده أساساً من درس 3 (مضادات الأيض في علاج الأورام)، بس سلايد 32 هنا بيقول إن الميثوتريكسات مضاد للفولات وبيثبّط إنزيم الـdihidrofolat redüktaz. تثبيطه للـtimidilat sentaz واستخدامه في الأورام متشرحين في درس 3.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Metotreksat"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K26-3.png",
+   "w": 272.0,
+   "h": 155.0,
+   "mark": [
+    0.1581,
+    0.5004,
+    0.1897,
+    0.0764
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K26-3-ev1.jpg",
+     "slide": 32,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K6-25-54",
+   "exam": "K6-25",
+   "qno": 54,
+   "stem": "Hafif romatoid artrit için prednizolon kullanan hastada hangi yan etkinin görülmesi en az olasıdır?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "نفس فكرة سؤال K6-26 بس الاختيار B هنا Hiperglisemi. السؤال من محاضرة الكورتيكوستيرويدات، وسلايد 26 بيعدّ الأعراض: قرح المعدة، احتباس السوايل والأوديما، السكر، وهشاشة العظام — هبوط الضغط مش منهم (احتباس السوايل بيرفع الضغط)، والجلوكوما مش في الدرس.",
+   "group": "prednizolon-yan-etki",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Hipotansiyon"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K6-25-54.png",
+   "w": 514.0,
+   "h": 284.0,
+   "mark": [
+    0.1482,
+    0.4482,
+    0.1557,
+    0.0538
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K6-25-54-ev1.jpg",
+     "slide": 26,
+     "title": "1.2. Sitokin Genlerinin Ekspresyonunu İnhibe Edenler (Glukokortikoidler)"
+    }
+   ]
+  },
+  {
+   "id": "K6-24-51",
+   "exam": "K6-24",
+   "qno": 51,
+   "stem": "Glukokortikoidler için hangisi yanlıştır?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "سلايدات 24–26 بتشرح الجلوكوكورتيكويدات كمثبطات مناعة، بس مفيش كلام عن تأثيرها المينرالوكورتيكويد ولا عن الهايبرجلايسيميا.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/12-immunsupresif-ajanlar/img/K6-24-51.png",
+   "w": 275.0,
+   "h": 164.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K24-79",
+   "exam": "K24",
+   "qno": 79,
+   "stem": "Siklofosfamidin etkisi aşağıdaki mekanizmalardan hangisinin aracılığı ile gerçekleşir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده أساساً من درس 2 (المواد المؤلكلة). سلايد 33 هنا بيقول إن السيكلوفوسفاميد مادة مؤلكلة، وسلايد 28 بيقول إن المؤلكلات بتبوّظ الـDNA بشكل مباشر، فالإجابة هي الألكلة. تفصيلة إنها على N7 بتاع الجوانين موجودة في درس 2.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Guaninin N7 pozisyonunda alkilasyonu"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K24-79.png",
+   "w": 292.0,
+   "h": 110.5,
+   "mark": [
+    0.0719,
+    0.3529,
+    0.6575,
+    0.1538
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K24-79-ev1.jpg",
+     "slide": 33,
+     "title": ""
+    },
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K24-79-ev2.jpg",
+     "slide": 28,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K24-81",
+   "exam": "K24",
+   "qno": 81,
+   "stem": "Aşağıdaki \"akıllı ilaç – etki mekanizması\" çiftlerinden hangisi yanlış eşleştirilmiştir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده أساساً من درس 4 (الأدوية الذكية)، وإسلام كاتب جنبه 4 و12. الجزء اللي تبع الدرس ده إن الـAnti-CD20 هو Rituksimab (سلايد 41)، فمينفعش يكون Nivolumab. إن Nivolumab هو anti-PD-1 ده في درس 4.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Nivolumab - Anti-CD20 monoklonal antikoru"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K24-81.png",
+   "w": 284.0,
+   "h": 115.0,
+   "mark": [
+    0.0986,
+    0.3304,
+    0.7394,
+    0.1304
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K24-81-ev1.jpg",
+     "slide": 41,
+     "title": "1.4. Sitokin Modülatörü Biyoteknoloji İlaçları"
+    }
+   ]
+  },
+  {
+   "id": "K6-21-50",
+   "exam": "K6-21",
+   "qno": 50,
+   "stem": "Kas güçsüzlüğü, karında yağ birikimi, ciltte incelme ve osteoporozu olan hastada hangi ilacın uzun süreli kullanımı bu tabloya neden olmuştur?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة الكورتيكوستيرويدات في كورول 6، بس سلايد 26 بيعدّ أعراض استخدام الجلوكوكورتيكويد مدة طويلة بجرعة عالية: كوشينج (ضعف العضلات والتخن)، ترقق الجلد، تقلب المزاج، وهشاشة العظام — وده وصف الحالة بالظبط، والديكساميثازون جلوكوكورتيكويد.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Deksametazon"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K6-21-50.png",
+   "w": 605.0,
+   "h": 295.0,
+   "mark": [
+    0.0248,
+    0.6644,
+    0.1769,
+    0.0814
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K6-21-50-ev1.jpg",
+     "slide": 26,
+     "title": "1.2. Sitokin Genlerinin Ekspresyonunu İnhibe Edenler (Glukokortikoidler)"
+    }
+   ]
+  },
+  {
+   "id": "K3-20-11",
+   "exam": "K3-20",
+   "qno": 11,
+   "stem": "Postmenopozal osteoporozlu kadında hangi ilacın kronik kullanımının osteoporoza katkıda bulunma olasılığı en yüksektir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة أدوية العظام وهشاشة العظام (ونفس السؤال بنفس الاختيارات جه قبلها في K3-19 سؤال 14)، بس سلايد 26 بيقول إن الجلوكوكورتيكويدات زي البريدنيزولون لما تتاخد مدة طويلة بجرعة عالية بتعمل هشاشة عظام (osteoporoz).",
+   "group": null,
+   "also": [
+    {
+     "exam": "K3-19",
+     "qno": 14
+    }
+   ],
+   "answer": {
+    "letter": "C",
+    "text": "Prednizolon"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K3-20-11.png",
+   "w": 220.0,
+   "h": 174.0,
+   "mark": [
+    0.0647,
+    0.7987,
+    0.1977,
+    0.0573
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K3-20-11-ev1.jpg",
+     "slide": 26,
+     "title": "1.2. Sitokin Genlerinin Ekspresyonunu İnhibe Edenler (Glukokortikoidler)"
+    }
+   ]
+  },
+  {
+   "id": "K3-19-14",
+   "exam": "K3-19",
+   "qno": 14,
+   "stem": "Postmenopozal osteoporozlu kadında hangi ilacın kronik kullanımının osteoporoza katkıda bulunma olasılığı en yüksektir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة أدوية العظام وهشاشة العظام (ونفس السؤال بنفس الاختيارات جه كمان في K3-20 سؤال 11)، بس سلايد 26 بيقول إن الجلوكوكورتيكويدات زي البريدنيزولون لما تتاخد مدة طويلة بجرعة عالية بتعمل هشاشة عظام (osteoporoz).",
+   "group": null,
+   "also": [
+    {
+     "exam": "K3-20",
+     "qno": 11
+    }
+   ],
+   "answer": {
+    "letter": "C",
+    "text": "Prednizolon"
+   },
+   "img": "lessons/12-immunsupresif-ajanlar/img/K3-19-14.png",
+   "w": 418.0,
+   "h": 101.0,
+   "mark": [
+    0.0579,
+    0.5735,
+    0.1272,
+    0.121
+   ],
+   "evidence": [
+    {
+     "img": "lessons/12-immunsupresif-ajanlar/img/K3-19-14-ev1.jpg",
+     "slide": 26,
+     "title": "1.2. Sitokin Genlerinin Ekspresyonunu İnhibe Edenler (Glukokortikoidler)"
+    }
+   ]
+  }
+ ]
+}

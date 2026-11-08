@@ -1,0 +1,198 @@
+{
+ "pdf": "lessons/02-alkilleyici-ajanlar/02-alkilleyici-ajanlar-sorular.pdf",
+ "pdfName": "Alkilleyici Ajanlar.pdf",
+ "pages": 8,
+ "questions": [
+  {
+   "id": "F26-7",
+   "exam": "F26",
+   "qno": 7,
+   "stem": "Aşağıdaki antineoplastik ilaçlardan hangisi alkilleyici bir ajandır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Klorambusil"
+   },
+   "img": "lessons/02-alkilleyici-ajanlar/img/F26-7.png",
+   "w": 272.0,
+   "h": 115.0,
+   "mark": [
+    0.1581,
+    0.3373,
+    0.1827,
+    0.103
+   ],
+   "evidence": [
+    {
+     "img": "lessons/02-alkilleyici-ajanlar/img/F26-7-ev1.jpg",
+     "slide": 14,
+     "title": "1. Alkilleyici İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K26-2",
+   "exam": "K26",
+   "qno": 2,
+   "stem": "Malign glioma ve nüks eden glioblastoma multiforme tedavisinde kullanılabilen nitrozoüre türevi alkilleyici ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Karmustin"
+   },
+   "img": "lessons/02-alkilleyici-ajanlar/img/K26-2.png",
+   "w": 272.0,
+   "h": 141.0,
+   "mark": [
+    0.1581,
+    0.4597,
+    0.1578,
+    0.084
+   ],
+   "evidence": [
+    {
+     "img": "lessons/02-alkilleyici-ajanlar/img/K26-2-ev1.jpg",
+     "slide": 19,
+     "title": "1. Alkilleyici İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K24-79",
+   "exam": "K24",
+   "qno": 79,
+   "stem": "Siklofosfamidin etkisi aşağıdaki mekanizmalardan hangisinin aracılığı ile gerçekleşir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Guaninin N7 pozisyonunda alkilasyonu"
+   },
+   "img": "lessons/02-alkilleyici-ajanlar/img/K24-79.png",
+   "w": 292.0,
+   "h": 110.5,
+   "mark": [
+    0.0719,
+    0.3529,
+    0.6575,
+    0.1538
+   ],
+   "evidence": [
+    {
+     "img": "lessons/02-alkilleyici-ajanlar/img/K24-79-ev1.jpg",
+     "slide": 10,
+     "title": "1. Alkilleyici İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "F21-1-43",
+   "exam": "F21-1",
+   "qno": 43,
+   "stem": "Aşağıdaki antineoplastik ilaçlardan hangisi DNA'daki nükleofilik gruplara, özellikle guaninin N7 pozisyonuna bağlanarak alkiller ve DNA sarmal kırığına yol açar?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Mekloretamin"
+   },
+   "img": "lessons/02-alkilleyici-ajanlar/img/F21-1-43.png",
+   "w": 582.0,
+   "h": 171.0,
+   "mark": [
+    0.1059,
+    0.7844,
+    0.1194,
+    0.0837
+   ],
+   "evidence": [
+    {
+     "img": "lessons/02-alkilleyici-ajanlar/img/F21-1-43-ev1.jpg",
+     "slide": 10,
+     "title": "1. Alkilleyici İlaçlar"
+    },
+    {
+     "img": "lessons/02-alkilleyici-ajanlar/img/F21-1-43-ev2.jpg",
+     "slide": 15,
+     "title": "1. Alkilleyici İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K21-57",
+   "exam": "K21",
+   "qno": 57,
+   "stem": "Akrolein ve diğer ürotoksik metabolitlerle reaksiyona girerek siklofosfamid ve ifosfamide bağlı hemorajik sistite karşı koruyan ajan hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Mesna"
+   },
+   "img": "lessons/02-alkilleyici-ajanlar/img/K21-57.png",
+   "w": 592.0,
+   "h": 182.0,
+   "mark": [
+    0.0627,
+    0.4542,
+    0.1282,
+    0.081
+   ],
+   "evidence": [
+    {
+     "img": "lessons/02-alkilleyici-ajanlar/img/K21-57-ev1.jpg",
+     "slide": 14,
+     "title": "1. Alkilleyici İlaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K25-68",
+   "exam": "K25",
+   "qno": 68,
+   "stem": "Philadelphia kromozomu pozitif (Ph (+)) kronik miyeloid lösemi (KML) tedavisinde kullanılan hedefe yönelik ilaç hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده أساساً من درس 4 (العلاج الموجَّه). بس سلايد 18 هنا بيقول إن البوسلفان كان زمان أول دوا لسرطان الدم الميلويدي المزمن (KML)، والنهارده بقى imatinib.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "İmatinib"
+   },
+   "img": "lessons/02-alkilleyici-ajanlar/img/K25-68.png",
+   "w": 272.0,
+   "h": 126.0,
+   "mark": [
+    0.1581,
+    0.4095,
+    0.1229,
+    0.094
+   ],
+   "evidence": [
+    {
+     "img": "lessons/02-alkilleyici-ajanlar/img/K25-68-ev1.jpg",
+     "slide": 18,
+     "title": "1. Alkilleyici İlaçlar"
+    }
+   ]
+  }
+ ]
+}

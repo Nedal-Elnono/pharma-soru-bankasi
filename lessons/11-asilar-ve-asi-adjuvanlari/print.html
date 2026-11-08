@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head><meta charset="utf-8"><title>11. Aşılar ve Aşı Adjuvanları · Sorular</title>
+<link rel="stylesheet" href="../../assets/folks.css"><style>/* Print layout for one lesson's question PDF. Tokens come from folks.css. */
+@page { size: A4 landscape; margin: 0; }
+html, body { margin: 0; background: var(--f-surface); }
+body.f { font-size: 13px; line-height: 1.45; }
+[lang="tr"] { font-family: var(--f-font-ui); }
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+.sheet {
+  width: 297mm; height: 210mm; padding: 11mm 13mm 9mm;
+  display: flex; flex-direction: column; gap: 14px;
+  overflow: hidden; break-after: page; position: relative;
+  background: var(--f-surface);
+}
+.sheet:last-child { break-after: auto; }
+
+.kicker { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; color: var(--f-dim); }
+.kicker i { width: 10px; height: 10px; border-radius: 3px; background: var(--f-ink); }
+
+/* ---------- cover ---------- */
+.cover { flex-direction: row; gap: 34px; }
+.cv-main { width: 43%; flex: none; display: flex; flex-direction: column; }
+.cv-main .legend { margin-top: auto; }
+.cover .toc { flex: 1; padding-top: 2px; }
+.cover .big {
+  font-family: var(--f-font-ui); font-size: 190px; font-weight: 800; line-height: .82;
+  letter-spacing: -9px; font-variant-numeric: tabular-nums; margin: 30px 0 16px; direction: ltr; text-align: left;
+}
+.cover h1 { font-size: 36px; line-height: 1.12; font-weight: 700; margin: 0; text-align: left; letter-spacing: -.3px; }
+.cover .who { margin: 8px 0 0; color: var(--f-dim); font-size: 14px; text-align: left; }
+.stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 26px 0 22px; }
+.stats div { background: var(--f-chip); border-radius: 18px; padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 2px; }
+.stats b { font-family: var(--f-font-ui); font-size: 34px; line-height: 1; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stats span { font-size: 12px; color: var(--f-dim); font-weight: 600; }
+.toc { flex: 1; min-height: 0; overflow: hidden; }
+.toc h3 { display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; color: var(--f-mute); margin: 16px 2px 6px; }
+.toc h3:first-child { margin-top: 0; }
+.toc ol { list-style: none; margin: 0; padding: 0; border-radius: 18px; box-shadow: inset 0 0 0 1px var(--f-line); overflow: hidden; }
+.toc li { display: grid; grid-template-columns: 26px 66px 1fr; gap: 10px; align-items: center; padding: 7px 14px; font-size: 12px; }
+.toc li + li { border-top: 1px solid var(--f-line); }
+.toc .n { font-family: var(--f-font-ui); font-variant-numeric: tabular-nums; color: var(--f-mute); font-weight: 600; }
+.toc .ex { font-family: var(--f-font-ui); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.toc .st { color: var(--f-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; }
+.legend { display: flex; gap: 14px; align-items: center; padding-top: 12px; border-top: 1px solid var(--f-line); font-size: 11px; color: var(--f-mute); }
+.legend b { color: var(--f-ink); font-family: var(--f-font-ui); margin-inline-end: 3px; }
+.legend .sp { flex: 1; }
+
+.toc-next { margin: 4px 2px 0; font-size: 13px; color: var(--f-mute); }
+.tocpage { gap: 14px; }
+.tocpage .toc h3:first-child { margin-top: 4px; }
+
+/* ---------- divider ---------- */
+.divider { justify-content: center; gap: 0; }
+.divider h2 { font-size: 64px; line-height: 1.1; margin: 14px 0 12px; font-weight: 800; }
+.divider p { font-size: 16px; color: var(--f-dim); margin: 0 0 30px; max-width: 520px; }
+.divider ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; max-width: 560px; }
+.divider li { background: var(--f-chip); border-radius: 18px; padding: 14px 16px; display: grid; gap: 4px; }
+.divider li b { font-size: 14px; }
+.divider li span { font-size: 13px; color: var(--f-dim); }
+
+/* ---------- question page (landscape) ---------- */
+.top { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--f-dim); flex: none; }
+.crumb { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.crumb b { font-family: var(--f-font-ui); display: inline-grid; place-items: center; min-width: 26px; height: 26px; padding: 0 6px; border-radius: 8px; background: var(--f-ink); color: var(--f-on-ink); font-size: 12px; font-variant-numeric: tabular-nums; }
+.crumb span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160mm; }
+.count { white-space: nowrap; }
+.count b { color: var(--f-ink); font-family: var(--f-font-ui); font-variant-numeric: tabular-nums; }
+
+.src { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex: none; }
+.exam { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px 6px 6px; border-radius: 999px; background: var(--f-chip); font-size: 13px; font-weight: 600; color: var(--f-dim); align-self: flex-start; }
+.exam b { background: var(--f-ink); color: var(--f-on-ink); border-radius: 999px; padding: 3px 10px; font-size: 12px; font-variant-numeric: tabular-nums; }
+.exam i { width: 3px; height: 3px; border-radius: 50%; background: var(--f-mute); }
+.tag.also b { font-weight: 700; color: var(--f-ink); }
+.tag { font-size: 11px; font-weight: 600; color: var(--f-dim); padding: 4px 10px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--f-line2); align-self: flex-start; }
+
+.note { flex: none; background: var(--f-chip); border-radius: 16px; padding: 10px 14px; }
+.note b { display: block; font-size: 12px; margin-bottom: 2px; }
+.note p { margin: 0; font-size: 12px; color: var(--f-dim); line-height: 1.55; }
+
+/* question and answer on the left 80% of the page; the right fifth stays blank for the student's notes */
+.sheet.q { padding-right: calc(59.4mm + 6mm); }
+.notes {
+  position: absolute; top: 0; bottom: 0; right: 0; width: 59.4mm; box-sizing: border-box;
+  padding: 11mm 7mm 9mm; border-left: 1px solid var(--f-line);
+}
+.notes span { font-size: 11px; font-weight: 600; color: var(--f-mute); }
+
+.q .body { flex: 1; min-height: 0; display: flex; gap: 16px; }
+.q .qside { display: flex; gap: 16px; flex: none; min-width: 0; }
+.q .meta { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.q.wide .body { flex-direction: column; }
+.q.wide .qside { flex-direction: row; align-items: flex-start; }
+.q.wide .meta { width: 240px; flex: none; }
+.q.tall .body { flex-direction: row; }
+.q.tall .qside { width: 390px; flex-direction: column; }
+
+.qcard { flex: none; margin: 0; padding: 12px; border-radius: 20px; box-shadow: inset 0 0 0 1px var(--f-line); display: flex; justify-content: center; }
+.q.wide .qcard { flex: 1; min-width: 0; }
+.qimg { position: relative; max-width: 100%; }
+.qimg img { display: block; width: 100%; height: 100%; }
+.mark { position: absolute; border-radius: 8px; box-shadow: inset 0 0 0 2px var(--f-ink); }
+.mark::after {
+  content: ""; position: absolute; left: 100%; top: 50%; translate: 6px -50%;
+  width: 18px; height: 18px; border-radius: 50%; background: var(--f-ink) no-repeat center / 11px
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+
+.ans { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; flex: none; }
+.lbl { font-size: 12px; font-weight: 600; color: var(--f-mute); }
+.pill { display: inline-flex; align-items: center; gap: 10px; padding: 7px 16px 7px 7px; border-radius: 999px; background: var(--f-ink); color: var(--f-on-ink); font-size: 14px; font-weight: 700; max-width: 100%; }
+.pill b { display: inline-grid; place-items: center; width: 24px; height: 24px; flex: none; border-radius: 50%; background: var(--f-on-ink); color: var(--f-ink); font-size: 12px; }
+.pill.none { background: none; color: var(--f-dim); box-shadow: inset 0 0 0 1.5px var(--f-line2); padding: 7px 16px; font-size: 13px; font-weight: 600; border: 0; }
+
+/* the answer: whole slides, as large as the page allows */
+.evs { flex: 1; min-height: 0; min-width: 0; display: flex; gap: 14px; }
+.q.wide .evs { flex-direction: row; }
+.q.tall .evs { flex-direction: column; }
+.ev { flex: 1 1 0; min-height: 0; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+.ev figcaption { display: flex; align-items: baseline; gap: 8px; font-size: 12px; color: var(--f-mute); flex: none; white-space: nowrap; overflow: hidden; }
+.ev figcaption b { color: var(--f-ink); }
+.ev figcaption .t { margin-inline-start: auto; color: var(--f-dim); overflow: hidden; text-overflow: ellipsis; }
+.evimg { flex: 1; min-height: 0; display: flex; align-items: flex-start; justify-content: center; }
+.evimg img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 0 0 1px var(--f-line); }
+
+.foot { display: flex; justify-content: space-between; font-size: 10.5px; color: var(--f-mute); flex: none; padding-top: 8px; border-top: 1px solid var(--f-line); }
+body { counter-reset: pg; }
+.sheet { counter-increment: pg; }
+.pg::before { content: counter(pg); font-variant-numeric: tabular-nums; }
+</style></head>
+<body class="f">
+<section class="sheet cover">
+  <div class="cv-main">
+    <div class="kicker"><i></i>بنك أسئلة السنين اللي فاتت · فارماكولوجي</div>
+    <div class="big">11</div>
+    <h1 dir="ltr" lang="tr">Aşılar ve Aşı Adjuvanları</h1>
+    <p class="who" dir="ltr" lang="tr">Dr. Öğr. Üyesi Sinan ŞERMET</p>
+    <div class="stats">
+      <div><b>1</b><span>سؤال</span></div>
+      <div><b>1</b><span>أساسي</span></div>
+      <div><b>0</b><span>للمراجعة</span></div>
+      <div><b>1</b><span>امتحان</span></div>
+    </div>
+    <footer class="legend">
+      <span><b dir="ltr">K</b> كورول</span><span><b dir="ltr">F</b> فاينال</span><span><b dir="ltr">B</b> بوتونلمه</span>
+      <span class="sp"></span><span>الأحدث الأول · الإجابة من ملف الشرح نفسه</span>
+    </footer>
+  </div>
+  <div class="toc"><h3><span>الأسئلة</span><span>1</span></h3><ol><li><span class="n">01</span><span class="ex" dir="ltr">K26 · 17</span><span class="st" dir="ltr" lang="tr">Aşağıdaki aşılardan hangisi canlı bir aşıdır?</span></li></ol></div>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>11</b><span dir="ltr" lang="tr">Aşılar ve Aşı Adjuvanları</span></span>
+    <span class="count">سؤال <b>1</b> من 1</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K26</b>Kurul 2025–2026<i></i>Soru 17</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Kızamık, kızamıkçık, kabakulak aşısı</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:187px"><img src="img/K26-17.png" alt=""><span class="mark" style="left:calc(14.63% - 6px);top:calc(26.20% - 3px);width:calc(49.79% + 12px);height:calc(11.73% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 4</b><span class="t" dir="ltr" lang="tr">Aşılar</span></figcaption><div class="evimg"><img src="img/K26-17-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Aşılar</span></figcaption><div class="evimg"><img src="img/K26-17-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>11 · <span dir="ltr" lang="tr">Aşılar ve Aşı Adjuvanları</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section></body></html>

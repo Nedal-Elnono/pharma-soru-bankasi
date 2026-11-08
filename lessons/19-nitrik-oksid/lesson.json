@@ -1,0 +1,558 @@
+{
+ "pdf": "lessons/19-nitrik-oksid/19-nitrik-oksid-sorular.pdf",
+ "pdfName": "Nitrik Oksid.pdf",
+ "pages": 28,
+ "questions": [
+  {
+   "id": "F25-9",
+   "exam": "F25",
+   "qno": 9,
+   "stem": "Aşağıdakilerden hangisi nitrogliserin ile cGMP metabolizmasını inhibe ederek etkileşen ve kombine edildiğinde ciddi hipotansiyona neden olan ilaçtır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Sildenafil"
+   },
+   "img": "lessons/19-nitrik-oksid/img/F25-9.png",
+   "w": 564.0,
+   "h": 266.0,
+   "mark": [
+    0.4298,
+    0.3903,
+    0.1286,
+    0.0584
+   ],
+   "evidence": [
+    {
+     "img": "lessons/19-nitrik-oksid/img/F25-9-ev1.jpg",
+     "slide": 11,
+     "title": "NO donörleri"
+    },
+    {
+     "img": "lessons/19-nitrik-oksid/img/F25-9-ev2.jpg",
+     "slide": 19,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K6-21-56",
+   "exam": "K6-21",
+   "qno": 56,
+   "stem": "Stabil olmayan anjina nedeniyle atenolol ve dil altı nitrogliserin başlanan hastanın ilaçlarından hangisi kesilmelidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Sildenafil"
+   },
+   "img": "lessons/19-nitrik-oksid/img/K6-21-56.png",
+   "w": 600.0,
+   "h": 268.0,
+   "mark": [
+    0.06,
+    0.3694,
+    0.0817,
+    0.0784
+   ],
+   "evidence": [
+    {
+     "img": "lessons/19-nitrik-oksid/img/K6-21-56-ev1.jpg",
+     "slide": 11,
+     "title": "NO donörleri"
+    },
+    {
+     "img": "lessons/19-nitrik-oksid/img/K6-21-56-ev2.jpg",
+     "slide": 19,
+     "title": "Tedavide"
+    }
+   ]
+  },
+  {
+   "id": "K3-21-69",
+   "exam": "K3-21",
+   "qno": 69,
+   "stem": "Muskarinik ilaçların oluşturduğu vazodilatasyon damar endotelinden hangi maddenin salıverilmesi ile oluşur?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Nitrik Oksit"
+   },
+   "img": "lessons/19-nitrik-oksid/img/K3-21-69.png",
+   "w": 528.0,
+   "h": 142.0,
+   "mark": [
+    0.0685,
+    0.5972,
+    0.1065,
+    0.1007
+   ],
+   "evidence": [
+    {
+     "img": "lessons/19-nitrik-oksid/img/K3-21-69-ev1.jpg",
+     "slide": 1,
+     "title": "Nitrik Oksid"
+    },
+    {
+     "img": "lessons/19-nitrik-oksid/img/K3-21-69-ev2.jpg",
+     "slide": 6,
+     "title": "NO'nun etki mekanizması"
+    }
+   ]
+  },
+  {
+   "id": "K3-21-76",
+   "exam": "K3-21",
+   "qno": 76,
+   "stem": "Aşağıdakilerden hangisi NO (nitrik oksid) etkilerinden değildir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "no-etkileri",
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Agregasyonu ve adezyonu aktive eder"
+   },
+   "img": "lessons/19-nitrik-oksid/img/K3-21-76.png",
+   "w": 528.0,
+   "h": 168.0,
+   "mark": [
+    0.0713,
+    0.691,
+    0.3591,
+    0.0852
+   ],
+   "evidence": [
+    {
+     "img": "lessons/19-nitrik-oksid/img/K3-21-76-ev1.jpg",
+     "slide": 18,
+     "title": "NO'nun Etkileri"
+    }
+   ]
+  },
+  {
+   "id": "F21-1-58",
+   "exam": "F21-1",
+   "qno": 58,
+   "stem": "Aşağıdakilerden hangisi nitrik oksid (NO) etkilerinden değildir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "no-etkileri",
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Ejakulasyon oluşumundan primer sorumludur"
+   },
+   "img": "lessons/19-nitrik-oksid/img/F21-1-58.png",
+   "w": 528.0,
+   "h": 168.0,
+   "mark": [
+    0.0685,
+    0.5704,
+    0.4415,
+    0.0852
+   ],
+   "evidence": [
+    {
+     "img": "lessons/19-nitrik-oksid/img/F21-1-58-ev1.jpg",
+     "slide": 18,
+     "title": "NO'nun Etkileri"
+    },
+    {
+     "img": "lessons/19-nitrik-oksid/img/F21-1-58-ev2.jpg",
+     "slide": 19,
+     "title": "Tedavide"
+    }
+   ]
+  },
+  {
+   "id": "K5-19-13",
+   "exam": "K5-19",
+   "qno": 13,
+   "stem": "Sildenafil, tadalafil, vardenafil gibi erektil disfonksiyon ilaçları hangi enzimi bloke ederek etki gösterir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Fosfodiesteraz Tip 5"
+   },
+   "img": "lessons/19-nitrik-oksid/img/K5-19-13.png",
+   "w": 450.0,
+   "h": 111.0,
+   "mark": [
+    0.0385,
+    0.6295,
+    0.201,
+    0.1101
+   ],
+   "evidence": [
+    {
+     "img": "lessons/19-nitrik-oksid/img/K5-19-13-ev1.jpg",
+     "slide": 20,
+     "title": "Diyabet, impotens ve PDE-5 inhibitörleri"
+    },
+    {
+     "img": "lessons/19-nitrik-oksid/img/K5-19-13-ev2.jpg",
+     "slide": 19,
+     "title": "Tedavide"
+    }
+   ]
+  },
+  {
+   "id": "K3-26-17",
+   "exam": "K3-26",
+   "qno": 17,
+   "stem": "Nitratların (nitrogliserin) temel hemodinamik etkisi hangisidir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "سلايد 11 بيقول إن النيتروجليسرين بيطلّع NO فبيعمل توسيع أوعية، ومفيش كلام عن الـ preload والـ afterload. المفتاح في الكتيّب A (بيوسّع الأوردة فبيقلّل الـ preload)، وهو الاختيار الوحيد اللي فيه توسيع.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/K3-26-17.png",
+   "w": 263.0,
+   "h": 102.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K3-26-18",
+   "exam": "K3-26",
+   "qno": 18,
+   "stem": "Sodyum nitroprussidin uzun süreli kullanımında hangi toksisite riski vardır?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "النيتروبروسيد من الـ NO donors (سلايد 10–11)، بس سمّيته (سيانيد/ثيوسيانات) مش مذكورة في الشرح. المفتاح في الكتيّب A.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/K3-26-18.png",
+   "w": 275.0,
+   "h": 102.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K3-26-22",
+   "exam": "K3-26",
+   "qno": 22,
+   "stem": "Akut anjina atağında inhalasyonla kullanılan, etkisi çok hızlı başlayan ve kısa süren ilaç hangisidir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "سلايد 11 بيذكر الأميل نيتريت ضمن الـ NO donors اللي بتستخدم antianginal، بس مش بيقول إنه بيتشمّ وإن مفعوله سريع وقصير. المفتاح في الكتيّب A (Amil nitrit).",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/K3-26-22.png",
+   "w": 263.0,
+   "h": 102.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K6-25-51",
+   "exam": "K6-25",
+   "qno": 51,
+   "stem": "Erektil disfonksiyonda kullanılan PDE5 inhibitörleriyle ilgili hangisi yanlıştır?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "سلايد 19 و 20 بيذكروا سيلدينافيل وتادالافيل وفاردينافيل كمثبطات PDE-5 بس، والأفانافيل ومدة المفعول مش موجودين في الشرح. المفتاح A (الأفانافيل مفعوله أقصر من السيلدينافيل، مش أطول).",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/K6-25-51.png",
+   "w": 506.0,
+   "h": 305.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K3-25-12",
+   "exam": "K3-25",
+   "qno": 12,
+   "stem": "Organik nitratların kullanılış yerlerinden hangisi değildir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "النيترات من الـ NO donors (سلايد 10–11)، والسلايد بيقول بس إنها بتستخدم كـ antianginal و antihypertensive؛ تفاصيل استخداماتها في محاضرة أدوية الذبحة. نفس اختيارات سؤال K3-24 رقم 15 بالظبط (الصيغة بس اللي اختلفت). المفتاح في الكتيّب A (تضخم البروستاتا).",
+   "group": "nitrat-kullanim",
+   "also": [],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/K3-25-12.png",
+   "w": 272.0,
+   "h": 103.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K6-24-55",
+   "exam": "K6-24",
+   "qno": 55,
+   "stem": "Tepe konsantrasyona 2 saatte ulaşan, etkisi 36 saate kadar süren PDE5 inhibitörü hangisidir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "سلايد 19 و 20 بيذكروا مثبطات PDE-5 (سيلدينافيل، تادالافيل، فاردينافيل)، بس مفيش كلام عن مدة المفعول أو وقت الذروة.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/K6-24-55.png",
+   "w": 275.0,
+   "h": 152.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K3-24-15",
+   "exam": "K3-24",
+   "qno": 15,
+   "stem": "Organik nitratların kullanılış yerleri için hangisi yanlıştır?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "النيترات من الـ NO donors (سلايد 10–11)، وسلايد 11 بيقول إنها بتستخدم كـ antianginal و antihypertensive بس؛ باقي الاختيارات مش مذكورة، فالإجابة مش واضحة من الشرح.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/K3-24-15.png",
+   "w": 262.0,
+   "h": 123.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K6-23-77",
+   "exam": "K6-23",
+   "qno": 77,
+   "stem": "Yarılanma ömrü 18 saat olan ve emilimi besinlerden etkilenmeyen PDE5 inhibitörü hangisidir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "سلايد 19 و 20 بيذكروا مثبطات PDE-5 (سيلدينافيل، تادالافيل، فاردينافيل) بس، من غير نص العمر ولا تأثير الأكل. المفتاح المعلّم C (Tadalafil). (سؤال قريب: K6-24 رقم 55.)",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/K6-23-77.png",
+   "w": 209.0,
+   "h": 148.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "F23-9",
+   "exam": "F23",
+   "qno": 9,
+   "stem": "Hipertansiyon profilaksisinde kullanılmayıp yalnızca acil hipertansiyonda iv infüzyonla verilen ilaç hangisidir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "سلايد 11 بيقول إن النيتروبروسيد الصوديوم من الـ NO donors وبيستخدم كخافض للضغط، بس مش بيقول إنه بيتدّي بالوريد في طوارئ الضغط بس. نفس السؤال بالظبط جه في K3-23 رقم 67، والمفتاح المعلّم هناك B (Sodyum nitroprusiyat).",
+   "group": null,
+   "also": [
+    {
+     "exam": "K3-23",
+     "qno": 67
+    }
+   ],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/F23-9.png",
+   "w": 216.0,
+   "h": 149.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K3-23-67",
+   "exam": "K3-23",
+   "qno": 67,
+   "stem": "Hipertansiyon profilaksisinde kullanılmayıp yalnızca acil hipertansiyonda iv infüzyonla verilen ilaç hangisidir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "سلايد 11 بيقول إن النيتروبروسيد الصوديوم من الـ NO donors وبيستخدم كخافض للضغط، بس مش بيقول إنه بيتدّي بالوريد في طوارئ الضغط بس. المفتاح المعلّم B (Sodyum nitroprusit). نفس السؤال بالظبط جه في F23 رقم 9.",
+   "group": null,
+   "also": [
+    {
+     "exam": "F23",
+     "qno": 9
+    }
+   ],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/K3-23-67.png",
+   "w": 214.0,
+   "h": 135.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "B21-2-61",
+   "exam": "B21-2",
+   "qno": 61,
+   "stem": "Aşağıdakilerden hangileri fosfodiesteraz-5 inhibitörleri için doğrudur?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "سلايد 19 و20 بيقولوا بس إن مثبطات PDE-5 (سيلدينافيل، تادالافيل، فاردينافيل) بتقوّي تأثير الـNO. نص العمر وتأثير الأكل واستخدامها في ضغط الشريان الرئوي مش موجودين في ملف الشرح. الجملة V غلط حسب سلايد 11 (سيلدينافيل مع النيترات بيعمل هبوط ضغط خطير). الإجابة المعلّمة في ورقة الامتحان هي C.",
+   "group": null,
+   "also": [
+    {
+     "exam": "K6-22",
+     "qno": 67
+    }
+   ],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/B21-2-61.png",
+   "w": 235.0,
+   "h": 198.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K6-22-67",
+   "exam": "K6-22",
+   "qno": 67,
+   "stem": "Aşağıdakilerden hangileri fosfodiesteraz-5 inhibitörleri için doğrudur?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "سلايد 19 و20 بيقولوا بس إن مثبطات PDE-5 (سيلدينافيل، تادالافيل، فاردينافيل) بتقوّي تأثير الـNO. نص العمر وتأثير الأكل واستخدامها في ضغط الشريان الرئوي مش موجودين في ملف الشرح. الجملة V غلط حسب سلايد 11 (سيلدينافيل مع النيترات بيعمل هبوط ضغط خطير). نفس السؤال بنفس الاختيارات جه في B21-2 سؤال 61، وهناك الإجابة المعلّمة C (I, II ve IV).",
+   "group": null,
+   "also": [
+    {
+     "exam": "B21-2",
+     "qno": 61
+    }
+   ],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/K6-22-67.png",
+   "w": 237.0,
+   "h": 265.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K3-21-65",
+   "exam": "K3-21",
+   "qno": 65,
+   "stem": "İlaç – kullanım yeri eşleştirmelerinden hangisi yanlıştır? (Sodyum nitroprusiyat – Akut hipotansiyon)",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال من محاضرة أدوية الصداع النصفي والجهاز العصبي الذاتي. الغلط في E: سلايد 11 بيقول إن النيتروبروسيد الصوديوم بيطلّع NO فبيعمل توسيع أوعية، وبيستخدم كخافض للضغط (Antihipertansif)، يعني عمره ما يستخدم لهبوط الضغط. باقي الاختيارات صح.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "E",
+    "text": "Sodyum nitroprusiyat – Akut hipotansiyon"
+   },
+   "img": "lessons/19-nitrik-oksid/img/K3-21-65.png",
+   "w": 528.0,
+   "h": 154.0,
+   "mark": [
+    0.0682,
+    0.8896,
+    0.4034,
+    0.1039
+   ],
+   "evidence": [
+    {
+     "img": "lessons/19-nitrik-oksid/img/K3-21-65-ev1.jpg",
+     "slide": 11,
+     "title": "NO donörleri"
+    }
+   ]
+  },
+  {
+   "id": "K3-21-72",
+   "exam": "K3-21",
+   "qno": 72,
+   "stem": "Nitrat grubu ilaçların genel kullanılış yerlerinden hangisi değildir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "النيترات من الـ NO donors (سلايد 10–11)، والسلايد بيقول بس إنها بتستخدم كـ antianginal و antihypertensive؛ تفاصيل استخداماتها في محاضرة أدوية الذبحة. المفتاح المعلّم C (احتشاء البطين الأيمن مع ضغط امتلاء منخفض). نسخة F21-1 رقم 61 نفس السؤال باختيار C مختلف.",
+   "group": "nitrat-kullanim",
+   "also": [],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/K3-21-72.png",
+   "w": 528.0,
+   "h": 166.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "F21-1-61",
+   "exam": "F21-1",
+   "qno": 61,
+   "stem": "Nitrat grubu ilaçların genel kullanım yerlerinden hangisi değildir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "النيترات من الـ NO donors (سلايد 10–11)، والسلايد بيقول بس إنها بتستخدم كـ antianginal و antihypertensive؛ تفاصيل استخداماتها في محاضرة أدوية الذبحة. المفتاح المعلّم C (Pernio ve akrosiyanoz).",
+   "group": "nitrat-kullanim",
+   "also": [],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/F21-1-61.png",
+   "w": 528.0,
+   "h": 166.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "F21-1-63",
+   "exam": "F21-1",
+   "qno": 63,
+   "stem": "Nitroprusiyat sodyumun klinik kullanımları hangileridir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "سلايد 10–11 بيقولوا بس إن النيتروبروسيد الصوديوم بيطلّع NO وبيستخدم كخافض للضغط ومضاد للذبحة. الاستخدامات التانية (فشل القلب، جراحة الأورطي) في محاضرة أدوية الضغط. المفتاح المعلّم E (I, II, III ve IV).",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/F21-1-63.png",
+   "w": 528.0,
+   "h": 212.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K1-20-28",
+   "exam": "K1-20",
+   "qno": 28,
+   "stem": "Organik nitratların kullanılış yerlerinden hangisi yanlıştır?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "النيترات من الـ NO donors (سلايد 10–11)، والسلايد بيقول بس إنها بتستخدم كـ antianginal و antihypertensive؛ تفاصيل استخداماتها في محاضرة أدوية الذبحة. المفتاح المعلّم في الامتحان E (النيترات بتستخدم في الـ variant angina، مش ممنوعة). نفس السؤال جه بصيغ تانية في K3-24 (15) و K3-25 (12) و K3-21 (72) و F21-1 (61).",
+   "group": "nitrat-kullanim",
+   "also": [],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/K1-20-28.png",
+   "w": 315.0,
+   "h": 87.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K1-19-24",
+   "exam": "K1-19",
+   "qno": 24,
+   "stem": "Primer pulmoner hipertansiyon tedavisinde kullanılan ilaç eşleştirmelerinden hangisi yanlıştır? (Nifedipin, Ergotamin, İloprost–PGI2, Bosentan, Sildenafil)",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "السؤال عن أدوية ضغط الشريان الرئوي الأولي. سلايد 38 بيقول إن البوسنتان مضاد لمستقبلات الإندوثيلين ETA و ETB، وسلايد 19 و20 بيقولوا إن السيلدينافيل مثبط PDE-5 (وسلايد 19 بيذكر الـNO المستنشق في ضغط الرئة عند حديثي الولادة)، يعني d و e صح. بس الإجابة نفسها مش في الملف ده: الإرجوتامين قلويد إرجوت بيتستخدم في نوبة الصداع النصفي (درس 16) ومش من أدوية ضغط الرئة. الإجابة المظللة في ورقة الامتحان b. السؤال ده موجود كمان في درس 18 (الإيلوبروست PGI2).",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/19-nitrik-oksid/img/K1-19-24.png",
+   "w": 467.0,
+   "h": 96.0,
+   "mark": null,
+   "evidence": []
+  }
+ ]
+}

@@ -1,0 +1,652 @@
+{
+ "pdf": "lessons/06-antiemetik-ajanlar/06-antiemetik-ajanlar-sorular.pdf",
+ "pdfName": "Antiemetik ajanlar.pdf",
+ "pages": 20,
+ "questions": [
+  {
+   "id": "BF26-36",
+   "exam": "BF26",
+   "qno": 36,
+   "stem": "Metoklopramid kullanan hastada hangi advers etkinin gelişme olasılığı yüksektir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "metoklopramid-eps",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Ekstrapiramidal belirtiler"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/BF26-36.png",
+   "w": 290.0,
+   "h": 103.0,
+   "mark": [
+    0.1332,
+    0.3399,
+    0.3413,
+    0.0803
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/BF26-36-ev1.jpg",
+     "slide": 28,
+     "title": "Antiemetik İlaçlar (Spot Bilgiler)"
+    },
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/BF26-36-ev2.jpg",
+     "slide": 18,
+     "title": "DİĞER BENZAMİDLER"
+    }
+   ]
+  },
+  {
+   "id": "K5-26-35",
+   "exam": "K5-26",
+   "qno": 35,
+   "stem": "Gastroparezide kullanılan, hem dopamin D2 antagonisti hem 5-HT4 agonisti olan ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "metoklopramid-mekanizma",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Metoklopramid"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/K5-26-35.png",
+   "w": 265.0,
+   "h": 129.0,
+   "mark": [
+    0.1547,
+    0.4658,
+    0.2342,
+    0.0641
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K5-26-35-ev1.jpg",
+     "slide": 24,
+     "title": ""
+    },
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K5-26-35-ev2.jpg",
+     "slide": 18,
+     "title": "DİĞER BENZAMİDLER"
+    }
+   ]
+  },
+  {
+   "id": "K5-26-36",
+   "exam": "K5-26",
+   "qno": 36,
+   "stem": "Metoklopramidin uzun süreli kullanımında en önemli yan etki hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": "الدرس بيقول إن الميتوكلوبراميد بيعمل أعراض خارج هرمية (ديستونيا وأعراض شبه باركنسون)، والـ tardive dyskinesia هي العرض الخارج هرمي اللي بيظهر مع الاستعمال الطويل.",
+   "group": "metoklopramid-eps",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Tardif diskinezi"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/K5-26-36.png",
+   "w": 265.0,
+   "h": 103.0,
+   "mark": [
+    0.1547,
+    0.3438,
+    0.2286,
+    0.0803
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K5-26-36-ev1.jpg",
+     "slide": 28,
+     "title": "Antiemetik İlaçlar (Spot Bilgiler)"
+    },
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K5-26-36-ev2.jpg",
+     "slide": 18,
+     "title": "DİĞER BENZAMİDLER"
+    }
+   ]
+  },
+  {
+   "id": "K26-6",
+   "exam": "K26",
+   "qno": 6,
+   "stem": "Ameliyat sonrası bulantı-kusmanın profilaksisinde sık kullanılan NK1 antagonisti antiemetik hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "aprepitant-nk1",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Aprepitant"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/K26-6.png",
+   "w": 272.0,
+   "h": 128.0,
+   "mark": [
+    0.1581,
+    0.4036,
+    0.1643,
+    0.0925
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K26-6-ev1.jpg",
+     "slide": 14,
+     "title": "NÖROKİNİN RESEPTÖR ANTAGONİSTLERİ"
+    }
+   ]
+  },
+  {
+   "id": "K26-19",
+   "exam": "K26",
+   "qno": 19,
+   "stem": "Kemoterapiye bağlı emezis tedavisinde kullanılan 5HT3 agonisti ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "ondansetron-5ht3",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Ondansetron"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/K26-19.png",
+   "w": 272.0,
+   "h": 115.0,
+   "mark": [
+    0.1581,
+    0.3388,
+    0.2046,
+    0.103
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K26-19-ev1.jpg",
+     "slide": 8,
+     "title": "SEROTONİN 5-HT3 ANTAGONİSTLERİ"
+    },
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K26-19-ev2.jpg",
+     "slide": 11,
+     "title": "Serotonin 5-HT3 Antagonistlerinin klinik kullanımı"
+    }
+   ]
+  },
+  {
+   "id": "BF25-37",
+   "exam": "BF25",
+   "qno": 37,
+   "stem": "Antiemetik ilaçlardan hangisi bir dopamin D2 reseptör antagonistidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Domperidon"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/BF25-37.png",
+   "w": 506.0,
+   "h": 224.0,
+   "mark": [
+    0.1591,
+    0.3091,
+    0.1481,
+    0.0682
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/BF25-37-ev1.jpg",
+     "slide": 28,
+     "title": "Antiemetik İlaçlar (Spot Bilgiler)"
+    },
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/BF25-37-ev2.jpg",
+     "slide": 24,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K5-25-62",
+   "exam": "K5-25",
+   "qno": 62,
+   "stem": "KTB'deki dopamin reseptörlerini bloke eden, yüksek dozda 5-HT3 reseptörlerini de bloke eden prokinetik antiemetik hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "metoklopramid-mekanizma",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Metoklopramid"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/K5-25-62.png",
+   "w": 506.0,
+   "h": 305.0,
+   "mark": [
+    0.1581,
+    0.4984,
+    0.1858,
+    0.0557
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K5-25-62-ev1.jpg",
+     "slide": 24,
+     "title": ""
+    },
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K5-25-62-ev2.jpg",
+     "slide": 23,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Agonistleri",
+     "lesson": 16
+    }
+   ]
+  },
+  {
+   "id": "K5-25-63",
+   "exam": "K5-25",
+   "qno": 63,
+   "stem": "Kemoterapiye bağlı geç dönem kusmada granisetron ve deksametazona eklenen üçüncü ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "kt-uclu-kombinasyon",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Aprepitant"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/K5-25-63.png",
+   "w": 506.0,
+   "h": 374.0,
+   "mark": [
+    0.1581,
+    0.5882,
+    0.1324,
+    0.0455
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K5-25-63-ev1.jpg",
+     "slide": 14,
+     "title": "NÖROKİNİN RESEPTÖR ANTAGONİSTLERİ"
+    },
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K5-25-63-ev2.jpg",
+     "slide": 30,
+     "title": "Doğru Cevap: C) Aprepitant"
+    }
+   ]
+  },
+  {
+   "id": "K4-25-7",
+   "exam": "K4-25",
+   "qno": 7,
+   "stem": "Kemoterapinin neden olduğu emezise karşı kullanılan 5-HT3 antagonisti hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "ondansetron-5ht3",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Ondansetron"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/K4-25-7.png",
+   "w": 291.0,
+   "h": 106.0,
+   "mark": [
+    0.1362,
+    0.3333,
+    0.186,
+    0.078
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K4-25-7-ev1.jpg",
+     "slide": 8,
+     "title": "SEROTONİN 5-HT3 ANTAGONİSTLERİ"
+    },
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K4-25-7-ev2.jpg",
+     "slide": 11,
+     "title": "Serotonin 5-HT3 Antagonistlerinin klinik kullanımı"
+    }
+   ]
+  },
+  {
+   "id": "BF24-33",
+   "exam": "BF24",
+   "qno": 33,
+   "stem": "Antiemetik ilaçlardan hangisi bir nörokinin 1 (NK1) reseptör antagonistidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "aprepitant-nk1",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Aprepitant"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/BF24-33.png",
+   "w": 265.0,
+   "h": 105.0,
+   "mark": [
+    0.1547,
+    0.341,
+    0.164,
+    0.0788
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/BF24-33-ev1.jpg",
+     "slide": 14,
+     "title": "NÖROKİNİN RESEPTÖR ANTAGONİSTLERİ"
+    }
+   ]
+  },
+  {
+   "id": "K5-24-59",
+   "exam": "K5-24",
+   "qno": 59,
+   "stem": "Antiemetikler için hangisi yanlıştır? (Metoklopramid seçici D2 antagonistidir, başka reseptöre etkisi yoktur)",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "metoklopramid-mekanizma",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Metoklopramid seçici bir D2 antagonistidir, diğer reseptörlere etkisi yoktur"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/K5-24-59.png",
+   "w": 268.0,
+   "h": 223.0,
+   "mark": [
+    0.0821,
+    0.1121,
+    0.8433,
+    0.2152
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K5-24-59-ev1.jpg",
+     "slide": 24,
+     "title": ""
+    },
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K5-24-59-ev2.jpg",
+     "slide": 23,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Agonistleri",
+     "lesson": 16
+    }
+   ]
+  },
+  {
+   "id": "BF23-72",
+   "exam": "BF23",
+   "qno": 72,
+   "stem": "Kemoterapiye bağlı bulantı ve kusmayı azaltan bir peptid (substans P / NK1) antagonisti hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "aprepitant-nk1",
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Aprepitant"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/BF23-72.png",
+   "w": 220.0,
+   "h": 111.0,
+   "mark": [
+    0.2092,
+    0.4879,
+    0.214,
+    0.1101
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/BF23-72-ev1.jpg",
+     "slide": 30,
+     "title": "Doğru Cevap: C) Aprepitant"
+    },
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/BF23-72-ev2.jpg",
+     "slide": 14,
+     "title": "NÖROKİNİN RESEPTÖR ANTAGONİSTLERİ"
+    }
+   ]
+  },
+  {
+   "id": "K5-23-62",
+   "exam": "K5-23",
+   "qno": 62,
+   "stem": "Taşıt tutmasını önlemek için en uygun antiemetik ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Scopolamin"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/K5-23-62.png",
+   "w": 206.0,
+   "h": 104.0,
+   "mark": [
+    0.1772,
+    0.4992,
+    0.2552,
+    0.1175
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K5-23-62-ev1.jpg",
+     "slide": 21,
+     "title": ""
+    },
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K5-23-62-ev2.jpg",
+     "slide": 28,
+     "title": "Antiemetik İlaçlar (Spot Bilgiler)"
+    }
+   ]
+  },
+  {
+   "id": "K5-22-57",
+   "exam": "K5-22",
+   "qno": 57,
+   "stem": "Küçük hücreli akciğer kanserinde ilk kemoterapi kürü sırasında akut bulantı-kusmayı önlemek için en iyi üçlü kombinasyon hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "kt-uclu-kombinasyon",
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Ondansetron, Aprepitant, Deksametazon"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/K5-22-57.png",
+   "w": 212.0,
+   "h": 220.0,
+   "mark": [
+    0.1887,
+    0.5455,
+    0.5377,
+    0.1318
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K5-22-57-ev1.jpg",
+     "slide": 14,
+     "title": "NÖROKİNİN RESEPTÖR ANTAGONİSTLERİ"
+    },
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K5-22-57-ev2.jpg",
+     "slide": 11,
+     "title": "Serotonin 5-HT3 Antagonistlerinin klinik kullanımı"
+    }
+   ]
+  },
+  {
+   "id": "K4-21-76",
+   "exam": "K4-21",
+   "qno": 76,
+   "stem": "Antiemetik ilaç sınıflarından hangileri ekstrapiramidal advers etkilere sahiptir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "metoklopramid-eps",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Haloperidol-Metoklopramid"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/K4-21-76.png",
+   "w": 610.0,
+   "h": 326.0,
+   "mark": [
+    0.0738,
+    0.3558,
+    0.241,
+    0.0798
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K4-21-76-ev1.jpg",
+     "slide": 17,
+     "title": "BUTİROFENONLAR"
+    },
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K4-21-76-ev2.jpg",
+     "slide": 28,
+     "title": "Antiemetik İlaçlar (Spot Bilgiler)"
+    }
+   ]
+  },
+  {
+   "id": "K3-20-8",
+   "exam": "K3-20",
+   "qno": 8,
+   "stem": "Aşağıdakilerden hangisi antiemetik ilaçların etki mekanizmalarıyla ilişkili değildir?",
+   "section": "main",
+   "reason": null,
+   "note": "نفس السؤال بنفس الاختيارات اتسأل كمان في K3-19 (سؤال 11).",
+   "group": null,
+   "also": [
+    {
+     "exam": "K3-19",
+     "qno": 11
+    }
+   ],
+   "answer": {
+    "letter": "E",
+    "text": "Dopamin D2 reseptörlerinin uyarılması"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/K3-20-8.png",
+   "w": 234.0,
+   "h": 90.0,
+   "mark": [
+    0.0609,
+    0.8553,
+    0.6056,
+    0.1107
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K3-20-8-ev1.jpg",
+     "slide": 24,
+     "title": ""
+    },
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K3-20-8-ev2.jpg",
+     "slide": 27,
+     "title": "Apomorfin"
+    }
+   ]
+  },
+  {
+   "id": "K3-19-11",
+   "exam": "K3-19",
+   "qno": 11,
+   "stem": "Aşağıdakilerden hangisi antiemetik ilaçların etki mekanizmalarıyla ilişkili değildir?",
+   "section": "main",
+   "reason": null,
+   "note": "نفس السؤال بنفس الاختيارات اتسأل كمان في K3-20 (سؤال 8).",
+   "group": null,
+   "also": [
+    {
+     "exam": "K3-20",
+     "qno": 8
+    }
+   ],
+   "answer": {
+    "letter": "E",
+    "text": "Dopamin D2 reseptörlerinin uyarılması"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/K3-19-11.png",
+   "w": 400.0,
+   "h": 87.0,
+   "mark": [
+    0.0605,
+    0.7941,
+    0.4332,
+    0.1405
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K3-19-11-ev1.jpg",
+     "slide": 24,
+     "title": ""
+    },
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/K3-19-11-ev2.jpg",
+     "slide": 27,
+     "title": "Apomorfin"
+    }
+   ]
+  },
+  {
+   "id": "F19-5",
+   "exam": "F19",
+   "qno": 5,
+   "stem": "Aşağıdaki ilaç ve kullanım yeri eşleştirmelerinden hangisi yanlıştır?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة الجهاز العصبي الذاتي والسيروتونين (أدوية الصداع النصفي وغيرها)، مش من درس القيء. بس سلايد 21 في الدرس ده بيقول إن الـSkopolamin بيتستخدم للوقاية من دوار الحركة (Hareket hastalığı)، مش لزيادة البرولاكتين، عشان كده الاختيار c هو الغلط.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Skopolamin – Hiperprolaktinemi"
+   },
+   "img": "lessons/06-antiemetik-ajanlar/img/F19-5.png",
+   "w": 260.0,
+   "h": 104.0,
+   "mark": [
+    0.1038,
+    0.5385,
+    0.6038,
+    0.1442
+   ],
+   "evidence": [
+    {
+     "img": "lessons/06-antiemetik-ajanlar/img/F19-5-ev1.jpg",
+     "slide": 21,
+     "title": ""
+    }
+   ]
+  }
+ ]
+}

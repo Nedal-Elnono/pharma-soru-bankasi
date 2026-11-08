@@ -1,0 +1,275 @@
+{
+ "pdf": "lessons/09-antianemik-ajanlar/09-antianemik-ajanlar-sorular.pdf",
+ "pdfName": "Antianemik ajanlar.pdf",
+ "pages": 10,
+ "questions": [
+  {
+   "id": "F26-9",
+   "exam": "F26",
+   "qno": 9,
+   "stem": "Aşağıdaki durumlardan hangisi parenteral demir tedavisi için endikasyon oluşturur?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "parenteral-demir",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Oral demir intoleransı"
+   },
+   "img": "lessons/09-antianemik-ajanlar/img/F26-9.png",
+   "w": 291.0,
+   "h": 112.0,
+   "mark": [
+    0.1345,
+    0.3464,
+    0.3089,
+    0.1057
+   ],
+   "evidence": [
+    {
+     "img": "lessons/09-antianemik-ajanlar/img/F26-9-ev1.jpg",
+     "slide": 29,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K26-8",
+   "exam": "K26",
+   "qno": 8,
+   "stem": "Parenteral demir tedavisinin doğru olduğu durum aşağıdakilerden hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "parenteral-demir",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Oral demire intolerans"
+   },
+   "img": "lessons/09-antianemik-ajanlar/img/K26-8.png",
+   "w": 272.0,
+   "h": 112.0,
+   "mark": [
+    0.1581,
+    0.352,
+    0.3422,
+    0.1057
+   ],
+   "evidence": [
+    {
+     "img": "lessons/09-antianemik-ajanlar/img/K26-8-ev1.jpg",
+     "slide": 29,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K24-76",
+   "exam": "K24",
+   "qno": 76,
+   "stem": "Anemi tedavisinde kullanılan ilaçlarla ilgili verilen bilgilerden hangisi yanlıştır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Folik asit mikrokristik hipokrom tip anemi tedavisinde kullanılır"
+   },
+   "img": "lessons/09-antianemik-ajanlar/img/K24-76.png",
+   "w": 288.0,
+   "h": 192.0,
+   "mark": [
+    0.0972,
+    0.1875,
+    0.875,
+    0.1458
+   ],
+   "evidence": [
+    {
+     "img": "lessons/09-antianemik-ajanlar/img/K24-76-ev1.jpg",
+     "slide": 10,
+     "title": ""
+    },
+    {
+     "img": "lessons/09-antianemik-ajanlar/img/K24-76-ev2.jpg",
+     "slide": 31,
+     "title": "Antianemik İlaçlar-özet"
+    }
+   ]
+  },
+  {
+   "id": "K23-93",
+   "exam": "K23",
+   "qno": 93,
+   "stem": "Hipokromik mikrositik eritrositler ve düşük hemoglobin saptanan hastaya hangi ilaç verilmelidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Ferröz glukonat"
+   },
+   "img": "lessons/09-antianemik-ajanlar/img/K23-93.png",
+   "w": 264.0,
+   "h": 205.0,
+   "mark": [
+    0.1635,
+    0.7963,
+    0.2725,
+    0.0613
+   ],
+   "evidence": [
+    {
+     "img": "lessons/09-antianemik-ajanlar/img/K23-93-ev1.jpg",
+     "slide": 10,
+     "title": ""
+    },
+    {
+     "img": "lessons/09-antianemik-ajanlar/img/K23-93-ev2.jpg",
+     "slide": 24,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "F21-1-41",
+   "exam": "F21-1",
+   "qno": 41,
+   "stem": "Aşağıdaki durumların hangisinde demirin kullanımına gerek yoktur?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "E",
+    "text": "Karaciğer yetmezliği olan hastalar"
+   },
+   "img": "lessons/09-antianemik-ajanlar/img/F21-1-41.png",
+   "w": 470.0,
+   "h": 156.0,
+   "mark": [
+    0.0828,
+    0.8865,
+    0.3635,
+    0.0917
+   ],
+   "evidence": [
+    {
+     "img": "lessons/09-antianemik-ajanlar/img/F21-1-41-ev1.jpg",
+     "slide": 12,
+     "title": "DEMİR EKSİKLİĞ İNİN"
+    },
+    {
+     "img": "lessons/09-antianemik-ajanlar/img/F21-1-41-ev2.jpg",
+     "slide": 29,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K21-53",
+   "exam": "K21",
+   "qno": 53,
+   "stem": "Parenteral demir, epoetin alfa, folik asit ve hidroksiüre ile ilgili ifadelerden hangileri doğrudur?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "I-II-IV"
+   },
+   "img": "lessons/09-antianemik-ajanlar/img/K21-53.png",
+   "w": 592.0,
+   "h": 256.0,
+   "mark": [
+    0.0613,
+    0.7698,
+    0.1138,
+    0.0576
+   ],
+   "evidence": [
+    {
+     "img": "lessons/09-antianemik-ajanlar/img/K21-53-ev1.jpg",
+     "slide": 29,
+     "title": ""
+    },
+    {
+     "img": "lessons/09-antianemik-ajanlar/img/K21-53-ev2.jpg",
+     "slide": 31,
+     "title": "Antianemik İlaçlar-özet"
+    }
+   ]
+  },
+  {
+   "id": "K25-65",
+   "exam": "K25",
+   "qno": 65,
+   "stem": "Kronik böbrek yetmezliği, kanser ya da prematüreye bağlı anemilerde kullanılan eritropoietin reseptör agonisti hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "إسلام كاتب جنبه 10، والسؤال أساساً من درس 10 (عوامل النمو). بس سلايد 31 في الدرس ده بيقول إن الإريثروبويتين (EPO) بيتستخدم في أنيميا الفشل الكلوي وبعض مرضى السرطان، وإن الهيدروكسي يوريا للأنيميا المنجلية.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Epoetin alfa"
+   },
+   "img": "lessons/09-antianemik-ajanlar/img/K25-65.png",
+   "w": 295.0,
+   "h": 125.0,
+   "mark": [
+    0.1463,
+    0.4156,
+    0.1682,
+    0.0947
+   ],
+   "evidence": [
+    {
+     "img": "lessons/09-antianemik-ajanlar/img/K25-65-ev1.jpg",
+     "slide": 31,
+     "title": "Antianemik İlaçlar-özet"
+    }
+   ]
+  },
+  {
+   "id": "K19-12",
+   "exam": "K19",
+   "qno": 12,
+   "stem": "Aşağıdakilerden hangisi eritropoetin endikasyonları arasında yer almaz?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال أساساً من درس 10 (عوامل النمو)، بس سلايد 31 هنا بيعدّ استعمالات الإريثروبويتين: أنيميا الفشل الكلوي، مرضى HIV، وبعض مرضى السرطان. أنيميا نقص الحديد علاجها الحديد مش EPO (سلايد 14–29). الـprematürite مش مذكورة في الملف.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Akut demir eksikliği anemisi"
+   },
+   "img": "lessons/09-antianemik-ajanlar/img/K19-12.png",
+   "w": 465.0,
+   "h": 121.0,
+   "mark": [
+    0.1116,
+    0.7078,
+    0.2833,
+    0.1039
+   ],
+   "evidence": [
+    {
+     "img": "lessons/09-antianemik-ajanlar/img/K19-12-ev1.jpg",
+     "slide": 31,
+     "title": "Antianemik İlaçlar-özet"
+    }
+   ]
+  }
+ ]
+}

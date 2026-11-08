@@ -1,0 +1,282 @@
+{
+ "pdf": "lessons/03-antimetabolitler/03-antimetabolitler-sorular.pdf",
+ "pdfName": "Antimetabolitler.pdf",
+ "pages": 11,
+ "questions": [
+  {
+   "id": "K26-3",
+   "exam": "K26",
+   "qno": 3,
+   "stem": "Başlıca dihidrofolat redüktaz ve timidilat sentaz enzimlerini inhibe eden, çok çeşitli hematolojik ve solid tümörlerde kullanılan antimetabolit hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Metotreksat"
+   },
+   "img": "lessons/03-antimetabolitler/img/K26-3.png",
+   "w": 272.0,
+   "h": 155.0,
+   "mark": [
+    0.1581,
+    0.5004,
+    0.1897,
+    0.0764
+   ],
+   "evidence": [
+    {
+     "img": "lessons/03-antimetabolitler/img/K26-3-ev1.jpg",
+     "slide": 12,
+     "title": "3. Antimetabolitler"
+    }
+   ]
+  },
+  {
+   "id": "K25-70",
+   "exam": "K25",
+   "qno": 70,
+   "stem": "ABVD tedavisi alan Hodgkin lenfoma hastasında pnömonitis gelişiyor; kombinasyondaki hangi ilacın bu yan etkiyi oluşturma potansiyeli en fazladır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Bleomisin"
+   },
+   "img": "lessons/03-antimetabolitler/img/K25-70.png",
+   "w": 292.0,
+   "h": 189.0,
+   "mark": [
+    0.1375,
+    0.6145,
+    0.1404,
+    0.0627
+   ],
+   "evidence": [
+    {
+     "img": "lessons/03-antimetabolitler/img/K25-70-ev1.jpg",
+     "slide": 34,
+     "title": "6. Antibiyotikler"
+    }
+   ]
+  },
+  {
+   "id": "F24-5",
+   "exam": "F24",
+   "qno": 5,
+   "stem": "Lökovorin, yüksek doz metotreksat tedavisi sırasında ortaya çıkabilecek aşırı toksisiteye karşı normal hücreleri hangi mekanizma ile korur?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "lokovorin-mtx",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Folat havuzunun yeniden doldurulması"
+   },
+   "img": "lessons/03-antimetabolitler/img/F24-5.png",
+   "w": 260.0,
+   "h": 161.0,
+   "mark": [
+    0.1,
+    0.4348,
+    0.6923,
+    0.118
+   ],
+   "evidence": [
+    {
+     "img": "lessons/03-antimetabolitler/img/F24-5-ev1.jpg",
+     "slide": 13,
+     "title": "3. Antimetabolitler"
+    }
+   ]
+  },
+  {
+   "id": "K24-80",
+   "exam": "K24",
+   "qno": 80,
+   "stem": "Doksorubisin ile indüklenen kardiyotoksisiteyi (DİK) doğru olarak tanımlamayan ifade hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "DİK hiçbir zaman ölüme sebep olmaz"
+   },
+   "img": "lessons/03-antimetabolitler/img/K24-80.png",
+   "w": 292.0,
+   "h": 130.0,
+   "mark": [
+    0.0753,
+    0.4,
+    0.6849,
+    0.1231
+   ],
+   "evidence": [
+    {
+     "img": "lessons/03-antimetabolitler/img/K24-80-ev1.jpg",
+     "slide": 33,
+     "title": "6. Antibiyotikler"
+    }
+   ]
+  },
+  {
+   "id": "K24-82",
+   "exam": "K24",
+   "qno": 82,
+   "stem": "Lökovorinin kullanım amacı hangisidir? (I. 5-FU yanıtını arttırmak, II. merkaptopürin yanıtını arttırmak, III. metotreksat toksisitesini tersine çevirmek)",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "I ve III"
+   },
+   "img": "lessons/03-antimetabolitler/img/K24-82.png",
+   "w": 276.0,
+   "h": 153.0,
+   "mark": [
+    0.087,
+    0.4967,
+    0.192,
+    0.098
+   ],
+   "evidence": [
+    {
+     "img": "lessons/03-antimetabolitler/img/K24-82-ev1.jpg",
+     "slide": 13,
+     "title": "3. Antimetabolitler"
+    },
+    {
+     "img": "lessons/03-antimetabolitler/img/K24-82-ev2.jpg",
+     "slide": 20,
+     "title": "3. Antimetabolitler"
+    }
+   ]
+  },
+  {
+   "id": "F23-6",
+   "exam": "F23",
+   "qno": 6,
+   "stem": "Lökovorin, yüksek doz metotreksat tedavisi sırasında normal hücreleri hangi mekanizma ile korur?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "lokovorin-mtx",
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Folat havuzunun doldurulması"
+   },
+   "img": "lessons/03-antimetabolitler/img/F23-6.png",
+   "w": 218.0,
+   "h": 158.0,
+   "mark": [
+    0.1406,
+    0.7802,
+    0.6339,
+    0.0795
+   ],
+   "evidence": [
+    {
+     "img": "lessons/03-antimetabolitler/img/F23-6-ev1.jpg",
+     "slide": 13,
+     "title": "3. Antimetabolitler"
+    }
+   ]
+  },
+  {
+   "id": "K23-92",
+   "exam": "K23",
+   "qno": 92,
+   "stem": "5-fluorourasilin aktif metaboliti olup dTMP sentezi sırasında timidilat sentaz için dUMP ile yarışan madde hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "5-fluorodeoksiüridin monofosfat (5-FdUMP)"
+   },
+   "img": "lessons/03-antimetabolitler/img/K23-92.png",
+   "w": 264.0,
+   "h": 201.0,
+   "mark": [
+    0.1439,
+    0.7463,
+    0.6477,
+    0.1294
+   ],
+   "evidence": [
+    {
+     "img": "lessons/03-antimetabolitler/img/K23-92-ev1.jpg",
+     "slide": 19,
+     "title": "3. Antimetabolitler"
+    }
+   ]
+  },
+  {
+   "id": "K21-59",
+   "exam": "K21",
+   "qno": 59,
+   "stem": "Hücre siklusunun G2/M fazında etkili, β-tubulin alt birimine bağlanarak mikrotübül polimerini stabilize eden antineoplastik ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Paklitaksel"
+   },
+   "img": "lessons/03-antimetabolitler/img/K21-59.png",
+   "w": 592.0,
+   "h": 182.0,
+   "mark": [
+    0.064,
+    0.7911,
+    0.1608,
+    0.081
+   ],
+   "evidence": [
+    {
+     "img": "lessons/03-antimetabolitler/img/K21-59-ev1.jpg",
+     "slide": 24,
+     "title": "4. Mikrotübül İnhibitörleri"
+    },
+    {
+     "img": "lessons/03-antimetabolitler/img/K21-59-ev2.jpg",
+     "slide": 25,
+     "title": "4. Mikrotübül İnhibitörleri"
+    }
+   ]
+  },
+  {
+   "id": "K21-58",
+   "exam": "K21",
+   "qno": 58,
+   "stem": "Hangi enzimin eksikliği 5-fluorourasil kullanımında görülen klasik üçlü toksisiteden (kemik iliği baskılanması, GİS toksisitesi, nörotoksisite) sorumludur?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "السؤال ده تبع الدرس (الـ5-FU في سلايد 19)، بس إنزيم Dihidropirimidin dehidrogenaz (DPD) اللي بيكسّر الـ5-FU مش مذكور في ملف الشرح خالص، فمفيش إجابة من الدرس. كلمة (Doğru) جنب الاختيار c جاية من ورقة الامتحان نفسها.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/03-antimetabolitler/img/K21-58.png",
+   "w": 592.0,
+   "h": 188.0,
+   "mark": null,
+   "evidence": []
+  }
+ ]
+}

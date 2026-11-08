@@ -1,0 +1,725 @@
+{
+ "pdf": "lessons/16-serotonin/16-serotonin-sorular.pdf",
+ "pdfName": "Serotonin.pdf",
+ "pages": 29,
+ "questions": [
+  {
+   "id": "K5-26-35",
+   "exam": "K5-26",
+   "qno": 35,
+   "stem": "Gastroparezide kullanılan, hem dopamin D2 antagonisti hem 5-HT4 agonisti olan ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "metoklopramid-mekanizma",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Metoklopramid"
+   },
+   "img": "lessons/16-serotonin/img/K5-26-35.png",
+   "w": 265.0,
+   "h": 128.0,
+   "mark": [
+    0.1547,
+    0.4695,
+    0.2342,
+    0.0646
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K5-26-35-ev1.jpg",
+     "slide": 23,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Agonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K4-26-7",
+   "exam": "K4-26",
+   "qno": 7,
+   "stem": "Buspironun benzodiazepinlerden farklı olarak sedatif etkisinin düşük olmasının temel nedeni hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "5-HT1A reseptör parsiyel agonisti olması"
+   },
+   "img": "lessons/16-serotonin/img/K4-26-7.png",
+   "w": 265.0,
+   "h": 115.0,
+   "mark": [
+    0.1547,
+    0.413,
+    0.6297,
+    0.0719
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K4-26-7-ev1.jpg",
+     "slide": 23,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Agonistleri"
+    },
+    {
+     "img": "lessons/16-serotonin/img/K4-26-7-ev2.jpg",
+     "slide": 30,
+     "title": "Table 13-5 Serotonergic Drugs: Primary Actions and Clinical Indications 5-HT1А"
+    }
+   ]
+  },
+  {
+   "id": "K4-26-11",
+   "exam": "K4-26",
+   "qno": 11,
+   "stem": "Sumatriptan dahil triptanlar hangi reseptörlere seçici agonistik etki göstererek migren tedavisinde kullanılır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "triptan-reseptor",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "5-HT1B ve 5-HT1D"
+   },
+   "img": "lessons/16-serotonin/img/K4-26-11.png",
+   "w": 258.0,
+   "h": 115.0,
+   "mark": [
+    0.1318,
+    0.4043,
+    0.2791,
+    0.0957
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K4-26-11-ev1.jpg",
+     "slide": 18,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Agonistleri"
+    },
+    {
+     "img": "lessons/16-serotonin/img/K4-26-11-ev2.jpg",
+     "slide": 34,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K26-19",
+   "exam": "K26",
+   "qno": 19,
+   "stem": "Kemoterapiye bağlı emeziste kullanılan 5-HT3 ilacı hangisidir? (soruda “agonisti” yazıyor; doğrusu antagonist)",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "5ht3-kemoterapi",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Ondansetron"
+   },
+   "img": "lessons/16-serotonin/img/K26-19.png",
+   "w": 272.0,
+   "h": 114.0,
+   "mark": [
+    0.1581,
+    0.3417,
+    0.2046,
+    0.1039
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K26-19-ev1.jpg",
+     "slide": 29,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Antagonistleri"
+    },
+    {
+     "img": "lessons/16-serotonin/img/K26-19-ev2.jpg",
+     "slide": 30,
+     "title": "Table 13-5 Serotonergic Drugs: Primary Actions and Clinical Indications 5-HT1А"
+    }
+   ]
+  },
+  {
+   "id": "K26-20",
+   "exam": "K26",
+   "qno": 20,
+   "stem": "Anksiyete, depresyon tedavisinde kullanılan 5-HT1A parsiyel agonisti ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Buspiron"
+   },
+   "img": "lessons/16-serotonin/img/K26-20.png",
+   "w": 272.0,
+   "h": 114.0,
+   "mark": [
+    0.1581,
+    0.3432,
+    0.1386,
+    0.1039
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K26-20-ev1.jpg",
+     "slide": 23,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Agonistleri"
+    },
+    {
+     "img": "lessons/16-serotonin/img/K26-20-ev2.jpg",
+     "slide": 30,
+     "title": "Table 13-5 Serotonergic Drugs: Primary Actions and Clinical Indications 5-HT1А"
+    }
+   ]
+  },
+  {
+   "id": "K26-21",
+   "exam": "K26",
+   "qno": 21,
+   "stem": "Akut migren krizinde kullanılan sumatriptan vb. triptanların etkilediği reseptör hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "triptan-reseptor",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Serotonin 5-HT1B/D reseptörü"
+   },
+   "img": "lessons/16-serotonin/img/K26-21.png",
+   "w": 272.0,
+   "h": 127.0,
+   "mark": [
+    0.1581,
+    0.4107,
+    0.4703,
+    0.0933
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K26-21-ev1.jpg",
+     "slide": 18,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Agonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K5-25-62",
+   "exam": "K5-25",
+   "qno": 62,
+   "stem": "KTB'deki dopamin reseptörlerini bloke eden, yüksek dozda 5-HT3 reseptörlerini de bloke eden ve prokinetik etkili antiemetik hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "metoklopramid-mekanizma",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Metoklopramid"
+   },
+   "img": "lessons/16-serotonin/img/K5-25-62.png",
+   "w": 507.0,
+   "h": 303.0,
+   "mark": [
+    0.1581,
+    0.4967,
+    0.1807,
+    0.0504
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K5-25-62-ev1.jpg",
+     "slide": 23,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Agonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K4-25-7",
+   "exam": "K4-25",
+   "qno": 7,
+   "stem": "Aşağıdakilerden hangisi kemoterapinin neden olduğu emesise karşı kullanılan 5-HT3 antagonistidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "5ht3-kemoterapi",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Ondansetron"
+   },
+   "img": "lessons/16-serotonin/img/K4-25-7.png",
+   "w": 258.0,
+   "h": 102.0,
+   "mark": [
+    0.142,
+    0.3366,
+    0.2098,
+    0.0811
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K4-25-7-ev1.jpg",
+     "slide": 29,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Antagonistleri"
+    },
+    {
+     "img": "lessons/16-serotonin/img/K4-25-7-ev2.jpg",
+     "slide": 30,
+     "title": "Table 13-5 Serotonergic Drugs: Primary Actions and Clinical Indications 5-HT1А"
+    }
+   ]
+  },
+  {
+   "id": "K4-25-20",
+   "exam": "K4-25",
+   "qno": 20,
+   "stem": "Aşağıdaki ilaçlardan hangisi migren kriz tedavisinde kullanılan 5-HT1D agonistidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Sumatriptan"
+   },
+   "img": "lessons/16-serotonin/img/K4-25-20.png",
+   "w": 265.0,
+   "h": 102.0,
+   "mark": [
+    0.1547,
+    0.3377,
+    0.1899,
+    0.0811
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K4-25-20-ev1.jpg",
+     "slide": 18,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Agonistleri"
+    },
+    {
+     "img": "lessons/16-serotonin/img/K4-25-20-ev2.jpg",
+     "slide": 30,
+     "title": "Table 13-5 Serotonergic Drugs: Primary Actions and Clinical Indications 5-HT1А"
+    }
+   ]
+  },
+  {
+   "id": "K5-24-59",
+   "exam": "K5-24",
+   "qno": 59,
+   "stem": "Antiemetikler için hangisi yanlıştır? (Metoklopramid seçici D2 antagonistidir, başka reseptöre etkisi yoktur)",
+   "section": "main",
+   "reason": null,
+   "note": "السؤال ده موجود كمان في درس 6 (مضادات القيء). سلايد 23 بيقول إن الميتوكلوبراميد agonist على 5-HT4 وantagonist على 5-HT3، يعني مش بيأثر على D2 بس، فالجملة A هي الغلط.",
+   "group": "metoklopramid-mekanizma",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Metoklopramid seçici bir D2 antagonistidir, diğer reseptörlere etkisi yoktur"
+   },
+   "img": "lessons/16-serotonin/img/K5-24-59.png",
+   "w": 268.0,
+   "h": 223.0,
+   "mark": [
+    0.0821,
+    0.1121,
+    0.8433,
+    0.2152
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K5-24-59-ev1.jpg",
+     "slide": 23,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Agonistleri"
+    }
+   ]
+  },
+  {
+   "id": "B21-2-77",
+   "exam": "B21-2",
+   "qno": 77,
+   "stem": "Aşağıdakilerden hangisi migren krizinde kullanılan ergot türevidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Ergotamin"
+   },
+   "img": "lessons/16-serotonin/img/B21-2-77.png",
+   "w": 360.0,
+   "h": 154.0,
+   "mark": [
+    0.0222,
+    0.7597,
+    0.1333,
+    0.0708
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/B21-2-77-ev1.jpg",
+     "slide": 22,
+     "title": "Migren Tedavisi"
+    },
+    {
+     "img": "lessons/16-serotonin/img/B21-2-77-ev2.jpg",
+     "slide": 27,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K4-21-64",
+   "exam": "K4-21",
+   "qno": 64,
+   "stem": "Serotonin ilaçlarıyla ilgili tanımlamalardan hangisi yanlıştır? (Ondansetron, Buspiron, Metoklopramid, Proglimid, Sisaprid)",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Proglimid: 5-HT1D reseptör antagonisti – kabızlıklı irritabl barsak sendromu"
+   },
+   "img": "lessons/16-serotonin/img/K4-21-64.png",
+   "w": 595.0,
+   "h": 276.0,
+   "mark": [
+    0.0756,
+    0.7065,
+    0.7395,
+    0.1196
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K4-21-64-ev1.jpg",
+     "slide": 23,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Agonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K1-20-18",
+   "exam": "K1-20",
+   "qno": 18,
+   "stem": "İlaç ve kullanım yeri eşleştirmelerinden yanlış olanı işaretleyiniz. (Ergotamin, Dihidroergotamin, Skopolamin, Alfa+Beta blokör, Sumatriptan)",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "ilac-kullanim-yeri",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Ergotamin – Migren proflaksisi"
+   },
+   "img": "lessons/16-serotonin/img/K1-20-18.png",
+   "w": 435.0,
+   "h": 88.0,
+   "mark": [
+    0.0364,
+    0.2488,
+    0.3418,
+    0.1389
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K1-20-18-ev1.jpg",
+     "slide": 22,
+     "title": "Migren Tedavisi"
+    }
+   ]
+  },
+  {
+   "id": "K1-20-32",
+   "exam": "K1-20",
+   "qno": 32,
+   "stem": "Serotoninerjik sistemle ilgili eşleştirmelerden yanlış olanı işaretleyiniz. (Buspiron, Sumatriptan, Metiserjit, Ondansetron)",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Metiserjit (5-HT2A/2C) → Myastenia gravis"
+   },
+   "img": "lessons/16-serotonin/img/K1-20-32.png",
+   "w": 435.0,
+   "h": 76.0,
+   "mark": [
+    0.035,
+    0.626,
+    0.4783,
+    0.1608
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K1-20-32-ev1.jpg",
+     "slide": 30,
+     "title": "Table 13-5 Serotonergic Drugs: Primary Actions and Clinical Indications 5-HT1А"
+    },
+    {
+     "img": "lessons/16-serotonin/img/K1-20-32-ev2.jpg",
+     "slide": 27,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Antagonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K1-19-2",
+   "exam": "K1-19",
+   "qno": 2,
+   "stem": "Hidroksitriptamin (serotonin) aşağıdaki hastalıklardan hangisinin patogenezinde önemlidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Depresyon"
+   },
+   "img": "lessons/16-serotonin/img/K1-19-2.png",
+   "w": 455.0,
+   "h": 89.0,
+   "mark": [
+    0.1614,
+    0.1972,
+    0.1143,
+    0.1493
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K1-19-2-ev1.jpg",
+     "slide": 11,
+     "title": "SEROTONİN Farmakolojik Etkileri"
+    }
+   ]
+  },
+  {
+   "id": "K3-26-16",
+   "exam": "K3-26",
+   "qno": 16,
+   "stem": "Hipertansiyon + migren profilaksisi ihtiyacı olan hastada uygun ilaç hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة أدوية الضغط، بس سلايد 22 في الدرس ده بيعدّ أدوية الوقاية من الصداع النصفي ومنها β-blokörler (زي البروبرانولول)، فالبروبرانولول بيعالج الضغط وبيمنع الصداع في نفس الوقت. السلايد كاتب كمان Ca kanal blokörleri، بس اللي بيتستخدم منهم للوقاية فلوناريزين/فيراباميل مش الأملوديبين، والإجابة في المفتاح A.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Propranolol"
+   },
+   "img": "lessons/16-serotonin/img/K3-26-16.png",
+   "w": 265.0,
+   "h": 103.0,
+   "mark": [
+    0.1547,
+    0.3403,
+    0.1805,
+    0.0803
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K3-26-16-ev1.jpg",
+     "slide": 22,
+     "title": "Migren Tedavisi"
+    }
+   ]
+  },
+  {
+   "id": "B21-2-78",
+   "exam": "B21-2",
+   "qno": 78,
+   "stem": "Aşağıdaki klinik kullanımlardan hangisi doğrudur? (Alosetron, Setirizin, Ergonovin, Ondansetron, Ranitidin)",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "تلات اختيارات من الخمسة أدوية من الدرس ده: سلايد 29 بيقول إن الأوندانسيترون (والألوسيترون من نفس المجموعة) مضادات 5-HT3 بتمنع قيء أدوية الكيماوي، يعني الأوندانسيترون مش لنوبة الصداع النصفي (علاجها السوماتريبتان والإرجوت، سلايد 22). الإجابة في المفتاح B (Setirizin – Saman nezlesi) ودي من درس الهيستامين، مش في الملف ده. السؤال ده موجود كمان في درس 15.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/16-serotonin/img/B21-2-78.png",
+   "w": 360.0,
+   "h": 155.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K3-21-64",
+   "exam": "K3-21",
+   "qno": 64,
+   "stem": "Hipertansiyon ilaçları ve ek hastalıkta ikili yarar eşleştirmelerinden hangisi yanlıştır? (Prazosin, Furosemid, Metildopa, Propranolol, Sumatriptan)",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة أدوية الضغط، بس سلايد 21 في الدرس ده بيقول إن التريبتانات (زي السوماتريبتان) ممنوعة في مرضى الشرايين التاجية والضغط لأنها بتقبّض الأوعية، وسلايد 18 بيقول إنها بتقبّض الشرايين التاجية، فـ«Sumatriptan – Koroner yetmezlik» هو الغلط.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "E",
+    "text": "Sumatriptan – Koroner yetmezlik"
+   },
+   "img": "lessons/16-serotonin/img/K3-21-64.png",
+   "w": 592.0,
+   "h": 163.0,
+   "mark": [
+    0.1029,
+    0.8915,
+    0.2691,
+    0.0878
+   ],
+   "evidence": [
+    {
+     "img": "lessons/16-serotonin/img/K3-21-64-ev1.jpg",
+     "slide": 21,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Agonistleri"
+    },
+    {
+     "img": "lessons/16-serotonin/img/K3-21-64-ev2.jpg",
+     "slide": 18,
+     "title": "Terapötik Amaçla Kullanılan Serotonin Agonistleri"
+    }
+   ]
+  },
+  {
+   "id": "K3-21-65",
+   "exam": "K3-21",
+   "qno": 65,
+   "stem": "İlaç – kullanım yeri eşleştirmelerinden hangisi yanlıştır? (Sodyum nitroprusiyat – Akut hipotansiyon)",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "نسخة تانية من سؤال K1-20-18. سلايد 22 بيقول إن البيزوتيفين للوقاية من الصداع النصفي، والسوماتريبتان وقلويدات الإرجوت (الديهيدروإرجوتامين) لعلاج النوبة، يعني a وb وd صح. الإجابة في مفتاح الامتحان E (Sodyum nitroprusiyat – Akut hipotansiyon) ومش في الملف ده: النيتروبروسيد بيوسّع الأوعية وبيتستخدم في الضغط العالي الطارئ، مش في هبوط الضغط (درس 19 سلايد 11). السؤال ده موجود كمان في درس 19.",
+   "group": "ilac-kullanim-yeri",
+   "also": [],
+   "answer": null,
+   "img": "lessons/16-serotonin/img/K3-21-65.png",
+   "w": 528.0,
+   "h": 154.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "F20-91",
+   "exam": "F20",
+   "qno": 91,
+   "stem": "İlaç ve kullanım yeri eşleştirmelerinden yanlış olanı işaretleyiniz. (Beta blokör, Dihidroergotamin, Skopolamin, Sumatriptan)",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "نسخة تانية من سؤال K1-20-18. سلايد 22 بيقول إن السوماتريبتان وقلويدات الإرجوت (الديهيدروإرجوتامين) لعلاج نوبة الصداع النصفي، يعني b وd صح، والسكوبولامين لدوار الحركة صح كمان (درس 15 سلايد 35). الإجابة المكتوب جنبها (Doğru) في الامتحان هي a: الـBeta blokör لوحده غلط في الـFeokromositoma، لازم Alfa + Beta مع بعض (زي ما جه في F19-5 وK3-21-65)، وده مش مشروح في الملف ده.",
+   "group": "ilac-kullanim-yeri",
+   "also": [],
+   "answer": null,
+   "img": "lessons/16-serotonin/img/F20-91.png",
+   "w": 342.0,
+   "h": 150.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K5-19-15",
+   "exam": "K5-19",
+   "qno": 15,
+   "stem": "Ergot alkaloidleri aşağıdaki hastalıklardan hangisinin tedavisinde kullanılmaz?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "السؤال تبع موضوع الدرس (الإرجوت)، بس ملف الشرح كل اللي فيه إن Ergot alkaloidleri بتتستخدم في نوبة الصداع النصفي (سلايد 22)، ومفيش كلام عن البرولاكتين ولا نزيف ما بعد الولادة ولا الأوعية الطرفية. في نسخة F19 الاختيار المظلل بالأصفر هو Periferik vasküler vazospazm، وده منطقي لأن الإرجوت بيقبّض الأوعية، زي التريبتانات اللي ممنوعة في أمراض الأوعية الطرفية (سلايد 21). ونفس السؤال بالظبط جه كمان في F19 سؤال 17.",
+   "group": null,
+   "also": [
+    {
+     "exam": "F19",
+     "qno": 17
+    }
+   ],
+   "answer": null,
+   "img": "lessons/16-serotonin/img/K5-19-15.png",
+   "w": 378.0,
+   "h": 92.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "F19-17",
+   "exam": "F19",
+   "qno": 17,
+   "stem": "Ergot alkaloidleri aşağıdaki hastalıklardan hangisinin tedavisinde kullanılmaz?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "السؤال تبع موضوع الدرس (الإرجوت)، بس ملف الشرح كل اللي فيه إن Ergot alkaloidleri بتتستخدم في نوبة الصداع النصفي (سلايد 22)، ومفيش كلام عن البرولاكتين ولا نزيف ما بعد الولادة ولا الأوعية الطرفية. الاختيار المظلل بالأصفر في ورقة الامتحان (Periferik vasküler vazospazm) منطقي لأن الإرجوت بيقبّض الأوعية، زي التريبتانات اللي ممنوعة في أمراض الأوعية الطرفية (سلايد 21). ونفس السؤال بالظبط (نفس الاختيارات) جه كمان في K5-19 سؤال 15.",
+   "group": null,
+   "also": [
+    {
+     "exam": "K5-19",
+     "qno": 15
+    }
+   ],
+   "answer": null,
+   "img": "lessons/16-serotonin/img/F19-17.png",
+   "w": 260.0,
+   "h": 100.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "F19-5",
+   "exam": "F19",
+   "qno": 5,
+   "stem": "İlaç ve kullanım yeri eşleştirmelerinden hangisi yanlıştır? (Pizotifen, Dihidroergotamin, Skopolamin, Alfa+Beta blokör, Sumatriptan)",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "نسخة تانية من سؤال K1-20-18 (أدوية الصداع النصفي). سلايد 22 بيقول إن البيزوتيفين للوقاية، والسوماتريبتان وقلويدات الإرجوت (زي الديهيدروإرجوتامين) لعلاج النوبة، يعني a وb وe صح. الإجابة المظللة في الامتحان C (Skopolamin – Hiperprolaktinemi) ومش في الملف ده: السكوبولامين بيتستخدم لدوار الحركة (درس 6 سلايد 21، ودرس 15 سلايد 35). السؤال ده موجود كمان في درس 6 و15.",
+   "group": "ilac-kullanim-yeri",
+   "also": [],
+   "answer": null,
+   "img": "lessons/16-serotonin/img/F19-5.png",
+   "w": 260.0,
+   "h": 104.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K1-19-24",
+   "exam": "K1-19",
+   "qno": 24,
+   "stem": "Primer pulmoner hipertansiyon tedavisinde kullanılan ilaçlardan yanlış olanı işaretleyiniz. (Nifedipin, Ergotamin, İloprost, Bosentan, Sildenafil)",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "السؤال عن أدوية ارتفاع ضغط الشريان الرئوي، والاختيار الغلط فيه دوا من الدرس ده (الإرجوتامين). سلايد 22 بيقول إن قلويدات الإرجوت (Ergot alkaloidleri) بتتستخدم في علاج نوبة الصداع النصفي الحادة، بس الملف مش بيقول في أي حتة إن الإرجوتامين مش بيتستخدم في ضغط الشريان الرئوي. الإجابة المظللة في الامتحان b (Ergotamin – Ergot Alkaloidi). السؤال ده موجود كمان في درس 18 و19.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/16-serotonin/img/K1-19-24.png",
+   "w": 467.0,
+   "h": 96.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K1-19-27",
+   "exam": "K1-19",
+   "qno": 27,
+   "stem": "Aşağıdaki ilaçlardan hangisi akut migren krizinin tedavisinde kullanılmaz? (Ergonovin, Ergotamin, Dihidroergotamin, Sumatriptan, Zolmitriptan)",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "السؤال تبع موضوع الدرس (علاج نوبة الصداع النصفي). سلايد 22 بيقول إن النوبة بتتعالج بالسوماتريبتان وقلويدات الإرجوت، وسلايد 18 بيعدّ الزولميتريبتان مع التريبتانات، بس الإرجونوفين مش مذكور في الملف خالص. الإجابة المظللة في مفتاح الامتحان A Ergonovin: ده إرجوت بيقبّض الرحم وبيتستخدم في نزيف ما بعد الولادة، مش للصداع.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/16-serotonin/img/K1-19-27.png",
+   "w": 455.0,
+   "h": 89.0,
+   "mark": null,
+   "evidence": []
+  }
+ ]
+}

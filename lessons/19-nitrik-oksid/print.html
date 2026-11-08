@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head><meta charset="utf-8"><title>19. Nitrik Oksid · Sorular</title>
+<link rel="stylesheet" href="../../assets/folks.css"><style>/* Print layout for one lesson's question PDF. Tokens come from folks.css. */
+@page { size: A4 landscape; margin: 0; }
+html, body { margin: 0; background: var(--f-surface); }
+body.f { font-size: 13px; line-height: 1.45; }
+[lang="tr"] { font-family: var(--f-font-ui); }
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+.sheet {
+  width: 297mm; height: 210mm; padding: 11mm 13mm 9mm;
+  display: flex; flex-direction: column; gap: 14px;
+  overflow: hidden; break-after: page; position: relative;
+  background: var(--f-surface);
+}
+.sheet:last-child { break-after: auto; }
+
+.kicker { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; color: var(--f-dim); }
+.kicker i { width: 10px; height: 10px; border-radius: 3px; background: var(--f-ink); }
+
+/* ---------- cover ---------- */
+.cover { flex-direction: row; gap: 34px; }
+.cv-main { width: 43%; flex: none; display: flex; flex-direction: column; }
+.cv-main .legend { margin-top: auto; }
+.cover .toc { flex: 1; padding-top: 2px; }
+.cover .big {
+  font-family: var(--f-font-ui); font-size: 190px; font-weight: 800; line-height: .82;
+  letter-spacing: -9px; font-variant-numeric: tabular-nums; margin: 30px 0 16px; direction: ltr; text-align: left;
+}
+.cover h1 { font-size: 36px; line-height: 1.12; font-weight: 700; margin: 0; text-align: left; letter-spacing: -.3px; }
+.cover .who { margin: 8px 0 0; color: var(--f-dim); font-size: 14px; text-align: left; }
+.stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 26px 0 22px; }
+.stats div { background: var(--f-chip); border-radius: 18px; padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 2px; }
+.stats b { font-family: var(--f-font-ui); font-size: 34px; line-height: 1; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stats span { font-size: 12px; color: var(--f-dim); font-weight: 600; }
+.toc { flex: 1; min-height: 0; overflow: hidden; }
+.toc h3 { display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; color: var(--f-mute); margin: 16px 2px 6px; }
+.toc h3:first-child { margin-top: 0; }
+.toc ol { list-style: none; margin: 0; padding: 0; border-radius: 18px; box-shadow: inset 0 0 0 1px var(--f-line); overflow: hidden; }
+.toc li { display: grid; grid-template-columns: 26px 66px 1fr; gap: 10px; align-items: center; padding: 7px 14px; font-size: 12px; }
+.toc li + li { border-top: 1px solid var(--f-line); }
+.toc .n { font-family: var(--f-font-ui); font-variant-numeric: tabular-nums; color: var(--f-mute); font-weight: 600; }
+.toc .ex { font-family: var(--f-font-ui); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.toc .st { color: var(--f-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; }
+.legend { display: flex; gap: 14px; align-items: center; padding-top: 12px; border-top: 1px solid var(--f-line); font-size: 11px; color: var(--f-mute); }
+.legend b { color: var(--f-ink); font-family: var(--f-font-ui); margin-inline-end: 3px; }
+.legend .sp { flex: 1; }
+
+.toc-next { margin: 4px 2px 0; font-size: 13px; color: var(--f-mute); }
+.tocpage { gap: 14px; }
+.tocpage .toc h3:first-child { margin-top: 4px; }
+
+/* ---------- divider ---------- */
+.divider { justify-content: center; gap: 0; }
+.divider h2 { font-size: 64px; line-height: 1.1; margin: 14px 0 12px; font-weight: 800; }
+.divider p { font-size: 16px; color: var(--f-dim); margin: 0 0 30px; max-width: 520px; }
+.divider ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; max-width: 560px; }
+.divider li { background: var(--f-chip); border-radius: 18px; padding: 14px 16px; display: grid; gap: 4px; }
+.divider li b { font-size: 14px; }
+.divider li span { font-size: 13px; color: var(--f-dim); }
+
+/* ---------- question page (landscape) ---------- */
+.top { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--f-dim); flex: none; }
+.crumb { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.crumb b { font-family: var(--f-font-ui); display: inline-grid; place-items: center; min-width: 26px; height: 26px; padding: 0 6px; border-radius: 8px; background: var(--f-ink); color: var(--f-on-ink); font-size: 12px; font-variant-numeric: tabular-nums; }
+.crumb span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160mm; }
+.count { white-space: nowrap; }
+.count b { color: var(--f-ink); font-family: var(--f-font-ui); font-variant-numeric: tabular-nums; }
+
+.src { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex: none; }
+.exam { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px 6px 6px; border-radius: 999px; background: var(--f-chip); font-size: 13px; font-weight: 600; color: var(--f-dim); align-self: flex-start; }
+.exam b { background: var(--f-ink); color: var(--f-on-ink); border-radius: 999px; padding: 3px 10px; font-size: 12px; font-variant-numeric: tabular-nums; }
+.exam i { width: 3px; height: 3px; border-radius: 50%; background: var(--f-mute); }
+.tag.also b { font-weight: 700; color: var(--f-ink); }
+.tag { font-size: 11px; font-weight: 600; color: var(--f-dim); padding: 4px 10px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--f-line2); align-self: flex-start; }
+
+.note { flex: none; background: var(--f-chip); border-radius: 16px; padding: 10px 14px; }
+.note b { display: block; font-size: 12px; margin-bottom: 2px; }
+.note p { margin: 0; font-size: 12px; color: var(--f-dim); line-height: 1.55; }
+
+/* question and answer on the left 80% of the page; the right fifth stays blank for the student's notes */
+.sheet.q { padding-right: calc(59.4mm + 6mm); }
+.notes {
+  position: absolute; top: 0; bottom: 0; right: 0; width: 59.4mm; box-sizing: border-box;
+  padding: 11mm 7mm 9mm; border-left: 1px solid var(--f-line);
+}
+.notes span { font-size: 11px; font-weight: 600; color: var(--f-mute); }
+
+.q .body { flex: 1; min-height: 0; display: flex; gap: 16px; }
+.q .qside { display: flex; gap: 16px; flex: none; min-width: 0; }
+.q .meta { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.q.wide .body { flex-direction: column; }
+.q.wide .qside { flex-direction: row; align-items: flex-start; }
+.q.wide .meta { width: 240px; flex: none; }
+.q.tall .body { flex-direction: row; }
+.q.tall .qside { width: 390px; flex-direction: column; }
+
+.qcard { flex: none; margin: 0; padding: 12px; border-radius: 20px; box-shadow: inset 0 0 0 1px var(--f-line); display: flex; justify-content: center; }
+.q.wide .qcard { flex: 1; min-width: 0; }
+.qimg { position: relative; max-width: 100%; }
+.qimg img { display: block; width: 100%; height: 100%; }
+.mark { position: absolute; border-radius: 8px; box-shadow: inset 0 0 0 2px var(--f-ink); }
+.mark::after {
+  content: ""; position: absolute; left: 100%; top: 50%; translate: 6px -50%;
+  width: 18px; height: 18px; border-radius: 50%; background: var(--f-ink) no-repeat center / 11px
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+
+.ans { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; flex: none; }
+.lbl { font-size: 12px; font-weight: 600; color: var(--f-mute); }
+.pill { display: inline-flex; align-items: center; gap: 10px; padding: 7px 16px 7px 7px; border-radius: 999px; background: var(--f-ink); color: var(--f-on-ink); font-size: 14px; font-weight: 700; max-width: 100%; }
+.pill b { display: inline-grid; place-items: center; width: 24px; height: 24px; flex: none; border-radius: 50%; background: var(--f-on-ink); color: var(--f-ink); font-size: 12px; }
+.pill.none { background: none; color: var(--f-dim); box-shadow: inset 0 0 0 1.5px var(--f-line2); padding: 7px 16px; font-size: 13px; font-weight: 600; border: 0; }
+
+/* the answer: whole slides, as large as the page allows */
+.evs { flex: 1; min-height: 0; min-width: 0; display: flex; gap: 14px; }
+.q.wide .evs { flex-direction: row; }
+.q.tall .evs { flex-direction: column; }
+.ev { flex: 1 1 0; min-height: 0; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+.ev figcaption { display: flex; align-items: baseline; gap: 8px; font-size: 12px; color: var(--f-mute); flex: none; white-space: nowrap; overflow: hidden; }
+.ev figcaption b { color: var(--f-ink); }
+.ev figcaption .t { margin-inline-start: auto; color: var(--f-dim); overflow: hidden; text-overflow: ellipsis; }
+.evimg { flex: 1; min-height: 0; display: flex; align-items: flex-start; justify-content: center; }
+.evimg img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 0 0 1px var(--f-line); }
+
+.foot { display: flex; justify-content: space-between; font-size: 10.5px; color: var(--f-mute); flex: none; padding-top: 8px; border-top: 1px solid var(--f-line); }
+body { counter-reset: pg; }
+.sheet { counter-increment: pg; }
+.pg::before { content: counter(pg); font-variant-numeric: tabular-nums; }
+</style></head>
+<body class="f">
+<section class="sheet cover">
+  <div class="cv-main">
+    <div class="kicker"><i></i>بنك أسئلة السنين اللي فاتت · فارماكولوجي</div>
+    <div class="big">19</div>
+    <h1 dir="ltr" lang="tr">Nitrik Oksid</h1>
+    <p class="who" dir="ltr" lang="tr"></p>
+    <div class="stats">
+      <div><b>24</b><span>سؤال</span></div>
+      <div><b>6</b><span>أساسي</span></div>
+      <div><b>18</b><span>للمراجعة</span></div>
+      <div><b>17</b><span>امتحان</span></div>
+    </div>
+    <footer class="legend">
+      <span><b dir="ltr">K</b> كورول</span><span><b dir="ltr">F</b> فاينال</span><span><b dir="ltr">B</b> بوتونلمه</span>
+      <span class="sp"></span><span>الأحدث الأول · الإجابة من ملف الشرح نفسه</span>
+    </footer>
+  </div>
+  <div class="toc"><p class="toc-next">فهرس الأسئلة في الصفحة الجاية</p></div>
+</section><section class="sheet tocpage"><div class="kicker"><i></i>فهرس الأسئلة</div><div class="toc"><h3><span>الأسئلة</span><span>6</span></h3><ol><li><span class="n">01</span><span class="ex" dir="ltr">F25 · 9</span><span class="st" dir="ltr" lang="tr">Aşağıdakilerden hangisi nitrogliserin ile cGMP metabolizmasını inhibe ederek etkileşen ve kombine edildiğinde ciddi hipotansiyona neden olan ilaçtır?</span></li><li><span class="n">02</span><span class="ex" dir="ltr">K6-21 · 56</span><span class="st" dir="ltr" lang="tr">Stabil olmayan anjina nedeniyle atenolol ve dil altı nitrogliserin başlanan hastanın ilaçlarından hangisi kesilmelidir?</span></li><li><span class="n">03</span><span class="ex" dir="ltr">K3-21 · 69</span><span class="st" dir="ltr" lang="tr">Muskarinik ilaçların oluşturduğu vazodilatasyon damar endotelinden hangi maddenin salıverilmesi ile oluşur?</span></li><li><span class="n">04</span><span class="ex" dir="ltr">K3-21 · 76</span><span class="st" dir="ltr" lang="tr">Aşağıdakilerden hangisi NO (nitrik oksid) etkilerinden değildir?</span></li><li><span class="n">05</span><span class="ex" dir="ltr">F21-1 · 58</span><span class="st" dir="ltr" lang="tr">Aşağıdakilerden hangisi nitrik oksid (NO) etkilerinden değildir?</span></li><li><span class="n">06</span><span class="ex" dir="ltr">K5-19 · 13</span><span class="st" dir="ltr" lang="tr">Sildenafil, tadalafil, vardenafil gibi erektil disfonksiyon ilaçları hangi enzimi bloke ederek etki gösterir?</span></li></ol><h3><span>للمراجعة · آخر الملف</span><span>18</span></h3><ol><li><span class="n">07</span><span class="ex" dir="ltr">K3-26 · 17</span><span class="st" dir="ltr" lang="tr">Nitratların (nitrogliserin) temel hemodinamik etkisi hangisidir?</span></li><li><span class="n">08</span><span class="ex" dir="ltr">K3-26 · 18</span><span class="st" dir="ltr" lang="tr">Sodyum nitroprussidin uzun süreli kullanımında hangi toksisite riski vardır?</span></li><li><span class="n">09</span><span class="ex" dir="ltr">K3-26 · 22</span><span class="st" dir="ltr" lang="tr">Akut anjina atağında inhalasyonla kullanılan, etkisi çok hızlı başlayan ve kısa süren ilaç hangisidir?</span></li><li><span class="n">10</span><span class="ex" dir="ltr">K6-25 · 51</span><span class="st" dir="ltr" lang="tr">Erektil disfonksiyonda kullanılan PDE5 inhibitörleriyle ilgili hangisi yanlıştır?</span></li><li><span class="n">11</span><span class="ex" dir="ltr">K3-25 · 12</span><span class="st" dir="ltr" lang="tr">Organik nitratların kullanılış yerlerinden hangisi değildir?</span></li><li><span class="n">12</span><span class="ex" dir="ltr">K6-24 · 55</span><span class="st" dir="ltr" lang="tr">Tepe konsantrasyona 2 saatte ulaşan, etkisi 36 saate kadar süren PDE5 inhibitörü hangisidir?</span></li><li><span class="n">13</span><span class="ex" dir="ltr">K3-24 · 15</span><span class="st" dir="ltr" lang="tr">Organik nitratların kullanılış yerleri için hangisi yanlıştır?</span></li><li><span class="n">14</span><span class="ex" dir="ltr">K6-23 · 77</span><span class="st" dir="ltr" lang="tr">Yarılanma ömrü 18 saat olan ve emilimi besinlerden etkilenmeyen PDE5 inhibitörü hangisidir?</span></li><li><span class="n">15</span><span class="ex" dir="ltr">F23 · 9</span><span class="st" dir="ltr" lang="tr">Hipertansiyon profilaksisinde kullanılmayıp yalnızca acil hipertansiyonda iv infüzyonla verilen ilaç hangisidir?</span></li><li><span class="n">16</span><span class="ex" dir="ltr">K3-23 · 67</span><span class="st" dir="ltr" lang="tr">Hipertansiyon profilaksisinde kullanılmayıp yalnızca acil hipertansiyonda iv infüzyonla verilen ilaç hangisidir?</span></li><li><span class="n">17</span><span class="ex" dir="ltr">B21-2 · 61</span><span class="st" dir="ltr" lang="tr">Aşağıdakilerden hangileri fosfodiesteraz-5 inhibitörleri için doğrudur?</span></li><li><span class="n">18</span><span class="ex" dir="ltr">K6-22 · 67</span><span class="st" dir="ltr" lang="tr">Aşağıdakilerden hangileri fosfodiesteraz-5 inhibitörleri için doğrudur?</span></li></ol></div></section><section class="sheet tocpage"><div class="kicker"><i></i>فهرس الأسئلة</div><div class="toc"><ol><li><span class="n">19</span><span class="ex" dir="ltr">K3-21 · 65</span><span class="st" dir="ltr" lang="tr">İlaç – kullanım yeri eşleştirmelerinden hangisi yanlıştır? (Sodyum nitroprusiyat – Akut hipotansiyon)</span></li><li><span class="n">20</span><span class="ex" dir="ltr">K3-21 · 72</span><span class="st" dir="ltr" lang="tr">Nitrat grubu ilaçların genel kullanılış yerlerinden hangisi değildir?</span></li><li><span class="n">21</span><span class="ex" dir="ltr">F21-1 · 61</span><span class="st" dir="ltr" lang="tr">Nitrat grubu ilaçların genel kullanım yerlerinden hangisi değildir?</span></li><li><span class="n">22</span><span class="ex" dir="ltr">F21-1 · 63</span><span class="st" dir="ltr" lang="tr">Nitroprusiyat sodyumun klinik kullanımları hangileridir?</span></li><li><span class="n">23</span><span class="ex" dir="ltr">K1-20 · 28</span><span class="st" dir="ltr" lang="tr">Organik nitratların kullanılış yerlerinden hangisi yanlıştır?</span></li><li><span class="n">24</span><span class="ex" dir="ltr">K1-19 · 24</span><span class="st" dir="ltr" lang="tr">Primer pulmoner hipertansiyon tedavisinde kullanılan ilaç eşleştirmelerinden hangisi yanlıştır? (Nifedipin, Ergotamin, İloprost–PGI2, Bosentan, Sildenafil)</span></li></ol></div></section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>1</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F25</b>Final 2024–2025<i></i>Soru 9</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Sildenafil</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:530px;height:250px"><img src="img/F25-9.png" alt=""><span class="mark" style="left:calc(42.98% - 6px);top:calc(39.03% - 3px);width:calc(12.86% + 12px);height:calc(5.84% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 11</b><span class="t" dir="ltr" lang="tr">NO donörleri</span></figcaption><div class="evimg"><img src="img/F25-9-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 19</b><span class="t" dir="ltr" lang="tr"></span></figcaption><div class="evimg"><img src="img/F25-9-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>2</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-21</b>Kurul 2020–2021<i></i>Soru 56</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Sildenafil</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:244px"><img src="img/K6-21-56.png" alt=""><span class="mark" style="left:calc(6.00% - 6px);top:calc(36.94% - 3px);width:calc(8.17% + 12px);height:calc(7.84% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 11</b><span class="t" dir="ltr" lang="tr">NO donörleri</span></figcaption><div class="evimg"><img src="img/K6-21-56-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 19</b><span class="t" dir="ltr" lang="tr">Tedavide</span></figcaption><div class="evimg"><img src="img/K6-21-56-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>3</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-21</b>Kurul 2020–2021<i></i>Soru 69</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Nitrik Oksit</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:147px"><img src="img/K3-21-69.png" alt=""><span class="mark" style="left:calc(6.85% - 6px);top:calc(59.72% - 3px);width:calc(10.65% + 12px);height:calc(10.07% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 1</b><span class="t" dir="ltr" lang="tr">Nitrik Oksid</span></figcaption><div class="evimg"><img src="img/K3-21-69-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">NO&#x27;nun etki mekanizması</span></figcaption><div class="evimg"><img src="img/K3-21-69-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>4</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-21</b>Kurul 2020–2021<i></i>Soru 76</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 2 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>D</b>Agregasyonu ve adezyonu aktive eder</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:174px"><img src="img/K3-21-76.png" alt=""><span class="mark" style="left:calc(7.13% - 6px);top:calc(69.10% - 3px);width:calc(35.91% + 12px);height:calc(8.52% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 18</b><span class="t" dir="ltr" lang="tr">NO&#x27;nun Etkileri</span></figcaption><div class="evimg"><img src="img/K3-21-76-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>5</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F21-1</b>Final 2020–2021<i></i>Soru 58</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 2 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Ejakulasyon oluşumundan primer sorumludur</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:174px"><img src="img/F21-1-58.png" alt=""><span class="mark" style="left:calc(6.85% - 6px);top:calc(57.04% - 3px);width:calc(44.15% + 12px);height:calc(8.52% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 18</b><span class="t" dir="ltr" lang="tr">NO&#x27;nun Etkileri</span></figcaption><div class="evimg"><img src="img/F21-1-58-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 19</b><span class="t" dir="ltr" lang="tr">Tedavide</span></figcaption><div class="evimg"><img src="img/F21-1-58-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>6</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K5-19</b>Kurul 2018–2019<i></i>Soru 13</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Fosfodiesteraz Tip 5</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:135px"><img src="img/K5-19-13.png" alt=""><span class="mark" style="left:calc(3.85% - 6px);top:calc(62.95% - 3px);width:calc(20.10% + 12px);height:calc(11.01% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 20</b><span class="t" dir="ltr" lang="tr">Diyabet, impotens ve PDE-5 inhibitörleri</span></figcaption><div class="evimg"><img src="img/K5-19-13-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 19</b><span class="t" dir="ltr" lang="tr">Tedavide</span></figcaption><div class="evimg"><img src="img/K5-19-13-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet divider">
+  <div class="kicker"><i></i>آخر الملف</div>
+  <h2>للمراجعة</h2>
+  <p>18 أسئلة مش متأكد إنها تبع الدرس ده بنسبة 100%، أو تبعه بس ملهاش إجابة في ملف الشرح.</p>
+  <ul>
+    <li><b>من محاضرة تانية</b><span>السؤال جاي من مادة أو محاضرة تانية، بس إجابته موجودة في سلايدات الدرس ده.</span></li>
+    <li><b>مفيش إجابة في الشرح</b><span>السؤال تبع موضوع الدرس، بس ملف الشرح مفيهوش إجابته، فمحطوط من غير إجابة.</span></li>
+  </ul>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>7</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-26</b>Kurul 2025–2026<i></i>Soru 17</span>
+        
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>سلايد 11 بيقول إن النيتروجليسرين بيطلّع NO فبيعمل توسيع أوعية، ومفيش كلام عن الـ preload والـ afterload. المفتاح في الكتيّب A (بيوسّع الأوردة فبيقلّل الـ preload)، وهو الاختيار الوحيد اللي فيه توسيع.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:513px;height:199px"><img src="img/K3-26-17.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>8</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-26</b>Kurul 2025–2026<i></i>Soru 18</span>
+        
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>النيتروبروسيد من الـ NO donors (سلايد 10–11)، بس سمّيته (سيانيد/ثيوسيانات) مش مذكورة في الشرح. المفتاح في الكتيّب A.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:536px;height:199px"><img src="img/K3-26-18.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>9</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-26</b>Kurul 2025–2026<i></i>Soru 22</span>
+        
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>سلايد 11 بيذكر الأميل نيتريت ضمن الـ NO donors اللي بتستخدم antianginal، بس مش بيقول إنه بيتشمّ وإن مفعوله سريع وقصير. المفتاح في الكتيّب A (Amil nitrit).</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:513px;height:199px"><img src="img/K3-26-22.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>10</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-25</b>Kurul 2024–2025<i></i>Soru 51</span>
+        
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>سلايد 19 و 20 بيذكروا سيلدينافيل وتادالافيل وفاردينافيل كمثبطات PDE-5 بس، والأفانافيل ومدة المفعول مش موجودين في الشرح. المفتاح A (الأفانافيل مفعوله أقصر من السيلدينافيل، مش أطول).</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:415px;height:250px"><img src="img/K6-25-51.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>11</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-25</b>Kurul 2024–2025<i></i>Soru 12</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 4 امتحانات</span>
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>النيترات من الـ NO donors (سلايد 10–11)، والسلايد بيقول بس إنها بتستخدم كـ antianginal و antihypertensive؛ تفاصيل استخداماتها في محاضرة أدوية الذبحة. نفس اختيارات سؤال K3-24 رقم 15 بالظبط (الصيغة بس اللي اختلفت). المفتاح في الكتيّب A (تضخم البروستاتا).</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:530px;height:201px"><img src="img/K3-25-12.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>12</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-24</b>Kurul 2023–2024<i></i>Soru 55</span>
+        
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>سلايد 19 و 20 بيذكروا مثبطات PDE-5 (سيلدينافيل، تادالافيل، فاردينافيل)، بس مفيش كلام عن مدة المفعول أو وقت الذروة.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:452px;height:250px"><img src="img/K6-24-55.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>13</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-24</b>Kurul 2023–2024<i></i>Soru 15</span>
+        
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>النيترات من الـ NO donors (سلايد 10–11)، وسلايد 11 بيقول إنها بتستخدم كـ antianginal و antihypertensive بس؛ باقي الاختيارات مش مذكورة، فالإجابة مش واضحة من الشرح.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:511px;height:240px"><img src="img/K3-24-15.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>14</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-23</b>Kurul 2022–2023<i></i>Soru 77</span>
+        
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>سلايد 19 و 20 بيذكروا مثبطات PDE-5 (سيلدينافيل، تادالافيل، فاردينافيل) بس، من غير نص العمر ولا تأثير الأكل. المفتاح المعلّم C (Tadalafil). (سؤال قريب: K6-24 رقم 55.)</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:353px;height:250px"><img src="img/K6-23-77.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>15</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F23</b>Final 2022–2023<i></i>Soru 9</span>
+        <span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>K3-23</b> Kurul 2022–2023 · Soru 67</span></span>
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>سلايد 11 بيقول إن النيتروبروسيد الصوديوم من الـ NO donors وبيستخدم كخافض للضغط، بس مش بيقول إنه بيتدّي بالوريد في طوارئ الضغط بس. نفس السؤال بالظبط جه في K3-23 رقم 67، والمفتاح المعلّم هناك B (Sodyum nitroprusiyat).</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:362px;height:250px"><img src="img/F23-9.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>16</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-23</b>Kurul 2022–2023<i></i>Soru 67</span>
+        <span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>F23</b> Final 2022–2023 · Soru 9</span></span>
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>سلايد 11 بيقول إن النيتروبروسيد الصوديوم من الـ NO donors وبيستخدم كخافض للضغط، بس مش بيقول إنه بيتدّي بالوريد في طوارئ الضغط بس. المفتاح المعلّم B (Sodyum nitroprusit). نفس السؤال بالظبط جه في F23 رقم 9.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:396px;height:250px"><img src="img/K3-23-67.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>17</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>B21-2</b>Bütünleme 2020–2021<i></i>Soru 61</span>
+        <span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>K6-22</b> Kurul 2021–2022 · Soru 67</span></span>
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>سلايد 19 و20 بيقولوا بس إن مثبطات PDE-5 (سيلدينافيل، تادالافيل، فاردينافيل) بتقوّي تأثير الـNO. نص العمر وتأثير الأكل واستخدامها في ضغط الشريان الرئوي مش موجودين في ملف الشرح. الجملة V غلط حسب سلايد 11 (سيلدينافيل مع النيترات بيعمل هبوط ضغط خطير). الإجابة المعلّمة في ورقة الامتحان هي C.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:297px;height:250px"><img src="img/B21-2-61.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q tall">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>18</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-22</b>Kurul 2021–2022<i></i>Soru 67</span>
+        <span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>B21-2</b> Bütünleme 2020–2021 · Soru 61</span></span>
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>سلايد 19 و20 بيقولوا بس إن مثبطات PDE-5 (سيلدينافيل، تادالافيل، فاردينافيل) بتقوّي تأثير الـNO. نص العمر وتأثير الأكل واستخدامها في ضغط الشريان الرئوي مش موجودين في ملف الشرح. الجملة V غلط حسب سلايد 11 (سيلدينافيل مع النيترات بيعمل هبوط ضغط خطير). نفس السؤال بنفس الاختيارات جه في B21-2 سؤال 61، وهناك الإجابة المعلّمة C (I, II ve IV).</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:366px;height:409px"><img src="img/K6-22-67.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>19</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-21</b>Kurul 2020–2021<i></i>Soru 65</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال من محاضرة أدوية الصداع النصفي والجهاز العصبي الذاتي. الغلط في E: سلايد 11 بيقول إن النيتروبروسيد الصوديوم بيطلّع NO فبيعمل توسيع أوعية، وبيستخدم كخافض للضغط (Antihipertansif)، يعني عمره ما يستخدم لهبوط الضغط. باقي الاختيارات صح.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>E</b>Sodyum nitroprusiyat – Akut hipotansiyon</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:159px"><img src="img/K3-21-65.png" alt=""><span class="mark" style="left:calc(6.82% - 6px);top:calc(88.96% - 3px);width:calc(40.34% + 12px);height:calc(10.39% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 11</b><span class="t" dir="ltr" lang="tr">NO donörleri</span></figcaption><div class="evimg"><img src="img/K3-21-65-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>20</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-21</b>Kurul 2020–2021<i></i>Soru 72</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 4 امتحانات</span>
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>النيترات من الـ NO donors (سلايد 10–11)، والسلايد بيقول بس إنها بتستخدم كـ antianginal و antihypertensive؛ تفاصيل استخداماتها في محاضرة أدوية الذبحة. المفتاح المعلّم C (احتشاء البطين الأيمن مع ضغط امتلاء منخفض). نسخة F21-1 رقم 61 نفس السؤال باختيار C مختلف.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:172px"><img src="img/K3-21-72.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>21</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F21-1</b>Final 2020–2021<i></i>Soru 61</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 4 امتحانات</span>
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>النيترات من الـ NO donors (سلايد 10–11)، والسلايد بيقول بس إنها بتستخدم كـ antianginal و antihypertensive؛ تفاصيل استخداماتها في محاضرة أدوية الذبحة. المفتاح المعلّم C (Pernio ve akrosiyanoz).</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:172px"><img src="img/F21-1-61.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>22</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F21-1</b>Final 2020–2021<i></i>Soru 63</span>
+        
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>سلايد 10–11 بيقولوا بس إن النيتروبروسيد الصوديوم بيطلّع NO وبيستخدم كخافض للضغط ومضاد للذبحة. الاستخدامات التانية (فشل القلب، جراحة الأورطي) في محاضرة أدوية الضغط. المفتاح المعلّم E (I, II, III ve IV).</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:219px"><img src="img/F21-1-63.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>23</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K1-20</b>Kurul 2019–2020<i></i>Soru 28</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 4 امتحانات</span>
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>النيترات من الـ NO donors (سلايد 10–11)، والسلايد بيقول بس إنها بتستخدم كـ antianginal و antihypertensive؛ تفاصيل استخداماتها في محاضرة أدوية الذبحة. المفتاح المعلّم في الامتحان E (النيترات بتستخدم في الـ variant angina، مش ممنوعة). نفس السؤال جه بصيغ تانية في K3-24 (15) و K3-25 (12) و K3-21 (72) و F21-1 (61).</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:151px"><img src="img/K1-20-28.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>19</b><span dir="ltr" lang="tr">Nitrik Oksid</span></span>
+    <span class="count">سؤال <b>24</b> من 24</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K1-19</b>Kurul 2018–2019<i></i>Soru 24</span>
+        
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>السؤال عن أدوية ضغط الشريان الرئوي الأولي. سلايد 38 بيقول إن البوسنتان مضاد لمستقبلات الإندوثيلين ETA و ETB، وسلايد 19 و20 بيقولوا إن السيلدينافيل مثبط PDE-5 (وسلايد 19 بيذكر الـNO المستنشق في ضغط الرئة عند حديثي الولادة)، يعني d و e صح. بس الإجابة نفسها مش في الملف ده: الإرجوتامين قلويد إرجوت بيتستخدم في نوبة الصداع النصفي (درس 16) ومش من أدوية ضغط الرئة. الإجابة المظللة في ورقة الامتحان b. السؤال ده موجود كمان في درس 18 (الإيلوبروست PGI2).</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:112px"><img src="img/K1-19-24.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>19 · <span dir="ltr" lang="tr">Nitrik Oksid</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section></body></html>

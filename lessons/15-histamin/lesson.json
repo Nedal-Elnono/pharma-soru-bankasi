@@ -1,0 +1,653 @@
+{
+ "pdf": "lessons/15-histamin/15-histamin-sorular.pdf",
+ "pdfName": "Histamin.pdf",
+ "pages": 24,
+ "questions": [
+  {
+   "id": "K5-26-38",
+   "exam": "K5-26",
+   "qno": 38,
+   "stem": "Aşağıdaki ilaçlardan hangisi histamin H2 reseptör antagonistidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Famotidin"
+   },
+   "img": "lessons/15-histamin/img/K5-26-38.png",
+   "w": 258.0,
+   "h": 103.0,
+   "mark": [
+    0.142,
+    0.3395,
+    0.1778,
+    0.0803
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/K5-26-38-ev1.jpg",
+     "slide": 42,
+     "title": "Histamin Reseptör Blokörleri H2 Reseptör Blokörleri"
+    }
+   ]
+  },
+  {
+   "id": "F26-16",
+   "exam": "F26",
+   "qno": 16,
+   "stem": "Astım + ürtiker + hipotansiyon tablosu olan hastada ilk kullanılacak ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "adrenalin-anafilaksi",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Adrenalin"
+   },
+   "img": "lessons/15-histamin/img/F26-16.png",
+   "w": 291.0,
+   "h": 115.0,
+   "mark": [
+    0.1345,
+    0.3356,
+    0.1378,
+    0.103
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/F26-16-ev1.jpg",
+     "slide": 55,
+     "title": "Fizyolojik antagonisti ADRENALİN ……. HİSTAMİNİN etkilerini antagonize eder"
+    }
+   ]
+  },
+  {
+   "id": "K26-22",
+   "exam": "K26",
+   "qno": 22,
+   "stem": "Histaminin etkilerinden yanlış olanı işaretleyiniz.",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "histamin-etkisi-degil",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Midede asit salgısını azaltır"
+   },
+   "img": "lessons/15-histamin/img/K26-22.png",
+   "w": 291.0,
+   "h": 103.0,
+   "mark": [
+    0.1345,
+    0.2517,
+    0.4052,
+    0.115
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/K26-22-ev1.jpg",
+     "slide": 25,
+     "title": "Histaminin Doku ve Organ Etkileri"
+    },
+    {
+     "img": "lessons/15-histamin/img/K26-22-ev2.jpg",
+     "slide": 21,
+     "title": "Histaminin Doku ve Organ Etkileri"
+    }
+   ]
+  },
+  {
+   "id": "F24-9",
+   "exam": "F24",
+   "qno": 9,
+   "stem": "Aşağıdakilerden hangisi bronkodilatör ilaç olarak kullanılan mast hücre stabilizatörü ilaçtır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "mast-stabilizator",
+   "also": [
+    {
+     "exam": "K3-25",
+     "qno": 13
+    }
+   ],
+   "answer": {
+    "letter": "A",
+    "text": "Kromoglikat"
+   },
+   "img": "lessons/15-histamin/img/F24-9.png",
+   "w": 265.0,
+   "h": 125.0,
+   "mark": [
+    0.1619,
+    0.3344,
+    0.2419,
+    0.0904
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/F24-9-ev1.jpg",
+     "slide": 49,
+     "title": "Mast Hücresi Stabilizatörleri"
+    }
+   ]
+  },
+  {
+   "id": "K3-25-13",
+   "exam": "K3-25",
+   "qno": 13,
+   "stem": "Aşağıdakilerden hangisi bronkodilatör ilaç olarak kullanılan mast hücre stabilizatörü ilaçtır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "mast-stabilizator",
+   "also": [
+    {
+     "exam": "F24",
+     "qno": 9
+    }
+   ],
+   "answer": {
+    "letter": "A",
+    "text": "Kromoglikat"
+   },
+   "img": "lessons/15-histamin/img/K3-25-13.png",
+   "w": 237.0,
+   "h": 108.0,
+   "mark": [
+    0.1715,
+    0.3497,
+    0.21,
+    0.0766
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/K3-25-13-ev1.jpg",
+     "slide": 49,
+     "title": "Mast Hücresi Stabilizatörleri"
+    }
+   ]
+  },
+  {
+   "id": "K3-25-17",
+   "exam": "K3-25",
+   "qno": 17,
+   "stem": "Aşağıdakilerden hangisi histaminin etkilerinden değildir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "histamin-etkisi-degil",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Damar permeabilitesinde azalma"
+   },
+   "img": "lessons/15-histamin/img/K3-25-17.png",
+   "w": 265.0,
+   "h": 103.0,
+   "mark": [
+    0.1547,
+    0.3376,
+    0.5027,
+    0.0803
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/K3-25-17-ev1.jpg",
+     "slide": 21,
+     "title": "Histaminin Doku ve Organ Etkileri"
+    },
+    {
+     "img": "lessons/15-histamin/img/K3-25-17-ev2.jpg",
+     "slide": 20,
+     "title": "Histaminin Doku ve Organ Etkileri"
+    }
+   ]
+  },
+  {
+   "id": "K3-25-24",
+   "exam": "K3-25",
+   "qno": 24,
+   "stem": "Bronkospazm ve hipotansiyon ile ilişkili anafilakside tercih edilen ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "adrenalin-anafilaksi",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Epinefrin (adrenalin)"
+   },
+   "img": "lessons/15-histamin/img/K3-25-24.png",
+   "w": 265.0,
+   "h": 103.0,
+   "mark": [
+    0.1547,
+    0.3349,
+    0.1375,
+    0.0803
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/K3-25-24-ev1.jpg",
+     "slide": 55,
+     "title": "Fizyolojik antagonisti ADRENALİN ……. HİSTAMİNİN etkilerini antagonize eder"
+    }
+   ]
+  },
+  {
+   "id": "F25-11",
+   "exam": "F25",
+   "qno": 11,
+   "stem": "Bronkospazm ve hipotansiyonla ilişkili anafilaksi durumunda tercih edilen ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "adrenalin-anafilaksi",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Adrenalin"
+   },
+   "img": "lessons/15-histamin/img/F25-11.png",
+   "w": 537.0,
+   "h": 259.0,
+   "mark": [
+    0.4755,
+    0.3749,
+    0.1045,
+    0.0599
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/F25-11-ev1.jpg",
+     "slide": 55,
+     "title": "Fizyolojik antagonisti ADRENALİN ……. HİSTAMİNİN etkilerini antagonize eder"
+    }
+   ]
+  },
+  {
+   "id": "B21-2-76",
+   "exam": "B21-2",
+   "qno": 76,
+   "stem": "Aşağıdakilerden hangisi histaminin vücuttaki etkilerinden değildir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Bradikardi"
+   },
+   "img": "lessons/15-histamin/img/B21-2-76.png",
+   "w": 360.0,
+   "h": 156.0,
+   "mark": [
+    0.0222,
+    0.3442,
+    0.1333,
+    0.0686
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/B21-2-76-ev1.jpg",
+     "slide": 21,
+     "title": "Histaminin Doku ve Organ Etkileri"
+    },
+    {
+     "img": "lessons/15-histamin/img/B21-2-76-ev2.jpg",
+     "slide": 53,
+     "title": "Histamin = Ach"
+    }
+   ]
+  },
+  {
+   "id": "B21-2-78",
+   "exam": "B21-2",
+   "qno": 78,
+   "stem": "Aşağıdaki klinik kullanımlardan hangisi doğrudur? (Alosetron, Setirizin, Ergonovin, Ondansetron, Ranitidin)",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Setirizin – Saman nezlesi"
+   },
+   "img": "lessons/15-histamin/img/B21-2-78.png",
+   "w": 360.0,
+   "h": 155.0,
+   "mark": [
+    0.0222,
+    0.4935,
+    0.2444,
+    0.0619
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/B21-2-78-ev1.jpg",
+     "slide": 37,
+     "title": "H1 Reseptör Blokörlerinin Klinik Kullanım Yerleri"
+    },
+    {
+     "img": "lessons/15-histamin/img/B21-2-78-ev2.jpg",
+     "slide": 32,
+     "title": "İkinci Kuşak Antihistaminikler Akrivastin Terfenadin"
+    }
+   ]
+  },
+  {
+   "id": "K3-21-75",
+   "exam": "K3-21",
+   "qno": 75,
+   "stem": "Aşağıdakilerden hangisi astım nöbeti sırasında kullanılan ilaçlardan değildir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Mast hücre stabilizatörleri – Kromoglikat, nedokromil"
+   },
+   "img": "lessons/15-histamin/img/K3-21-75.png",
+   "w": 592.0,
+   "h": 148.0,
+   "mark": [
+    0.1041,
+    0.4829,
+    0.4367,
+    0.0967
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/K3-21-75-ev1.jpg",
+     "slide": 49,
+     "title": "Mast Hücresi Stabilizatörleri"
+    }
+   ]
+  },
+  {
+   "id": "F21-1-57",
+   "exam": "F21-1",
+   "qno": 57,
+   "stem": "Aşağıdakilerden hangisi bronkodilatör olarak kullanılan mast hücre stabilizatörü ilaçtır? (Formeterol, Aminofilin, Zafirlukast, Budesonid)",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "mast-stabilizator",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Kromoglikat"
+   },
+   "img": "lessons/15-histamin/img/F21-1-57.png",
+   "w": 592.0,
+   "h": 148.0,
+   "mark": [
+    0.1029,
+    0.3485,
+    0.1013,
+    0.0967
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/F21-1-57-ev1.jpg",
+     "slide": 49,
+     "title": "Mast Hücresi Stabilizatörleri"
+    }
+   ]
+  },
+  {
+   "id": "K1-20-33",
+   "exam": "K1-20",
+   "qno": 33,
+   "stem": "Histaminin H1 reseptör aktivasyonuna bağlı etkilerden yanlış olanı işaretleyiniz.",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Göz içi basıncında düşme"
+   },
+   "img": "lessons/15-histamin/img/K1-20-33.png",
+   "w": 435.0,
+   "h": 88.0,
+   "mark": [
+    0.0364,
+    0.2442,
+    0.2748,
+    0.1389
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/K1-20-33-ev1.jpg",
+     "slide": 33,
+     "title": "H1 Reseptör Blokörleri Farmakolojik Etkileri"
+    }
+   ]
+  },
+  {
+   "id": "K1-20-34",
+   "exam": "K1-20",
+   "qno": 34,
+   "stem": "Antihistaminik ilaçların endikasyonlarından yanlış olanı işaretleyiniz.",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Soğuk algınlığında analjezik"
+   },
+   "img": "lessons/15-histamin/img/K1-20-34.png",
+   "w": 435.0,
+   "h": 89.0,
+   "mark": [
+    0.0377,
+    0.3941,
+    0.3064,
+    0.1373
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/K1-20-34-ev1.jpg",
+     "slide": 37,
+     "title": "H1 Reseptör Blokörlerinin Klinik Kullanım Yerleri"
+    }
+   ]
+  },
+  {
+   "id": "K1-19-1",
+   "exam": "K1-19",
+   "qno": 1,
+   "stem": "Hangi etki klasik antihistaminiklerle ilgili değildir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "E",
+    "text": "Vazokonstriksiyon"
+   },
+   "img": "lessons/15-histamin/img/K1-19-1.png",
+   "w": 455.0,
+   "h": 90.0,
+   "mark": [
+    0.1614,
+    0.8141,
+    0.1992,
+    0.1476
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/K1-19-1-ev1.jpg",
+     "slide": 36,
+     "title": "H1 Reseptör Blokörleri Farmakolojik Etkileri"
+    },
+    {
+     "img": "lessons/15-histamin/img/K1-19-1-ev2.jpg",
+     "slide": 38,
+     "title": "H1 Reseptör Blokörleri Yan Etkileri"
+    }
+   ]
+  },
+  {
+   "id": "K5-23-62",
+   "exam": "K5-23",
+   "qno": 62,
+   "stem": "Taşıt tutmasını önlemek için en uygun antiemetik ilaç hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده أصلاً من درس 6 (مضادات القيء) وموجود كمان هناك. بس سلايد 35 في الدرس ده بيقول إن السكوبولامين مع مضادات H1 هما أقوى أدوية لدوار الحركة (Taşıt tutması)، والسكوبولامين هو الاختيار الكلاسيكي للوقاية، فالإجابة B. البروميثازين مضاد H1 والسلايد 37 بيذكره لقيء الحمل وبعد العمليات.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Scopolamin"
+   },
+   "img": "lessons/15-histamin/img/K5-23-62.png",
+   "w": 206.0,
+   "h": 104.0,
+   "mark": [
+    0.1772,
+    0.4992,
+    0.2552,
+    0.1175
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/K5-23-62-ev1.jpg",
+     "slide": 35,
+     "title": "H1 Reseptör Blokörleri Farmakolojik Etkileri"
+    }
+   ]
+  },
+  {
+   "id": "K4-21-63",
+   "exam": "K4-21",
+   "qno": 63,
+   "stem": "Antihistaminiklerle ilgili tanımlamalardan hangisi yanlıştır? (akut H1 blokör zehirlenmesinde en büyük tehlike?)",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "السؤال تبع موضوع الدرس (الهيستامين ومضادات H1 وH2)، والاختيارات A وB وC وE مكتوبة صح في ملف الشرح (سلايد 14 و37 و47)، بس الملف مفيهوش أي كلام عن التسمم بمضادات H1. في مفتاح الامتحان الإجابة D، لأن أخطر حاجة في التسمم الحاد بمضادات H1 (خصوصاً عند الأطفال) هي تهيّج الجهاز العصبي والتشنجات، مش الـdepresyon.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/15-histamin/img/K4-21-63.png",
+   "w": 595.0,
+   "h": 296.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K1-20-24",
+   "exam": "K1-20",
+   "qno": 24,
+   "stem": "Bronkodilatör ilaç ve etki mekanizmalarından yanlış olanı işaretleyiniz.",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة موسّعات الشُّعب (bronkodilatörler)، بس سلايد 49 في الدرس ده بيقول إن مثبّتات الماست سيلز هي Kromoglikat وKetotifen وNedokromil، فالزافيرلوكاست (مضاد لوكوترين) مش منهم، وده الاختيار اللي في مفتاح الامتحان (D). خلي بالك: الاختيارين A وB مكتوبين غلط كمان في الورقة (السالبوتامول β2-agonist مش Alfa2، والأمينوفيلين بيثبّط الفوسفودايستيراز مش بينشّطه).",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Mast hücre stabilizatörleri → Zafirlukast"
+   },
+   "img": "lessons/15-histamin/img/K1-20-24.png",
+   "w": 435.0,
+   "h": 88.0,
+   "mark": [
+    0.3733,
+    0.6847,
+    0.1108,
+    0.1389
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/K1-20-24-ev1.jpg",
+     "slide": 49,
+     "title": "Mast Hücresi Stabilizatörleri"
+    }
+   ]
+  },
+  {
+   "id": "K4-19-20",
+   "exam": "K4-19",
+   "qno": 20,
+   "stem": "Depolarizan olmayan (kompetitif) blok yapan ve histamin salıverici etkisi olmayan ilaçlardan yanlış olanı işaretleyiniz.",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة مرخيات العضلات (nöromusküler blokörler)، بس سلايد 16 وسلايد 17 في الدرس ده بيقولوا إن التوبوكورارين (Tubokürarin) من الأدوية اللي بتطلّع هيستامين من الماست سيلز، فهو الاختيار الغلط في القايمة.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "E",
+    "text": "Tübokürarin"
+   },
+   "img": "lessons/15-histamin/img/K4-19-20.png",
+   "w": 492.0,
+   "h": 102.0,
+   "mark": [
+    0.0346,
+    0.8449,
+    0.1219,
+    0.1302
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/K4-19-20-ev1.jpg",
+     "slide": 16,
+     "title": ""
+    },
+    {
+     "img": "lessons/15-histamin/img/K4-19-20-ev2.jpg",
+     "slide": 17,
+     "title": "Histamin salıverici etkenler"
+    }
+   ]
+  },
+  {
+   "id": "F19-5",
+   "exam": "F19",
+   "qno": 5,
+   "stem": "İlaç ve kullanım yeri eşleştirmelerinden hangisi yanlıştır? (Pizotifen, Dihidroergotamin, Skopolamin, Alfa+Beta blokör, Sumatriptan)",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من محاضرة الجهاز العصبي الذاتي (الأوتونوم)، بس سلايد 35 في الدرس ده بيقول إن السكوبولامين بيتستخدم في دوار الحركة (Taşıt tutması)، مش في فرط البرولاكتين، فده الاختيار الغلط. الباقي صح: البيزوتيفن للوقاية من الصداع النصفي، والديهيدروإرجوتامين والسوماتريبتان لنوبة الصداع (درس 16 السيروتونين، سلايد 22 و24).",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Skopolamin – Hiperprolaktinemi"
+   },
+   "img": "lessons/15-histamin/img/F19-5.png",
+   "w": 260.0,
+   "h": 100.0,
+   "mark": [
+    0.107,
+    0.5745,
+    0.5965,
+    0.1256
+   ],
+   "evidence": [
+    {
+     "img": "lessons/15-histamin/img/F19-5-ev1.jpg",
+     "slide": 35,
+     "title": "H1 Reseptör Blokörleri Farmakolojik Etkileri"
+    }
+   ]
+  }
+ ]
+}

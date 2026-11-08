@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head><meta charset="utf-8"><title>17. Anjiyotensin · Sorular</title>
+<link rel="stylesheet" href="../../assets/folks.css"><style>/* Print layout for one lesson's question PDF. Tokens come from folks.css. */
+@page { size: A4 landscape; margin: 0; }
+html, body { margin: 0; background: var(--f-surface); }
+body.f { font-size: 13px; line-height: 1.45; }
+[lang="tr"] { font-family: var(--f-font-ui); }
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+.sheet {
+  width: 297mm; height: 210mm; padding: 11mm 13mm 9mm;
+  display: flex; flex-direction: column; gap: 14px;
+  overflow: hidden; break-after: page; position: relative;
+  background: var(--f-surface);
+}
+.sheet:last-child { break-after: auto; }
+
+.kicker { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; color: var(--f-dim); }
+.kicker i { width: 10px; height: 10px; border-radius: 3px; background: var(--f-ink); }
+
+/* ---------- cover ---------- */
+.cover { flex-direction: row; gap: 34px; }
+.cv-main { width: 43%; flex: none; display: flex; flex-direction: column; }
+.cv-main .legend { margin-top: auto; }
+.cover .toc { flex: 1; padding-top: 2px; }
+.cover .big {
+  font-family: var(--f-font-ui); font-size: 190px; font-weight: 800; line-height: .82;
+  letter-spacing: -9px; font-variant-numeric: tabular-nums; margin: 30px 0 16px; direction: ltr; text-align: left;
+}
+.cover h1 { font-size: 36px; line-height: 1.12; font-weight: 700; margin: 0; text-align: left; letter-spacing: -.3px; }
+.cover .who { margin: 8px 0 0; color: var(--f-dim); font-size: 14px; text-align: left; }
+.stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 26px 0 22px; }
+.stats div { background: var(--f-chip); border-radius: 18px; padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 2px; }
+.stats b { font-family: var(--f-font-ui); font-size: 34px; line-height: 1; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stats span { font-size: 12px; color: var(--f-dim); font-weight: 600; }
+.toc { flex: 1; min-height: 0; overflow: hidden; }
+.toc h3 { display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; color: var(--f-mute); margin: 16px 2px 6px; }
+.toc h3:first-child { margin-top: 0; }
+.toc ol { list-style: none; margin: 0; padding: 0; border-radius: 18px; box-shadow: inset 0 0 0 1px var(--f-line); overflow: hidden; }
+.toc li { display: grid; grid-template-columns: 26px 66px 1fr; gap: 10px; align-items: center; padding: 7px 14px; font-size: 12px; }
+.toc li + li { border-top: 1px solid var(--f-line); }
+.toc .n { font-family: var(--f-font-ui); font-variant-numeric: tabular-nums; color: var(--f-mute); font-weight: 600; }
+.toc .ex { font-family: var(--f-font-ui); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.toc .st { color: var(--f-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; }
+.legend { display: flex; gap: 14px; align-items: center; padding-top: 12px; border-top: 1px solid var(--f-line); font-size: 11px; color: var(--f-mute); }
+.legend b { color: var(--f-ink); font-family: var(--f-font-ui); margin-inline-end: 3px; }
+.legend .sp { flex: 1; }
+
+.toc-next { margin: 4px 2px 0; font-size: 13px; color: var(--f-mute); }
+.tocpage { gap: 14px; }
+.tocpage .toc h3:first-child { margin-top: 4px; }
+
+/* ---------- divider ---------- */
+.divider { justify-content: center; gap: 0; }
+.divider h2 { font-size: 64px; line-height: 1.1; margin: 14px 0 12px; font-weight: 800; }
+.divider p { font-size: 16px; color: var(--f-dim); margin: 0 0 30px; max-width: 520px; }
+.divider ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; max-width: 560px; }
+.divider li { background: var(--f-chip); border-radius: 18px; padding: 14px 16px; display: grid; gap: 4px; }
+.divider li b { font-size: 14px; }
+.divider li span { font-size: 13px; color: var(--f-dim); }
+
+/* ---------- question page (landscape) ---------- */
+.top { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--f-dim); flex: none; }
+.crumb { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.crumb b { font-family: var(--f-font-ui); display: inline-grid; place-items: center; min-width: 26px; height: 26px; padding: 0 6px; border-radius: 8px; background: var(--f-ink); color: var(--f-on-ink); font-size: 12px; font-variant-numeric: tabular-nums; }
+.crumb span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160mm; }
+.count { white-space: nowrap; }
+.count b { color: var(--f-ink); font-family: var(--f-font-ui); font-variant-numeric: tabular-nums; }
+
+.src { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex: none; }
+.exam { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px 6px 6px; border-radius: 999px; background: var(--f-chip); font-size: 13px; font-weight: 600; color: var(--f-dim); align-self: flex-start; }
+.exam b { background: var(--f-ink); color: var(--f-on-ink); border-radius: 999px; padding: 3px 10px; font-size: 12px; font-variant-numeric: tabular-nums; }
+.exam i { width: 3px; height: 3px; border-radius: 50%; background: var(--f-mute); }
+.tag.also b { font-weight: 700; color: var(--f-ink); }
+.tag { font-size: 11px; font-weight: 600; color: var(--f-dim); padding: 4px 10px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--f-line2); align-self: flex-start; }
+
+.note { flex: none; background: var(--f-chip); border-radius: 16px; padding: 10px 14px; }
+.note b { display: block; font-size: 12px; margin-bottom: 2px; }
+.note p { margin: 0; font-size: 12px; color: var(--f-dim); line-height: 1.55; }
+
+/* question and answer on the left 80% of the page; the right fifth stays blank for the student's notes */
+.sheet.q { padding-right: calc(59.4mm + 6mm); }
+.notes {
+  position: absolute; top: 0; bottom: 0; right: 0; width: 59.4mm; box-sizing: border-box;
+  padding: 11mm 7mm 9mm; border-left: 1px solid var(--f-line);
+}
+.notes span { font-size: 11px; font-weight: 600; color: var(--f-mute); }
+
+.q .body { flex: 1; min-height: 0; display: flex; gap: 16px; }
+.q .qside { display: flex; gap: 16px; flex: none; min-width: 0; }
+.q .meta { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.q.wide .body { flex-direction: column; }
+.q.wide .qside { flex-direction: row; align-items: flex-start; }
+.q.wide .meta { width: 240px; flex: none; }
+.q.tall .body { flex-direction: row; }
+.q.tall .qside { width: 390px; flex-direction: column; }
+
+.qcard { flex: none; margin: 0; padding: 12px; border-radius: 20px; box-shadow: inset 0 0 0 1px var(--f-line); display: flex; justify-content: center; }
+.q.wide .qcard { flex: 1; min-width: 0; }
+.qimg { position: relative; max-width: 100%; }
+.qimg img { display: block; width: 100%; height: 100%; }
+.mark { position: absolute; border-radius: 8px; box-shadow: inset 0 0 0 2px var(--f-ink); }
+.mark::after {
+  content: ""; position: absolute; left: 100%; top: 50%; translate: 6px -50%;
+  width: 18px; height: 18px; border-radius: 50%; background: var(--f-ink) no-repeat center / 11px
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+
+.ans { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; flex: none; }
+.lbl { font-size: 12px; font-weight: 600; color: var(--f-mute); }
+.pill { display: inline-flex; align-items: center; gap: 10px; padding: 7px 16px 7px 7px; border-radius: 999px; background: var(--f-ink); color: var(--f-on-ink); font-size: 14px; font-weight: 700; max-width: 100%; }
+.pill b { display: inline-grid; place-items: center; width: 24px; height: 24px; flex: none; border-radius: 50%; background: var(--f-on-ink); color: var(--f-ink); font-size: 12px; }
+.pill.none { background: none; color: var(--f-dim); box-shadow: inset 0 0 0 1.5px var(--f-line2); padding: 7px 16px; font-size: 13px; font-weight: 600; border: 0; }
+
+/* the answer: whole slides, as large as the page allows */
+.evs { flex: 1; min-height: 0; min-width: 0; display: flex; gap: 14px; }
+.q.wide .evs { flex-direction: row; }
+.q.tall .evs { flex-direction: column; }
+.ev { flex: 1 1 0; min-height: 0; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+.ev figcaption { display: flex; align-items: baseline; gap: 8px; font-size: 12px; color: var(--f-mute); flex: none; white-space: nowrap; overflow: hidden; }
+.ev figcaption b { color: var(--f-ink); }
+.ev figcaption .t { margin-inline-start: auto; color: var(--f-dim); overflow: hidden; text-overflow: ellipsis; }
+.evimg { flex: 1; min-height: 0; display: flex; align-items: flex-start; justify-content: center; }
+.evimg img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 0 0 1px var(--f-line); }
+
+.foot { display: flex; justify-content: space-between; font-size: 10.5px; color: var(--f-mute); flex: none; padding-top: 8px; border-top: 1px solid var(--f-line); }
+body { counter-reset: pg; }
+.sheet { counter-increment: pg; }
+.pg::before { content: counter(pg); font-variant-numeric: tabular-nums; }
+</style></head>
+<body class="f">
+<section class="sheet cover">
+  <div class="cv-main">
+    <div class="kicker"><i></i>بنك أسئلة السنين اللي فاتت · فارماكولوجي</div>
+    <div class="big">17</div>
+    <h1 dir="ltr" lang="tr">Anjiyotensin</h1>
+    <p class="who" dir="ltr" lang="tr"></p>
+    <div class="stats">
+      <div><b>25</b><span>سؤال</span></div>
+      <div><b>19</b><span>أساسي</span></div>
+      <div><b>6</b><span>للمراجعة</span></div>
+      <div><b>15</b><span>امتحان</span></div>
+    </div>
+    <footer class="legend">
+      <span><b dir="ltr">K</b> كورول</span><span><b dir="ltr">F</b> فاينال</span><span><b dir="ltr">B</b> بوتونلمه</span>
+      <span class="sp"></span><span>الأحدث الأول · الإجابة من ملف الشرح نفسه</span>
+    </footer>
+  </div>
+  <div class="toc"><p class="toc-next">فهرس الأسئلة في الصفحة الجاية</p></div>
+</section><section class="sheet tocpage"><div class="kicker"><i></i>فهرس الأسئلة</div><div class="toc"><h3><span>الأسئلة</span><span>19</span></h3><ol><li><span class="n">01</span><span class="ex" dir="ltr">K3-26 · 14</span><span class="st" dir="ltr" lang="tr">Hipertansiyon + kalp yetmezliği (HFrEF) olan hastada mortaliteyi azaltan antihipertansif ilaç hangisidir?</span></li><li><span class="n">02</span><span class="ex" dir="ltr">F26 · 18</span><span class="st" dir="ltr" lang="tr">İki taraflı renal arter stenozu olan hipertansif hastada akut böbrek yetmezliği riskini artıran ilaç hangisidir?</span></li><li><span class="n">03</span><span class="ex" dir="ltr">F26 · 20</span><span class="st" dir="ltr" lang="tr">ACE inhibitörlerinin sık yan etkisi olan kuru öksürük hangi mediatörle ilişkilidir?</span></li><li><span class="n">04</span><span class="ex" dir="ltr">K26 · 18</span><span class="st" dir="ltr" lang="tr">Anjiyotensin AT1 reseptörlerinin etkilerinden yanlış olanı işaretleyiniz.</span></li><li><span class="n">05</span><span class="ex" dir="ltr">F23 · 8</span><span class="st" dir="ltr" lang="tr">Aşağıdaki hastaların hangisinde ACE inhibitörü kullanmak uygun değildir?</span></li><li><span class="n">06</span><span class="ex" dir="ltr">K3-23 · 63</span><span class="st" dir="ltr" lang="tr">Aşağıdaki hastaların hangisinde ACE inhibitörü kullanmak uygun değildir?</span></li><li><span class="n">07</span><span class="ex" dir="ltr">K3-23 · 84</span><span class="st" dir="ltr" lang="tr">ACE inhibitörü veya ARB düşünülen kalp yetmezlikli hastada sadece ACE inhibitörlerinde görülen yan etki hangisidir?</span></li><li><span class="n">08</span><span class="ex" dir="ltr">B21-2 · 85</span><span class="st" dir="ltr" lang="tr">Aşağıdakilerden hangisi otakoid peptidler için doğrudur?</span></li><li><span class="n">09</span><span class="ex" dir="ltr">K3-21 · 62</span><span class="st" dir="ltr" lang="tr">Hipertansiyonda kullanılan ADE inhibitörleri için hangisi yanlıştır? (gebelerde tercih edilir)</span></li><li><span class="n">10</span><span class="ex" dir="ltr">K3-21 · 79</span><span class="st" dir="ltr" lang="tr">Aşağıdakilerden hangisi ADE inhibitörleri ile gelişebilecek advers reaksiyonlardır?</span></li><li><span class="n">11</span><span class="ex" dir="ltr">K3-21 · 95</span><span class="st" dir="ltr" lang="tr">Aşağıdakilerden hangisi anjiotensin-2&#x27;nin kalp yetersizliği gelişmesindeki rollerinden değildir?</span></li><li><span class="n">12</span><span class="ex" dir="ltr">F21-1 · 62</span><span class="st" dir="ltr" lang="tr">Hipertansiyon, konjestif kalp yetmezliği ve tip I diyabeti olan yaşlı hastada en uygun antihipertansif ilaç hangisidir?</span></li><li><span class="n">13</span><span class="ex" dir="ltr">F20 · 94</span><span class="st" dir="ltr" lang="tr">Hipertansiyonda kullanılan ACE inhibitörleri ile ilgili bilgilerden yanlış olanı işaretleyiniz.</span></li><li><span class="n">14</span><span class="ex" dir="ltr">K1-20 · 17</span><span class="st" dir="ltr" lang="tr">Hipertansiyonda kullanılan ADE inhibitörleri ile ilgili bilgilerden yanlış olanı işaretleyiniz. (renal arter stenozunda tercih edilir)</span></li><li><span class="n">15</span><span class="ex" dir="ltr">K1-20 · 25</span><span class="st" dir="ltr" lang="tr">ACE inhibitörleri hipertansiyonla birlikte bulunan hastalıklarda tercih edilir; yanlış olanı işaretleyiniz.</span></li><li><span class="n">16</span><span class="ex" dir="ltr">K1-20 · 26</span><span class="st" dir="ltr" lang="tr">Hipertansiyonla birlikte bulunan hastalıklarda tercih edilen ilaç grubu eşleştirmelerinden yanlış olanı işaretleyiniz.</span></li><li><span class="n">17</span><span class="ex" dir="ltr">K1-19 · 3</span><span class="st" dir="ltr" lang="tr">ADE inhibitörlerinin anjiotensin reseptör blokerlerinden etki mekanizması farkı hangisidir?</span></li><li><span class="n">18</span><span class="ex" dir="ltr">K1-19 · 22</span><span class="st" dir="ltr" lang="tr">Direkt renin inhibitörlerini ADE inhibitörlerinden ayıran özellik hangisidir?</span></li><li><span class="n">19</span><span class="ex" dir="ltr">K1-19 · 23</span><span class="st" dir="ltr" lang="tr">Hipertansiyonda kullanılan ADE inhibitörleri ile ilgili bilgilerden yanlış olanı işaretleyiniz. (renal arter stenozunda öncelikle kullanılır)</span></li></ol></div></section><section class="sheet tocpage"><div class="kicker"><i></i>فهرس الأسئلة</div><div class="toc"><h3><span>للمراجعة · آخر الملف</span><span>6</span></h3><ol><li><span class="n">20</span><span class="ex" dir="ltr">K3-26 · 15</span><span class="st" dir="ltr" lang="tr">Gebelikte kontrendike olan antihipertansif ilaç hangisidir? (Losartan, Metildopa, Labetalol, Nifedipin, Hidralazin)</span></li><li><span class="n">21</span><span class="ex" dir="ltr">K26 · 6</span><span class="st" dir="ltr" lang="tr">Ameliyat sonrası bulantı-kusmanın profilaksisinde sık kullanılan NK1 antagonisti antiemetik hangisidir?</span></li><li><span class="n">22</span><span class="ex" dir="ltr">F25 · 10</span><span class="st" dir="ltr" lang="tr">Hipertansiyonu olan 32 yaşında hamile bir kadında kesinlikle kontrendike olan ilaç hangisidir?</span></li><li><span class="n">23</span><span class="ex" dir="ltr">BF24 · 33</span><span class="st" dir="ltr" lang="tr">Antiemetik ilaçlardan hangisi bir nörokinin 1 (NK1) reseptör antagonistidir?</span></li><li><span class="n">24</span><span class="ex" dir="ltr">K3-24 · 1</span><span class="st" dir="ltr" lang="tr">Kalp yetmezliğinde kalp hızındaki ve renin salgısındaki kompensatuvar artışı hangi ilaç düşürebilir?</span></li><li><span class="n">25</span><span class="ex" dir="ltr">BF23 · 72</span><span class="st" dir="ltr" lang="tr">Kemoterapiye bağlı bulantı ve kusmayı azaltan bir peptid (substans P / NK1) antagonisti hangisidir?</span></li></ol></div></section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>1</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-26</b>Kurul 2025–2026<i></i>Soru 14</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>ACEi/ARB</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:517px;height:226px"><img src="img/K3-26-14.png" alt=""><span class="mark" style="left:calc(15.47% - 6px);top:calc(40.94% - 3px);width:calc(14.76% + 12px);height:calc(7.13% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 46</b><span class="t" dir="ltr" lang="tr">Angiotensin receptor blocker</span></figcaption><div class="evimg"><img src="img/K3-26-14-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 27</b><span class="t" dir="ltr" lang="tr">Anjiotensin Reseptör Blokerleri</span></figcaption><div class="evimg"><img src="img/K3-26-14-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>2</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F26</b>Final 2025–2026<i></i>Soru 18</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Enalapril</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:216px"><img src="img/F26-18.png" alt=""><span class="mark" style="left:calc(13.45% - 6px);top:calc(33.74% - 3px);width:calc(12.33% + 12px);height:calc(10.30% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 21</b><span class="t" dir="ltr" lang="tr">Anjiyotensin Sentez İnhibitörleri</span></figcaption><div class="evimg"><img src="img/F26-18-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 36</b><span class="t" dir="ltr" lang="tr">Renal Arter Stenozunda ACE Inhibitörü</span></figcaption><div class="evimg"><img src="img/F26-18-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>3</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F26</b>Final 2025–2026<i></i>Soru 20</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Bradikinin</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:530px;height:248px"><img src="img/F26-20.png" alt=""><span class="mark" style="left:calc(15.81% - 6px);top:calc(40.81% - 3px);width:calc(15.20% + 12px);height:calc(9.33% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 26</b><span class="t" dir="ltr" lang="tr">Anjiotensin Reseptör Blokerleri</span></figcaption><div class="evimg"><img src="img/F26-20-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 20</b><span class="t" dir="ltr" lang="tr">Anjiotensin Etkisini Bloke Etmek</span></figcaption><div class="evimg"><img src="img/F26-20-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>4</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K26</b>Kurul 2025–2026<i></i>Soru 18</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Fetusta böbrek gelişimi</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:530px;height:220px"><img src="img/K26-18.png" alt=""><span class="mark" style="left:calc(15.81% - 6px);top:calc(34.33% - 3px);width:calc(36.05% + 12px);height:calc(10.48% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 8</b><span class="t" dir="ltr" lang="tr">AT-1 AT-2</span></figcaption><div class="evimg"><img src="img/K26-18-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>5</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F23</b>Final 2022–2023<i></i>Soru 8</span>
+        <span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>K3-23</b> Kurul 2022–2023 · Soru 63</span></span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>E</b>Gebe olan hipertansif hasta</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:362px;height:250px"><img src="img/F23-8.png" alt=""><span class="mark" style="left:calc(15.99% - 6px);top:calc(89.25% - 3px);width:calc(55.38% + 12px);height:calc(8.16% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 23</b><span class="t" dir="ltr" lang="tr">Anjiotensin Sentez İnhibitörleri</span></figcaption><div class="evimg"><img src="img/F23-8-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>6</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-23</b>Kurul 2022–2023<i></i>Soru 63</span>
+        <span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>F23</b> Final 2022–2023 · Soru 8</span></span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>E</b>Gebe olan hipertansif hasta</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:351px;height:250px"><img src="img/K3-23-63.png" alt=""><span class="mark" style="left:calc(21.28% - 6px);top:calc(88.12% - 3px);width:calc(56.63% + 12px);height:calc(8.09% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 23</b><span class="t" dir="ltr" lang="tr">Anjiotensin Sentez İnhibitörleri</span></figcaption><div class="evimg"><img src="img/K3-23-63-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q tall">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>7</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-23</b>Kurul 2022–2023<i></i>Soru 84</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>Kuru öksürük</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:366px;height:447px"><img src="img/K3-23-84.png" alt=""><span class="mark" style="left:calc(21.28% - 6px);top:calc(79.70% - 3px);width:calc(28.74% + 12px);height:calc(4.72% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 26</b><span class="t" dir="ltr" lang="tr">Anjiotensin Reseptör Blokerleri</span></figcaption><div class="evimg"><img src="img/K3-23-84-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 23</b><span class="t" dir="ltr" lang="tr">Anjiotensin Sentez İnhibitörleri</span></figcaption><div class="evimg"><img src="img/K3-23-84-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>8</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>B21-2</b>Bütünleme 2020–2021<i></i>Soru 85</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>Bradikinin ağrı ve ödemi indükleyici etkileri bulunan potent bir vazodilatördür</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:237px"><img src="img/B21-2-85.png" alt=""><span class="mark" style="left:calc(2.22% - 6px);top:calc(47.82% - 3px);width:calc(64.17% + 12px);height:calc(6.79% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">BRADİKİNİN SİSTEMİ kallikrein</span></figcaption><div class="evimg"><img src="img/B21-2-85-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 26</b><span class="t" dir="ltr" lang="tr">Anjiotensin Reseptör Blokerleri</span></figcaption><div class="evimg"><img src="img/B21-2-85-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>9</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-21</b>Kurul 2020–2021<i></i>Soru 62</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 4 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Gebelerde tercih edilir</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:136px"><img src="img/K3-21-62.png" alt=""><span class="mark" style="left:calc(10.29% - 6px);top:calc(34.08% - 3px);width:calc(19.23% + 12px);height:calc(9.73% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 23</b><span class="t" dir="ltr" lang="tr">Anjiotensin Sentez İnhibitörleri</span></figcaption><div class="evimg"><img src="img/K3-21-62-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 20</b><span class="t" dir="ltr" lang="tr">Anjiotensin Etkisini Bloke Etmek</span></figcaption><div class="evimg"><img src="img/K3-21-62-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>10</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-21</b>Kurul 2020–2021<i></i>Soru 79</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>E</b>Kuru öksürük – Cilt döküntüleri – Hiperkalemi</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:137px"><img src="img/K3-21-79.png" alt=""><span class="mark" style="left:calc(10.29% - 6px);top:calc(88.11% - 3px);width:calc(36.06% + 12px);height:calc(9.60% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 23</b><span class="t" dir="ltr" lang="tr">Anjiotensin Sentez İnhibitörleri</span></figcaption><div class="evimg"><img src="img/K3-21-79-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 20</b><span class="t" dir="ltr" lang="tr">Anjiotensin Etkisini Bloke Etmek</span></figcaption><div class="evimg"><img src="img/K3-21-79-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>11</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-21</b>Kurul 2020–2021<i></i>Soru 95</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>D</b>Aldosteron sekresyonunu azaltmak</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:136px"><img src="img/K3-21-95.png" alt=""><span class="mark" style="left:calc(10.41% - 6px);top:calc(75.39% - 3px);width:calc(29.83% + 12px);height:calc(9.67% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 12</b><span class="t" dir="ltr" lang="tr">Anjiotensinin Etkileri</span></figcaption><div class="evimg"><img src="img/K3-21-95-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 13</b><span class="t" dir="ltr" lang="tr">Anjiotensinin Etkileri</span></figcaption><div class="evimg"><img src="img/K3-21-95-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>12</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F21-1</b>Final 2020–2021<i></i>Soru 62</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>Kaptopril</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:150px"><img src="img/F21-1-62.png" alt=""><span class="mark" style="left:calc(10.41% - 6px);top:calc(52.97% - 3px);width:calc(7.80% + 12px);height:calc(8.78% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 23</b><span class="t" dir="ltr" lang="tr">Anjiotensin Sentez İnhibitörleri</span></figcaption><div class="evimg"><img src="img/F21-1-62-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>13</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F20</b>Final 2019–2020<i></i>Soru 94</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 4 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>Hipokalemi yapması nedeniyle tedaviye potasyum eklenmesi gerekir</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:148px"><img src="img/F20-94.png" alt=""><span class="mark" style="left:calc(6.26% - 6px);top:calc(47.46% - 3px);width:calc(65.52% + 12px);height:calc(9.21% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 20</b><span class="t" dir="ltr" lang="tr">Anjiotensin Etkisini Bloke Etmek</span></figcaption><div class="evimg"><img src="img/F20-94-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 23</b><span class="t" dir="ltr" lang="tr">Anjiotensin Sentez İnhibitörleri</span></figcaption><div class="evimg"><img src="img/F20-94-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>14</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K1-20</b>Kurul 2019–2020<i></i>Soru 17</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 4 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>D</b>Bilateral renal arter stenozu olanlarda tercih edilir</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:127px"><img src="img/K1-20-17.png" alt=""><span class="mark" style="left:calc(3.77% - 6px);top:calc(72.25% - 3px);width:calc(55.56% + 12px);height:calc(12.10% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 21</b><span class="t" dir="ltr" lang="tr">Anjiyotensin Sentez İnhibitörleri</span></figcaption><div class="evimg"><img src="img/K1-20-17-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 36</b><span class="t" dir="ltr" lang="tr">Renal Arter Stenozunda ACE Inhibitörü</span></figcaption><div class="evimg"><img src="img/K1-20-17-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>15</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K1-20</b>Kurul 2019–2020<i></i>Soru 25</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>Migren</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:125px"><img src="img/K1-20-25.png" alt=""><span class="mark" style="left:calc(3.73% - 6px);top:calc(47.02% - 3px);width:calc(7.94% + 12px);height:calc(12.10% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 23</b><span class="t" dir="ltr" lang="tr">Anjiotensin Sentez İnhibitörleri</span></figcaption><div class="evimg"><img src="img/K1-20-25-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من درس 16</span><b>سلايد 22</b><span class="t" dir="ltr" lang="tr">Migren Tedavisi</span></figcaption><div class="evimg"><img src="img/K1-20-25-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>16</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K1-20</b>Kurul 2019–2020<i></i>Soru 26</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>D</b>Hamile olan → ACE reseptör antagonisti</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:123px"><img src="img/K1-20-26.png" alt=""><span class="mark" style="left:calc(20.19% - 6px);top:calc(72.39% - 3px);width:calc(26.89% + 12px);height:calc(12.22% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 23</b><span class="t" dir="ltr" lang="tr">Anjiotensin Sentez İnhibitörleri</span></figcaption><div class="evimg"><img src="img/K1-20-26-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>17</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K1-19</b>Kurul 2018–2019<i></i>Soru 3</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Kininaz II inhibisyonu</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:125px"><img src="img/K1-19-3.png" alt=""><span class="mark" style="left:calc(16.14% - 6px);top:calc(57.26% - 3px);width:calc(23.88% + 12px);height:calc(12.77% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 29</b><span class="t" dir="ltr" lang="tr">ANJİOTENSİN</span></figcaption><div class="evimg"><img src="img/K1-19-3-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 26</b><span class="t" dir="ltr" lang="tr">Anjiotensin Reseptör Blokerleri</span></figcaption><div class="evimg"><img src="img/K1-19-3-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>18</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K1-19</b>Kurul 2018–2019<i></i>Soru 22</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>Plazma renin aktivitesini düşürmeleri</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:129px"><img src="img/K1-19-22.png" alt=""><span class="mark" style="left:calc(16.14% - 6px);top:calc(46.04% - 3px);width:calc(39.48% + 12px);height:calc(12.36% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 43</b><span class="t" dir="ltr" lang="tr">SUMMARY Drugs That Interact with Vasoactive Peptide Systems</span></figcaption><div class="evimg"><img src="img/K1-19-22-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 20</b><span class="t" dir="ltr" lang="tr">Anjiotensin Etkisini Bloke Etmek</span></figcaption><div class="evimg"><img src="img/K1-19-22-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>19</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K1-19</b>Kurul 2018–2019<i></i>Soru 23</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 4 امتحانات</span>
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>D</b>Bilateral renal arter stenozu olanlarda öncelikle kullanılır</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:121px"><img src="img/K1-19-23.png" alt=""><span class="mark" style="left:calc(15.97% - 6px);top:calc(70.81% - 3px);width:calc(60.33% + 12px);height:calc(13.02% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 21</b><span class="t" dir="ltr" lang="tr">Anjiyotensin Sentez İnhibitörleri</span></figcaption><div class="evimg"><img src="img/K1-19-23-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 36</b><span class="t" dir="ltr" lang="tr">Renal Arter Stenozunda ACE Inhibitörü</span></figcaption><div class="evimg"><img src="img/K1-19-23-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet divider">
+  <div class="kicker"><i></i>آخر الملف</div>
+  <h2>للمراجعة</h2>
+  <p>6 أسئلة مش متأكد إنها تبع الدرس ده بنسبة 100%، أو تبعه بس ملهاش إجابة في ملف الشرح.</p>
+  <ul>
+    <li><b>من محاضرة تانية</b><span>السؤال جاي من مادة أو محاضرة تانية، بس إجابته موجودة في سلايدات الدرس ده.</span></li>
+    <li><b>مفيش إجابة في الشرح</b><span>السؤال تبع موضوع الدرس، بس ملف الشرح مفيهوش إجابته، فمحطوط من غير إجابة.</span></li>
+  </ul>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>20</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-26</b>Kurul 2025–2026<i></i>Soru 15</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 2 امتحانات</span>
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>نفس فكرة سؤال F25-10 بصيغة واختيارات تانية (من محاضرة أدوية الضغط). سلايد 23 بيقول إن مثبطات ACE ممنوعة في الحمل لأنها بتأذي كلى الجنين، وسلايد 25 بيقول إن اللوسارتان بيقفل مستقبلات الأنجيوتنسين، فهو كمان ممنوع في الحمل. بس الملف مش كاتب المنع ده عن اللوسارتان بالاسم.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Losartan</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:517px;height:201px"><img src="img/K3-26-15.png" alt=""><span class="mark" style="left:calc(15.47% - 6px);top:calc(33.76% - 3px);width:calc(13.73% + 12px);height:calc(8.03% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 23</b><span class="t" dir="ltr" lang="tr">Anjiotensin Sentez İnhibitörleri</span></figcaption><div class="evimg"><img src="img/K3-26-15-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 25</b><span class="t" dir="ltr" lang="tr">Anjiotensin Etkisini Bloke Etmek</span></figcaption><div class="evimg"><img src="img/K3-26-15-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>21</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K26</b>Kurul 2025–2026<i></i>Soru 6</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 3 امتحانات</span>
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من محاضرة مضادات القيء (درس 6، وموجود هناك). بس سلايد 44 في الدرس ده (جدول الأدوية اللي بتأثر على الببتيدات الفعّالة وعائيًا) فيه صف «Substance P antagonists»: الأبريبيتانت بيغلق مستقبلات NK1 (tachykinin NK1) وبيتستخدم في الوقاية من القيء والغثيان بتاع الكيماوي. (الجدول بيقول قيء الكيماوي؛ استخدامه بعد العمليات مش مذكور هنا، بس المطلوب هو مضاد NK1.)</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Aprepitant</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:530px;height:250px"><img src="img/K26-6.png" alt=""><span class="mark" style="left:calc(15.81% - 6px);top:calc(40.36% - 3px);width:calc(16.43% + 12px);height:calc(9.25% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 44</b><span class="t" dir="ltr" lang="tr">Vazoaktif peptid sistemleri ile etkileşen ilaçlar (özet tablo)</span></figcaption><div class="evimg"><img src="img/K26-6-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>22</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F25</b>Final 2024–2025<i></i>Soru 10</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 2 امتحانات</span>
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من محاضرة أدوية الضغط (YUSUF SARIOĞLU). الدرس بيقول صراحةً إن مثبطات ACE ممنوعة في الحمل لأنها بتأذي كلى الجنين (سلايد 23)، واللوسارتان بيقفل نفس النظام لأنه حاصر لمستقبل AT1 (سلايد 25)، فهو كمان ممنوع في الحمل. بس الملف مش كاتب المنع ده عن الـARB بالاسم.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Losartan</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:533px;height:250px"><img src="img/F25-10.png" alt=""><span class="mark" style="left:calc(47.55% - 6px);top:calc(36.11% - 3px);width:calc(9.72% + 12px);height:calc(6.16% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 23</b><span class="t" dir="ltr" lang="tr">Anjiotensin Sentez İnhibitörleri</span></figcaption><div class="evimg"><img src="img/F25-10-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 25</b><span class="t" dir="ltr" lang="tr">Anjiotensin Etkisini Bloke Etmek</span></figcaption><div class="evimg"><img src="img/F25-10-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>23</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>BF24</b>Bahar Final 2023–2024<i></i>Soru 33</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 3 امتحانات</span>
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من محاضرة مضادات القيء (درس 6، وموجود هناك). بس سلايد 44 في الدرس ده (جدول الأدوية اللي بتأثر على الببتيدات الفعّالة وعائيًا) فيه صف «Substance P antagonists»: الأبريبيتانت بيغلق مستقبلات NK1 (tachykinin NK1) وبيتستخدم في الوقاية من القيء والغثيان بتاع الكيماوي.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Aprepitant</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:517px;height:205px"><img src="img/BF24-33.png" alt=""><span class="mark" style="left:calc(15.47% - 6px);top:calc(34.10% - 3px);width:calc(16.40% + 12px);height:calc(7.88% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 44</b><span class="t" dir="ltr" lang="tr">Vazoaktif peptid sistemleri ile etkileşen ilaçlar (özet tablo)</span></figcaption><div class="evimg"><img src="img/BF24-33-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>24</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-24</b>Kurul 2023–2024<i></i>Soru 1</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال من محاضرة أدوية القلب. سلايد 15 بيقول إن السمبثاوي بيزوّد إفراز الرينين عن طريق مستقبلات β وإن البروبرانولول بيقلله؛ والكارفيديلول β-blocker برضه.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Karvedilol</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:468px;height:228px"><img src="img/K3-24-1.png" alt=""><span class="mark" style="left:calc(15.00% - 6px);top:calc(39.32% - 3px);width:calc(22.92% + 12px);height:calc(11.97% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 15</b><span class="t" dir="ltr" lang="tr">Böbrekte jukstaglomerüler hücrelerden renin salgılanmasının düzenlenmesi</span></figcaption><div class="evimg"><img src="img/K3-24-1-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>17</b><span dir="ltr" lang="tr">Anjiyotensin</span></span>
+    <span class="count">سؤال <b>25</b> من 25</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>BF23</b>Bahar Final 2022–2023<i></i>Soru 72</span>
+        <span class="tag">اتسأل بصيغ مختلفة في 3 امتحانات</span>
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من محاضرة مضادات القيء (درس 6، وموجود هناك). بس سلايد 44 في الدرس ده (جدول الأدوية اللي بتأثر على الببتيدات الفعّالة وعائيًا) فيه صف «Substance P antagonists»: الأبريبيتانت بيغلق مستقبلات NK1 (tachykinin NK1) وبيتستخدم في الوقاية من القيء والغثيان بتاع الكيماوي. وخلّي بالك إن الإينالابريل اللي في الاختيارات من أدوية الدرس ده: مثبط ACE مش مضاد قيء.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>Aprepitant</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:429px;height:216px"><img src="img/BF23-72.png" alt=""><span class="mark" style="left:calc(20.92% - 6px);top:calc(48.79% - 3px);width:calc(21.40% + 12px);height:calc(11.01% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 44</b><span class="t" dir="ltr" lang="tr">Vazoaktif peptid sistemleri ile etkileşen ilaçlar (özet tablo)</span></figcaption><div class="evimg"><img src="img/BF23-72-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>17 · <span dir="ltr" lang="tr">Anjiyotensin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section></body></html>

@@ -1,0 +1,965 @@
+{
+ "pdf": "lessons/07-antikoagulanlar/07-antikoagulanlar-sorular.pdf",
+ "pdfName": "Antikoagülanlar.pdf",
+ "pages": 35,
+ "questions": [
+  {
+   "id": "F26-10",
+   "exam": "F26",
+   "qno": 10,
+   "stem": "Heparinin antikoagülan etkisi esas olarak hangi faktör üzerinden gerçekleşir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Antitrombin III"
+   },
+   "img": "lessons/07-antikoagulanlar/img/F26-10.png",
+   "w": 291.0,
+   "h": 112.0,
+   "mark": [
+    0.1345,
+    0.3478,
+    0.2021,
+    0.1057
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/F26-10-ev1.jpg",
+     "slide": 9,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/F26-10-ev2.jpg",
+     "slide": 5,
+     "title": "Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma"
+    }
+   ]
+  },
+  {
+   "id": "F26-14",
+   "exam": "F26",
+   "qno": 14,
+   "stem": "Direkt trombin (seçici faktör 2a) inhibitörü olan, VTE profilaksi ve tedavisinde kullanılan yeni nesil oral antikoagülan hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "dabigatran",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Dabigatran"
+   },
+   "img": "lessons/07-antikoagulanlar/img/F26-14.png",
+   "w": 272.0,
+   "h": 164.0,
+   "mark": [
+    0.1581,
+    0.5541,
+    0.171,
+    0.0722
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/F26-14-ev1.jpg",
+     "slide": 13,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/F26-14-ev2.jpg",
+     "slide": 15,
+     "title": "4.Direkt Trombin Inhibitörleri"
+    }
+   ]
+  },
+  {
+   "id": "K26-9",
+   "exam": "K26",
+   "qno": 9,
+   "stem": "Varfarin kullanan hastada INR hızla yükselmiştir. CYP450'yi inhibe ederek varfarinin etkisini artıran ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Flukonazol"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K26-9.png",
+   "w": 272.0,
+   "h": 164.0,
+   "mark": [
+    0.1581,
+    0.5544,
+    0.1658,
+    0.0722
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K26-9-ev1.jpg",
+     "slide": 18,
+     "title": "İLAÇ ETKİLEŞİMLERİ"
+    }
+   ]
+  },
+  {
+   "id": "K26-10",
+   "exam": "K26",
+   "qno": 10,
+   "stem": "Aşağıdaki durumlardan hangisi Fondaparinuks kullanımını diğer heparinlerden klinikte daha riskli hâle getirir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Antidotu olmaması"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K26-10.png",
+   "w": 291.0,
+   "h": 125.0,
+   "mark": [
+    0.1345,
+    0.4133,
+    0.2707,
+    0.0947
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K26-10-ev1.jpg",
+     "slide": 11,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    }
+   ]
+  },
+  {
+   "id": "K26-11",
+   "exam": "K26",
+   "qno": 11,
+   "stem": "Klopidogrel alan hastada trombosit agregasyonu beklenenden az baskılanmıştır. Bu etkinlik azalmasını hangi ilaç açıklar?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Omeprazol"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K26-11.png",
+   "w": 291.0,
+   "h": 125.0,
+   "mark": [
+    0.1345,
+    0.4124,
+    0.1586,
+    0.0947
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K26-11-ev1.jpg",
+     "slide": 19,
+     "title": "İLAÇ ETKİLEŞİMLERİ"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/K26-11-ev2.jpg",
+     "slide": 29,
+     "title": "Advers Etkiler"
+    }
+   ]
+  },
+  {
+   "id": "K3-25-7",
+   "exam": "K3-25",
+   "qno": 7,
+   "stem": "Aşağıdakilerden hangisi oral yoldan kullanılan direkt trombin inhibitörü bir antikoagülan ilaçtır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "dabigatran",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Dabigatran"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K3-25-7.png",
+   "w": 260.0,
+   "h": 104.0,
+   "mark": [
+    0.1486,
+    0.337,
+    0.174,
+    0.0795
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K3-25-7-ev1.jpg",
+     "slide": 14,
+     "title": "3- Faktör Xa inhibitörleri-devam"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/K3-25-7-ev2.jpg",
+     "slide": 15,
+     "title": "4.Direkt Trombin Inhibitörleri"
+    }
+   ]
+  },
+  {
+   "id": "K3-25-8",
+   "exam": "K3-25",
+   "qno": 8,
+   "stem": "Venöz tromboz ve pulmoner embolizmin hem profilaksisi hem de tedavisinde kullanılan fondaparinuksun etki mekanizması hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Antitrombin aracılı Faktör Xa inhibisyonu"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K3-25-8.png",
+   "w": 257.0,
+   "h": 117.0,
+   "mark": [
+    0.1479,
+    0.4103,
+    0.6392,
+    0.0707
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K3-25-8-ev1.jpg",
+     "slide": 11,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/K3-25-8-ev2.jpg",
+     "slide": 10,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    }
+   ]
+  },
+  {
+   "id": "F25-4",
+   "exam": "F25",
+   "qno": 4,
+   "stem": "Aşağıdakilerden hangisi P2Y inhibitörü olan antiagregan bir ilaçtır?",
+   "section": "main",
+   "reason": null,
+   "note": "السؤال ده موجود كمان في درس 8، لأن ملف درس 7 هو نفس ملف درس 8 بالظبط، وجزء الأنتي بلاتليت بيبدأ من سلايد 25.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Tikagrelor"
+   },
+   "img": "lessons/07-antikoagulanlar/img/F25-4.png",
+   "w": 565.0,
+   "h": 222.0,
+   "mark": [
+    0.4572,
+    0.2965,
+    0.1061,
+    0.0699
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/F25-4-ev1.jpg",
+     "slide": 28,
+     "title": "2. ADP RESEPTÖR BLOKÖRLERİ"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/F25-4-ev2.jpg",
+     "slide": 5,
+     "title": "Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma"
+    }
+   ]
+  },
+  {
+   "id": "F25-5",
+   "exam": "F25",
+   "qno": 5,
+   "stem": "Atriyal fibrilasyon gelişen hastaya direkt (pro)trombin inhibitörü bir antikoagülan veriliyor. En olası ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "dabigatran",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Dabigatran"
+   },
+   "img": "lessons/07-antikoagulanlar/img/F25-5.png",
+   "w": 565.0,
+   "h": 290.0,
+   "mark": [
+    0.4572,
+    0.4783,
+    0.1167,
+    0.0535
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/F25-5-ev1.jpg",
+     "slide": 15,
+     "title": "4.Direkt Trombin Inhibitörleri"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/F25-5-ev2.jpg",
+     "slide": 6,
+     "title": "Temel Farmakolojik Farklılıkların Özeti"
+    }
+   ]
+  },
+  {
+   "id": "F24-4",
+   "exam": "F24",
+   "qno": 4,
+   "stem": "PAR-1 antagonisti olan ve trombinle indüklenen trombosit aktivasyonunu inhibe eden antitrombositer ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": "السؤال ده موجود كمان في درس 8، لأن ملف درس 7 هو نفس ملف درس 8 بالظبط، وجزء الأنتي بلاتليت بيبدأ من سلايد 25. سلايد 26 بيوضّح إن الـVorapaxar بيمنع تنشيط الصفائح عن طريق الـthrombin.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Vorapaksar"
+   },
+   "img": "lessons/07-antikoagulanlar/img/F24-4.png",
+   "w": 267.0,
+   "h": 160.0,
+   "mark": [
+    0.0899,
+    0.45,
+    0.2622,
+    0.1062
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/F24-4-ev1.jpg",
+     "slide": 26,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K3-23-78",
+   "exam": "K3-23",
+   "qno": 78,
+   "stem": "Aşağıdaki antikoagülan ilaçlardan hangisi, antitrombin ile etkileşime girerek hem Faktör Xa hem de trombini (Faktör IIa) inhibe eder?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "D",
+    "text": "Fraksiyone olmamış heparin"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K3-23-78.png",
+   "w": 210.0,
+   "h": 122.0,
+   "mark": [
+    0.2148,
+    0.7822,
+    0.5967,
+    0.1002
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K3-23-78-ev1.jpg",
+     "slide": 5,
+     "title": "Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/K3-23-78-ev2.jpg",
+     "slide": 10,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    }
+   ]
+  },
+  {
+   "id": "B21-2-89",
+   "exam": "B21-2",
+   "qno": 89,
+   "stem": "Enoksaparini fraksiyonlanmamış heparine göre tercih etme nedeni hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Hastanın aPTZ değerlerini izlemeye gerek olmaması"
+   },
+   "img": "lessons/07-antikoagulanlar/img/B21-2-89.png",
+   "w": 360.0,
+   "h": 156.0,
+   "mark": [
+    0.0306,
+    0.3462,
+    0.45,
+    0.1026
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/B21-2-89-ev1.jpg",
+     "slide": 9,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/B21-2-89-ev2.jpg",
+     "slide": 10,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    }
+   ]
+  },
+  {
+   "id": "K3-21-83",
+   "exam": "K3-21",
+   "qno": 83,
+   "stem": "Aşağıdaki antikoagülan ilaç gruplarından hangisi için aktive edilmiş parsiyel tromboplastin zamanının (aPTZ) izlenmesi gereklidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "heparin-aptt",
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Yüksek molekül ağırlıklı heparinler"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K3-21-83.png",
+   "w": 533.0,
+   "h": 155.0,
+   "mark": [
+    0.073,
+    0.3775,
+    0.3248,
+    0.0923
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K3-21-83-ev1.jpg",
+     "slide": 9,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/K3-21-83-ev2.jpg",
+     "slide": 6,
+     "title": "Temel Farmakolojik Farklılıkların Özeti"
+    }
+   ]
+  },
+  {
+   "id": "F21-1-48",
+   "exam": "F21-1",
+   "qno": 48,
+   "stem": "Varfarinle birlikte kullanıldığında onun antikoagülan etkisini azaltan ilaç hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Rifampin"
+   },
+   "img": "lessons/07-antikoagulanlar/img/F21-1-48.png",
+   "w": 342.0,
+   "h": 155.0,
+   "mark": [
+    0.1137,
+    0.3787,
+    0.1329,
+    0.0923
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/F21-1-48-ev1.jpg",
+     "slide": 17,
+     "title": "VARFARİN İLE BİRLİKTE KULLANILMASI ÖNERİLMEYEN İLAÇLAR"
+    }
+   ]
+  },
+  {
+   "id": "K1-20-1",
+   "exam": "K1-20",
+   "qno": 1,
+   "stem": "Heparin ile yapılan antikoagülasyonda doz ayarlaması için en uygun laboratuvar testi hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": "heparin-aptt",
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "aPTT"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K1-20-1.png",
+   "w": 475.0,
+   "h": 83.0,
+   "mark": [
+    0.0388,
+    0.3521,
+    0.0567,
+    0.1472
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K1-20-1-ev1.jpg",
+     "slide": 9,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/K1-20-1-ev2.jpg",
+     "slide": 6,
+     "title": "Temel Farmakolojik Farklılıkların Özeti"
+    }
+   ]
+  },
+  {
+   "id": "K1-20-11",
+   "exam": "K1-20",
+   "qno": 11,
+   "stem": "Heparinin etki mekanizması ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Doğrudan intrensek antikoagülan aktivite gösterir"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K1-20-11.png",
+   "w": 475.0,
+   "h": 90.0,
+   "mark": [
+    0.0375,
+    0.2615,
+    0.5035,
+    0.1358
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K1-20-11-ev1.jpg",
+     "slide": 9,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/K1-20-11-ev2.jpg",
+     "slide": 5,
+     "title": "Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma"
+    }
+   ]
+  },
+  {
+   "id": "F19-48",
+   "exam": "F19",
+   "qno": 48,
+   "stem": "Warfarin kullanan bir hastanın takibinde aşağıdaki laboratuvar testlerinden hangisi kullanılmaktadır?",
+   "section": "main",
+   "reason": null,
+   "note": "نفس السؤال بالظبط (نفس الكلام والاختيارات) جه كمان في K1-19 سؤال 56 (تحت عنوان Biyokimya).",
+   "group": null,
+   "also": [
+    {
+     "exam": "K1-19",
+     "qno": 56
+    }
+   ],
+   "answer": {
+    "letter": "B",
+    "text": "PT/INR (Protrombin zamanı)"
+   },
+   "img": "lessons/07-antikoagulanlar/img/F19-48.png",
+   "w": 260.0,
+   "h": 116.0,
+   "mark": [
+    0.107,
+    0.5107,
+    0.4673,
+    0.1083
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/F19-48-ev1.jpg",
+     "slide": 6,
+     "title": "Temel Farmakolojik Farklılıkların Özeti"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/F19-48-ev2.jpg",
+     "slide": 21,
+     "title": "PIHTILAŞMA TESTLERİ"
+    }
+   ]
+  },
+  {
+   "id": "K1-19-56",
+   "exam": "K1-19",
+   "qno": 56,
+   "stem": "Warfarin kullanan bir hastanın takibinde aşağıdaki laboratuvar testlerinden hangisi kullanılmaktadır?",
+   "section": "main",
+   "reason": null,
+   "note": "نفس السؤال بالظبط (نفس الكلام والاختيارات) جه كمان في F19 سؤال 48.",
+   "group": null,
+   "also": [
+    {
+     "exam": "F19",
+     "qno": 48
+    }
+   ],
+   "answer": {
+    "letter": "B",
+    "text": "PT/INR (Protrombin zamanı)"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K1-19-56.png",
+   "w": 431.0,
+   "h": 122.0,
+   "mark": [
+    0.0993,
+    0.5006,
+    0.2993,
+    0.1089
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K1-19-56-ev1.jpg",
+     "slide": 6,
+     "title": "Temel Farmakolojik Farklılıkların Özeti"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/K1-19-56-ev2.jpg",
+     "slide": 21,
+     "title": "PIHTILAŞMA TESTLERİ"
+    }
+   ]
+  },
+  {
+   "id": "K1-19-30",
+   "exam": "K1-19",
+   "qno": 30,
+   "stem": "Aşağıdakilerden hangisi gebelik süresince uygulanan heparin tedavisinin yan etkilerinden biri değildir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "B",
+    "text": "Fetal anomali"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K1-19-30.png",
+   "w": 465.0,
+   "h": 105.0,
+   "mark": [
+    0.158,
+    0.4483,
+    0.1412,
+    0.1265
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K1-19-30-ev1.jpg",
+     "slide": 9,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/K1-19-30-ev2.jpg",
+     "slide": 6,
+     "title": "Temel Farmakolojik Farklılıkların Özeti"
+    }
+   ]
+  },
+  {
+   "id": "K1-19-31",
+   "exam": "K1-19",
+   "qno": 31,
+   "stem": "Aşağıdaki ilaçlardan hangisi doğrudan trombinin aktif bölgesine bağlanarak antikoagülan etkinlik gösterir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Bivalirudin"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K1-19-31.png",
+   "w": 460.0,
+   "h": 104.0,
+   "mark": [
+    0.1597,
+    0.5787,
+    0.1188,
+    0.1277
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K1-19-31-ev1.jpg",
+     "slide": 15,
+     "title": "4.Direkt Trombin Inhibitörleri"
+    }
+   ]
+  },
+  {
+   "id": "K3-26-2",
+   "exam": "K3-26",
+   "qno": 2,
+   "stem": "Önceki gebeliklerinde tromboembolik olay yaşamış gebe hastada hangi antikoagülan ile tedavi uygundur?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "عن اختيار مضاد التجلط للست الحامل فهو تبع الدرس ده، بس الشرح مفيهوش كلام عن الحمل. الكتيب معلّم A) Enoksaparin (الهيبارينات مش بتعدي المشيمة، أما الوارفارين والديكومارول بيعملوا تشوهات، والـDOAC مش بتتدي في الحمل).",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/07-antikoagulanlar/img/K3-26-2.png",
+   "w": 262.0,
+   "h": 153.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K25-64",
+   "exam": "K25",
+   "qno": 64,
+   "stem": "CYP2C9 ve VKORC1 polimorfizmi nedeniyle ara doz warfarin gereken hastada enzimin uğradığı değişiklik hangisidir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "السؤال عن الوارفارين فهو تبع الدرس ده، بس عن الـpolymorphism بتاع CYP2C9 وVKORC1، والكلام ده مش موجود في ملف الشرح خالص (سلايد 5 بس بيقول إن الوارفارين بيثبط K vitamini epoksit redüktaz). الكتيب معلّم A (Enzim indüksiyonu) كإجابة رسمية.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/07-antikoagulanlar/img/K25-64.png",
+   "w": 295.0,
+   "h": 216.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K3-24-7",
+   "exam": "K3-24",
+   "qno": 7,
+   "stem": "Plazminojen aktivatörü olup trombolitik tedavide kullanılan ilaç hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال أساساً من درس 13 (الفيبرينوليتيك)، بس سلايد 8 هنا بيحط الريتيبلاز تحت Fibrinolitik İlaçlar ← Plazminojen Aktivatörler، وسلايد 33 بيقول إنه rekombinan tPA. وباقي الاختيارات (أسبرين، إنوكسابارين، كلوبيدوجريل، سيلوستازول) من الدرس ده.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Reteplaz"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K3-24-7.png",
+   "w": 298.0,
+   "h": 131.0,
+   "mark": [
+    0.0336,
+    0.4198,
+    0.1846,
+    0.1374
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K3-24-7-ev1.jpg",
+     "slide": 8,
+     "title": "Sınıflandırma"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/K3-24-7-ev2.jpg",
+     "slide": 33,
+     "title": "Fibrinolitik ilaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K3-24-8",
+   "exam": "K3-24",
+   "qno": 8,
+   "stem": "Rivaroksabana bağlı hayatı tehdit eden kanamanın tersine çevrilmesinde hangisi kullanılır?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "تبع موضوع مضادات التجلط (عكس مفعول الريفاروكسابان)، بس الشرح مفيهوش اسم الـ antidote؛ سلايد 6 بيقول بس إن الـ DOAC ليها antidotes خاصة.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/07-antikoagulanlar/img/K3-24-8.png",
+   "w": 262.0,
+   "h": 144.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K3-23-80",
+   "exam": "K3-23",
+   "qno": 80,
+   "stem": "Gebelikte kullanıldığında burun-orta yüz hipoplazisi ve kondrodisplazi ile tipik embriyopati yapan antikoagülan hangisidir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "عن التشوهات اللي الوارفارين بيعملها للجنين فهو تبع الدرس ده، بس الشرح مفيهوش أي كلام عن مضادات التجلط والحمل. الإجابة المعلّمة في الامتحان e) Varfarin.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/07-antikoagulanlar/img/K3-23-80.png",
+   "w": 225.0,
+   "h": 171.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K4-21-65",
+   "exam": "K4-21",
+   "qno": 65,
+   "stem": "Prostanoid – farmakolojik etki eşleştirmelerinden hangisi yanlıştır?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال أساساً من درس 18 (البروستانويدات)، بس سلايد 5 هنا بيقول إن الأسبرين بيمنع تكوين الـTXA2 فالتجمّع يقل، يعني الـTxA2 بيزوّد تجمّع الصفائح مش بيقلله (الاختيار E غلط)، وسلايد 32 بيقول إن الـPGI2 بيثبط الصفائح (الاختيار D صح).",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "E",
+    "text": "TxA2 – Trombosit agregasyonunda azalma"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K4-21-65.png",
+   "w": 610.0,
+   "h": 310.0,
+   "mark": [
+    0.077,
+    0.8839,
+    0.3525,
+    0.0839
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K4-21-65-ev1.jpg",
+     "slide": 5,
+     "title": "Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma"
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/K4-21-65-ev2.jpg",
+     "slide": 32,
+     "title": "5. Prostanoid agonistleri (Epoprostenol)"
+    }
+   ]
+  },
+  {
+   "id": "K3-21-82",
+   "exam": "K3-21",
+   "qno": 82,
+   "stem": "Varfarin etkisinin hızlı bir şekilde ani olarak ortadan kaldırılması gereken durumlarda hastaya hangileri verilmelidir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "عن إلغاء مفعول الوارفارين بسرعة فهو تبع الدرس ده، بس سلايد 6 بيقول بس إن الـantidote بتاع الوارفارين هو فيتامين K، ومفيش كلام عن البلازما ولا الـprotrombin kompleks konsantresi. الإجابة المعلّمة في الامتحان هي d (دم كامل + بلازما مجمدة + PCC)، لأن فيتامين K لوحده بياخد وقت.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/07-antikoagulanlar/img/K3-21-82.png",
+   "w": 533.0,
+   "h": 156.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K3-21-84",
+   "exam": "K3-21",
+   "qno": 84,
+   "stem": "Dabigatranın neden olduğu kanamayı tersine çevirmek için kullanılan monoklonal antikor hangisidir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "عن الـantidote بتاع الدابيجاتران فهو تبع الدرس ده، بس الشرح مفيهوش اسمه؛ سلايد 6 بيقول بس إن الـDOAC ليها antidotes خاصة. الإجابة المعلّمة في الامتحان b) Idarucizumab.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/07-antikoagulanlar/img/K3-21-84.png",
+   "w": 533.0,
+   "h": 187.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "F21-1-49",
+   "exam": "F21-1",
+   "qno": 49,
+   "stem": "Heparinin kontrendike olduğu durum/durumlar hangileridir? (düşük tehlikesi olan gebelik, ileri renal yetmezlik, hiperlipidemi, şiddetli hipertansiyon)",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "سؤال عن موانع استعمال الهيبارين فهو تبع الدرس ده، بس الشرح مفيهوش contraindications للهيبارين خالص (سلايد 6 و9 بيتكلموا بس عن النزيف وقلة الصفائح). الإجابة المعلّمة في الامتحان b) I-II-IV.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/07-antikoagulanlar/img/F21-1-49.png",
+   "w": 270.0,
+   "h": 215.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "K1-20-14",
+   "exam": "K1-20",
+   "qno": 14,
+   "stem": "Streptokinaz: antitrombotik / antikoagülan / fibrinolitik / hipolipidemik / hemostatik?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال أساساً من درس 13، بس سلايد 33 هنا بيقول صراحة إن الستربتوكيناز من الـFibrinolitik ilaçlar اللي بتكسّر الفيبرين وتدوّب الجلطة بعد ما تتكوّن (مش antiplatelet ولا antikoagülan).",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Fibrinolitiktir"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K1-20-14.png",
+   "w": 135.0,
+   "h": 88.0,
+   "mark": [
+    0.1276,
+    0.5403,
+    0.4885,
+    0.1389
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K1-20-14-ev1.jpg",
+     "slide": 33,
+     "title": "Fibrinolitik ilaçlar"
+    }
+   ]
+  },
+  {
+   "id": "K1-19-4",
+   "exam": "K1-19",
+   "qno": 4,
+   "stem": "Hemodiyaliz ve kalp cerrahisinde ekstrakorporal dolaşımda pıhtı oluşmasını ve trombosit kaybını önlemek için hangi prostaglandin analoğu kullanılır?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال أساساً من درس 18 (البروستاجلاندينات)، بس سلايد 32 هنا بيقول إن الـPGI2 analoğu (إيبوبروستينول) بيثبط الصفائح، فالاختيار الـPGI2 (إيلوبروست) هو اللي بيمنع الجلطة وفقد الصفائح. الإيلوبروست نفسه مش مذكور بالاسم.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "İloprost (PGI2)"
+   },
+   "img": "lessons/07-antikoagulanlar/img/K1-19-4.png",
+   "w": 415.0,
+   "h": 117.0,
+   "mark": [
+    0.177,
+    0.3941,
+    0.1775,
+    0.1135
+   ],
+   "evidence": [
+    {
+     "img": "lessons/07-antikoagulanlar/img/K1-19-4-ev1.jpg",
+     "slide": 32,
+     "title": "5. Prostanoid agonistleri (Epoprostenol)"
+    }
+   ]
+  }
+ ]
+}

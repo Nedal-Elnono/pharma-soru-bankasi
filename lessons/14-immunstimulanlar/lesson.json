@@ -1,0 +1,237 @@
+{
+ "pdf": "lessons/14-immunstimulanlar/14-immunstimulanlar-sorular.pdf",
+ "pdfName": "İmmunstimulanlar.pdf",
+ "pages": 10,
+ "questions": [
+  {
+   "id": "F26-13",
+   "exam": "F26",
+   "qno": 13,
+   "stem": "Doğal ve kazanılmış immün yanıtı birlikte aktive ederek viral enfeksiyonlara karşı erken yanıtı güçlendiren immünstimülan hangisidir?",
+   "section": "main",
+   "reason": null,
+   "note": null,
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "İnterferon alfa"
+   },
+   "img": "lessons/14-immunstimulanlar/img/F26-13.png",
+   "w": 270.0,
+   "h": 125.0,
+   "mark": [
+    0.1592,
+    0.4123,
+    0.2193,
+    0.0947
+   ],
+   "evidence": [
+    {
+     "img": "lessons/14-immunstimulanlar/img/F26-13-ev1.jpg",
+     "slide": 17,
+     "title": "Interferonlar"
+    },
+    {
+     "img": "lessons/14-immunstimulanlar/img/F26-13-ev2.jpg",
+     "slide": 18,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K26-12",
+   "exam": "K26",
+   "qno": 12,
+   "stem": "Siklofosfamide bağlı miyelotoksisite sonucu gelişebilecek şiddetli nötropeni tedavisinde hangi ilaç kullanılabilir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده أساساً من درس 10 (إسلام كاتب جنبه 10، والمراجع اللي تحته نفس صفحات درس 10)، بس سلايد 30 هنا بيقول إن الـG-CSF (فيلغراستيم) هو اللي بيتدي في النيوتروبينيا بعد الكيماوي.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Filgrastim"
+   },
+   "img": "lessons/14-immunstimulanlar/img/K26-12.png",
+   "w": 295.0,
+   "h": 152.0,
+   "mark": [
+    0.1463,
+    0.5132,
+    0.1401,
+    0.0779
+   ],
+   "evidence": [
+    {
+     "img": "lessons/14-immunstimulanlar/img/K26-12-ev1.jpg",
+     "slide": 30,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K26-16",
+   "exam": "K26",
+   "qno": 16,
+   "stem": "Kemoterapiye bağlı ciddi lökopenide kemik iliğinin nötrofil üretimini hızlandırmak için hangi ajan tercih edilir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده أساساً من درس 10 (إسلام كاتب جنبه 10)، بس سلايد 30 هنا بيقول إن الـG-CSF بينشّط سلائف النيوتروفيل في نخاع العظم وبيزوّد إنتاجها.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "G-CSF"
+   },
+   "img": "lessons/14-immunstimulanlar/img/K26-16.png",
+   "w": 295.0,
+   "h": 126.0,
+   "mark": [
+    0.1463,
+    0.4098,
+    0.0948,
+    0.094
+   ],
+   "evidence": [
+    {
+     "img": "lessons/14-immunstimulanlar/img/K26-16-ev1.jpg",
+     "slide": 30,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "F25-15",
+   "exam": "F25",
+   "qno": 15,
+   "stem": "Kemik iliği transplantasyonunda yardımcı ilaç olarak ve kanser hastalarında nötropeninin hafifletilmesinde kullanılan immünomodülatör hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده من درس 10 (مكتوب فوقه اسم الدكتور Sinan Şermet)، بس سلايد 30 هنا بيقول إن الفيلغراستيم (G-CSF) بيتدي في النيوتروبينيا بعد الكيماوي. حتة زرع النخاع موجودة في درس 10 سلايد 6.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Filgrastim"
+   },
+   "img": "lessons/14-immunstimulanlar/img/F25-15.png",
+   "w": 554.0,
+   "h": 276.0,
+   "mark": [
+    0.4448,
+    0.3913,
+    0.1379,
+    0.0563
+   ],
+   "evidence": [
+    {
+     "img": "lessons/14-immunstimulanlar/img/F25-15-ev1.jpg",
+     "slide": 30,
+     "title": ""
+    }
+   ]
+  },
+  {
+   "id": "K25-65",
+   "exam": "K25",
+   "qno": 65,
+   "stem": "Kronik böbrek yetmezliği, kanser ya da prematüreye bağlı anemilerde kullanılan eritropoietin reseptör agonisti hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده أساساً من درس 10 (إسلام كاتب جنبه 10)، بس سلايد 22 هنا بيقول إن الـEPO (Epoetin alfa) بيحفّز تكوين كرات الدم الحمرا وبيتدي في أنيميا الفشل الكلوي المزمن.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "A",
+    "text": "Epoetin alfa"
+   },
+   "img": "lessons/14-immunstimulanlar/img/K25-65.png",
+   "w": 295.0,
+   "h": 128.0,
+   "mark": [
+    0.1463,
+    0.4059,
+    0.1682,
+    0.0925
+   ],
+   "evidence": [
+    {
+     "img": "lessons/14-immunstimulanlar/img/K25-65-ev1.jpg",
+     "slide": 22,
+     "title": "EPO (Epoetin alfa)"
+    }
+   ]
+  },
+  {
+   "id": "B21-2-92",
+   "exam": "B21-2",
+   "qno": 92,
+   "stem": "Şiddetli kemoterapi kaynaklı nötropeni gelişen hastada hangisi kullanılabilir?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "السؤال ده أساساً من درس 10. سلايد 21 هنا بيقول بس إن السارجراموستيم هو GM-CSF وطيفه أوسع، وإن الـG-CSF هو اللي بيتدي في نيوتروبينيا الكيماوي؛ إن السارجراموستيم نفسه بيتدي في النيوتروبينيا مش مكتوب هنا (موجود في درس 10 سلايد 7 و11). الإجابة B (Sargramostim).",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/14-immunstimulanlar/img/B21-2-92.png",
+   "w": 295.0,
+   "h": 157.0,
+   "mark": null,
+   "evidence": []
+  },
+  {
+   "id": "F19-14",
+   "exam": "F19",
+   "qno": 14,
+   "stem": "Trombositopenik hastalarda trombopoietin reseptörlerini aktive ederek trombosit sayısını artıran ilaç hangisidir?",
+   "section": "review",
+   "reason": "other-lecture",
+   "note": "السؤال ده تبع درس 10 (الرومبلوستيم متشرح هناك في سلايد 9 و10)، بس سلايد 23 هنا بيقول إن الإلترومبوباج والرومبلوستيم منبهات للثرومبوبويتين وبيزوّدوا إنتاج الصفايح.",
+   "group": null,
+   "also": [],
+   "answer": {
+    "letter": "C",
+    "text": "Romiplostim"
+   },
+   "img": "lessons/14-immunstimulanlar/img/F19-14.png",
+   "w": 260.0,
+   "h": 115.0,
+   "mark": [
+    0.107,
+    0.6375,
+    0.2279,
+    0.1092
+   ],
+   "evidence": [
+    {
+     "img": "lessons/14-immunstimulanlar/img/F19-14-ev1.jpg",
+     "slide": 23,
+     "title": "Trombopoietin Agonistleri"
+    },
+    {
+     "img": "lessons/14-immunstimulanlar/img/F19-14-ev2.jpg",
+     "slide": 16,
+     "title": "İMMÜNSTİMÜLAN İLAÇ SINIFLARI"
+    }
+   ]
+  },
+  {
+   "id": "K19-12",
+   "exam": "K19",
+   "qno": 12,
+   "stem": "Aşağıdakilerden hangisi eritropoetin endikasyonları arasında yer almaz?",
+   "section": "review",
+   "reason": "no-answer",
+   "note": "السؤال ده أساساً من درس 10. سلايد 22 هنا بيقول بس إن الـEPO بيتدي في أنيميا الفشل الكلوي المزمن؛ باقي الاستخدامات (الكيماوي، المبتسرين، الإيدز) مش مكتوبة هنا، موجودة في درس 10 سلايد 11. الإجابة D: أنيميا نقص الحديد الحادة مش من استخدامات الـEPO.",
+   "group": null,
+   "also": [],
+   "answer": null,
+   "img": "lessons/14-immunstimulanlar/img/K19-12.png",
+   "w": 465.0,
+   "h": 121.0,
+   "mark": null,
+   "evidence": []
+  }
+ ]
+}

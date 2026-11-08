@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head><meta charset="utf-8"><title>18. Prostaglandin · Sorular</title>
+<link rel="stylesheet" href="../../assets/folks.css"><style>/* Print layout for one lesson's question PDF. Tokens come from folks.css. */
+@page { size: A4 landscape; margin: 0; }
+html, body { margin: 0; background: var(--f-surface); }
+body.f { font-size: 13px; line-height: 1.45; }
+[lang="tr"] { font-family: var(--f-font-ui); }
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+.sheet {
+  width: 297mm; height: 210mm; padding: 11mm 13mm 9mm;
+  display: flex; flex-direction: column; gap: 14px;
+  overflow: hidden; break-after: page; position: relative;
+  background: var(--f-surface);
+}
+.sheet:last-child { break-after: auto; }
+
+.kicker { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; color: var(--f-dim); }
+.kicker i { width: 10px; height: 10px; border-radius: 3px; background: var(--f-ink); }
+
+/* ---------- cover ---------- */
+.cover { flex-direction: row; gap: 34px; }
+.cv-main { width: 43%; flex: none; display: flex; flex-direction: column; }
+.cv-main .legend { margin-top: auto; }
+.cover .toc { flex: 1; padding-top: 2px; }
+.cover .big {
+  font-family: var(--f-font-ui); font-size: 190px; font-weight: 800; line-height: .82;
+  letter-spacing: -9px; font-variant-numeric: tabular-nums; margin: 30px 0 16px; direction: ltr; text-align: left;
+}
+.cover h1 { font-size: 36px; line-height: 1.12; font-weight: 700; margin: 0; text-align: left; letter-spacing: -.3px; }
+.cover .who { margin: 8px 0 0; color: var(--f-dim); font-size: 14px; text-align: left; }
+.stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 26px 0 22px; }
+.stats div { background: var(--f-chip); border-radius: 18px; padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 2px; }
+.stats b { font-family: var(--f-font-ui); font-size: 34px; line-height: 1; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stats span { font-size: 12px; color: var(--f-dim); font-weight: 600; }
+.toc { flex: 1; min-height: 0; overflow: hidden; }
+.toc h3 { display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; color: var(--f-mute); margin: 16px 2px 6px; }
+.toc h3:first-child { margin-top: 0; }
+.toc ol { list-style: none; margin: 0; padding: 0; border-radius: 18px; box-shadow: inset 0 0 0 1px var(--f-line); overflow: hidden; }
+.toc li { display: grid; grid-template-columns: 26px 66px 1fr; gap: 10px; align-items: center; padding: 7px 14px; font-size: 12px; }
+.toc li + li { border-top: 1px solid var(--f-line); }
+.toc .n { font-family: var(--f-font-ui); font-variant-numeric: tabular-nums; color: var(--f-mute); font-weight: 600; }
+.toc .ex { font-family: var(--f-font-ui); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.toc .st { color: var(--f-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; }
+.legend { display: flex; gap: 14px; align-items: center; padding-top: 12px; border-top: 1px solid var(--f-line); font-size: 11px; color: var(--f-mute); }
+.legend b { color: var(--f-ink); font-family: var(--f-font-ui); margin-inline-end: 3px; }
+.legend .sp { flex: 1; }
+
+.toc-next { margin: 4px 2px 0; font-size: 13px; color: var(--f-mute); }
+.tocpage { gap: 14px; }
+.tocpage .toc h3:first-child { margin-top: 4px; }
+
+/* ---------- divider ---------- */
+.divider { justify-content: center; gap: 0; }
+.divider h2 { font-size: 64px; line-height: 1.1; margin: 14px 0 12px; font-weight: 800; }
+.divider p { font-size: 16px; color: var(--f-dim); margin: 0 0 30px; max-width: 520px; }
+.divider ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; max-width: 560px; }
+.divider li { background: var(--f-chip); border-radius: 18px; padding: 14px 16px; display: grid; gap: 4px; }
+.divider li b { font-size: 14px; }
+.divider li span { font-size: 13px; color: var(--f-dim); }
+
+/* ---------- question page (landscape) ---------- */
+.top { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--f-dim); flex: none; }
+.crumb { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.crumb b { font-family: var(--f-font-ui); display: inline-grid; place-items: center; min-width: 26px; height: 26px; padding: 0 6px; border-radius: 8px; background: var(--f-ink); color: var(--f-on-ink); font-size: 12px; font-variant-numeric: tabular-nums; }
+.crumb span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160mm; }
+.count { white-space: nowrap; }
+.count b { color: var(--f-ink); font-family: var(--f-font-ui); font-variant-numeric: tabular-nums; }
+
+.src { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex: none; }
+.exam { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px 6px 6px; border-radius: 999px; background: var(--f-chip); font-size: 13px; font-weight: 600; color: var(--f-dim); align-self: flex-start; }
+.exam b { background: var(--f-ink); color: var(--f-on-ink); border-radius: 999px; padding: 3px 10px; font-size: 12px; font-variant-numeric: tabular-nums; }
+.exam i { width: 3px; height: 3px; border-radius: 50%; background: var(--f-mute); }
+.tag.also b { font-weight: 700; color: var(--f-ink); }
+.tag { font-size: 11px; font-weight: 600; color: var(--f-dim); padding: 4px 10px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--f-line2); align-self: flex-start; }
+
+.note { flex: none; background: var(--f-chip); border-radius: 16px; padding: 10px 14px; }
+.note b { display: block; font-size: 12px; margin-bottom: 2px; }
+.note p { margin: 0; font-size: 12px; color: var(--f-dim); line-height: 1.55; }
+
+/* question and answer on the left 80% of the page; the right fifth stays blank for the student's notes */
+.sheet.q { padding-right: calc(59.4mm + 6mm); }
+.notes {
+  position: absolute; top: 0; bottom: 0; right: 0; width: 59.4mm; box-sizing: border-box;
+  padding: 11mm 7mm 9mm; border-left: 1px solid var(--f-line);
+}
+.notes span { font-size: 11px; font-weight: 600; color: var(--f-mute); }
+
+.q .body { flex: 1; min-height: 0; display: flex; gap: 16px; }
+.q .qside { display: flex; gap: 16px; flex: none; min-width: 0; }
+.q .meta { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.q.wide .body { flex-direction: column; }
+.q.wide .qside { flex-direction: row; align-items: flex-start; }
+.q.wide .meta { width: 240px; flex: none; }
+.q.tall .body { flex-direction: row; }
+.q.tall .qside { width: 390px; flex-direction: column; }
+
+.qcard { flex: none; margin: 0; padding: 12px; border-radius: 20px; box-shadow: inset 0 0 0 1px var(--f-line); display: flex; justify-content: center; }
+.q.wide .qcard { flex: 1; min-width: 0; }
+.qimg { position: relative; max-width: 100%; }
+.qimg img { display: block; width: 100%; height: 100%; }
+.mark { position: absolute; border-radius: 8px; box-shadow: inset 0 0 0 2px var(--f-ink); }
+.mark::after {
+  content: ""; position: absolute; left: 100%; top: 50%; translate: 6px -50%;
+  width: 18px; height: 18px; border-radius: 50%; background: var(--f-ink) no-repeat center / 11px
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+
+.ans { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; flex: none; }
+.lbl { font-size: 12px; font-weight: 600; color: var(--f-mute); }
+.pill { display: inline-flex; align-items: center; gap: 10px; padding: 7px 16px 7px 7px; border-radius: 999px; background: var(--f-ink); color: var(--f-on-ink); font-size: 14px; font-weight: 700; max-width: 100%; }
+.pill b { display: inline-grid; place-items: center; width: 24px; height: 24px; flex: none; border-radius: 50%; background: var(--f-on-ink); color: var(--f-ink); font-size: 12px; }
+.pill.none { background: none; color: var(--f-dim); box-shadow: inset 0 0 0 1.5px var(--f-line2); padding: 7px 16px; font-size: 13px; font-weight: 600; border: 0; }
+
+/* the answer: whole slides, as large as the page allows */
+.evs { flex: 1; min-height: 0; min-width: 0; display: flex; gap: 14px; }
+.q.wide .evs { flex-direction: row; }
+.q.tall .evs { flex-direction: column; }
+.ev { flex: 1 1 0; min-height: 0; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+.ev figcaption { display: flex; align-items: baseline; gap: 8px; font-size: 12px; color: var(--f-mute); flex: none; white-space: nowrap; overflow: hidden; }
+.ev figcaption b { color: var(--f-ink); }
+.ev figcaption .t { margin-inline-start: auto; color: var(--f-dim); overflow: hidden; text-overflow: ellipsis; }
+.evimg { flex: 1; min-height: 0; display: flex; align-items: flex-start; justify-content: center; }
+.evimg img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 0 0 1px var(--f-line); }
+
+.foot { display: flex; justify-content: space-between; font-size: 10.5px; color: var(--f-mute); flex: none; padding-top: 8px; border-top: 1px solid var(--f-line); }
+body { counter-reset: pg; }
+.sheet { counter-increment: pg; }
+.pg::before { content: counter(pg); font-variant-numeric: tabular-nums; }
+</style></head>
+<body class="f">
+<section class="sheet cover">
+  <div class="cv-main">
+    <div class="kicker"><i></i>بنك أسئلة السنين اللي فاتت · فارماكولوجي</div>
+    <div class="big">18</div>
+    <h1 dir="ltr" lang="tr">Prostaglandin</h1>
+    <p class="who" dir="ltr" lang="tr"></p>
+    <div class="stats">
+      <div><b>21</b><span>سؤال</span></div>
+      <div><b>13</b><span>أساسي</span></div>
+      <div><b>8</b><span>للمراجعة</span></div>
+      <div><b>16</b><span>امتحان</span></div>
+    </div>
+    <footer class="legend">
+      <span><b dir="ltr">K</b> كورول</span><span><b dir="ltr">F</b> فاينال</span><span><b dir="ltr">B</b> بوتونلمه</span>
+      <span class="sp"></span><span>الأحدث الأول · الإجابة من ملف الشرح نفسه</span>
+    </footer>
+  </div>
+  <div class="toc"><p class="toc-next">فهرس الأسئلة في الصفحة الجاية</p></div>
+</section><section class="sheet tocpage"><div class="kicker"><i></i>فهرس الأسئلة</div><div class="toc"><h3><span>الأسئلة</span><span>13</span></h3><ol><li><span class="n">01</span><span class="ex" dir="ltr">K5-26 · 28</span><span class="st" dir="ltr" lang="tr">Uzun süre NSAİİ kullanan hastada mide mukozasını korumak için başlanan prostaglandin analoğu hangisidir?</span></li><li><span class="n">02</span><span class="ex" dir="ltr">K3-26 · 24</span><span class="st" dir="ltr" lang="tr">Aspirin sonrası astım atağı gelişen hastada ek tedavi olarak kullanılan lökotrien antagonisti hangisidir?</span></li><li><span class="n">03</span><span class="ex" dir="ltr">K5-23 · 61</span><span class="st" dir="ltr" lang="tr">Sitoprotektif etkili ve gebelerde kullanılması kontrendike olan prostaglandin analoğu ilaç hangisidir?</span></li><li><span class="n">04</span><span class="ex" dir="ltr">B21-2 · 79</span><span class="st" dir="ltr" lang="tr">Katarakt ameliyatı sonrası glokom gelişen hastada aşağıdaki ilaçlardan hangisi göz içi basıncını düşürür?</span></li><li><span class="n">05</span><span class="ex" dir="ltr">K6-21 · 55</span><span class="st" dir="ltr" lang="tr">Fetüs ölümü nedeniyle doğum indüksiyonunda vajinal supozituvar olarak uygulanan ilaç hangisidir?</span></li><li><span class="n">06</span><span class="ex" dir="ltr">K4-21 · 65</span><span class="st" dir="ltr" lang="tr">Prostanoid – farmakolojik etki eşleştirmelerinden hangisi yanlıştır?</span></li><li><span class="n">07</span><span class="ex" dir="ltr">K4-21 · 67</span><span class="st" dir="ltr" lang="tr">Eikozanoid sentezinde araşidonik asit oluşmasını sağlayan fosfolipaz A2 enzimini hangisi inhibe eder?</span></li><li><span class="n">08</span><span class="ex" dir="ltr">K4-21 · 69</span><span class="st" dir="ltr" lang="tr">PGE1 analoğu ilaçlarla (mizoprostol, alprostadil) ilgili hangisi yanlıştır?</span></li><li><span class="n">09</span><span class="ex" dir="ltr">K1-20 · 30</span><span class="st" dir="ltr" lang="tr">Lökotrienlerin patogenezinde özellikle rol oynadığı hastalıklardan hangisi yanlıştır?</span></li><li><span class="n">10</span><span class="ex" dir="ltr">K1-20 · 31</span><span class="st" dir="ltr" lang="tr">PGE2&#x27;nin etkilerinden hangisi yanlıştır?</span></li><li><span class="n">11</span><span class="ex" dir="ltr">K5-19 · 17</span><span class="st" dir="ltr" lang="tr">Hangi prostaglandin tiplerinin (E2, I2, H2) analogları gebelerde oksitosik etki için kullanılabilir?</span></li><li><span class="n">12</span><span class="ex" dir="ltr">F19 · 1</span><span class="st" dir="ltr" lang="tr">Duktus arteriosusun açık kalmasının gerektiği durumlarda hangisi kullanılır?</span></li><li><span class="n">13</span><span class="ex" dir="ltr">K1-19 · 4</span><span class="st" dir="ltr" lang="tr">Hemodiyaliz ve kalp cerrahisinde ekstrakorporal dolaşımda pıhtı oluşmasını ve trombosit kaybını önlemek için hangi prostaglandin analoğu kullanılır?</span></li></ol><h3><span>للمراجعة · آخر الملف</span><span>8</span></h3><ol><li><span class="n">14</span><span class="ex" dir="ltr">BF26 · 27</span><span class="st" dir="ltr" lang="tr">Uzun süre diklofenak kullanan romatoid artritli hastada hangi yan etkinin görülmesi en az olasıdır?</span></li><li><span class="n">15</span><span class="ex" dir="ltr">K26 · 22</span><span class="st" dir="ltr" lang="tr">Histaminin etkilerinden yanlış olanı işaretleyiniz.</span></li><li><span class="n">16</span><span class="ex" dir="ltr">K4-24 · 26</span><span class="st" dir="ltr" lang="tr">Hangisi naproksenin farmakodinamik etkilerinden değildir?</span></li><li><span class="n">17</span><span class="ex" dir="ltr">K6-23 · 81</span><span class="st" dir="ltr" lang="tr">Tecavüz sonucu oluşan gebeliği farmakolojik yoldan sonlandırmak için en uygun ilaç hangisidir?</span></li><li><span class="n">18</span><span class="ex" dir="ltr">K6-22 · 63</span><span class="st" dir="ltr" lang="tr">Astımlı hastalardaki endikasyonu düşünüldüğünde glukokortikoidlerin farmakolojik etkisi hangisidir?</span></li></ol></div></section><section class="sheet tocpage"><div class="kicker"><i></i>فهرس الأسئلة</div><div class="toc"><ol><li><span class="n">19</span><span class="ex" dir="ltr">K3-21 · 74</span><span class="st" dir="ltr" lang="tr">Bronkodilatör olarak kullanılan ilaç grubu – ilaç eşleştirmelerinden hangisi yanlıştır?</span></li><li><span class="n">20</span><span class="ex" dir="ltr">K1-20 · 24</span><span class="st" dir="ltr" lang="tr">Bronkodilatör ilaç ve etki mekanizması eşleştirmelerinden hangisi yanlıştır?</span></li><li><span class="n">21</span><span class="ex" dir="ltr">K1-19 · 24</span><span class="st" dir="ltr" lang="tr">Primer pulmoner hipertansiyon tedavisinde kullanılan ilaç eşleştirmelerinden hangisi yanlıştır? (Nifedipin, Ergotamin, İloprost–PGI2, Bosentan, Sildenafil)</span></li></ol></div></section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>1</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K5-26</b>Kurul 2025–2026<i></i>Soru 28</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Misoprostol</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:517px;height:248px"><img src="img/K5-26-28.png" alt=""><span class="mark" style="left:calc(15.47% - 6px);top:calc(46.46% - 3px);width:calc(18.52% + 12px);height:calc(6.51% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 91</b><span class="t" dir="ltr" lang="tr">E serisi prostaglandinlerin</span></figcaption><div class="evimg"><img src="img/K5-26-28-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>2</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-26</b>Kurul 2025–2026<i></i>Soru 24</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Montelukast</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:513px;height:224px"><img src="img/K3-26-24.png" alt=""><span class="mark" style="left:calc(15.59% - 6px);top:calc(40.91% - 3px);width:calc(19.33% + 12px);height:calc(7.19% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 56</b><span class="t" dir="ltr" lang="tr">Bronşlar</span></figcaption><div class="evimg"><img src="img/K3-26-24-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 109</b><span class="t" dir="ltr" lang="tr">Lökotrien reseptörleri ve blokörleri</span></figcaption><div class="evimg"><img src="img/K3-26-24-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>3</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K5-23</b>Kurul 2022–2023<i></i>Soru 61</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>D</b>Misoprostol</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:419px;height:238px"><img src="img/K5-23-61.png" alt=""><span class="mark" style="left:calc(24.40% - 6px);top:calc(78.73% - 3px);width:calc(24.74% + 12px);height:calc(10.02% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 91</b><span class="t" dir="ltr" lang="tr">E serisi prostaglandinlerin</span></figcaption><div class="evimg"><img src="img/K5-23-61-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>4</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>B21-2</b>Bütünleme 2020–2021<i></i>Soru 79</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>PGF2α analogları</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:245px"><img src="img/B21-2-79.png" alt=""><span class="mark" style="left:calc(3.27% - 6px);top:calc(63.64% - 3px);width:calc(18.80% + 12px);height:calc(9.70% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 139</b><span class="t" dir="ltr" lang="tr"></span></figcaption><div class="evimg"><img src="img/B21-2-79-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>5</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-21</b>Kurul 2020–2021<i></i>Soru 55</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>E</b>Dinoproston</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:532px;height:250px"><img src="img/K6-21-55.png" alt=""><span class="mark" style="left:calc(6.00% - 6px);top:calc(90.43% - 3px);width:calc(11.17% + 12px);height:calc(6.38% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 87</b><span class="t" dir="ltr" lang="tr">İlaç Olarak Kullanılan Prostaglandinler</span></figcaption><div class="evimg"><img src="img/K6-21-55-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 135</b><span class="t" dir="ltr" lang="tr">Prostoglandin Analoğu İlaçlar</span></figcaption><div class="evimg"><img src="img/K6-21-55-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>6</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K4-21</b>Kurul 2020–2021<i></i>Soru 65</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>E</b>TxA2 – Trombosit agregasyonunda azalma</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:492px;height:250px"><img src="img/K4-21-65.png" alt=""><span class="mark" style="left:calc(7.70% - 6px);top:calc(88.39% - 3px);width:calc(35.25% + 12px);height:calc(8.39% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 132</b><span class="t" dir="ltr" lang="tr">Prostanoidlerin etkileri</span></figcaption><div class="evimg"><img src="img/K4-21-65-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 130</b><span class="t" dir="ltr" lang="tr">Prostaglandin Fizyolojik Etkiler</span></figcaption><div class="evimg"><img src="img/K4-21-65-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>7</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K4-21</b>Kurul 2020–2021<i></i>Soru 67</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Glukokortikoidler</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:477px;height:250px"><img src="img/K4-21-67.png" alt=""><span class="mark" style="left:calc(7.70% - 6px);top:calc(42.19% - 3px);width:calc(15.25% + 12px);height:calc(8.13% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 111</b><span class="t" dir="ltr" lang="tr">Eikozanoid sentezini bloke eden ilaçlar</span></figcaption><div class="evimg"><img src="img/K4-21-67-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>8</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K4-21</b>Kurul 2020–2021<i></i>Soru 69</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>En sık oluşturduğu yan etki konstipasyondur</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:505px;height:250px"><img src="img/K4-21-69.png" alt=""><span class="mark" style="left:calc(7.70% - 6px);top:calc(64.57% - 3px);width:calc(36.89% + 12px);height:calc(8.28% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 134</b><span class="t" dir="ltr" lang="tr">EİKOSANOİDLER</span></figcaption><div class="evimg"><img src="img/K4-21-69-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>9</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K1-20</b>Kurul 2019–2020<i></i>Soru 30</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>Peptik ülser</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:125px"><img src="img/K1-20-30.png" alt=""><span class="mark" style="left:calc(3.71% - 6px);top:calc(47.67% - 3px);width:calc(12.81% + 12px);height:calc(12.10% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 107</b><span class="t" dir="ltr" lang="tr">Kükürtlü lökotrienler</span></figcaption><div class="evimg"><img src="img/K1-20-30-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>10</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K1-20</b>Kurul 2019–2020<i></i>Soru 31</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Damar düz kaslarında ve bronşlarda kasılma</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:468px;height:172px"><img src="img/K1-20-31.png" alt=""><span class="mark" style="left:calc(6.59% - 6px);top:calc(25.44% - 3px);width:calc(88.75% + 12px);height:calc(13.89% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 129</b><span class="t" dir="ltr" lang="tr">Fizyolojik etkiler</span></figcaption><div class="evimg"><img src="img/K1-20-31-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>11</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K5-19</b>Kurul 2018–2019<i></i>Soru 17</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Yalnız I (E2)</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:180px"><img src="img/K5-19-17.png" alt=""><span class="mark" style="left:calc(3.90% - 6px);top:calc(52.95% - 3px);width:calc(8.03% + 12px);height:calc(8.31% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 132</b><span class="t" dir="ltr" lang="tr">Prostanoidlerin etkileri</span></figcaption><div class="evimg"><img src="img/K5-19-17-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 87</b><span class="t" dir="ltr" lang="tr">İlaç Olarak Kullanılan Prostaglandinler</span></figcaption><div class="evimg"><img src="img/K5-19-17-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>12</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>F19</b>Final 2018–2019<i></i>Soru 1</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>Alprostadil (PGE1)</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:491px;height:191px"><img src="img/F19-1.png" alt=""><span class="mark" style="left:calc(9.84% - 6px);top:calc(42.08% - 3px);width:calc(35.02% + 12px);height:calc(12.82% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 88</b><span class="t" dir="ltr" lang="tr">Alprostadil (PGE,)</span></figcaption><div class="evimg"><img src="img/F19-1-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>13</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K1-19</b>Kurul 2018–2019<i></i>Soru 4</span>
+        
+        
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>İloprost (PGI2)</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:154px"><img src="img/K1-19-4.png" alt=""><span class="mark" style="left:calc(17.70% - 6px);top:calc(39.41% - 3px);width:calc(17.75% + 12px);height:calc(11.35% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 90</b><span class="t" dir="ltr" lang="tr">Epoprostenol sodyum (PGI2)</span></figcaption><div class="evimg"><img src="img/K1-19-4-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 135</b><span class="t" dir="ltr" lang="tr">Prostoglandin Analoğu İlaçlar</span></figcaption><div class="evimg"><img src="img/K1-19-4-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet divider">
+  <div class="kicker"><i></i>آخر الملف</div>
+  <h2>للمراجعة</h2>
+  <p>8 أسئلة مش متأكد إنها تبع الدرس ده بنسبة 100%، أو تبعه بس ملهاش إجابة في ملف الشرح.</p>
+  <ul>
+    <li><b>من محاضرة تانية</b><span>السؤال جاي من مادة أو محاضرة تانية، بس إجابته موجودة في سلايدات الدرس ده.</span></li>
+    <li><b>مفيش إجابة في الشرح</b><span>السؤال تبع موضوع الدرس، بس ملف الشرح مفيهوش إجابته، فمحطوط من غير إجابة.</span></li>
+  </ul>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>14</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>BF26</b>Bahar Final 2025–2026<i></i>Soru 27</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال من محاضرة الـ NSAİİ. سلايد 78 بيقول إن الـ NSAİİ لما تقلّل البروستاجلاندين والبروستاسيكلين ممكن ترفع الضغط (وسلايد 47: بتعاكس مفعول أدوية الضغط)، فهبوط الضغط هو الأقل احتمالًا. وسلايد 60: ممكن تقلّل دم الكلى وتعمل فشل كلوي، وسلايد 54: قرحة ونزيف في المعدة.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Hipotansiyon</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:517px;height:248px"><img src="img/BF26-27.png" alt=""><span class="mark" style="left:calc(15.47% - 6px);top:calc(46.91% - 3px);width:calc(20.45% + 12px);height:calc(6.51% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 78</b><span class="t" dir="ltr" lang="tr">Dolaşımın lokal homeostazı ve hipertansiyon</span></figcaption><div class="evimg"><img src="img/BF26-27-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 60</b><span class="t" dir="ltr" lang="tr">Böbrekler ve idrar oluşumu</span></figcaption><div class="evimg"><img src="img/BF26-27-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>15</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K26</b>Kurul 2025–2026<i></i>Soru 22</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال ده من درس 15 (الهيستامين)، وإسلام كاتب جنبه 15. بس سلايد 51 في الدرس ده بيقول إن الهيستامين بيزوّد الـcAMP في الخلايا الجدارية فبيزوّد إفراز حمض المعدة، فالاختيار A غلط. (البروستاجلاندينات هي اللي بتقلّل الحمض.)</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Midede asit salgısını azalatır</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:186px"><img src="img/K26-22.png" alt=""><span class="mark" style="left:calc(14.34% - 6px);top:calc(23.92% - 3px);width:calc(40.10% + 12px);height:calc(11.84% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 51</b><span class="t" dir="ltr" lang="tr">Gastrointestinal kanal</span></figcaption><div class="evimg"><img src="img/K26-22-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>16</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K4-24</b>Kurul 2023–2024<i></i>Soru 26</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>النابروكسين NSAID بيثبط الـ COX (سلايد 27). سلايد 129: الـ PGE2 بيعمل ألم وحرارة وبيقلل حمض المعدة (وسلايد 130: TXA2 بيزود تجمّع الصفائح)؛ فلما يقلّوا: مسكن وخافض حرارة، مضاد التهاب، حمض أكتر، ونزيف أطول. تسريع التئام الكسور مش منهم.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Kemik kırığı ve iskelet kası iyileşmesini hızlandırır</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:419px;height:250px"><img src="img/K4-24-26.png" alt=""><span class="mark" style="left:calc(13.09% - 6px);top:calc(26.22% - 3px);width:calc(67.64% + 12px);height:calc(20.12% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 27</b><span class="t" dir="ltr" lang="tr">Siklooksijenaz Ürünleri(cox)</span></figcaption><div class="evimg"><img src="img/K4-24-26-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 129</b><span class="t" dir="ltr" lang="tr">Prostaglandinlerin fizyolojik etkileri</span></figcaption><div class="evimg"><img src="img/K4-24-26-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>17</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-23</b>Kurul 2022–2023<i></i>Soru 81</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال من محاضرة أدوية الجهاز التناسلي. سلايد 134 بيقول إن الميزوبروستول بيستخدم لعمل إجهاض وإن الميفيبريستون (RU 486) بيستخدم لنفس الغرض. الإرجونوفين بيقلّص الرحم بعد الولادة، الرالوكسيفين والتاموكسيفين معدّلات لمستقبلات الإستروجين، والتيربوتالين بيرخّي الرحم.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>Mifepriston</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:420px;height:250px"><img src="img/K6-23-81.png" alt=""><span class="mark" style="left:calc(24.67% - 6px);top:calc(61.87% - 3px);width:calc(23.13% + 12px);height:calc(9.12% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 134</b><span class="t" dir="ltr" lang="tr">EİKOSANOİDLER</span></figcaption><div class="evimg"><img src="img/K6-23-81-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>18</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K6-22</b>Kurul 2021–2022<i></i>Soru 63</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال من محاضرة الكورتيكوستيرويدات. سلايد 111 بيقول إن الجلوكوكورتيكويدات (عن طريق الليبوكورتين) بتثبّط الفوسفوليباز A2، فمفيش أراكيدونيك أسيد يتكوّن، وبالتالي بيقلّ تكوين البروستاجلاندينات واللوكوترينات. باقي الاختيارات عكس اللي بيعمله الكورتيزون (ضمور عضلات، ارتفاع سكر، تأخير التئام الجروح، احتباس ملح ومية).</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Lökotrien sentezinin inhibisyonu</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:461px;height:250px"><img src="img/K6-22-63.png" alt=""><span class="mark" style="left:calc(13.86% - 6px);top:calc(63.30% - 3px);width:calc(66.58% + 12px);height:calc(10.30% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 111</b><span class="t" dir="ltr" lang="tr">Eikozanoid sentezini bloke eden ilaçlar</span></figcaption><div class="evimg"><img src="img/K6-22-63-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>19</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K3-21</b>Kurul 2020–2021<i></i>Soru 74</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال من محاضرة أدوية الربو. الغلط في C: المونتيلوكاست والزافيرلوكاست مش «لوكوترينات»، دول مضادات لمستقبلات اللوكوترينات (سلايد 109: Antagonistler)، والزيليوتون بيثبّط إنزيم 5-ليبوكسيجيناز فبيقلّل تكوين اللوكوترينات (سلايد 113). باقي المجموعات صح.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Lökotrienler – Montelukast, zafirlukast, zileuton</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:156px"><img src="img/K3-21-74.png" alt=""><span class="mark" style="left:calc(6.44% - 6px);top:calc(62.25% - 3px);width:calc(44.13% + 12px);height:calc(10.60% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 109</b><span class="t" dir="ltr" lang="tr">Lökotrien reseptörleri ve blokörleri</span></figcaption><div class="evimg"><img src="img/K3-21-74-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 113</b><span class="t" dir="ltr" lang="tr">Lökotrien sentezini bloke eden ilaçlar</span></figcaption><div class="evimg"><img src="img/K3-21-74-ev2.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>20</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K1-20</b>Kurul 2019–2020<i></i>Soru 24</span>
+        
+        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال من محاضرة أدوية الربو، والمفتاح المعلّم في الامتحان D. سلايد 109 بيقول إن الزافيرلوكاست مضاد لمستقبلات اللوكوترينات (Antagonistler)، مش مثبّت للخلايا البدينة (ده الكروموجلايكات). خلي بالك: A (السالبوتامول β2 مش ألفا 2) و B (الأمينوفيلين مثبّط فوسفوديستيراز مش منشّط) مكتوبين غلط في الورقة برضه، بس المفتاح D.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>D</b>Mast hücre stabilizatörleri → Zafirlukast</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:138px"><img src="img/K1-20-24.png" alt=""><span class="mark" style="left:calc(4.35% - 6px);top:calc(66.67% - 3px);width:calc(57.10% + 12px);height:calc(16.09% + 6px)"></span></div></figure>
+    </div>
+    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 109</b><span class="t" dir="ltr" lang="tr">Lökotrien reseptörleri ve blokörleri</span></figcaption><div class="evimg"><img src="img/K1-20-24-ev1.jpg" alt=""></div></figure></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section>
+<section class="sheet q wide">
+  <header class="top">
+    <span class="crumb"><b>18</b><span dir="ltr" lang="tr">Prostaglandin</span></span>
+    <span class="count">سؤال <b>21</b> من 21</span>
+  </header>
+  <div class="body">
+    <div class="qside">
+      <div class="meta">
+        <span class="exam" dir="ltr" lang="tr"><b>K1-19</b>Kurul 2018–2019<i></i>Soru 24</span>
+        
+        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>السؤال عن أدوية ضغط الشريان الرئوي الأولي. سلايد 135 بيقول إن الإيلوبروست من نظائر الـPGI2، وإن الإيبوبروستينول بيتستخدم في علاج الـprimer pulmoner hipertansiyon، يعني اختيار c صح. بس الإجابة نفسها مش في الملف ده: الإرجوتامين قلويد إرجوت بيتستخدم في نوبة الصداع النصفي (درس 16 السيروتونين) ومش من أدوية ضغط الرئة. الإجابة المظللة في ورقة الامتحان b. السؤال ده موجود كمان في درس 19.</p></aside>
+        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+      </div>
+      <figure class="qcard"><div class="qimg" style="width:546px;height:112px"><img src="img/K1-19-24.png" alt=""></div></figure>
+    </div>
+    <div class="evs"></div>
+  </div>
+  <footer class="foot"><span>18 · <span dir="ltr" lang="tr">Prostaglandin</span></span><span class="pg"></span></footer>
+  <aside class="notes"><span>ملاحظات</span></aside>
+</section></body></html>
