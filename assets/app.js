@@ -149,17 +149,11 @@
     // the same question, word for word, in other exams
     const also = (q.also || []).map(a => `<span class="badge also">جه كمان في <b dir="ltr">${esc(a.exam)} · ${esc((examBy[a.exam] || {}).year || '')} · Soru ${a.qno}</b></span>`).join('');
     const ln = typeof q.lesson === 'number' && lessonBy[q.lesson];
-    // the other options: what each one really is, from the lesson file, and the slides that say it
-    const opts = q.options && q.options.length ? `<section class="opts"><h3>${q.answer ? 'باقي الاختيارات' : 'الاختيارات'}<span>الصح بتاع كل اختيار من ملف الشرح</span></h3>
-      <ol class="orows">${q.options.map(o => {
-        const sl = [...new Set(o.ev.map(k => q.optEvidence[k].slide))];
-        return `<li><b class="ol" dir="ltr">${esc(o.letter)}</b><div class="ot"><span class="otx" dir="ltr" lang="tr">${esc(o.text)}</span>
-          ${sl.length ? `<span class="ref">سلايد ${sl.join('، ')}</span>` : ''}
-          ${o.fact ? `<p class="fact">${esc(o.fact)}</p>` : ''}</div></li>`;
-      }).join('')}</ol>
-      ${q.optEvidence.length ? `<div class="evs ogrid">${q.optEvidence.map(ev => `<figure class="ev"><span class="letters" dir="ltr">${ev.letters.join(' · ')}</span>
+    // the other options: only the lesson slides that answer them, each mark with its letter
+    const opts = q.optEvidence && q.optEvidence.length ? `<section class="opts"><h3>باقي الاختيارات</h3>
+      <div class="evs ogrid">${q.optEvidence.map(ev => `<figure class="ev"><span class="letters" dir="ltr">${ev.letters.join(' · ')}</span>
         <figcaption><span>${ev.lesson ? `من درس ${ev.lesson}` : 'من الدرس'}</span><b>سلايد ${ev.slide}</b><span class="t" lang="tr">${esc(ev.title)}</span></figcaption>
-        <img src="${esc(imgSrc(ev.img))}" alt="سلايد ${ev.slide}" loading="lazy"></figure>`).join('')}</div>` : ''}</section>` : '';
+        <img src="${esc(imgSrc(ev.img))}" alt="سلايد ${ev.slide}" loading="lazy"></figure>`).join('')}</div></section>` : '';
     return `<article class="qc rise" id="${esc(q.id)}" data-sec="${q.section}" style="--i:${Math.min(i, 8)}">
       <div class="qh"><span class="idx">${String(i).padStart(2, '0')}</span>
         <span class="exam"><b>${esc(q.exam)}</b>${esc(e.name || e.kind)} ${esc(e.year)}<i></i>Soru ${q.qno}</span>
