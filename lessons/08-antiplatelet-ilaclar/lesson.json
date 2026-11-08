@@ -1,7 +1,7 @@
 {
  "pdf": "lessons/08-antiplatelet-ilaclar/08-antiplatelet-ilaclar-sorular.pdf",
  "pdfName": "Antiplatelet ilaçlar.pdf",
- "pages": 35,
+ "pages": 56,
  "questions": [
   {
    "id": "F26-10",
@@ -35,7 +35,48 @@
     {
      "img": "lessons/08-antiplatelet-ilaclar/img/F26-10-ev2.jpg",
      "slide": 9,
-     "title": "1- Standart Heparı̇n"
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    }
+   ],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Protein S",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "C",
+     "text": "Protein C",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "D",
+     "text": "Faktör IX",
+     "fact": "Faktör IX من عوامل التجلط المعتمدة على فيتامين K، واللي بيقلل تصنيعها هو الوارفارين مش الهيبارين.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Faktör VII",
+     "fact": "Faktör VII برضه من العوامل المعتمدة على فيتامين K اللي الوارفارين بيقلل تصنيعها.",
+     "ev": [
+      0
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/F26-10-o1.jpg",
+     "slide": 12,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "D",
+      "E"
+     ]
     }
    ]
   },
@@ -73,6 +114,60 @@
      "slide": 15,
      "title": "4. Direkt Trombin İnhibitörleri"
     }
+   ],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Klopidogrel",
+     "fact": "مضاد صفائح (ADP reseptör antagonisti)، مش مضاد تجلط.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Silostazol",
+     "fact": "مضاد صفائح (PDE inhibitörü).",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Absiksimab",
+     "fact": "مضاد صفائح (GPIIb/IIIa antagonisti).",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Tenekteplaz",
+     "fact": "فيبرينوليتيك (rekombinan tPA) بيدوّب الجلطة.",
+     "ev": [
+      1
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/F26-14-o1.jpg",
+     "slide": 25,
+     "title": "Antiplatelet ilaçlar- 2nd lecture",
+     "letters": [
+      "B",
+      "C",
+      "D"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/F26-14-o2.jpg",
+     "slide": 33,
+     "title": "Fibrinolitik ilaçlar",
+     "letters": [
+      "E"
+     ]
+    }
    ]
   },
   {
@@ -109,6 +204,60 @@
      "slide": 17,
      "title": "VARFARİN İLE BİRLİKTE KULLANILMASI ÖNERİLMEYEN İLAÇLAR"
     }
+   ],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Fenitoin",
+     "fact": "سلايد 17 حاطط الفينيتوين في قايمة اللي بيزوّدوا مفعول الوارفارين، بس الملف مش بيقول إنه بيثبط CYP450 زي الفلوكونازول.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Amoksisilin",
+     "fact": "البنسلينات والكو-أموكسيكلاف بيرفعوا الـINR، بس الملف مش بيقول إن ده عن طريق تثبيط CYP450.",
+     "ev": [
+      1
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Karbamazepin",
+     "fact": "بالعكس: بيقلل مفعول مضادات التجلط.",
+     "ev": [
+      1
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Rifampisin",
+     "fact": "بالعكس: من اللي بيقللوا مفعول الوارفارين.",
+     "ev": [
+      0
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K26-9-o1.jpg",
+     "slide": 17,
+     "title": "VARFARİN İLE BİRLİKTE KULLANILMASI ÖNERİLMEYEN İLAÇLAR",
+     "letters": [
+      "B",
+      "E"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K26-9-o2.jpg",
+     "slide": 18,
+     "title": "İLAÇ ETKİLEŞİMLERİ",
+     "letters": [
+      "C",
+      "D"
+     ]
+    }
    ]
   },
   {
@@ -138,7 +287,63 @@
     {
      "img": "lessons/08-antiplatelet-ilaclar/img/K26-10-ev1.jpg",
      "slide": 11,
-     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI Fondaparinuks"
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    }
+   ],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Laboratuvar izlemi gerektirmesi",
+     "fact": "بالعكس: الفوندابارينوكس مش محتاج ضبط جرعة ولا تحاليل.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Protaminle tam nötralize edilebilmesi",
+     "fact": "اللي بيتعادل بالبروتامين تماماً هو الهيبارين العادي؛ الفوندابارينوكس ملوش antidote.",
+     "ev": [
+      1,
+      0
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Sadece intravenöz uygulanması",
+     "fact": "بالعكس: بيتدّي تحت الجلد مرة واحدة في اليوم.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Yarı ömrünün çok kısa olması",
+     "fact": "بالعكس: نص عمره طويل، من 15 لـ20 ساعة.",
+     "ev": [
+      0
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K26-10-o1.jpg",
+     "slide": 11,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "B",
+      "C",
+      "D",
+      "E"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K26-10-o2.jpg",
+     "slide": 9,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "C"
+     ]
     }
    ]
   },
@@ -169,12 +374,70 @@
     {
      "img": "lessons/08-antiplatelet-ilaclar/img/K26-11-ev1.jpg",
      "slide": 19,
-     "title": "İLAÇ ETKİLEŞİMLERİ • Oral antitrombotik ilaçlardan;"
+     "title": "İLAÇ ETKİLEŞİMLERİ"
     },
     {
      "img": "lessons/08-antiplatelet-ilaclar/img/K26-11-ev2.jpg",
      "slide": 29,
      "title": "Advers Etkiler"
+    }
+   ],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Nitratlar",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "C",
+     "text": "Abciximab",
+     "fact": "مثبط GPIIb/IIIa، وده أقوى مثبط لتجمّع الصفائح، يعني بيزوّد التثبيط مش بيقلله.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Dipiridamol",
+     "fact": "هو نفسه مضاد صفائح (PDE inhibitörü)، فمش هيقلل التثبيط.",
+     "ev": [
+      1
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Aspirin",
+     "fact": "الـNSAİ (زي الأسبرين) مع الكلوبيدوجريل بيزوّدوا النزيف، مش بيقللوا المفعول.",
+     "ev": [
+      2
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K26-11-o1.jpg",
+     "slide": 30,
+     "title": "GPIIb/IIIa antagonistleri",
+     "letters": [
+      "C"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K26-11-o2.jpg",
+     "slide": 25,
+     "title": "Antiplatelet ilaçlar- 2nd lecture",
+     "letters": [
+      "D"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K26-11-o3.jpg",
+     "slide": 19,
+     "title": "İLAÇ ETKİLEŞİMLERİ",
+     "letters": [
+      "E"
+     ]
     }
    ]
   },
@@ -212,6 +475,74 @@
      "slide": 15,
      "title": "4. Direkt Trombin İnhibitörleri"
     }
+   ],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Varfarin",
+     "fact": "مضاد لفيتامين K، مش مثبط للثرومبين.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Fondaparinuks",
+     "fact": "مثبط انتقائي لـXa وبيتدّي تحت الجلد.",
+     "ev": [
+      1
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Asetilsalisilik asit",
+     "fact": "مضاد صفائح: بيعطّل COX-1 بشكل غير عكسي.",
+     "ev": [
+      2
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Rivaroksaban",
+     "fact": "فموي بس مثبط مباشر لـFXa، مش للثرومبين.",
+     "ev": [
+      3
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-25-7-o1.jpg",
+     "slide": 12,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "B"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-25-7-o2.jpg",
+     "slide": 11,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "C"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-25-7-o3.jpg",
+     "slide": 27,
+     "title": "Aspirin",
+     "letters": [
+      "D"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-25-7-o4.jpg",
+     "slide": 14,
+     "title": "3- Faktör Xa inhibitörleri-devam",
+     "letters": [
+      "E"
+     ]
+    }
    ]
   },
   {
@@ -241,12 +572,82 @@
     {
      "img": "lessons/08-antiplatelet-ilaclar/img/K3-25-8-ev1.jpg",
      "slide": 11,
-     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI Fondaparinuks"
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
     },
     {
      "img": "lessons/08-antiplatelet-ilaclar/img/K3-25-8-ev2.jpg",
      "slide": 10,
-     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI a.Düşük Molekül Ağırlıklı Heparinler"
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    }
+   ],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Antitrombin aracılı trombin inhibisyonu",
+     "fact": "ده الهيبارين العادي (بيثبط IIa وXa)؛ الفوندابارينوكس انتقائي لـXa بس.",
+     "ev": [
+      0,
+      1
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "K vitamini antagonisti",
+     "fact": "ده الوارفارين.",
+     "ev": [
+      2
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Direkt trombin inhibitörü",
+     "fact": "ده الدابيجاتران.",
+     "ev": [
+      3
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Direkt Faktör X inhibisyonu",
+     "fact": "ده الريفاروكسابان والأبيكسابان والإيدوكسابان.",
+     "ev": [
+      3
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-25-8-o1.jpg",
+     "slide": 5,
+     "title": "Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma",
+     "letters": [
+      "B"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-25-8-o2.jpg",
+     "slide": 11,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "B"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-25-8-o3.jpg",
+     "slide": 12,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "C"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-25-8-o4.jpg",
+     "slide": 13,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "D",
+      "E"
+     ]
     }
    ]
   },
@@ -277,12 +678,60 @@
     {
      "img": "lessons/08-antiplatelet-ilaclar/img/F25-4-ev1.jpg",
      "slide": 28,
-     "title": "ADP RESEPTÖR BLOKÖRLERİ"
+     "title": "2. ADP RESEPTÖR BLOKÖRLERİ"
     },
     {
      "img": "lessons/08-antiplatelet-ilaclar/img/F25-4-ev2.jpg",
      "slide": 5,
      "title": "Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma"
+    }
+   ],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Aspirin",
+     "fact": "بيعطّل COX-1 بشكل غير عكسي، مش P2Y12.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Dazoksiben",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "D",
+     "text": "Treprostinil",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "E",
+     "text": "Dipiridamol",
+     "fact": "مثبط فوسفودايستراز (PDE).",
+     "ev": [
+      1
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/F25-4-o1.jpg",
+     "slide": 27,
+     "title": "Aspirin",
+     "letters": [
+      "B"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/F25-4-o2.jpg",
+     "slide": 31,
+     "title": "4. Fosfodiesteraz Inhibitörleri",
+     "letters": [
+      "E"
+     ]
     }
    ]
   },
@@ -320,6 +769,74 @@
      "slide": 6,
      "title": "Temel Farmakolojik Farklılıkların Özeti"
     }
+   ],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Aspirin",
+     "fact": "مضاد صفائح: بيثبط COX-1 في الصفائح، مش مثبط للثرومبين.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Heparin",
+     "fact": "بيشتغل بشكل غير مباشر عن طريق الأنتيثرومبين، مش مثبط مباشر.",
+     "ev": [
+      1
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Varfarin",
+     "fact": "مضاد لفيتامين K: بيقلل تصنيع عوامل II وVII وIX وX في الكبد.",
+     "ev": [
+      2
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Tiklopidin",
+     "fact": "مضاد صفائح: بيثبط مستقبل P2Y12 بشكل غير عكسي.",
+     "ev": [
+      3
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/F25-5-o1.jpg",
+     "slide": 25,
+     "title": "Antiplatelet ilaçlar- 2nd lecture",
+     "letters": [
+      "B"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/F25-5-o2.jpg",
+     "slide": 9,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "C"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/F25-5-o3.jpg",
+     "slide": 12,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "D"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/F25-5-o4.jpg",
+     "slide": 28,
+     "title": "2. ADP RESEPTÖR BLOKÖRLERİ",
+     "letters": [
+      "E"
+     ]
+    }
    ]
   },
   {
@@ -350,6 +867,60 @@
      "img": "lessons/08-antiplatelet-ilaclar/img/F24-4-ev1.jpg",
      "slide": 26,
      "title": ""
+    }
+   ],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Tiklopidin",
+     "fact": "بيثبط مستقبل P2Y12 بتاع الـADP بشكل غير عكسي، مش PAR-1.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Klopidogrel",
+     "fact": "بيثبط مستقبل P2Y12 بتاع الـADP بشكل غير عكسي.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Prasugrel",
+     "fact": "بيثبط مستقبل P2Y12 بتاع الـADP بشكل غير عكسي.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Aspirin",
+     "fact": "بيعطّل COX-1 بشكل غير عكسي فيمنع تكوين الـTXA2.",
+     "ev": [
+      1
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/F24-4-o1.jpg",
+     "slide": 28,
+     "title": "2. ADP RESEPTÖR BLOKÖRLERİ",
+     "letters": [
+      "B",
+      "C",
+      "D"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/F24-4-o2.jpg",
+     "slide": 27,
+     "title": "Aspirin",
+     "letters": [
+      "E"
+     ]
     }
    ]
   },
@@ -385,7 +956,68 @@
     {
      "img": "lessons/08-antiplatelet-ilaclar/img/K3-23-78-ev2.jpg",
      "slide": 10,
-     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI a.Düşük Molekül Ağırlıklı Heparinler"
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
+    }
+   ],
+   "options": [
+    {
+     "letter": "A",
+     "text": "Bivalirudin",
+     "fact": "مثبط مباشر للثرومبين (مشتق الهيرودين)، مش محتاج أنتيثرومبين.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "B",
+     "text": "Dabigatran",
+     "fact": "مثبط مباشر وانتقائي للثرومبين بس.",
+     "ev": [
+      1
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Enoksaparin",
+     "fact": "DMAH: بيثبط الثرومبين أقل بكتير من Xa.",
+     "ev": [
+      2
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Rivaroksaban",
+     "fact": "مثبط مباشر لـFXa بس، من غير أنتيثرومبين.",
+     "ev": [
+      1
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-23-78-o1.jpg",
+     "slide": 15,
+     "title": "4. Direkt Trombin İnhibitörleri",
+     "letters": [
+      "A"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-23-78-o2.jpg",
+     "slide": 13,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "B",
+      "E"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-23-78-o3.jpg",
+     "slide": 10,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "C"
+     ]
     }
    ]
   },
@@ -418,6 +1050,67 @@
      "slide": 6,
      "title": "Temel Farmakolojik Farklılıkların Özeti"
     }
+   ],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Oral direkt Faktör-Xa inhibitörleri",
+     "fact": "مفيش ليهم اختبار زي الـINR ولا اختبار كمّي ثابت للمتابعة.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Düşük molekül ağırlıklı heparinler",
+     "fact": "الملف بيقول إن الهيبارين العادي هو اللي بيتابع بالـaPTZ؛ والـDMAH نص عمره أطول وتوافره الحيوي أحسن.",
+     "ev": [
+      1
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Hirudin",
+     "fact": "من مثبطات الثرومبين المباشرة اللي بتتدّي بالحقن (زي البيفاليرودين).",
+     "ev": [
+      2
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Dabigatran",
+     "fact": "مضاد تجلط فموي جديد، ومفيش ليه اختبار زي الـINR.",
+     "ev": [
+      0
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-21-83-o1.jpg",
+     "slide": 24,
+     "title": "Yeni Oral Antikoagülan Kullanan Hastalara Yaklaşım",
+     "letters": [
+      "B",
+      "E"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-21-83-o2.jpg",
+     "slide": 10,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "C"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-21-83-o3.jpg",
+     "slide": 15,
+     "title": "4. Direkt Trombin İnhibitörleri",
+     "letters": [
+      "D"
+     ]
+    }
    ]
   },
   {
@@ -448,6 +1141,71 @@
      "img": "lessons/08-antiplatelet-ilaclar/img/F21-1-48-ev1.jpg",
      "slide": 17,
      "title": "VARFARİN İLE BİRLİKTE KULLANILMASI ÖNERİLMEYEN İLAÇLAR"
+    }
+   ],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Gemfibrozil",
+     "fact": "الملف مش بيذكر الجيمفيبروزيل بالاسم؛ من نفس عيلته الـKlofibrat، ومكتوب في اللي بيزوّدوا مفعول الوارفارين.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Tetrasiklin",
+     "fact": "الدوكسيسيكلين (تتراسيكلين) في قايمة المضادات الحيوية اللي ماتتاخدش مع الوارفارين، والمضادات الحيوية بتزوّد مفعوله.",
+     "ev": [
+      1,
+      0
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Aspirin",
+     "fact": "بيزوّد مفعول الوارفارين وخطر النزيف.",
+     "ev": [
+      0,
+      2
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Kloramfenikol",
+     "fact": "من المضادات الحيوية اللي بتزوّد مفعول الوارفارين.",
+     "ev": [
+      0
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/F21-1-48-o1.jpg",
+     "slide": 17,
+     "title": "VARFARİN İLE BİRLİKTE KULLANILMASI ÖNERİLMEYEN İLAÇLAR",
+     "letters": [
+      "B",
+      "C",
+      "D",
+      "E"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/F21-1-48-o2.jpg",
+     "slide": 16,
+     "title": "VARFARİN İLE BİRLİKTE KULLANILMAMASI GEREKEN İLAÇLAR",
+     "letters": [
+      "C"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/F21-1-48-o3.jpg",
+     "slide": 18,
+     "title": "İLAÇ ETKİLEŞİMLERİ",
+     "letters": [
+      "D"
+     ]
     }
    ]
   },
@@ -480,6 +1238,57 @@
      "slide": 6,
      "title": "Temel Farmakolojik Farklılıkların Özeti"
     }
+   ],
+   "options": [
+    {
+     "letter": "A",
+     "text": "PT-INR",
+     "fact": "الـINR للوارفارين؛ الهيبارين بيتابع بالـaPTT.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Trombosit sayısı",
+     "fact": "نقص الصفائح أثر جانبي للهيبارين، بس الملف مش بيستخدم عدد الصفائح لضبط الجرعة.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "D-dimer",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "E",
+     "text": "Kanama zamanı",
+     "fact": "زمن النزيف بيطول مع مضادات الصفائح (اختلال تجمّع الصفائح)، مش ده اختبار الهيبارين.",
+     "ev": [
+      1
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K1-20-1-o1.jpg",
+     "slide": 6,
+     "title": "Temel Farmakolojik Farklılıkların Özeti",
+     "letters": [
+      "A",
+      "C"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K1-20-1-o2.jpg",
+     "slide": 23,
+     "title": "Antitrombotik İlaç Kullanan Hastalara Yaklaşım",
+     "letters": [
+      "E"
+     ]
+    }
    ]
   },
   {
@@ -509,12 +1318,66 @@
     {
      "img": "lessons/08-antiplatelet-ilaclar/img/K1-20-11-ev1.jpg",
      "slide": 9,
-     "title": "1- Standart Heparı̇n"
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
     },
     {
      "img": "lessons/08-antiplatelet-ilaclar/img/K1-20-11-ev2.jpg",
      "slide": 5,
      "title": "Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma"
+    }
+   ],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Antitrombine bağlanarak etki gösterir",
+     "fact": "صح: الهيبارين بيرتبط بالأنتيثرومبين.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Faktör Xa'yı inhibe eder",
+     "fact": "صح: عن طريق الأنتيثرومبين بيعطّل Faktör Xa.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Trombin-antitrombin reaksiyonunun hızını artırır",
+     "fact": "صح: بينشّط الأنتيثرومبين III فيثبط الثرومبين (IIa) وXa.",
+     "ev": [
+      1
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Koagülasyon proteazlarının antitrombin ile inhibisyonunu katalizler",
+     "fact": "صح: كل مفعوله عن طريق الأنتيثرومبين.",
+     "ev": [
+      0
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K1-20-11-o1.jpg",
+     "slide": 9,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "B",
+      "C",
+      "E"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K1-20-11-o2.jpg",
+     "slide": 5,
+     "title": "Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma",
+     "letters": [
+      "D"
+     ]
     }
    ]
   },
@@ -557,6 +1420,44 @@
      "slide": 21,
      "title": "PIHTILAŞMA TESTLERİ"
     }
+   ],
+   "options": [
+    {
+     "letter": "A",
+     "text": "aPTT (Aktive parsiyel tromboplastin zamanı)",
+     "fact": "الـaPTT بيتابعوا بيه الهيبارين، مش الوارفارين.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Faktör Xa düzeyi",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "D",
+     "text": "TT (Trombin zamanı)",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "E",
+     "text": "Fibrinojen",
+     "fact": null,
+     "ev": []
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/F19-48-o1.jpg",
+     "slide": 6,
+     "title": "Temel Farmakolojik Farklılıkların Özeti",
+     "letters": [
+      "A"
+     ]
+    }
    ]
   },
   {
@@ -598,6 +1499,44 @@
      "slide": 21,
      "title": "PIHTILAŞMA TESTLERİ"
     }
+   ],
+   "options": [
+    {
+     "letter": "A",
+     "text": "aPTT (Aktive parsiyel tromboplastin zamanı)",
+     "fact": "الـaPTT بيتابعوا بيه الهيبارين، مش الوارفارين.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Faktör Xa düzeyi",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "D",
+     "text": "TT (Trombin zamanı)",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "E",
+     "text": "Fibrinojen",
+     "fact": null,
+     "ev": []
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K1-19-56-o1.jpg",
+     "slide": 6,
+     "title": "Temel Farmakolojik Farklılıkların Özeti",
+     "letters": [
+      "A"
+     ]
+    }
    ]
   },
   {
@@ -627,12 +1566,66 @@
     {
      "img": "lessons/08-antiplatelet-ilaclar/img/K1-19-30-ev1.jpg",
      "slide": 9,
-     "title": "1- Standart Heparı̇n"
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI"
     },
     {
      "img": "lessons/08-antiplatelet-ilaclar/img/K1-19-30-ev2.jpg",
      "slide": 6,
      "title": "Temel Farmakolojik Farklılıkların Özeti"
+    }
+   ],
+   "options": [
+    {
+     "letter": "A",
+     "text": "Trombositopeni",
+     "fact": "صح، من آثاره الجانبية: نقص الصفائح بسبب الهيبارين.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Osteoporoz",
+     "fact": "صح: الهيبارين بيثبط الـosteoblast وينشّط الـosteoclast، فبيزوّد فقدان العظم.",
+     "ev": [
+      1
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Postpartum kanama",
+     "fact": "صح: النزيف هو الأثر الجانبي الأساسي لمضادات التجلط.",
+     "ev": [
+      1
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Pelvik hematom",
+     "fact": "صح: نزيف برضه، والهيبارين ممكن يعمل نزيف.",
+     "ev": [
+      1
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K1-19-30-o1.jpg",
+     "slide": 6,
+     "title": "Temel Farmakolojik Farklılıkların Özeti",
+     "letters": [
+      "A"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K1-19-30-o2.jpg",
+     "slide": 9,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "C",
+      "D",
+      "E"
+     ]
     }
    ]
   },
@@ -665,6 +1658,67 @@
      "slide": 15,
      "title": "4. Direkt Trombin İnhibitörleri"
     }
+   ],
+   "options": [
+    {
+     "letter": "A",
+     "text": "Enoksaparin",
+     "fact": "هيبارين منخفض الوزن الجزيئي (DMAH): بيشتغل عن طريق الأنتيثرومبين وبيثبط الثرومبين أقل من Xa.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "B",
+     "text": "Fondaparinuks",
+     "fact": "مثبط انتقائي لـFaktör Xa، مش للثرومبين.",
+     "ev": [
+      1
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Heparin",
+     "fact": "بيشتغل عن طريق الأنتيثرومبين، مش بيرتبط بالثرومبين مباشرة.",
+     "ev": [
+      2
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Dalteparin",
+     "fact": "واحد من الـDMAH، وبيشتغل عن طريق الأنتيثرومبين زيهم.",
+     "ev": [
+      0
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K1-19-31-o1.jpg",
+     "slide": 10,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "A",
+      "E"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K1-19-31-o2.jpg",
+     "slide": 11,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "B"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K1-19-31-o3.jpg",
+     "slide": 9,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "D"
+     ]
+    }
    ]
   },
   {
@@ -682,7 +1736,40 @@
    "w": 262.0,
    "h": 153.0,
    "mark": null,
-   "evidence": []
+   "evidence": [],
+   "options": [
+    {
+     "letter": "A",
+     "text": "Enoksaparin",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "B",
+     "text": "Dabigatran",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "C",
+     "text": "Rivaroksaban",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "D",
+     "text": "Varfarin",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "E",
+     "text": "Dikumarol",
+     "fact": null,
+     "ev": []
+    }
+   ],
+   "optEvidence": []
   },
   {
    "id": "K25-64",
@@ -699,7 +1786,40 @@
    "w": 295.0,
    "h": 216.0,
    "mark": null,
-   "evidence": []
+   "evidence": [],
+   "options": [
+    {
+     "letter": "A",
+     "text": "Enzim indüksiyonu",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "B",
+     "text": "Enzim inhibisyonu",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "C",
+     "text": "Enzim füzyonu",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "D",
+     "text": "Enzim transdüksiyonu",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "E",
+     "text": "Enzim biyotransformasyonu",
+     "fact": null,
+     "ev": []
+    }
+   ],
+   "optEvidence": []
   },
   {
    "id": "K3-24-7",
@@ -735,6 +1855,60 @@
      "slide": 33,
      "title": "Fibrinolitik ilaçlar"
     }
+   ],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Aspirin",
+     "fact": "مضاد صفائح (COX inhibitörü)، مش فيبرينوليتيك.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Enoksaparin",
+     "fact": "مضاد تجلط من الهيبارينات (LMWH).",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Klopidogrel",
+     "fact": "مضاد صفائح (ADP reseptör antagonisti).",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Silostazol",
+     "fact": "مضاد صفائح (PDE inhibitörü).",
+     "ev": [
+      1
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-24-7-o1.jpg",
+     "slide": 8,
+     "title": "Sınıflandırma",
+     "letters": [
+      "B",
+      "C",
+      "D"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-24-7-o2.jpg",
+     "slide": 25,
+     "title": "Antiplatelet ilaçlar- 2nd lecture",
+     "letters": [
+      "E"
+     ]
+    }
    ]
   },
   {
@@ -752,7 +1926,57 @@
    "w": 262.0,
    "h": 144.0,
    "mark": null,
-   "evidence": []
+   "evidence": [],
+   "options": [
+    {
+     "letter": "A",
+     "text": "Andeksanet alfa",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "B",
+     "text": "Protamin sülfat",
+     "fact": "البروتامين سلفات هو الـantidote بتاع الهيبارين.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "İdarusizumab",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "D",
+     "text": "K vitamini artı pıhtılaşma faktörleri (II, VII, IX ve X)",
+     "fact": "فيتامين K هو الـantidote بتاع الوارفارين، مش الريفاروكسابان؛ الـDOAC ليها antidotes خاصة بيها.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "K vitamini artı protrombin kompleks konsantresi",
+     "fact": "برضه فيتامين K للوارفارين؛ الملف بيقول بس إن الـDOAC ليها antidotes خاصة.",
+     "ev": [
+      0
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-24-8-o1.jpg",
+     "slide": 6,
+     "title": "Temel Farmakolojik Farklılıkların Özeti",
+     "letters": [
+      "B",
+      "D",
+      "E"
+     ]
+    }
+   ]
   },
   {
    "id": "K3-23-80",
@@ -769,7 +1993,40 @@
    "w": 225.0,
    "h": 171.0,
    "mark": null,
-   "evidence": []
+   "evidence": [],
+   "options": [
+    {
+     "letter": "A",
+     "text": "Dipiridamol",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "B",
+     "text": "Enoksaparin",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "C",
+     "text": "Fraksiyonlanmamış heparin",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "D",
+     "text": "Klopidogrel",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "E",
+     "text": "Varfarin",
+     "fact": null,
+     "ev": []
+    }
+   ],
+   "optEvidence": []
   },
   {
    "id": "B21-2-89",
@@ -786,7 +2043,58 @@
    "w": 360.0,
    "h": 156.0,
    "mark": null,
-   "evidence": []
+   "evidence": [],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Daha kısa etki süresine sahip olması",
+     "fact": "بالعكس: نص عمر الـDMAH أطول من الهيبارين العادي بـ2 لـ4 مرات.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "İntravenöz uygulanması",
+     "fact": "الهيبارين العادي هو اللي بيتدّي وريدي أو تحت الجلد، فده مش ميزة للإنوكسابارين.",
+     "ev": [
+      1
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Plazma proteinlerine yüksek oranda bağlanması",
+     "fact": "بالعكس: الـDMAH بيرتبط ببروتينات البلازما أقل.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "E",
+     "text": "Teratojenik etki potansiyelinin düşük olması",
+     "fact": null,
+     "ev": []
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/B21-2-89-o1.jpg",
+     "slide": 10,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "B",
+      "D"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/B21-2-89-o2.jpg",
+     "slide": 9,
+     "title": "ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI",
+     "letters": [
+      "C"
+     ]
+    }
+   ]
   },
   {
    "id": "K4-21-65",
@@ -822,6 +2130,44 @@
      "slide": 32,
      "title": "Prostanoid agonistleri (Epoprostenol)"
     }
+   ],
+   "options": [
+    {
+     "letter": "A",
+     "text": "PGF2α – Uterusta kasılma (oksitosik)",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "B",
+     "text": "PGI2 – Sitoprotektif (hücre koruyucu) etki",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "C",
+     "text": "PGE2 – Mide asit salgısının inhibisyonu",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "D",
+     "text": "PGI2 – Trombosit agregasyonunun inhibisyonu",
+     "fact": "صح: الـPGI2 (البروستاسيكلين) بيثبط الصفائح.",
+     "ev": [
+      0
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K4-21-65-o1.jpg",
+     "slide": 32,
+     "title": "Prostanoid agonistleri (Epoprostenol)",
+     "letters": [
+      "D"
+     ]
+    }
    ]
   },
   {
@@ -839,7 +2185,92 @@
    "w": 533.0,
    "h": 156.0,
    "mark": null,
-   "evidence": []
+   "evidence": [],
+   "options": [
+    {
+     "letter": "A",
+     "text": "Dipiridamol – Streptokinaz – Faktör VII",
+     "fact": "الديبيريدامول مضاد صفائح والستربتوكيناز بيدوّب الجلطة، يعني هيزوّدوا النزيف.",
+     "ev": [
+      0,
+      1
+     ]
+    },
+    {
+     "letter": "B",
+     "text": "Tiklopidin – Aspirin",
+     "fact": "الاتنين مضادات صفائح، يعني هيزوّدوا النزيف.",
+     "ev": [
+      2,
+      3
+     ]
+    },
+    {
+     "letter": "C",
+     "text": "Yalnızca oral K1 vitamini",
+     "fact": "فيتامين K هو الـantidote بتاع الوارفارين، بس الملف مش بيقول إذا كان لوحده كفاية في الحالات المستعجلة.",
+     "ev": [
+      4
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Tam kan – Taze donmuş plazma – Protrombin kompleks konsantresi",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "E",
+     "text": "İlacın kesilmesi yeterlidir",
+     "fact": "مفعول الوارفارين بيبدأ ويخلص ببطء، فوقفه لوحده مش بيلغي المفعول بسرعة.",
+     "ev": [
+      4
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-21-82-o1.jpg",
+     "slide": 8,
+     "title": "Sınıflandırma",
+     "letters": [
+      "A"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-21-82-o2.jpg",
+     "slide": 33,
+     "title": "Fibrinolitik ilaçlar",
+     "letters": [
+      "A"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-21-82-o3.jpg",
+     "slide": 28,
+     "title": "2. ADP RESEPTÖR BLOKÖRLERİ",
+     "letters": [
+      "B"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-21-82-o4.jpg",
+     "slide": 25,
+     "title": "Antiplatelet ilaçlar- 2nd lecture",
+     "letters": [
+      "B"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K3-21-82-o5.jpg",
+     "slide": 6,
+     "title": "Temel Farmakolojik Farklılıkların Özeti",
+     "letters": [
+      "C",
+      "E"
+     ]
+    }
+   ]
   },
   {
    "id": "K3-21-84",
@@ -856,7 +2287,40 @@
    "w": 533.0,
    "h": 187.0,
    "mark": null,
-   "evidence": []
+   "evidence": [],
+   "options": [
+    {
+     "letter": "A",
+     "text": "Omalizumab",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "B",
+     "text": "İdarusizumab",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "C",
+     "text": "İnfliksimab",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "D",
+     "text": "Rituksimab",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "E",
+     "text": "Abatasept",
+     "fact": null,
+     "ev": []
+    }
+   ],
+   "optEvidence": []
   },
   {
    "id": "F21-1-49",
@@ -873,7 +2337,40 @@
    "w": 270.0,
    "h": 215.0,
    "mark": null,
-   "evidence": []
+   "evidence": [],
+   "options": [
+    {
+     "letter": "A",
+     "text": "Yalnız I",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "B",
+     "text": "I-II-IV",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "C",
+     "text": "II-IV",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "D",
+     "text": "Yalnız II",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "E",
+     "text": "Yalnız III",
+     "fact": null,
+     "ev": []
+    }
+   ],
+   "optEvidence": []
   },
   {
    "id": "K1-20-14",
@@ -903,6 +2400,57 @@
      "img": "lessons/08-antiplatelet-ilaclar/img/K1-20-14-ev1.jpg",
      "slide": 33,
      "title": "Fibrinolitik ilaçlar"
+    }
+   ],
+   "options": [
+    {
+     "letter": "A",
+     "text": "Antitrombotiktir",
+     "fact": "Antitrombotik ده الاسم العام لكل اللي بيمنع الجلطة، والفيبرينوليتيك بيدخلوا تحته في بعض التصنيفات بس.",
+     "ev": [
+      0
+     ]
+    },
+    {
+     "letter": "B",
+     "text": "Antikoagülandır",
+     "fact": "مضادات التجلط بتثبط العوامل، أما الستربتوكيناز فبيكسّر الفيبرين.",
+     "ev": [
+      1
+     ]
+    },
+    {
+     "letter": "D",
+     "text": "Hipolipidemiktir",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "E",
+     "text": "Hemostatiktir",
+     "fact": "بالعكس: بيكسّر الفيبرين ويدوّب الجلطة.",
+     "ev": [
+      1
+     ]
+    }
+   ],
+   "optEvidence": [
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K1-20-14-o1.jpg",
+     "slide": 7,
+     "title": "Klinik Uvoulamadaki Avrım",
+     "letters": [
+      "A"
+     ]
+    },
+    {
+     "img": "lessons/08-antiplatelet-ilaclar/img/K1-20-14-o2.jpg",
+     "slide": 33,
+     "title": "Fibrinolitik ilaçlar",
+     "letters": [
+      "B",
+      "E"
+     ]
     }
    ]
   },
@@ -935,7 +2483,34 @@
      "slide": 32,
      "title": "Prostanoid agonistleri (Epoprostenol)"
     }
-   ]
+   ],
+   "options": [
+    {
+     "letter": "B",
+     "text": "Mizoprostol",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "C",
+     "text": "Rioprostil (PGE2)",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "D",
+     "text": "Enprostil (PGE2)",
+     "fact": null,
+     "ev": []
+    },
+    {
+     "letter": "E",
+     "text": "Gemeprost (PGE1)",
+     "fact": null,
+     "ev": []
+    }
+   ],
+   "optEvidence": []
   }
  ]
 }

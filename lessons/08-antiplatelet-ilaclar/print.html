@@ -2,14 +2,14 @@
 <html lang="ar" dir="rtl" data-theme="light">
 <head><meta charset="utf-8"><title>8. Antiplatelet ilaçlar · Sorular</title>
 <link rel="stylesheet" href="../../assets/folks.css"><style>/* Print layout for one lesson's question PDF. Tokens come from folks.css. */
-@page { size: A4 landscape; margin: 0; }
+@page { size: A4 portrait; margin: 0; }
 html, body { margin: 0; background: var(--f-surface); }
 body.f { font-size: 13px; line-height: 1.45; }
 [lang="tr"] { font-family: var(--f-font-ui); }
 * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 
 .sheet {
-  width: 297mm; height: 210mm; padding: 11mm 13mm 9mm;
+  width: 210mm; height: 297mm; padding: 14mm 13mm 11mm;
   display: flex; flex-direction: column; gap: 14px;
   overflow: hidden; break-after: page; position: relative;
   background: var(--f-surface);
@@ -20,17 +20,17 @@ body.f { font-size: 13px; line-height: 1.45; }
 .kicker i { width: 10px; height: 10px; border-radius: 3px; background: var(--f-ink); }
 
 /* ---------- cover ---------- */
-.cover { flex-direction: row; gap: 34px; }
-.cv-main { width: 43%; flex: none; display: flex; flex-direction: column; }
-.cv-main .legend { margin-top: auto; }
+.cover { flex-direction: column; gap: 22px; }
+.cv-main { flex: none; display: flex; flex-direction: column; }
+.cv-main .legend { margin-top: 4px; }
 .cover .toc { flex: 1; padding-top: 2px; }
 .cover .big {
-  font-family: var(--f-font-ui); font-size: 190px; font-weight: 800; line-height: .82;
+  font-family: var(--f-font-ui); font-size: 150px; font-weight: 800; line-height: .82;
   letter-spacing: -9px; font-variant-numeric: tabular-nums; margin: 30px 0 16px; direction: ltr; text-align: left;
 }
 .cover h1 { font-size: 36px; line-height: 1.12; font-weight: 700; margin: 0; text-align: left; letter-spacing: -.3px; }
 .cover .who { margin: 8px 0 0; color: var(--f-dim); font-size: 14px; text-align: left; }
-.stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 26px 0 22px; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 22px 0 16px; }
 .stats div { background: var(--f-chip); border-radius: 18px; padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 2px; }
 .stats b { font-family: var(--f-font-ui); font-size: 34px; line-height: 1; font-weight: 700; font-variant-numeric: tabular-nums; }
 .stats span { font-size: 12px; color: var(--f-dim); font-weight: 600; }
@@ -128,6 +128,46 @@ body.f { font-size: 13px; line-height: 1.45; }
 body { counter-reset: pg; }
 .sheet { counter-increment: pg; }
 .pg::before { content: counter(pg); font-variant-numeric: tabular-nums; }
+
+/* ---------- question pages (portrait, flowing) ----------
+   A question starts on a new page and runs on to the next when its slides don't fit. The page
+   margin on the right (the right fifth of the sheet) is left blank for the student's notes. */
+@page q {
+  size: A4 portrait;
+  margin: 12mm 50mm 12mm 12mm;
+  @right-top { content: "ملاحظات"; vertical-align: top; text-align: left; padding: 0 0 0 7mm; margin-left: 8mm;
+    border-left: 1px solid #e3e3e6; font: 600 10px system-ui, sans-serif; color: #9a9aa1; }
+  @right-middle { content: ""; margin-left: 8mm; border-left: 1px solid #e3e3e6; }
+  @right-bottom { content: ""; margin-left: 8mm; border-left: 1px solid #e3e3e6; }
+  @bottom-left { content: counter(page); font: 600 9.5px system-ui, sans-serif; color: #9a9aa1; vertical-align: top; padding-top: 3mm; }
+}
+.qp { page: q; break-before: page; display: flex; flex-direction: column; gap: 10px; background: var(--f-surface); }
+.qp .top { margin-bottom: 2px; }
+.qp .src { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: flex-start; }
+.qp .note { break-inside: avoid; }
+.qp .qcard { align-self: flex-start; max-width: 100%; break-inside: avoid; }
+.qp .ans { break-after: avoid; }
+.qp .evs { display: grid; gap: 10px; }
+.qp .evs.n2 { grid-template-columns: 1fr 1fr; }
+.qp .ev { break-inside: avoid; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.qp .ev figcaption { font-size: 10.5px; }
+.qp .evimg { border-radius: 10px; overflow: hidden; box-shadow: 0 0 0 1px var(--f-line); }
+.qp .evimg img { display: block; width: 100%; height: auto; }
+
+.opts { display: flex; flex-direction: column; gap: 8px; margin-top: 6px; padding-top: 10px; border-top: 1px solid var(--f-line); }
+.opts h3 { margin: 0; display: flex; align-items: baseline; gap: 10px; font-size: 14px; font-weight: 800; break-after: avoid; }
+.opts h3 span { font-size: 11px; font-weight: 600; color: var(--f-mute); }
+.orows { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.orows li { display: grid; grid-template-columns: 24px 1fr; gap: 9px; align-items: start; padding: 7px 10px; border-radius: 12px; background: var(--f-chip); break-inside: avoid; }
+.orows .ol { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; box-shadow: inset 0 0 0 1.5px var(--f-ink); font: 700 11px var(--f-font-ui); }
+.orows .ot { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; min-width: 0; }
+.orows .otx { font-weight: 700; font-size: 12.5px; }
+.orows .ref { font-size: 10.5px; color: var(--f-mute); font-weight: 600; }
+.orows .fact { flex-basis: 100%; margin: 0; font-size: 12px; line-height: 1.55; color: var(--f-dim); }
+.orows .fact.none { color: var(--f-mute); font-style: normal; }
+.ogrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.ogrid .ev { position: relative; }
+.ogrid .letters { position: absolute; z-index: 1; top: 22px; left: 6px; padding: 2px 8px; border-radius: 999px; background: var(--f-ink); color: var(--f-on-ink); font: 700 10.5px var(--f-font-ui); }
 </style></head>
 <body class="f">
 <section class="sheet cover">
@@ -135,7 +175,7 @@ body { counter-reset: pg; }
     <div class="kicker"><i></i>بنك أسئلة السنين اللي فاتت · فارماكولوجي</div>
     <div class="big">8</div>
     <h1 dir="ltr" lang="tr">Antiplatelet ilaçlar</h1>
-    <p class="who" dir="ltr" lang="tr">Doç. Dr. Sema Ketenci</p>
+    <p class="who" dir="ltr" lang="tr"></p>
     <div class="stats">
       <div><b>31</b><span>سؤال</span></div>
       <div><b>19</b><span>أساسي</span></div>
@@ -148,386 +188,234 @@ body { counter-reset: pg; }
     </footer>
   </div>
   <div class="toc"><p class="toc-next">فهرس الأسئلة في الصفحة الجاية</p></div>
-</section><section class="sheet tocpage"><div class="kicker"><i></i>فهرس الأسئلة</div><div class="toc"><h3><span>الأسئلة</span><span>19</span></h3><ol><li><span class="n">01</span><span class="ex" dir="ltr">F26 · 10</span><span class="st" dir="ltr" lang="tr">Heparinin antikoagülan etkisi esas olarak hangi faktör üzerinden gerçekleşir?</span></li><li><span class="n">02</span><span class="ex" dir="ltr">F26 · 14</span><span class="st" dir="ltr" lang="tr">Direkt trombin (seçici faktör 2a) inhibitörü olan, VTE profilaksi ve tedavisinde kullanılan yeni nesil oral antikoagülan hangisidir?</span></li><li><span class="n">03</span><span class="ex" dir="ltr">K26 · 9</span><span class="st" dir="ltr" lang="tr">Varfarin kullanan hastada INR hızla yükselmiştir. CYP450&#x27;yi inhibe ederek varfarinin etkisini artıran ilaç hangisidir?</span></li><li><span class="n">04</span><span class="ex" dir="ltr">K26 · 10</span><span class="st" dir="ltr" lang="tr">Aşağıdaki durumlardan hangisi Fondaparinuks kullanımını diğer heparinlerden klinikte daha riskli hâle getirir?</span></li><li><span class="n">05</span><span class="ex" dir="ltr">K26 · 11</span><span class="st" dir="ltr" lang="tr">Klopidogrel alan hastada trombosit agregasyonu beklenenden az baskılanmıştır. Bu etkinlik azalmasını hangi ilaç açıklar?</span></li><li><span class="n">06</span><span class="ex" dir="ltr">K3-25 · 7</span><span class="st" dir="ltr" lang="tr">Aşağıdakilerden hangisi oral yoldan kullanılan direkt trombin inhibitörü bir antikoagülan ilaçtır?</span></li><li><span class="n">07</span><span class="ex" dir="ltr">K3-25 · 8</span><span class="st" dir="ltr" lang="tr">Venöz tromboz ve pulmoner embolizmin hem profilaksisi hem de tedavisinde kullanılan fondaparinuksun etki mekanizması hangisidir?</span></li><li><span class="n">08</span><span class="ex" dir="ltr">F25 · 4</span><span class="st" dir="ltr" lang="tr">Aşağıdakilerden hangisi P2Y inhibitörü olan antiagregan bir ilaçtır?</span></li><li><span class="n">09</span><span class="ex" dir="ltr">F25 · 5</span><span class="st" dir="ltr" lang="tr">Atriyal fibrilasyon gelişen hastaya direkt (pro)trombin inhibitörü bir antikoagülan veriliyor. En olası ilaç hangisidir?</span></li><li><span class="n">10</span><span class="ex" dir="ltr">F24 · 4</span><span class="st" dir="ltr" lang="tr">PAR-1 antagonisti olan ve trombinle indüklenen trombosit aktivasyonunu inhibe eden antitrombositer ilaç hangisidir?</span></li><li><span class="n">11</span><span class="ex" dir="ltr">K3-23 · 78</span><span class="st" dir="ltr" lang="tr">Aşağıdaki antikoagülan ilaçlardan hangisi, antitrombin ile etkileşime girerek hem Faktör Xa hem de trombini (Faktör IIa) inhibe eder?</span></li><li><span class="n">12</span><span class="ex" dir="ltr">K3-21 · 83</span><span class="st" dir="ltr" lang="tr">Aşağıdaki antikoagülan ilaç gruplarından hangisi için aktive edilmiş parsiyel tromboplastin zamanının (aPTZ) izlenmesi gereklidir?</span></li><li><span class="n">13</span><span class="ex" dir="ltr">F21-1 · 48</span><span class="st" dir="ltr" lang="tr">Varfarinle birlikte kullanıldığında onun antikoagülan etkisini azaltan ilaç hangisidir?</span></li><li><span class="n">14</span><span class="ex" dir="ltr">K1-20 · 1</span><span class="st" dir="ltr" lang="tr">Heparin ile yapılan antikoagülasyonda doz ayarlaması için en uygun laboratuvar testi hangisidir?</span></li><li><span class="n">15</span><span class="ex" dir="ltr">K1-20 · 11</span><span class="st" dir="ltr" lang="tr">Heparinin etki mekanizması ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?</span></li><li><span class="n">16</span><span class="ex" dir="ltr">F19 · 48</span><span class="st" dir="ltr" lang="tr">Warfarin kullanan bir hastanın takibinde aşağıdaki laboratuvar testlerinden hangisi kullanılmaktadır?</span></li><li><span class="n">17</span><span class="ex" dir="ltr">K1-19 · 56</span><span class="st" dir="ltr" lang="tr">Warfarin kullanan bir hastanın takibinde aşağıdaki laboratuvar testlerinden hangisi kullanılmaktadır?</span></li><li><span class="n">18</span><span class="ex" dir="ltr">K1-19 · 30</span><span class="st" dir="ltr" lang="tr">Aşağıdakilerden hangisi gebelik süresince uygulanan heparin tedavisinin yan etkilerinden biri değildir?</span></li><li><span class="n">19</span><span class="ex" dir="ltr">K1-19 · 31</span><span class="st" dir="ltr" lang="tr">Aşağıdaki ilaçlardan hangisi doğrudan trombinin aktif bölgesine bağlanarak antikoagülan etkinlik gösterir?</span></li></ol></div></section><section class="sheet tocpage"><div class="kicker"><i></i>فهرس الأسئلة</div><div class="toc"><h3><span>للمراجعة · آخر الملف</span><span>12</span></h3><ol><li><span class="n">20</span><span class="ex" dir="ltr">K3-26 · 2</span><span class="st" dir="ltr" lang="tr">Önceki gebeliklerinde tromboembolik olay yaşamış gebe hastada hangi antikoagülan ile tedavi uygundur?</span></li><li><span class="n">21</span><span class="ex" dir="ltr">K25 · 64</span><span class="st" dir="ltr" lang="tr">CYP2C9 ve VKORC1 polimorfizmi nedeniyle ara doz warfarin gereken hastada enzimin uğradığı değişiklik hangisidir?</span></li><li><span class="n">22</span><span class="ex" dir="ltr">K3-24 · 7</span><span class="st" dir="ltr" lang="tr">Plazminojen aktivatörü olup trombolitik tedavide kullanılan ilaç hangisidir?</span></li><li><span class="n">23</span><span class="ex" dir="ltr">K3-24 · 8</span><span class="st" dir="ltr" lang="tr">Rivaroksabana bağlı hayatı tehdit eden kanamanın tersine çevrilmesinde hangisi kullanılır?</span></li><li><span class="n">24</span><span class="ex" dir="ltr">K3-23 · 80</span><span class="st" dir="ltr" lang="tr">Gebelikte kullanıldığında burun-orta yüz hipoplazisi ve kondrodisplazi ile tipik embriyopati yapan antikoagülan hangisidir?</span></li><li><span class="n">25</span><span class="ex" dir="ltr">B21-2 · 89</span><span class="st" dir="ltr" lang="tr">Enoksaparini fraksiyonlanmamış heparine göre tercih etme nedeni hangisidir?</span></li><li><span class="n">26</span><span class="ex" dir="ltr">K4-21 · 65</span><span class="st" dir="ltr" lang="tr">Prostanoid – farmakolojik etki eşleştirmelerinden hangisi yanlıştır?</span></li><li><span class="n">27</span><span class="ex" dir="ltr">K3-21 · 82</span><span class="st" dir="ltr" lang="tr">Varfarin etkisinin hızlı bir şekilde ani olarak ortadan kaldırılması gereken durumlarda hastaya hangileri verilmelidir?</span></li><li><span class="n">28</span><span class="ex" dir="ltr">K3-21 · 84</span><span class="st" dir="ltr" lang="tr">Dabigatranın neden olduğu kanamayı tersine çevirmek için kullanılan monoklonal antikor hangisidir?</span></li><li><span class="n">29</span><span class="ex" dir="ltr">F21-1 · 49</span><span class="st" dir="ltr" lang="tr">Heparinin kontrendike olduğu durum/durumlar hangileridir? (düşük tehlikesi olan gebelik, ileri renal yetmezlik, hiperlipidemi, şiddetli hipertansiyon)</span></li><li><span class="n">30</span><span class="ex" dir="ltr">K1-20 · 14</span><span class="st" dir="ltr" lang="tr">Streptokinaz: antitrombotik / antikoagülan / fibrinolitik / hipolipidemik / hemostatik?</span></li><li><span class="n">31</span><span class="ex" dir="ltr">K1-19 · 4</span><span class="st" dir="ltr" lang="tr">Hemodiyaliz ve kalp cerrahisinde ekstrakorporal dolaşımda pıhtı oluşmasını ve trombosit kaybını önlemek için hangi prostaglandin analoğu kullanılır?</span></li></ol></div></section>
-<section class="sheet q wide">
+</section><section class="sheet tocpage"><div class="kicker"><i></i>فهرس الأسئلة</div><div class="toc"><h3><span>الأسئلة</span><span>19</span></h3><ol><li><span class="n">01</span><span class="ex" dir="ltr">F26 · 10</span><span class="st" dir="ltr" lang="tr">Heparinin antikoagülan etkisi esas olarak hangi faktör üzerinden gerçekleşir?</span></li><li><span class="n">02</span><span class="ex" dir="ltr">F26 · 14</span><span class="st" dir="ltr" lang="tr">Direkt trombin (seçici faktör 2a) inhibitörü olan, VTE profilaksi ve tedavisinde kullanılan yeni nesil oral antikoagülan hangisidir?</span></li><li><span class="n">03</span><span class="ex" dir="ltr">K26 · 9</span><span class="st" dir="ltr" lang="tr">Varfarin kullanan hastada INR hızla yükselmiştir. CYP450&#x27;yi inhibe ederek varfarinin etkisini artıran ilaç hangisidir?</span></li><li><span class="n">04</span><span class="ex" dir="ltr">K26 · 10</span><span class="st" dir="ltr" lang="tr">Aşağıdaki durumlardan hangisi Fondaparinuks kullanımını diğer heparinlerden klinikte daha riskli hâle getirir?</span></li><li><span class="n">05</span><span class="ex" dir="ltr">K26 · 11</span><span class="st" dir="ltr" lang="tr">Klopidogrel alan hastada trombosit agregasyonu beklenenden az baskılanmıştır. Bu etkinlik azalmasını hangi ilaç açıklar?</span></li><li><span class="n">06</span><span class="ex" dir="ltr">K3-25 · 7</span><span class="st" dir="ltr" lang="tr">Aşağıdakilerden hangisi oral yoldan kullanılan direkt trombin inhibitörü bir antikoagülan ilaçtır?</span></li><li><span class="n">07</span><span class="ex" dir="ltr">K3-25 · 8</span><span class="st" dir="ltr" lang="tr">Venöz tromboz ve pulmoner embolizmin hem profilaksisi hem de tedavisinde kullanılan fondaparinuksun etki mekanizması hangisidir?</span></li><li><span class="n">08</span><span class="ex" dir="ltr">F25 · 4</span><span class="st" dir="ltr" lang="tr">Aşağıdakilerden hangisi P2Y inhibitörü olan antiagregan bir ilaçtır?</span></li><li><span class="n">09</span><span class="ex" dir="ltr">F25 · 5</span><span class="st" dir="ltr" lang="tr">Atriyal fibrilasyon gelişen hastaya direkt (pro)trombin inhibitörü bir antikoagülan veriliyor. En olası ilaç hangisidir?</span></li><li><span class="n">10</span><span class="ex" dir="ltr">F24 · 4</span><span class="st" dir="ltr" lang="tr">PAR-1 antagonisti olan ve trombinle indüklenen trombosit aktivasyonunu inhibe eden antitrombositer ilaç hangisidir?</span></li><li><span class="n">11</span><span class="ex" dir="ltr">K3-23 · 78</span><span class="st" dir="ltr" lang="tr">Aşağıdaki antikoagülan ilaçlardan hangisi, antitrombin ile etkileşime girerek hem Faktör Xa hem de trombini (Faktör IIa) inhibe eder?</span></li><li><span class="n">12</span><span class="ex" dir="ltr">K3-21 · 83</span><span class="st" dir="ltr" lang="tr">Aşağıdaki antikoagülan ilaç gruplarından hangisi için aktive edilmiş parsiyel tromboplastin zamanının (aPTZ) izlenmesi gereklidir?</span></li><li><span class="n">13</span><span class="ex" dir="ltr">F21-1 · 48</span><span class="st" dir="ltr" lang="tr">Varfarinle birlikte kullanıldığında onun antikoagülan etkisini azaltan ilaç hangisidir?</span></li><li><span class="n">14</span><span class="ex" dir="ltr">K1-20 · 1</span><span class="st" dir="ltr" lang="tr">Heparin ile yapılan antikoagülasyonda doz ayarlaması için en uygun laboratuvar testi hangisidir?</span></li><li><span class="n">15</span><span class="ex" dir="ltr">K1-20 · 11</span><span class="st" dir="ltr" lang="tr">Heparinin etki mekanizması ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?</span></li><li><span class="n">16</span><span class="ex" dir="ltr">F19 · 48</span><span class="st" dir="ltr" lang="tr">Warfarin kullanan bir hastanın takibinde aşağıdaki laboratuvar testlerinden hangisi kullanılmaktadır?</span></li><li><span class="n">17</span><span class="ex" dir="ltr">K1-19 · 56</span><span class="st" dir="ltr" lang="tr">Warfarin kullanan bir hastanın takibinde aşağıdaki laboratuvar testlerinden hangisi kullanılmaktadır?</span></li><li><span class="n">18</span><span class="ex" dir="ltr">K1-19 · 30</span><span class="st" dir="ltr" lang="tr">Aşağıdakilerden hangisi gebelik süresince uygulanan heparin tedavisinin yan etkilerinden biri değildir?</span></li><li><span class="n">19</span><span class="ex" dir="ltr">K1-19 · 31</span><span class="st" dir="ltr" lang="tr">Aşağıdaki ilaçlardan hangisi doğrudan trombinin aktif bölgesine bağlanarak antikoagülan etkinlik gösterir?</span></li></ol><h3><span>للمراجعة · آخر الملف</span><span>12</span></h3><ol><li><span class="n">20</span><span class="ex" dir="ltr">K3-26 · 2</span><span class="st" dir="ltr" lang="tr">Önceki gebeliklerinde tromboembolik olay yaşamış gebe hastada hangi antikoagülan ile tedavi uygundur?</span></li><li><span class="n">21</span><span class="ex" dir="ltr">K25 · 64</span><span class="st" dir="ltr" lang="tr">CYP2C9 ve VKORC1 polimorfizmi nedeniyle ara doz warfarin gereken hastada enzimin uğradığı değişiklik hangisidir?</span></li><li><span class="n">22</span><span class="ex" dir="ltr">K3-24 · 7</span><span class="st" dir="ltr" lang="tr">Plazminojen aktivatörü olup trombolitik tedavide kullanılan ilaç hangisidir?</span></li><li><span class="n">23</span><span class="ex" dir="ltr">K3-24 · 8</span><span class="st" dir="ltr" lang="tr">Rivaroksabana bağlı hayatı tehdit eden kanamanın tersine çevrilmesinde hangisi kullanılır?</span></li><li><span class="n">24</span><span class="ex" dir="ltr">K3-23 · 80</span><span class="st" dir="ltr" lang="tr">Gebelikte kullanıldığında burun-orta yüz hipoplazisi ve kondrodisplazi ile tipik embriyopati yapan antikoagülan hangisidir?</span></li><li><span class="n">25</span><span class="ex" dir="ltr">B21-2 · 89</span><span class="st" dir="ltr" lang="tr">Enoksaparini fraksiyonlanmamış heparine göre tercih etme nedeni hangisidir?</span></li><li><span class="n">26</span><span class="ex" dir="ltr">K4-21 · 65</span><span class="st" dir="ltr" lang="tr">Prostanoid – farmakolojik etki eşleştirmelerinden hangisi yanlıştır?</span></li><li><span class="n">27</span><span class="ex" dir="ltr">K3-21 · 82</span><span class="st" dir="ltr" lang="tr">Varfarin etkisinin hızlı bir şekilde ani olarak ortadan kaldırılması gereken durumlarda hastaya hangileri verilmelidir?</span></li><li><span class="n">28</span><span class="ex" dir="ltr">K3-21 · 84</span><span class="st" dir="ltr" lang="tr">Dabigatranın neden olduğu kanamayı tersine çevirmek için kullanılan monoklonal antikor hangisidir?</span></li><li><span class="n">29</span><span class="ex" dir="ltr">F21-1 · 49</span><span class="st" dir="ltr" lang="tr">Heparinin kontrendike olduğu durum/durumlar hangileridir? (düşük tehlikesi olan gebelik, ileri renal yetmezlik, hiperlipidemi, şiddetli hipertansiyon)</span></li><li><span class="n">30</span><span class="ex" dir="ltr">K1-20 · 14</span><span class="st" dir="ltr" lang="tr">Streptokinaz: antitrombotik / antikoagülan / fibrinolitik / hipolipidemik / hemostatik?</span></li><li><span class="n">31</span><span class="ex" dir="ltr">K1-19 · 4</span><span class="st" dir="ltr" lang="tr">Hemodiyaliz ve kalp cerrahisinde ekstrakorporal dolaşımda pıhtı oluşmasını ve trombosit kaybını önlemek için hangi prostaglandin analoğu kullanılır?</span></li></ol></div></section>
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>1</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>F26</b>Final 2025–2026<i></i>Soru 10</span>
-        
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Antitrombin III</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:210px"><img src="img/F26-10.png" alt=""><span class="mark" style="left:calc(13.45% - 6px);top:calc(34.78% - 3px);width:calc(20.21% + 12px);height:calc(10.57% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/F26-10-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 9</b><span class="t" dir="ltr" lang="tr">1- Standart Heparı̇n</span></figcaption><div class="evimg"><img src="img/F26-10-ev2.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>F26</b>Final 2025–2026<i></i>Soru 10</span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:206px"><img src="img/F26-10.png" alt=""><span class="mark" style="left:calc(13.45% - 6px);top:calc(34.78% - 3px);width:calc(20.21% + 12px);height:calc(10.57% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Antitrombin III</span></div>
+  <div class="evs n2"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/F26-10-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 9</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/F26-10-ev2.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Protein S</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Protein C</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Faktör IX</span><span class="ref">سلايد 12</span><p class="fact">Faktör IX من عوامل التجلط المعتمدة على فيتامين K، واللي بيقلل تصنيعها هو الوارفارين مش الهيبارين.</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Faktör VII</span><span class="ref">سلايد 12</span><p class="fact">Faktör VII برضه من العوامل المعتمدة على فيتامين K اللي الوارفارين بيقلل تصنيعها.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">D · E</span><figcaption><span>من الدرس</span><b>سلايد 12</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/F26-10-o1.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>2</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>F26</b>Final 2025–2026<i></i>Soru 14</span>
-        <span class="tag">اتسأل بصيغ مختلفة في 3 امتحانات</span>
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Dabigatran</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:415px;height:250px"><img src="img/F26-14.png" alt=""><span class="mark" style="left:calc(15.81% - 6px);top:calc(55.41% - 3px);width:calc(17.10% + 12px);height:calc(7.22% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/F26-14-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 15</b><span class="t" dir="ltr" lang="tr">4. Direkt Trombin İnhibitörleri</span></figcaption><div class="evimg"><img src="img/F26-14-ev2.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>F26</b>Final 2025–2026<i></i>Soru 14</span><span class="tag">اتسأل بصيغ مختلفة في 3 امتحانات</span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:530px;height:320px"><img src="img/F26-14.png" alt=""><span class="mark" style="left:calc(15.81% - 6px);top:calc(55.41% - 3px);width:calc(17.10% + 12px);height:calc(7.22% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Dabigatran</span></div>
+  <div class="evs n2"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/F26-14-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 15</b><span class="t" dir="ltr" lang="tr">4. Direkt Trombin İnhibitörleri</span></figcaption><div class="evimg"><img src="img/F26-14-ev2.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Klopidogrel</span><span class="ref">سلايد 25</span><p class="fact">مضاد صفائح (ADP reseptör antagonisti)، مش مضاد تجلط.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Silostazol</span><span class="ref">سلايد 25</span><p class="fact">مضاد صفائح (PDE inhibitörü).</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Absiksimab</span><span class="ref">سلايد 25</span><p class="fact">مضاد صفائح (GPIIb/IIIa antagonisti).</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Tenekteplaz</span><span class="ref">سلايد 33</span><p class="fact">فيبرينوليتيك (rekombinan tPA) بيدوّب الجلطة.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">B · C · D</span><figcaption><span>من الدرس</span><b>سلايد 25</b><span class="t" dir="ltr" lang="tr">Antiplatelet ilaçlar- 2nd lecture</span></figcaption><div class="evimg"><img src="img/F26-14-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">E</span><figcaption><span>من الدرس</span><b>سلايد 33</b><span class="t" dir="ltr" lang="tr">Fibrinolitik ilaçlar</span></figcaption><div class="evimg"><img src="img/F26-14-o2.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>3</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K26</b>Kurul 2025–2026<i></i>Soru 9</span>
-        
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات)، وإسلام كاتب جنبه 7 و8.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Flukonazol</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:415px;height:250px"><img src="img/K26-9.png" alt=""><span class="mark" style="left:calc(15.81% - 6px);top:calc(55.44% - 3px);width:calc(16.58% + 12px);height:calc(7.22% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 18</b><span class="t" dir="ltr" lang="tr">İLAÇ ETKİLEŞİMLERİ</span></figcaption><div class="evimg"><img src="img/K26-9-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 17</b><span class="t" dir="ltr" lang="tr">VARFARİN İLE BİRLİKTE KULLANILMASI ÖNERİLMEYEN İLAÇLAR</span></figcaption><div class="evimg"><img src="img/K26-9-ev2.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K26</b>Kurul 2025–2026<i></i>Soru 9</span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات)، وإسلام كاتب جنبه 7 و8.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:530px;height:320px"><img src="img/K26-9.png" alt=""><span class="mark" style="left:calc(15.81% - 6px);top:calc(55.44% - 3px);width:calc(16.58% + 12px);height:calc(7.22% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Flukonazol</span></div>
+  <div class="evs n2"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 18</b><span class="t" dir="ltr" lang="tr">İLAÇ ETKİLEŞİMLERİ</span></figcaption><div class="evimg"><img src="img/K26-9-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 17</b><span class="t" dir="ltr" lang="tr">VARFARİN İLE BİRLİKTE KULLANILMASI ÖNERİLMEYEN İLAÇLAR</span></figcaption><div class="evimg"><img src="img/K26-9-ev2.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Fenitoin</span><span class="ref">سلايد 17</span><p class="fact">سلايد 17 حاطط الفينيتوين في قايمة اللي بيزوّدوا مفعول الوارفارين، بس الملف مش بيقول إنه بيثبط CYP450 زي الفلوكونازول.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Amoksisilin</span><span class="ref">سلايد 18</span><p class="fact">البنسلينات والكو-أموكسيكلاف بيرفعوا الـINR، بس الملف مش بيقول إن ده عن طريق تثبيط CYP450.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Karbamazepin</span><span class="ref">سلايد 18</span><p class="fact">بالعكس: بيقلل مفعول مضادات التجلط.</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Rifampisin</span><span class="ref">سلايد 17</span><p class="fact">بالعكس: من اللي بيقللوا مفعول الوارفارين.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">B · E</span><figcaption><span>من الدرس</span><b>سلايد 17</b><span class="t" dir="ltr" lang="tr">VARFARİN İLE BİRLİKTE KULLANILMASI ÖNERİLMEYEN İLAÇLAR</span></figcaption><div class="evimg"><img src="img/K26-9-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">C · D</span><figcaption><span>من الدرس</span><b>سلايد 18</b><span class="t" dir="ltr" lang="tr">İLAÇ ETKİLEŞİMLERİ</span></figcaption><div class="evimg"><img src="img/K26-9-o2.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>4</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K26</b>Kurul 2025–2026<i></i>Soru 10</span>
-        
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات)، وإسلام كاتب جنبه 7 و8.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Antidotu olmaması</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:235px"><img src="img/K26-10.png" alt=""><span class="mark" style="left:calc(13.45% - 6px);top:calc(41.33% - 3px);width:calc(27.07% + 12px);height:calc(9.47% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 11</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI Fondaparinuks</span></figcaption><div class="evimg"><img src="img/K26-10-ev1.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K26</b>Kurul 2025–2026<i></i>Soru 10</span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات)، وإسلام كاتب جنبه 7 و8.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:229px"><img src="img/K26-10.png" alt=""><span class="mark" style="left:calc(13.45% - 6px);top:calc(41.33% - 3px);width:calc(27.07% + 12px);height:calc(9.47% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Antidotu olmaması</span></div>
+  <div class="evs n1"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 11</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K26-10-ev1.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Laboratuvar izlemi gerektirmesi</span><span class="ref">سلايد 11</span><p class="fact">بالعكس: الفوندابارينوكس مش محتاج ضبط جرعة ولا تحاليل.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Protaminle tam nötralize edilebilmesi</span><span class="ref">سلايد 9، 11</span><p class="fact">اللي بيتعادل بالبروتامين تماماً هو الهيبارين العادي؛ الفوندابارينوكس ملوش antidote.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Sadece intravenöz uygulanması</span><span class="ref">سلايد 11</span><p class="fact">بالعكس: بيتدّي تحت الجلد مرة واحدة في اليوم.</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Yarı ömrünün çok kısa olması</span><span class="ref">سلايد 11</span><p class="fact">بالعكس: نص عمره طويل، من 15 لـ20 ساعة.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">B · C · D · E</span><figcaption><span>من الدرس</span><b>سلايد 11</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K26-10-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">C</span><figcaption><span>من الدرس</span><b>سلايد 9</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K26-10-o2.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>5</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K26</b>Kurul 2025–2026<i></i>Soru 11</span>
-        
-        
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Omeprazol</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:235px"><img src="img/K26-11.png" alt=""><span class="mark" style="left:calc(13.45% - 6px);top:calc(41.24% - 3px);width:calc(15.86% + 12px);height:calc(9.47% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 19</b><span class="t" dir="ltr" lang="tr">İLAÇ ETKİLEŞİMLERİ • Oral antitrombotik ilaçlardan;</span></figcaption><div class="evimg"><img src="img/K26-11-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 29</b><span class="t" dir="ltr" lang="tr">Advers Etkiler</span></figcaption><div class="evimg"><img src="img/K26-11-ev2.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K26</b>Kurul 2025–2026<i></i>Soru 11</span></div>
+  
+  <figure class="qcard"><div class="qimg" style="width:534px;height:229px"><img src="img/K26-11.png" alt=""><span class="mark" style="left:calc(13.45% - 6px);top:calc(41.24% - 3px);width:calc(15.86% + 12px);height:calc(9.47% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Omeprazol</span></div>
+  <div class="evs n2"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 19</b><span class="t" dir="ltr" lang="tr">İLAÇ ETKİLEŞİMLERİ</span></figcaption><div class="evimg"><img src="img/K26-11-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 29</b><span class="t" dir="ltr" lang="tr">Advers Etkiler</span></figcaption><div class="evimg"><img src="img/K26-11-ev2.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Nitratlar</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Abciximab</span><span class="ref">سلايد 30</span><p class="fact">مثبط GPIIb/IIIa، وده أقوى مثبط لتجمّع الصفائح، يعني بيزوّد التثبيط مش بيقلله.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Dipiridamol</span><span class="ref">سلايد 25</span><p class="fact">هو نفسه مضاد صفائح (PDE inhibitörü)، فمش هيقلل التثبيط.</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Aspirin</span><span class="ref">سلايد 19</span><p class="fact">الـNSAİ (زي الأسبرين) مع الكلوبيدوجريل بيزوّدوا النزيف، مش بيقللوا المفعول.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">C</span><figcaption><span>من الدرس</span><b>سلايد 30</b><span class="t" dir="ltr" lang="tr">GPIIb/IIIa antagonistleri</span></figcaption><div class="evimg"><img src="img/K26-11-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">D</span><figcaption><span>من الدرس</span><b>سلايد 25</b><span class="t" dir="ltr" lang="tr">Antiplatelet ilaçlar- 2nd lecture</span></figcaption><div class="evimg"><img src="img/K26-11-o2.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">E</span><figcaption><span>من الدرس</span><b>سلايد 19</b><span class="t" dir="ltr" lang="tr">İLAÇ ETKİLEŞİMLERİ</span></figcaption><div class="evimg"><img src="img/K26-11-o3.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>6</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K3-25</b>Kurul 2024–2025<i></i>Soru 7</span>
-        <span class="tag">اتسأل بصيغ مختلفة في 3 امتحانات</span>
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Dabigatran</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:507px;height:203px"><img src="img/K3-25-7.png" alt=""><span class="mark" style="left:calc(14.86% - 6px);top:calc(33.70% - 3px);width:calc(17.40% + 12px);height:calc(7.95% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/K3-25-7-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 15</b><span class="t" dir="ltr" lang="tr">4. Direkt Trombin İnhibitörleri</span></figcaption><div class="evimg"><img src="img/K3-25-7-ev2.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K3-25</b>Kurul 2024–2025<i></i>Soru 7</span><span class="tag">اتسأل بصيغ مختلفة في 3 امتحانات</span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:507px;height:203px"><img src="img/K3-25-7.png" alt=""><span class="mark" style="left:calc(14.86% - 6px);top:calc(33.70% - 3px);width:calc(17.40% + 12px);height:calc(7.95% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Dabigatran</span></div>
+  <div class="evs n2"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/K3-25-7-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 15</b><span class="t" dir="ltr" lang="tr">4. Direkt Trombin İnhibitörleri</span></figcaption><div class="evimg"><img src="img/K3-25-7-ev2.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Varfarin</span><span class="ref">سلايد 12</span><p class="fact">مضاد لفيتامين K، مش مثبط للثرومبين.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Fondaparinuks</span><span class="ref">سلايد 11</span><p class="fact">مثبط انتقائي لـXa وبيتدّي تحت الجلد.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Asetilsalisilik asit</span><span class="ref">سلايد 27</span><p class="fact">مضاد صفائح: بيعطّل COX-1 بشكل غير عكسي.</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Rivaroksaban</span><span class="ref">سلايد 14</span><p class="fact">فموي بس مثبط مباشر لـFXa، مش للثرومبين.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">B</span><figcaption><span>من الدرس</span><b>سلايد 12</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K3-25-7-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">C</span><figcaption><span>من الدرس</span><b>سلايد 11</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K3-25-7-o2.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">D</span><figcaption><span>من الدرس</span><b>سلايد 27</b><span class="t" dir="ltr" lang="tr">Aspirin</span></figcaption><div class="evimg"><img src="img/K3-25-7-o3.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">E</span><figcaption><span>من الدرس</span><b>سلايد 14</b><span class="t" dir="ltr" lang="tr">3- Faktör Xa inhibitörleri-devam</span></figcaption><div class="evimg"><img src="img/K3-25-7-o4.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>7</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K3-25</b>Kurul 2024–2025<i></i>Soru 8</span>
-        
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات). الرسمة في سلايد 10 بتوضّح إن الـpentasakkarid بيرتبط بالـantitrombin عشان يثبط Faktör Xa.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Antitrombin aracılı Faktör Xa inhibisyonu</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:501px;height:228px"><img src="img/K3-25-8.png" alt=""><span class="mark" style="left:calc(14.79% - 6px);top:calc(41.03% - 3px);width:calc(63.92% + 12px);height:calc(7.07% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 11</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI Fondaparinuks</span></figcaption><div class="evimg"><img src="img/K3-25-8-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 10</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI a.Düşük Molekül Ağırlıklı Heparinler</span></figcaption><div class="evimg"><img src="img/K3-25-8-ev2.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K3-25</b>Kurul 2024–2025<i></i>Soru 8</span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات). الرسمة في سلايد 10 بتوضّح إن الـpentasakkarid بيرتبط بالـantitrombin عشان يثبط Faktör Xa.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:501px;height:228px"><img src="img/K3-25-8.png" alt=""><span class="mark" style="left:calc(14.79% - 6px);top:calc(41.03% - 3px);width:calc(63.92% + 12px);height:calc(7.07% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Antitrombin aracılı Faktör Xa inhibisyonu</span></div>
+  <div class="evs n2"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 11</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K3-25-8-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 10</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K3-25-8-ev2.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Antitrombin aracılı trombin inhibisyonu</span><span class="ref">سلايد 5، 11</span><p class="fact">ده الهيبارين العادي (بيثبط IIa وXa)؛ الفوندابارينوكس انتقائي لـXa بس.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">K vitamini antagonisti</span><span class="ref">سلايد 12</span><p class="fact">ده الوارفارين.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Direkt trombin inhibitörü</span><span class="ref">سلايد 13</span><p class="fact">ده الدابيجاتران.</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Direkt Faktör X inhibisyonu</span><span class="ref">سلايد 13</span><p class="fact">ده الريفاروكسابان والأبيكسابان والإيدوكسابان.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">B</span><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/K3-25-8-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">B</span><figcaption><span>من الدرس</span><b>سلايد 11</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K3-25-8-o2.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">C</span><figcaption><span>من الدرس</span><b>سلايد 12</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K3-25-8-o3.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">D · E</span><figcaption><span>من الدرس</span><b>سلايد 13</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K3-25-8-o4.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>8</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>F25</b>Final 2024–2025<i></i>Soru 4</span>
-        
-        
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Tikagrelor</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:215px"><img src="img/F25-4.png" alt=""><span class="mark" style="left:calc(45.72% - 6px);top:calc(29.65% - 3px);width:calc(10.61% + 12px);height:calc(6.99% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 28</b><span class="t" dir="ltr" lang="tr">ADP RESEPTÖR BLOKÖRLERİ</span></figcaption><div class="evimg"><img src="img/F25-4-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/F25-4-ev2.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>F25</b>Final 2024–2025<i></i>Soru 4</span></div>
+  
+  <figure class="qcard"><div class="qimg" style="width:534px;height:210px"><img src="img/F25-4.png" alt=""><span class="mark" style="left:calc(45.72% - 6px);top:calc(29.65% - 3px);width:calc(10.61% + 12px);height:calc(6.99% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Tikagrelor</span></div>
+  <div class="evs n2"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 28</b><span class="t" dir="ltr" lang="tr">2. ADP RESEPTÖR BLOKÖRLERİ</span></figcaption><div class="evimg"><img src="img/F25-4-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/F25-4-ev2.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Aspirin</span><span class="ref">سلايد 27</span><p class="fact">بيعطّل COX-1 بشكل غير عكسي، مش P2Y12.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Dazoksiben</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Treprostinil</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Dipiridamol</span><span class="ref">سلايد 31</span><p class="fact">مثبط فوسفودايستراز (PDE).</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">B</span><figcaption><span>من الدرس</span><b>سلايد 27</b><span class="t" dir="ltr" lang="tr">Aspirin</span></figcaption><div class="evimg"><img src="img/F25-4-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">E</span><figcaption><span>من الدرس</span><b>سلايد 31</b><span class="t" dir="ltr" lang="tr">4. Fosfodiesteraz Inhibitörleri</span></figcaption><div class="evimg"><img src="img/F25-4-o2.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>9</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>F25</b>Final 2024–2025<i></i>Soru 5</span>
-        <span class="tag">اتسأل بصيغ مختلفة في 3 امتحانات</span>
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Dabigatran</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:487px;height:250px"><img src="img/F25-5.png" alt=""><span class="mark" style="left:calc(45.72% - 6px);top:calc(47.83% - 3px);width:calc(11.67% + 12px);height:calc(5.35% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/F25-5-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/F25-5-ev2.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>F25</b>Final 2024–2025<i></i>Soru 5</span><span class="tag">اتسأل بصيغ مختلفة في 3 امتحانات</span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:274px"><img src="img/F25-5.png" alt=""><span class="mark" style="left:calc(45.72% - 6px);top:calc(47.83% - 3px);width:calc(11.67% + 12px);height:calc(5.35% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Dabigatran</span></div>
+  <div class="evs n2"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/F25-5-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/F25-5-ev2.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Aspirin</span><span class="ref">سلايد 25</span><p class="fact">مضاد صفائح: بيثبط COX-1 في الصفائح، مش مثبط للثرومبين.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Heparin</span><span class="ref">سلايد 9</span><p class="fact">بيشتغل بشكل غير مباشر عن طريق الأنتيثرومبين، مش مثبط مباشر.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Varfarin</span><span class="ref">سلايد 12</span><p class="fact">مضاد لفيتامين K: بيقلل تصنيع عوامل II وVII وIX وX في الكبد.</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Tiklopidin</span><span class="ref">سلايد 28</span><p class="fact">مضاد صفائح: بيثبط مستقبل P2Y12 بشكل غير عكسي.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">B</span><figcaption><span>من الدرس</span><b>سلايد 25</b><span class="t" dir="ltr" lang="tr">Antiplatelet ilaçlar- 2nd lecture</span></figcaption><div class="evimg"><img src="img/F25-5-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">C</span><figcaption><span>من الدرس</span><b>سلايد 9</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/F25-5-o2.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">D</span><figcaption><span>من الدرس</span><b>سلايد 12</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/F25-5-o3.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">E</span><figcaption><span>من الدرس</span><b>سلايد 28</b><span class="t" dir="ltr" lang="tr">2. ADP RESEPTÖR BLOKÖRLERİ</span></figcaption><div class="evimg"><img src="img/F25-5-o4.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>10</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>F24</b>Final 2023–2024<i></i>Soru 4</span>
-        
-        
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Vorapaksar</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:417px;height:250px"><img src="img/F24-4.png" alt=""><span class="mark" style="left:calc(8.99% - 6px);top:calc(45.00% - 3px);width:calc(26.22% + 12px);height:calc(10.62% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 26</b><span class="t" dir="ltr" lang="tr"></span></figcaption><div class="evimg"><img src="img/F24-4-ev1.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>F24</b>Final 2023–2024<i></i>Soru 4</span></div>
+  
+  <figure class="qcard"><div class="qimg" style="width:521px;height:312px"><img src="img/F24-4.png" alt=""><span class="mark" style="left:calc(8.99% - 6px);top:calc(45.00% - 3px);width:calc(26.22% + 12px);height:calc(10.62% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Vorapaksar</span></div>
+  <div class="evs n1"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 26</b><span class="t" dir="ltr" lang="tr"></span></figcaption><div class="evimg"><img src="img/F24-4-ev1.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Tiklopidin</span><span class="ref">سلايد 28</span><p class="fact">بيثبط مستقبل P2Y12 بتاع الـADP بشكل غير عكسي، مش PAR-1.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Klopidogrel</span><span class="ref">سلايد 28</span><p class="fact">بيثبط مستقبل P2Y12 بتاع الـADP بشكل غير عكسي.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Prasugrel</span><span class="ref">سلايد 28</span><p class="fact">بيثبط مستقبل P2Y12 بتاع الـADP بشكل غير عكسي.</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Aspirin</span><span class="ref">سلايد 27</span><p class="fact">بيعطّل COX-1 بشكل غير عكسي فيمنع تكوين الـTXA2.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">B · C · D</span><figcaption><span>من الدرس</span><b>سلايد 28</b><span class="t" dir="ltr" lang="tr">2. ADP RESEPTÖR BLOKÖRLERİ</span></figcaption><div class="evimg"><img src="img/F24-4-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">E</span><figcaption><span>من الدرس</span><b>سلايد 27</b><span class="t" dir="ltr" lang="tr">Aspirin</span></figcaption><div class="evimg"><img src="img/F24-4-o2.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>11</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K3-23</b>Kurul 2022–2023<i></i>Soru 78</span>
-        
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>D</b>Fraksiyone olmamış heparin</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:410px;height:238px"><img src="img/K3-23-78.png" alt=""><span class="mark" style="left:calc(21.48% - 6px);top:calc(78.22% - 3px);width:calc(59.67% + 12px);height:calc(10.02% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/K3-23-78-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 10</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI a.Düşük Molekül Ağırlıklı Heparinler</span></figcaption><div class="evimg"><img src="img/K3-23-78-ev2.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K3-23</b>Kurul 2022–2023<i></i>Soru 78</span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:410px;height:238px"><img src="img/K3-23-78.png" alt=""><span class="mark" style="left:calc(21.48% - 6px);top:calc(78.22% - 3px);width:calc(59.67% + 12px);height:calc(10.02% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>D</b>Fraksiyone olmamış heparin</span></div>
+  <div class="evs n2"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/K3-23-78-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 10</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K3-23-78-ev2.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">A</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Bivalirudin</span><span class="ref">سلايد 15</span><p class="fact">مثبط مباشر للثرومبين (مشتق الهيرودين)، مش محتاج أنتيثرومبين.</p></div></li><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Dabigatran</span><span class="ref">سلايد 13</span><p class="fact">مثبط مباشر وانتقائي للثرومبين بس.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Enoksaparin</span><span class="ref">سلايد 10</span><p class="fact">DMAH: بيثبط الثرومبين أقل بكتير من Xa.</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Rivaroksaban</span><span class="ref">سلايد 13</span><p class="fact">مثبط مباشر لـFXa بس، من غير أنتيثرومبين.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">A</span><figcaption><span>من الدرس</span><b>سلايد 15</b><span class="t" dir="ltr" lang="tr">4. Direkt Trombin İnhibitörleri</span></figcaption><div class="evimg"><img src="img/K3-23-78-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">B · E</span><figcaption><span>من الدرس</span><b>سلايد 13</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K3-23-78-o2.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">C</span><figcaption><span>من الدرس</span><b>سلايد 10</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K3-23-78-o3.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>12</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K3-21</b>Kurul 2020–2021<i></i>Soru 83</span>
-        <span class="tag">اتسأل بصيغ مختلفة في 2 امتحانات</span>
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات). الهيبارين اللي وزنه الجزيئي عالي (Yüksek molekül ağırlıklı) هو الهيبارين العادي.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Yüksek molekül ağırlıklı heparinler</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:159px"><img src="img/K3-21-83.png" alt=""><span class="mark" style="left:calc(7.30% - 6px);top:calc(37.75% - 3px);width:calc(32.48% + 12px);height:calc(9.23% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/K3-21-83-ev1.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K3-21</b>Kurul 2020–2021<i></i>Soru 83</span><span class="tag">اتسأل بصيغ مختلفة في 2 امتحانات</span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات). الهيبارين اللي وزنه الجزيئي عالي (Yüksek molekül ağırlıklı) هو الهيبارين العادي.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:155px"><img src="img/K3-21-83.png" alt=""><span class="mark" style="left:calc(7.30% - 6px);top:calc(37.75% - 3px);width:calc(32.48% + 12px);height:calc(9.23% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Yüksek molekül ağırlıklı heparinler</span></div>
+  <div class="evs n1"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/K3-21-83-ev1.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Oral direkt Faktör-Xa inhibitörleri</span><span class="ref">سلايد 24</span><p class="fact">مفيش ليهم اختبار زي الـINR ولا اختبار كمّي ثابت للمتابعة.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Düşük molekül ağırlıklı heparinler</span><span class="ref">سلايد 10</span><p class="fact">الملف بيقول إن الهيبارين العادي هو اللي بيتابع بالـaPTZ؛ والـDMAH نص عمره أطول وتوافره الحيوي أحسن.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Hirudin</span><span class="ref">سلايد 15</span><p class="fact">من مثبطات الثرومبين المباشرة اللي بتتدّي بالحقن (زي البيفاليرودين).</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Dabigatran</span><span class="ref">سلايد 24</span><p class="fact">مضاد تجلط فموي جديد، ومفيش ليه اختبار زي الـINR.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">B · E</span><figcaption><span>من الدرس</span><b>سلايد 24</b><span class="t" dir="ltr" lang="tr">Yeni Oral Antikoagülan Kullanan Hastalara Yaklaşım</span></figcaption><div class="evimg"><img src="img/K3-21-83-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">C</span><figcaption><span>من الدرس</span><b>سلايد 10</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K3-21-83-o2.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">D</span><figcaption><span>من الدرس</span><b>سلايد 15</b><span class="t" dir="ltr" lang="tr">4. Direkt Trombin İnhibitörleri</span></figcaption><div class="evimg"><img src="img/K3-21-83-o3.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>13</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>F21-1</b>Final 2020–2021<i></i>Soru 48</span>
-        
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Rifampin</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:247px"><img src="img/F21-1-48.png" alt=""><span class="mark" style="left:calc(11.37% - 6px);top:calc(37.87% - 3px);width:calc(13.29% + 12px);height:calc(9.23% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 17</b><span class="t" dir="ltr" lang="tr">VARFARİN İLE BİRLİKTE KULLANILMASI ÖNERİLMEYEN İLAÇLAR</span></figcaption><div class="evimg"><img src="img/F21-1-48-ev1.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>F21-1</b>Final 2020–2021<i></i>Soru 48</span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:242px"><img src="img/F21-1-48.png" alt=""><span class="mark" style="left:calc(11.37% - 6px);top:calc(37.87% - 3px);width:calc(13.29% + 12px);height:calc(9.23% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Rifampin</span></div>
+  <div class="evs n1"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 17</b><span class="t" dir="ltr" lang="tr">VARFARİN İLE BİRLİKTE KULLANILMASI ÖNERİLMEYEN İLAÇLAR</span></figcaption><div class="evimg"><img src="img/F21-1-48-ev1.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Gemfibrozil</span><span class="ref">سلايد 17</span><p class="fact">الملف مش بيذكر الجيمفيبروزيل بالاسم؛ من نفس عيلته الـKlofibrat، ومكتوب في اللي بيزوّدوا مفعول الوارفارين.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Tetrasiklin</span><span class="ref">سلايد 16، 17</span><p class="fact">الدوكسيسيكلين (تتراسيكلين) في قايمة المضادات الحيوية اللي ماتتاخدش مع الوارفارين، والمضادات الحيوية بتزوّد مفعوله.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Aspirin</span><span class="ref">سلايد 17، 18</span><p class="fact">بيزوّد مفعول الوارفارين وخطر النزيف.</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Kloramfenikol</span><span class="ref">سلايد 17</span><p class="fact">من المضادات الحيوية اللي بتزوّد مفعول الوارفارين.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">B · C · D · E</span><figcaption><span>من الدرس</span><b>سلايد 17</b><span class="t" dir="ltr" lang="tr">VARFARİN İLE BİRLİKTE KULLANILMASI ÖNERİLMEYEN İLAÇLAR</span></figcaption><div class="evimg"><img src="img/F21-1-48-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">C</span><figcaption><span>من الدرس</span><b>سلايد 16</b><span class="t" dir="ltr" lang="tr">VARFARİN İLE BİRLİKTE KULLANILMAMASI GEREKEN İLAÇLAR</span></figcaption><div class="evimg"><img src="img/F21-1-48-o2.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">D</span><figcaption><span>من الدرس</span><b>سلايد 18</b><span class="t" dir="ltr" lang="tr">İLAÇ ETKİLEŞİMLERİ</span></figcaption><div class="evimg"><img src="img/F21-1-48-o3.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>14</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K1-20</b>Kurul 2019–2020<i></i>Soru 1</span>
-        <span class="tag">اتسأل بصيغ مختلفة في 2 امتحانات</span>
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>aPTT</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:95px"><img src="img/K1-20-1.png" alt=""><span class="mark" style="left:calc(3.88% - 6px);top:calc(35.21% - 3px);width:calc(5.67% + 12px);height:calc(14.72% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/K1-20-1-ev1.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K1-20</b>Kurul 2019–2020<i></i>Soru 1</span><span class="tag">اتسأل بصيغ مختلفة في 2 امتحانات</span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:93px"><img src="img/K1-20-1.png" alt=""><span class="mark" style="left:calc(3.88% - 6px);top:calc(35.21% - 3px);width:calc(5.67% + 12px);height:calc(14.72% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>aPTT</span></div>
+  <div class="evs n1"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/K1-20-1-ev1.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">A</b><div class="ot"><span class="otx" dir="ltr" lang="tr">PT-INR</span><span class="ref">سلايد 6</span><p class="fact">الـINR للوارفارين؛ الهيبارين بيتابع بالـaPTT.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Trombosit sayısı</span><span class="ref">سلايد 6</span><p class="fact">نقص الصفائح أثر جانبي للهيبارين، بس الملف مش بيستخدم عدد الصفائح لضبط الجرعة.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">D-dimer</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Kanama zamanı</span><span class="ref">سلايد 23</span><p class="fact">زمن النزيف بيطول مع مضادات الصفائح (اختلال تجمّع الصفائح)، مش ده اختبار الهيبارين.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">A · C</span><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/K1-20-1-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">E</span><figcaption><span>من الدرس</span><b>سلايد 23</b><span class="t" dir="ltr" lang="tr">Antitrombotik İlaç Kullanan Hastalara Yaklaşım</span></figcaption><div class="evimg"><img src="img/K1-20-1-o2.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>15</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K1-20</b>Kurul 2019–2020<i></i>Soru 11</span>
-        
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات). الهيبارين بيشتغل عن طريق الـantitrombin، مش لوحده.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Doğrudan intrensek antikoagülan aktivite gösterir</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:103px"><img src="img/K1-20-11.png" alt=""><span class="mark" style="left:calc(3.75% - 6px);top:calc(26.15% - 3px);width:calc(50.35% + 12px);height:calc(13.58% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 9</b><span class="t" dir="ltr" lang="tr">1- Standart Heparı̇n</span></figcaption><div class="evimg"><img src="img/K1-20-11-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/K1-20-11-ev2.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K1-20</b>Kurul 2019–2020<i></i>Soru 11</span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات). الهيبارين بيشتغل عن طريق الـantitrombin، مش لوحده.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:101px"><img src="img/K1-20-11.png" alt=""><span class="mark" style="left:calc(3.75% - 6px);top:calc(26.15% - 3px);width:calc(50.35% + 12px);height:calc(13.58% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Doğrudan intrensek antikoagülan aktivite gösterir</span></div>
+  <div class="evs n2"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 9</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K1-20-11-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/K1-20-11-ev2.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Antitrombine bağlanarak etki gösterir</span><span class="ref">سلايد 9</span><p class="fact">صح: الهيبارين بيرتبط بالأنتيثرومبين.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Faktör Xa&#x27;yı inhibe eder</span><span class="ref">سلايد 9</span><p class="fact">صح: عن طريق الأنتيثرومبين بيعطّل Faktör Xa.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Trombin-antitrombin reaksiyonunun hızını artırır</span><span class="ref">سلايد 5</span><p class="fact">صح: بينشّط الأنتيثرومبين III فيثبط الثرومبين (IIa) وXa.</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Koagülasyon proteazlarının antitrombin ile inhibisyonunu katalizler</span><span class="ref">سلايد 9</span><p class="fact">صح: كل مفعوله عن طريق الأنتيثرومبين.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">B · C · E</span><figcaption><span>من الدرس</span><b>سلايد 9</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K1-20-11-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">D</span><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/K1-20-11-o2.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>16</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>F19</b>Final 2018–2019<i></i>Soru 48</span>
-        <span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>K1-19</b> Kurul 2018–2019 · Soru 56</span></span>
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات). نفس السؤال بالظبط جه كمان في K1-19 سؤال 56.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>PT/INR (Protrombin zamanı)</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:507px;height:226px"><img src="img/F19-48.png" alt=""><span class="mark" style="left:calc(10.70% - 6px);top:calc(51.07% - 3px);width:calc(46.73% + 12px);height:calc(10.83% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/F19-48-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 21</b><span class="t" dir="ltr" lang="tr">PIHTILAŞMA TESTLERİ</span></figcaption><div class="evimg"><img src="img/F19-48-ev2.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>F19</b>Final 2018–2019<i></i>Soru 48</span><span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>K1-19</b> Kurul 2018–2019 · Soru 56</span></span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات). نفس السؤال بالظبط جه كمان في K1-19 سؤال 56.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:507px;height:226px"><img src="img/F19-48.png" alt=""><span class="mark" style="left:calc(10.70% - 6px);top:calc(51.07% - 3px);width:calc(46.73% + 12px);height:calc(10.83% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>PT/INR (Protrombin zamanı)</span></div>
+  <div class="evs n2"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/F19-48-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 21</b><span class="t" dir="ltr" lang="tr">PIHTILAŞMA TESTLERİ</span></figcaption><div class="evimg"><img src="img/F19-48-ev2.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">A</b><div class="ot"><span class="otx" dir="ltr" lang="tr">aPTT (Aktive parsiyel tromboplastin zamanı)</span><span class="ref">سلايد 6</span><p class="fact">الـaPTT بيتابعوا بيه الهيبارين، مش الوارفارين.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Faktör Xa düzeyi</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">TT (Trombin zamanı)</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Fibrinojen</span><p class="fact none">مش موجود في ملف الشرح</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">A</span><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/F19-48-o1.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>17</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K1-19</b>Kurul 2018–2019<i></i>Soru 56</span>
-        <span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>F19</b> Final 2018–2019 · Soru 48</span></span>
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات). نفس السؤال بالظبط جه كمان في F19 سؤال 48.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>PT/INR (Protrombin zamanı)</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:155px"><img src="img/K1-19-56.png" alt=""><span class="mark" style="left:calc(9.93% - 6px);top:calc(50.06% - 3px);width:calc(29.93% + 12px);height:calc(10.89% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/K1-19-56-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 21</b><span class="t" dir="ltr" lang="tr">PIHTILAŞMA TESTLERİ</span></figcaption><div class="evimg"><img src="img/K1-19-56-ev2.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K1-19</b>Kurul 2018–2019<i></i>Soru 56</span><span class="tag also">جه كمان في <span dir="ltr" lang="tr"><b>F19</b> Final 2018–2019 · Soru 48</span></span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات). نفس السؤال بالظبط جه كمان في F19 سؤال 48.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:151px"><img src="img/K1-19-56.png" alt=""><span class="mark" style="left:calc(9.93% - 6px);top:calc(50.06% - 3px);width:calc(29.93% + 12px);height:calc(10.89% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>PT/INR (Protrombin zamanı)</span></div>
+  <div class="evs n2"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/K1-19-56-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 21</b><span class="t" dir="ltr" lang="tr">PIHTILAŞMA TESTLERİ</span></figcaption><div class="evimg"><img src="img/K1-19-56-ev2.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">A</b><div class="ot"><span class="otx" dir="ltr" lang="tr">aPTT (Aktive parsiyel tromboplastin zamanı)</span><span class="ref">سلايد 6</span><p class="fact">الـaPTT بيتابعوا بيه الهيبارين، مش الوارفارين.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Faktör Xa düzeyi</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">TT (Trombin zamanı)</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Fibrinojen</span><p class="fact none">مش موجود في ملف الشرح</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">A</span><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/K1-19-56-o1.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>18</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K1-19</b>Kurul 2018–2019<i></i>Soru 30</span>
-        
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات). الملف بيعدّ أعراض الهيبارين الجانبية: نزيف، قلة صفائح، وهشاشة عظام؛ لكن مش تشوهات للجنين.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>Fetal anomali</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:123px"><img src="img/K1-19-30.png" alt=""><span class="mark" style="left:calc(15.80% - 6px);top:calc(44.83% - 3px);width:calc(14.12% + 12px);height:calc(12.65% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 9</b><span class="t" dir="ltr" lang="tr">1- Standart Heparı̇n</span></figcaption><div class="evimg"><img src="img/K1-19-30-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/K1-19-30-ev2.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K1-19</b>Kurul 2018–2019<i></i>Soru 30</span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات). الملف بيعدّ أعراض الهيبارين الجانبية: نزيف، قلة صفائح، وهشاشة عظام؛ لكن مش تشوهات للجنين.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:121px"><img src="img/K1-19-30.png" alt=""><span class="mark" style="left:calc(15.80% - 6px);top:calc(44.83% - 3px);width:calc(14.12% + 12px);height:calc(12.65% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>B</b>Fetal anomali</span></div>
+  <div class="evs n2"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 9</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K1-19-30-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/K1-19-30-ev2.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">A</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Trombositopeni</span><span class="ref">سلايد 6</span><p class="fact">صح، من آثاره الجانبية: نقص الصفائح بسبب الهيبارين.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Osteoporoz</span><span class="ref">سلايد 9</span><p class="fact">صح: الهيبارين بيثبط الـosteoblast وينشّط الـosteoclast، فبيزوّد فقدان العظم.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Postpartum kanama</span><span class="ref">سلايد 9</span><p class="fact">صح: النزيف هو الأثر الجانبي الأساسي لمضادات التجلط.</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Pelvik hematom</span><span class="ref">سلايد 9</span><p class="fact">صح: نزيف برضه، والهيبارين ممكن يعمل نزيف.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">A</span><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/K1-19-30-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">C · D · E</span><figcaption><span>من الدرس</span><b>سلايد 9</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K1-19-30-o2.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>19</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K1-19</b>Kurul 2018–2019<i></i>Soru 31</span>
-        
-        <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Bivalirudin</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:123px"><img src="img/K1-19-31.png" alt=""><span class="mark" style="left:calc(15.97% - 6px);top:calc(57.87% - 3px);width:calc(11.88% + 12px);height:calc(12.77% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 15</b><span class="t" dir="ltr" lang="tr">4. Direkt Trombin İnhibitörleri</span></figcaption><div class="evimg"><img src="img/K1-19-31-ev1.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K1-19</b>Kurul 2018–2019<i></i>Soru 31</span></div>
+  <aside class="note"><b>ملحوظة</b><p>السؤال ده موجود كمان في درس 7، لأن ملف درس 8 هو نفس ملف درس 7 بالظبط (نفس السلايدات).</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:121px"><img src="img/K1-19-31.png" alt=""><span class="mark" style="left:calc(15.97% - 6px);top:calc(57.87% - 3px);width:calc(11.88% + 12px);height:calc(12.77% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Bivalirudin</span></div>
+  <div class="evs n1"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 15</b><span class="t" dir="ltr" lang="tr">4. Direkt Trombin İnhibitörleri</span></figcaption><div class="evimg"><img src="img/K1-19-31-ev1.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">A</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Enoksaparin</span><span class="ref">سلايد 10</span><p class="fact">هيبارين منخفض الوزن الجزيئي (DMAH): بيشتغل عن طريق الأنتيثرومبين وبيثبط الثرومبين أقل من Xa.</p></div></li><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Fondaparinuks</span><span class="ref">سلايد 11</span><p class="fact">مثبط انتقائي لـFaktör Xa، مش للثرومبين.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Heparin</span><span class="ref">سلايد 9</span><p class="fact">بيشتغل عن طريق الأنتيثرومبين، مش بيرتبط بالثرومبين مباشرة.</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Dalteparin</span><span class="ref">سلايد 10</span><p class="fact">واحد من الـDMAH، وبيشتغل عن طريق الأنتيثرومبين زيهم.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">A · E</span><figcaption><span>من الدرس</span><b>سلايد 10</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K1-19-31-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">B</span><figcaption><span>من الدرس</span><b>سلايد 11</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K1-19-31-o2.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">D</span><figcaption><span>من الدرس</span><b>سلايد 9</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/K1-19-31-o3.jpg" alt=""></div></figure></div></section>
 </section>
 <section class="sheet divider">
   <div class="kicker"><i></i>آخر الملف</div>
@@ -538,243 +426,147 @@ body { counter-reset: pg; }
     <li><b>مفيش إجابة في الشرح</b><span>السؤال تبع موضوع الدرس، بس ملف الشرح مفيهوش إجابته، فمحطوط من غير إجابة.</span></li>
   </ul>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>20</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K3-26</b>Kurul 2025–2026<i></i>Soru 2</span>
-        
-        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>عن مضاد التجلط المناسب للست الحامل، وموجود كمان في درس 7 (نفس الملف). الملف مفيهوش كلام عن الحمل. الكتيب معلّم A) Enoksaparin.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:428px;height:250px"><img src="img/K3-26-2.png" alt=""></div></figure>
-    </div>
-    <div class="evs"></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K3-26</b>Kurul 2025–2026<i></i>Soru 2</span></div>
+  <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>عن مضاد التجلط المناسب للست الحامل، وموجود كمان في درس 7 (نفس الملف). الملف مفيهوش كلام عن الحمل. الكتيب معلّم A) Enoksaparin.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:511px;height:298px"><img src="img/K3-26-2.png" alt=""></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+  
+  <section class="opts"><h3>الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">A</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Enoksaparin</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Dabigatran</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Rivaroksaban</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Varfarin</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Dikumarol</span><p class="fact none">مش موجود في ملف الشرح</p></div></li></ol></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>21</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K25</b>Kurul 2024–2025<i></i>Soru 64</span>
-        
-        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>السؤال عن الوارفارين، وموجود كمان في درس 7 (نفس الملف). الكلام عن الـpolymorphism بتاع CYP2C9 وVKORC1 مش موجود في الملف (سلايد 5 بيقول بس إن الوارفارين بيثبط K vitamini epoksit redüktaz). الكتيب معلّم A (Enzim indüksiyonu) كإجابة رسمية.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:341px;height:250px"><img src="img/K25-64.png" alt=""></div></figure>
-    </div>
-    <div class="evs"></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K25</b>Kurul 2024–2025<i></i>Soru 64</span></div>
+  <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>السؤال عن الوارفارين، وموجود كمان في درس 7 (نفس الملف). الكلام عن الـpolymorphism بتاع CYP2C9 وVKORC1 مش موجود في الملف (سلايد 5 بيقول بس إن الوارفارين بيثبط K vitamini epoksit redüktaz). الكتيب معلّم A (Enzim indüksiyonu) كإجابة رسمية.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:391px"><img src="img/K25-64.png" alt=""></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+  
+  <section class="opts"><h3>الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">A</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Enzim indüksiyonu</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Enzim inhibisyonu</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Enzim füzyonu</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Enzim transdüksiyonu</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Enzim biyotransformasyonu</span><p class="fact none">مش موجود في ملف الشرح</p></div></li></ol></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>22</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K3-24</b>Kurul 2023–2024<i></i>Soru 7</span>
-        
-        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال أساساً من درس 13 (الفيبرينوليتيك)، بس سلايد 8 هنا بيحط الريتيبلاز تحت Fibrinolitik İlaçlar ← Plazminojen Aktivatörler، وسلايد 33 بيقول إنه rekombinan tPA. وباقي الاختيارات (أسبرين، إنوكسابارين، كلوبيدوجريل، سيلوستازول) من الدرس ده.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Reteplaz</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:240px"><img src="img/K3-24-7.png" alt=""><span class="mark" style="left:calc(3.36% - 6px);top:calc(41.98% - 3px);width:calc(18.46% + 12px);height:calc(13.74% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 8</b><span class="t" dir="ltr" lang="tr">Sınıflandırma</span></figcaption><div class="evimg"><img src="img/K3-24-7-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 33</b><span class="t" dir="ltr" lang="tr">Fibrinolitik ilaçlar</span></figcaption><div class="evimg"><img src="img/K3-24-7-ev2.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K3-24</b>Kurul 2023–2024<i></i>Soru 7</span></div>
+  <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال أساساً من درس 13 (الفيبرينوليتيك)، بس سلايد 8 هنا بيحط الريتيبلاز تحت Fibrinolitik İlaçlar ← Plazminojen Aktivatörler، وسلايد 33 بيقول إنه rekombinan tPA. وباقي الاختيارات (أسبرين، إنوكسابارين، كلوبيدوجريل، سيلوستازول) من الدرس ده.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:235px"><img src="img/K3-24-7.png" alt=""><span class="mark" style="left:calc(3.36% - 6px);top:calc(41.98% - 3px);width:calc(18.46% + 12px);height:calc(13.74% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>Reteplaz</span></div>
+  <div class="evs n2"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 8</b><span class="t" dir="ltr" lang="tr">Sınıflandırma</span></figcaption><div class="evimg"><img src="img/K3-24-7-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 33</b><span class="t" dir="ltr" lang="tr">Fibrinolitik ilaçlar</span></figcaption><div class="evimg"><img src="img/K3-24-7-ev2.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Aspirin</span><span class="ref">سلايد 8</span><p class="fact">مضاد صفائح (COX inhibitörü)، مش فيبرينوليتيك.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Enoksaparin</span><span class="ref">سلايد 8</span><p class="fact">مضاد تجلط من الهيبارينات (LMWH).</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Klopidogrel</span><span class="ref">سلايد 8</span><p class="fact">مضاد صفائح (ADP reseptör antagonisti).</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Silostazol</span><span class="ref">سلايد 25</span><p class="fact">مضاد صفائح (PDE inhibitörü).</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">B · C · D</span><figcaption><span>من الدرس</span><b>سلايد 8</b><span class="t" dir="ltr" lang="tr">Sınıflandırma</span></figcaption><div class="evimg"><img src="img/K3-24-7-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">E</span><figcaption><span>من الدرس</span><b>سلايد 25</b><span class="t" dir="ltr" lang="tr">Antiplatelet ilaçlar- 2nd lecture</span></figcaption><div class="evimg"><img src="img/K3-24-7-o2.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>23</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K3-24</b>Kurul 2023–2024<i></i>Soru 8</span>
-        
-        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>عن عكس مفعول الريفاروكسابان، وموجود كمان في درس 7 (نفس الملف). الملف مفيهوش اسم الـantidote؛ سلايد 6 بيقول بس إن الـDOAC ليها antidotes خاصة.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:455px;height:250px"><img src="img/K3-24-8.png" alt=""></div></figure>
-    </div>
-    <div class="evs"></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K3-24</b>Kurul 2023–2024<i></i>Soru 8</span></div>
+  <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>عن عكس مفعول الريفاروكسابان، وموجود كمان في درس 7 (نفس الملف). الملف مفيهوش اسم الـantidote؛ سلايد 6 بيقول بس إن الـDOAC ليها antidotes خاصة.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:511px;height:281px"><img src="img/K3-24-8.png" alt=""></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+  
+  <section class="opts"><h3>الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">A</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Andeksanet alfa</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Protamin sülfat</span><span class="ref">سلايد 6</span><p class="fact">البروتامين سلفات هو الـantidote بتاع الهيبارين.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">İdarusizumab</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">K vitamini artı pıhtılaşma faktörleri (II, VII, IX ve X)</span><span class="ref">سلايد 6</span><p class="fact">فيتامين K هو الـantidote بتاع الوارفارين، مش الريفاروكسابان؛ الـDOAC ليها antidotes خاصة بيها.</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">K vitamini artı protrombin kompleks konsantresi</span><span class="ref">سلايد 6</span><p class="fact">برضه فيتامين K للوارفارين؛ الملف بيقول بس إن الـDOAC ليها antidotes خاصة.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">B · D · E</span><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/K3-24-8-o1.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>24</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K3-23</b>Kurul 2022–2023<i></i>Soru 80</span>
-        
-        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>عن تشوهات الجنين من الوارفارين، وموجود كمان في درس 7 (نفس الملف). الملف مفيهوش كلام عن مضادات التجلط والحمل. الإجابة المعلّمة في الامتحان e) Varfarin.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:329px;height:250px"><img src="img/K3-23-80.png" alt=""></div></figure>
-    </div>
-    <div class="evs"></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K3-23</b>Kurul 2022–2023<i></i>Soru 80</span></div>
+  <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>عن تشوهات الجنين من الوارفارين، وموجود كمان في درس 7 (نفس الملف). الملف مفيهوش كلام عن مضادات التجلط والحمل. الإجابة المعلّمة في الامتحان e) Varfarin.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:439px;height:333px"><img src="img/K3-23-80.png" alt=""></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+  
+  <section class="opts"><h3>الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">A</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Dipiridamol</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Enoksaparin</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Fraksiyonlanmamış heparin</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Klopidogrel</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Varfarin</span><p class="fact none">مش موجود في ملف الشرح</p></div></li></ol></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>25</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>B21-2</b>Bütünleme 2020–2021<i></i>Soru 89</span>
-        
-        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>السؤال ده موجود كمان في درس 7 (نفس الملف). بس ملف درس 8 نسخة أقدم وكلام سلايد 9 و10 بيتقطع، فالجملة اللي بتقول إن الهيبارين العادي بيتابَع بالـaPTZ (والإنوكسابارين لأ) مش موجودة هنا؛ سلايد 6 بيقول بس إن الهيبارين ساعات بيتابَع بالـaPTT. الإجابة A، ومكتوبة في سلايد 9 في ملف درس 7.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:237px"><img src="img/B21-2-89.png" alt=""></div></figure>
-    </div>
-    <div class="evs"></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>B21-2</b>Bütünleme 2020–2021<i></i>Soru 89</span></div>
+  <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>السؤال ده موجود كمان في درس 7 (نفس الملف). بس ملف درس 8 نسخة أقدم وكلام سلايد 9 و10 بيتقطع، فالجملة اللي بتقول إن الهيبارين العادي بيتابَع بالـaPTZ (والإنوكسابارين لأ) مش موجودة هنا؛ سلايد 6 بيقول بس إن الهيبارين ساعات بيتابَع بالـaPTT. الإجابة A، ومكتوبة في سلايد 9 في ملف درس 7.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:231px"><img src="img/B21-2-89.png" alt=""></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+  
+  <section class="opts"><h3>الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Daha kısa etki süresine sahip olması</span><span class="ref">سلايد 10</span><p class="fact">بالعكس: نص عمر الـDMAH أطول من الهيبارين العادي بـ2 لـ4 مرات.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">İntravenöz uygulanması</span><span class="ref">سلايد 9</span><p class="fact">الهيبارين العادي هو اللي بيتدّي وريدي أو تحت الجلد، فده مش ميزة للإنوكسابارين.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Plazma proteinlerine yüksek oranda bağlanması</span><span class="ref">سلايد 10</span><p class="fact">بالعكس: الـDMAH بيرتبط ببروتينات البلازما أقل.</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Teratojenik etki potansiyelinin düşük olması</span><p class="fact none">مش موجود في ملف الشرح</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">B · D</span><figcaption><span>من الدرس</span><b>سلايد 10</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/B21-2-89-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">C</span><figcaption><span>من الدرس</span><b>سلايد 9</b><span class="t" dir="ltr" lang="tr">ANTİKOAGÜLAN İLAÇLAR VE ETKİ MEKANİZMALARI</span></figcaption><div class="evimg"><img src="img/B21-2-89-o2.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>26</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K4-21</b>Kurul 2020–2021<i></i>Soru 65</span>
-        
-        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال أساساً من درس 18 (البروستانويدات)، بس سلايد 5 هنا بيقول إن الأسبرين بيمنع تكوين الـTXA2 فالتجمّع يقل، يعني الـTxA2 بيزوّد تجمّع الصفائح مش بيقلله (الاختيار E غلط)، وسلايد 32 بيقول إن الـPGI2 بيثبط الصفائح (الاختيار D صح).</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>E</b>TxA2 – Trombosit agregasyonunda azalma</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:492px;height:250px"><img src="img/K4-21-65.png" alt=""><span class="mark" style="left:calc(7.70% - 6px);top:calc(88.39% - 3px);width:calc(35.25% + 12px);height:calc(8.39% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/K4-21-65-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 32</b><span class="t" dir="ltr" lang="tr">Prostanoid agonistleri (Epoprostenol)</span></figcaption><div class="evimg"><img src="img/K4-21-65-ev2.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K4-21</b>Kurul 2020–2021<i></i>Soru 65</span></div>
+  <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال أساساً من درس 18 (البروستانويدات)، بس سلايد 5 هنا بيقول إن الأسبرين بيمنع تكوين الـTXA2 فالتجمّع يقل، يعني الـTxA2 بيزوّد تجمّع الصفائح مش بيقلله (الاختيار E غلط)، وسلايد 32 بيقول إن الـPGI2 بيثبط الصفائح (الاختيار D صح).</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:271px"><img src="img/K4-21-65.png" alt=""><span class="mark" style="left:calc(7.70% - 6px);top:calc(88.39% - 3px);width:calc(35.25% + 12px);height:calc(8.39% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>E</b>TxA2 – Trombosit agregasyonunda azalma</span></div>
+  <div class="evs n2"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 5</b><span class="t" dir="ltr" lang="tr">Etki Mekanizmalarına Göre Farmakolojik Sınıflandırma</span></figcaption><div class="evimg"><img src="img/K4-21-65-ev1.jpg" alt=""></div></figure><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 32</b><span class="t" dir="ltr" lang="tr">Prostanoid agonistleri (Epoprostenol)</span></figcaption><div class="evimg"><img src="img/K4-21-65-ev2.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">A</b><div class="ot"><span class="otx" dir="ltr" lang="tr">PGF2α – Uterusta kasılma (oksitosik)</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">PGI2 – Sitoprotektif (hücre koruyucu) etki</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">PGE2 – Mide asit salgısının inhibisyonu</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">PGI2 – Trombosit agregasyonunun inhibisyonu</span><span class="ref">سلايد 32</span><p class="fact">صح: الـPGI2 (البروستاسيكلين) بيثبط الصفائح.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">D</span><figcaption><span>من الدرس</span><b>سلايد 32</b><span class="t" dir="ltr" lang="tr">Prostanoid agonistleri (Epoprostenol)</span></figcaption><div class="evimg"><img src="img/K4-21-65-o1.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>27</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K3-21</b>Kurul 2020–2021<i></i>Soru 82</span>
-        
-        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>عن إلغاء مفعول الوارفارين بسرعة، وموجود كمان في درس 7 (نفس الملف). سلايد 6 بيقول بس إن الـantidote بتاع الوارفارين فيتامين K، ومفيش كلام عن البلازما ولا الـPCC. الإجابة المعلّمة في الامتحان d (دم كامل + بلازما مجمدة + PCC).</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:160px"><img src="img/K3-21-82.png" alt=""></div></figure>
-    </div>
-    <div class="evs"></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K3-21</b>Kurul 2020–2021<i></i>Soru 82</span></div>
+  <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>عن إلغاء مفعول الوارفارين بسرعة، وموجود كمان في درس 7 (نفس الملف). سلايد 6 بيقول بس إن الـantidote بتاع الوارفارين فيتامين K، ومفيش كلام عن البلازما ولا الـPCC. الإجابة المعلّمة في الامتحان d (دم كامل + بلازما مجمدة + PCC).</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:156px"><img src="img/K3-21-82.png" alt=""></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+  
+  <section class="opts"><h3>الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">A</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Dipiridamol – Streptokinaz – Faktör VII</span><span class="ref">سلايد 8، 33</span><p class="fact">الديبيريدامول مضاد صفائح والستربتوكيناز بيدوّب الجلطة، يعني هيزوّدوا النزيف.</p></div></li><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Tiklopidin – Aspirin</span><span class="ref">سلايد 25، 28</span><p class="fact">الاتنين مضادات صفائح، يعني هيزوّدوا النزيف.</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Yalnızca oral K1 vitamini</span><span class="ref">سلايد 6</span><p class="fact">فيتامين K هو الـantidote بتاع الوارفارين، بس الملف مش بيقول إذا كان لوحده كفاية في الحالات المستعجلة.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Tam kan – Taze donmuş plazma – Protrombin kompleks konsantresi</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">İlacın kesilmesi yeterlidir</span><span class="ref">سلايد 6</span><p class="fact">مفعول الوارفارين بيبدأ ويخلص ببطء، فوقفه لوحده مش بيلغي المفعول بسرعة.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">A</span><figcaption><span>من الدرس</span><b>سلايد 8</b><span class="t" dir="ltr" lang="tr">Sınıflandırma</span></figcaption><div class="evimg"><img src="img/K3-21-82-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">A</span><figcaption><span>من الدرس</span><b>سلايد 33</b><span class="t" dir="ltr" lang="tr">Fibrinolitik ilaçlar</span></figcaption><div class="evimg"><img src="img/K3-21-82-o2.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">B</span><figcaption><span>من الدرس</span><b>سلايد 28</b><span class="t" dir="ltr" lang="tr">2. ADP RESEPTÖR BLOKÖRLERİ</span></figcaption><div class="evimg"><img src="img/K3-21-82-o3.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">B</span><figcaption><span>من الدرس</span><b>سلايد 25</b><span class="t" dir="ltr" lang="tr">Antiplatelet ilaçlar- 2nd lecture</span></figcaption><div class="evimg"><img src="img/K3-21-82-o4.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">C · E</span><figcaption><span>من الدرس</span><b>سلايد 6</b><span class="t" dir="ltr" lang="tr">Temel Farmakolojik Farklılıkların Özeti</span></figcaption><div class="evimg"><img src="img/K3-21-82-o5.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>28</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K3-21</b>Kurul 2020–2021<i></i>Soru 84</span>
-        
-        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>عن الـantidote بتاع الدابيجاتران، وموجود كمان في درس 7 (نفس الملف). الملف مفيهوش اسمه؛ سلايد 6 بيقول بس إن الـDOAC ليها antidotes خاصة. الإجابة المعلّمة في الامتحان b) Idarucizumab.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:192px"><img src="img/K3-21-84.png" alt=""></div></figure>
-    </div>
-    <div class="evs"></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K3-21</b>Kurul 2020–2021<i></i>Soru 84</span></div>
+  <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>عن الـantidote بتاع الدابيجاتران، وموجود كمان في درس 7 (نفس الملف). الملف مفيهوش اسمه؛ سلايد 6 بيقول بس إن الـDOAC ليها antidotes خاصة. الإجابة المعلّمة في الامتحان b) Idarucizumab.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:187px"><img src="img/K3-21-84.png" alt=""></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+  
+  <section class="opts"><h3>الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">A</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Omalizumab</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">İdarusizumab</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">İnfliksimab</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Rituksimab</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Abatasept</span><p class="fact none">مش موجود في ملف الشرح</p></div></li></ol></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>29</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>F21-1</b>Final 2020–2021<i></i>Soru 49</span>
-        
-        <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>عن موانع استعمال الهيبارين، وموجود كمان في درس 7 (نفس الملف). الملف مفيهوش contraindications للهيبارين (سلايد 6 و9 بيتكلموا بس عن النزيف وقلة الصفائح). الإجابة المعلّمة في الامتحان b) I-II-IV.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:314px;height:250px"><img src="img/F21-1-49.png" alt=""></div></figure>
-    </div>
-    <div class="evs"></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>F21-1</b>Final 2020–2021<i></i>Soru 49</span></div>
+  <aside class="note"><b>ليه هنا؟ · مفيش إجابة في الشرح</b><p>عن موانع استعمال الهيبارين، وموجود كمان في درس 7 (نفس الملف). الملف مفيهوش contraindications للهيبارين (سلايد 6 و9 بيتكلموا بس عن النزيف وقلة الصفائح). الإجابة المعلّمة في الامتحان b) I-II-IV.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:526px;height:419px"><img src="img/F21-1-49.png" alt=""></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill none">مفيش إجابة في ملف الشرح</span></div>
+  
+  <section class="opts"><h3>الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">A</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Yalnız I</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">I-II-IV</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">II-IV</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Yalnız II</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Yalnız III</span><p class="fact none">مش موجود في ملف الشرح</p></div></li></ol></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>30</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K1-20</b>Kurul 2019–2020<i></i>Soru 14</span>
-        
-        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال أساساً من درس 13، بس سلايد 33 هنا بيقول صراحة إن الستربتوكيناز من الـFibrinolitik ilaçlar اللي بتكسّر الفيبرين وتدوّب الجلطة بعد ما تتكوّن (مش antiplatelet ولا antikoagülan).</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Fibrinolitiktir</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:263px;height:172px"><img src="img/K1-20-14.png" alt=""><span class="mark" style="left:calc(12.76% - 6px);top:calc(54.03% - 3px);width:calc(48.85% + 12px);height:calc(13.89% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 33</b><span class="t" dir="ltr" lang="tr">Fibrinolitik ilaçlar</span></figcaption><div class="evimg"><img src="img/K1-20-14-ev1.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K1-20</b>Kurul 2019–2020<i></i>Soru 14</span></div>
+  <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال أساساً من درس 13، بس سلايد 33 هنا بيقول صراحة إن الستربتوكيناز من الـFibrinolitik ilaçlar اللي بتكسّر الفيبرين وتدوّب الجلطة بعد ما تتكوّن (مش antiplatelet ولا antikoagülan).</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:263px;height:172px"><img src="img/K1-20-14.png" alt=""><span class="mark" style="left:calc(12.76% - 6px);top:calc(54.03% - 3px);width:calc(48.85% + 12px);height:calc(13.89% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>C</b>Fibrinolitiktir</span></div>
+  <div class="evs n1"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 33</b><span class="t" dir="ltr" lang="tr">Fibrinolitik ilaçlar</span></figcaption><div class="evimg"><img src="img/K1-20-14-ev1.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">A</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Antitrombotiktir</span><span class="ref">سلايد 7</span><p class="fact">Antitrombotik ده الاسم العام لكل اللي بيمنع الجلطة، والفيبرينوليتيك بيدخلوا تحته في بعض التصنيفات بس.</p></div></li><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Antikoagülandır</span><span class="ref">سلايد 33</span><p class="fact">مضادات التجلط بتثبط العوامل، أما الستربتوكيناز فبيكسّر الفيبرين.</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Hipolipidemiktir</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Hemostatiktir</span><span class="ref">سلايد 33</span><p class="fact">بالعكس: بيكسّر الفيبرين ويدوّب الجلطة.</p></div></li></ol><div class=ogrid><figure class="ev"><span class="letters" dir="ltr">A</span><figcaption><span>من الدرس</span><b>سلايد 7</b><span class="t" dir="ltr" lang="tr">Klinik Uvoulamadaki Avrım</span></figcaption><div class="evimg"><img src="img/K1-20-14-o1.jpg" alt=""></div></figure><figure class="ev"><span class="letters" dir="ltr">B · E</span><figcaption><span>من الدرس</span><b>سلايد 33</b><span class="t" dir="ltr" lang="tr">Fibrinolitik ilaçlar</span></figcaption><div class="evimg"><img src="img/K1-20-14-o2.jpg" alt=""></div></figure></div></section>
 </section>
-<section class="sheet q wide">
+<section class="qp">
   <header class="top">
     <span class="crumb"><b>8</b><span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span>
     <span class="count">سؤال <b>31</b> من 31</span>
   </header>
-  <div class="body">
-    <div class="qside">
-      <div class="meta">
-        <span class="exam" dir="ltr" lang="tr"><b>K1-19</b>Kurul 2018–2019<i></i>Soru 4</span>
-        
-        <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال أساساً من درس 18 (البروستاجلاندينات)، بس سلايد 32 هنا بيقول إن الـPGI2 analoğu (إيبوبروستينول) بيثبط الصفائح، فالاختيار الـPGI2 (إيلوبروست) هو اللي بيمنع الجلطة وفقد الصفائح. الإيلوبروست نفسه مش مذكور بالاسم.</p></aside>
-        <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>İloprost (PGI2)</span></div>
-      </div>
-      <figure class="qcard"><div class="qimg" style="width:546px;height:154px"><img src="img/K1-19-4.png" alt=""><span class="mark" style="left:calc(17.70% - 6px);top:calc(39.41% - 3px);width:calc(17.75% + 12px);height:calc(11.35% + 6px)"></span></div></figure>
-    </div>
-    <div class="evs"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 32</b><span class="t" dir="ltr" lang="tr">Prostanoid agonistleri (Epoprostenol)</span></figcaption><div class="evimg"><img src="img/K1-19-4-ev1.jpg" alt=""></div></figure></div>
-  </div>
-  <footer class="foot"><span>8 · <span dir="ltr" lang="tr">Antiplatelet ilaçlar</span></span><span class="pg"></span></footer>
-  <aside class="notes"><span>ملاحظات</span></aside>
+  <div class="src"><span class="exam" dir="ltr" lang="tr"><b>K1-19</b>Kurul 2018–2019<i></i>Soru 4</span></div>
+  <aside class="note"><b>ليه هنا؟ · من محاضرة تانية</b><p>السؤال أساساً من درس 18 (البروستاجلاندينات)، بس سلايد 32 هنا بيقول إن الـPGI2 analoğu (إيبوبروستينول) بيثبط الصفائح، فالاختيار الـPGI2 (إيلوبروست) هو اللي بيمنع الجلطة وفقد الصفائح. الإيلوبروست نفسه مش مذكور بالاسم.</p></aside>
+  <figure class="qcard"><div class="qimg" style="width:534px;height:151px"><img src="img/K1-19-4.png" alt=""><span class="mark" style="left:calc(17.70% - 6px);top:calc(39.41% - 3px);width:calc(17.75% + 12px);height:calc(11.35% + 6px)"></span></div></figure>
+  <div class="ans"><span class="lbl">الإجابة</span><span class="pill" dir="ltr" lang="tr"><b>A</b>İloprost (PGI2)</span></div>
+  <div class="evs n1"><figure class="ev"><figcaption><span>من الدرس</span><b>سلايد 32</b><span class="t" dir="ltr" lang="tr">Prostanoid agonistleri (Epoprostenol)</span></figcaption><div class="evimg"><img src="img/K1-19-4-ev1.jpg" alt=""></div></figure></div>
+  <section class="opts"><h3>باقي الاختيارات<span>الصح بتاع كل اختيار من ملف الشرح</span></h3><ol class="orows"><li><b class="ol" dir="ltr">B</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Mizoprostol</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">C</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Rioprostil (PGE2)</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">D</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Enprostil (PGE2)</span><p class="fact none">مش موجود في ملف الشرح</p></div></li><li><b class="ol" dir="ltr">E</b><div class="ot"><span class="otx" dir="ltr" lang="tr">Gemeprost (PGE1)</span><p class="fact none">مش موجود في ملف الشرح</p></div></li></ol></section>
 </section></body></html>
