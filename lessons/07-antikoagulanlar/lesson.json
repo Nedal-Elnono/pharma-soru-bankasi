@@ -1,7 +1,7 @@
 {
  "pdf": "lessons/07-antikoagulanlar/07-antikoagulanlar-sorular.pdf",
  "pdfName": "Antikoagülanlar.pdf",
- "pages": 55,
+ "pages": 49,
  "questions": [
   {
    "id": "F26-10",
@@ -39,18 +39,6 @@
     }
    ],
    "options": [
-    {
-     "letter": "B",
-     "text": "Protein S",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "C",
-     "text": "Protein C",
-     "fact": null,
-     "ev": []
-    },
     {
      "letter": "D",
      "text": "Faktör IX",
@@ -204,7 +192,7 @@
     {
      "letter": "B",
      "text": "Fenitoin",
-     "fact": "سلايد 17 حاطط الفينيتوين في قايمة اللي بيزوّدوا مفعول الوارفارين، بس الملف مش بيقول إنه بيثبط CYP450 زي الفلوكونازول.",
+     "fact": "من اللي بيزوّدوا مفعول الوارفارين.",
      "ev": [
       0
      ]
@@ -212,7 +200,7 @@
     {
      "letter": "C",
      "text": "Amoksisilin",
-     "fact": "البنسلينات والكو-أموكسيكلاف بيرفعوا الـINR، بس الملف مش بيقول إن ده عن طريق تثبيط CYP450.",
+     "fact": "البنسلينات والكو-أموكسيكلاف بيرفعوا الـINR.",
      "ev": [
       1
      ]
@@ -378,12 +366,6 @@
     }
    ],
    "options": [
-    {
-     "letter": "B",
-     "text": "Nitratlar",
-     "fact": null,
-     "ev": []
-    },
     {
      "letter": "C",
      "text": "Abciximab",
@@ -689,18 +671,6 @@
      "ev": [
       0
      ]
-    },
-    {
-     "letter": "C",
-     "text": "Dazoksiben",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "D",
-     "text": "Treprostinil",
-     "fact": null,
-     "ev": []
     },
     {
      "letter": "E",
@@ -1070,12 +1040,6 @@
      "ev": [
       0
      ]
-    },
-    {
-     "letter": "E",
-     "text": "Teratojenik etki potansiyelinin düşük olması",
-     "fact": null,
-     "ev": []
     }
    ],
    "optEvidence": [
@@ -1145,7 +1109,7 @@
     {
      "letter": "C",
      "text": "Düşük molekül ağırlıklı heparinler",
-     "fact": "الملف بيقول إن الهيبارين العادي هو اللي بيتابع بالـaPTZ؛ والـDMAH نص عمره أطول وتوافره الحيوي أحسن.",
+     "fact": "نص عمر الـDMAH أطول من الهيبارين العادي بـ2–4 مرات.",
      "ev": [
       1
      ]
@@ -1227,20 +1191,12 @@
    ],
    "options": [
     {
-     "letter": "B",
-     "text": "Gemfibrozil",
-     "fact": "الملف مش بيذكر الجيمفيبروزيل بالاسم؛ من نفس عيلته الـKlofibrat، ومكتوب في اللي بيزوّدوا مفعول الوارفارين.",
-     "ev": [
-      0
-     ]
-    },
-    {
      "letter": "C",
      "text": "Tetrasiklin",
      "fact": "الدوكسيسيكلين (تتراسيكلين) في قايمة المضادات الحيوية اللي ماتتاخدش مع الوارفارين، والمضادات الحيوية بتزوّد مفعوله.",
      "ev": [
-      1,
-      0
+      0,
+      1
      ]
     },
     {
@@ -1248,7 +1204,7 @@
      "text": "Aspirin",
      "fact": "بيزوّد مفعول الوارفارين وخطر النزيف.",
      "ev": [
-      0,
+      1,
       2
      ]
     },
@@ -1257,28 +1213,27 @@
      "text": "Kloramfenikol",
      "fact": "من المضادات الحيوية اللي بتزوّد مفعول الوارفارين.",
      "ev": [
-      0
+      1
      ]
     }
    ],
    "optEvidence": [
     {
      "img": "lessons/07-antikoagulanlar/img/F21-1-48-o1.jpg",
-     "slide": 17,
-     "title": "VARFARİN İLE BİRLİKTE KULLANILMASI ÖNERİLMEYEN İLAÇLAR",
-     "letters": [
-      "B",
-      "C",
-      "D",
-      "E"
-     ]
-    },
-    {
-     "img": "lessons/07-antikoagulanlar/img/F21-1-48-o2.jpg",
      "slide": 16,
      "title": "VARFARİN İLE BİRLİKTE KULLANILMAMASI GEREKEN İLAÇLAR",
      "letters": [
       "C"
+     ]
+    },
+    {
+     "img": "lessons/07-antikoagulanlar/img/F21-1-48-o2.jpg",
+     "slide": 17,
+     "title": "VARFARİN İLE BİRLİKTE KULLANILMASI ÖNERİLMEYEN İLAÇLAR",
+     "letters": [
+      "C",
+      "D",
+      "E"
      ]
     },
     {
@@ -1338,16 +1293,10 @@
     {
      "letter": "C",
      "text": "Trombosit sayısı",
-     "fact": "نقص الصفائح أثر جانبي للهيبارين، بس الملف مش بيستخدم عدد الصفائح لضبط الجرعة.",
+     "fact": "نقص الصفائح أثر جانبي للهيبارين، مش طريقة متابعة.",
      "ev": [
       0
      ]
-    },
-    {
-     "letter": "D",
-     "text": "D-dimer",
-     "fact": null,
-     "ev": []
     },
     {
      "letter": "E",
@@ -1516,24 +1465,6 @@
      "ev": [
       0
      ]
-    },
-    {
-     "letter": "C",
-     "text": "Faktör Xa düzeyi",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "D",
-     "text": "TT (Trombin zamanı)",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "E",
-     "text": "Fibrinojen",
-     "fact": null,
-     "ev": []
     }
    ],
    "optEvidence": [
@@ -1595,24 +1526,6 @@
      "ev": [
       0
      ]
-    },
-    {
-     "letter": "C",
-     "text": "Faktör Xa düzeyi",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "D",
-     "text": "TT (Trombin zamanı)",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "E",
-     "text": "Fibrinojen",
-     "fact": null,
-     "ev": []
     }
    ],
    "optEvidence": [
@@ -1823,40 +1736,7 @@
    "w": 262.0,
    "h": 153.0,
    "mark": null,
-   "evidence": [],
-   "options": [
-    {
-     "letter": "A",
-     "text": "Enoksaparin",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "B",
-     "text": "Dabigatran",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "C",
-     "text": "Rivaroksaban",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "D",
-     "text": "Varfarin",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "E",
-     "text": "Dikumarol",
-     "fact": null,
-     "ev": []
-    }
-   ],
-   "optEvidence": []
+   "evidence": []
   },
   {
    "id": "K25-64",
@@ -1873,40 +1753,7 @@
    "w": 295.0,
    "h": 216.0,
    "mark": null,
-   "evidence": [],
-   "options": [
-    {
-     "letter": "A",
-     "text": "Enzim indüksiyonu",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "B",
-     "text": "Enzim inhibisyonu",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "C",
-     "text": "Enzim füzyonu",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "D",
-     "text": "Enzim transdüksiyonu",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "E",
-     "text": "Enzim biyotransformasyonu",
-     "fact": null,
-     "ev": []
-    }
-   ],
-   "optEvidence": []
+   "evidence": []
   },
   {
    "id": "K3-24-7",
@@ -2016,24 +1863,12 @@
    "evidence": [],
    "options": [
     {
-     "letter": "A",
-     "text": "Andeksanet alfa",
-     "fact": null,
-     "ev": []
-    },
-    {
      "letter": "B",
      "text": "Protamin sülfat",
      "fact": "البروتامين سلفات هو الـantidote بتاع الهيبارين.",
      "ev": [
       0
      ]
-    },
-    {
-     "letter": "C",
-     "text": "İdarusizumab",
-     "fact": null,
-     "ev": []
     },
     {
      "letter": "D",
@@ -2046,7 +1881,7 @@
     {
      "letter": "E",
      "text": "K vitamini artı protrombin kompleks konsantresi",
-     "fact": "برضه فيتامين K للوارفارين؛ الملف بيقول بس إن الـDOAC ليها antidotes خاصة.",
+     "fact": "فيتامين K هو الـantidote بتاع الوارفارين، والـDOAC ليها antidotes خاصة بيها.",
      "ev": [
       0
      ]
@@ -2080,40 +1915,7 @@
    "w": 225.0,
    "h": 171.0,
    "mark": null,
-   "evidence": [],
-   "options": [
-    {
-     "letter": "A",
-     "text": "Dipiridamol",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "B",
-     "text": "Enoksaparin",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "C",
-     "text": "Fraksiyonlanmamış heparin",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "D",
-     "text": "Klopidogrel",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "E",
-     "text": "Varfarin",
-     "fact": null,
-     "ev": []
-    }
-   ],
-   "optEvidence": []
+   "evidence": []
   },
   {
    "id": "K4-21-65",
@@ -2151,24 +1953,6 @@
     }
    ],
    "options": [
-    {
-     "letter": "A",
-     "text": "PGF2α – Uterusta kasılma (oksitosik)",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "B",
-     "text": "PGI2 – Sitoprotektif (hücre koruyucu) etki",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "C",
-     "text": "PGE2 – Mide asit salgısının inhibisyonu",
-     "fact": null,
-     "ev": []
-    },
     {
      "letter": "D",
      "text": "PGI2 – Trombosit agregasyonunun inhibisyonu",
@@ -2227,16 +2011,10 @@
     {
      "letter": "C",
      "text": "Yalnızca oral K1 vitamini",
-     "fact": "فيتامين K هو الـantidote بتاع الوارفارين، بس الملف مش بيقول إذا كان لوحده كفاية في الحالات المستعجلة.",
+     "fact": "فيتامين K هو الـantidote بتاع الوارفارين.",
      "ev": [
       4
      ]
-    },
-    {
-     "letter": "D",
-     "text": "Tam kan – Taze donmuş plazma – Protrombin kompleks konsantresi",
-     "fact": null,
-     "ev": []
     },
     {
      "letter": "E",
@@ -2306,40 +2084,7 @@
    "w": 533.0,
    "h": 187.0,
    "mark": null,
-   "evidence": [],
-   "options": [
-    {
-     "letter": "A",
-     "text": "Omalizumab",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "B",
-     "text": "İdarusizumab",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "C",
-     "text": "İnfliksimab",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "D",
-     "text": "Rituksimab",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "E",
-     "text": "Abatasept",
-     "fact": null,
-     "ev": []
-    }
-   ],
-   "optEvidence": []
+   "evidence": []
   },
   {
    "id": "F21-1-49",
@@ -2356,40 +2101,7 @@
    "w": 270.0,
    "h": 215.0,
    "mark": null,
-   "evidence": [],
-   "options": [
-    {
-     "letter": "A",
-     "text": "Yalnız I",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "B",
-     "text": "I-II-IV",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "C",
-     "text": "II-IV",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "D",
-     "text": "Yalnız II",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "E",
-     "text": "Yalnız III",
-     "fact": null,
-     "ev": []
-    }
-   ],
-   "optEvidence": []
+   "evidence": []
   },
   {
    "id": "K1-20-14",
@@ -2437,12 +2149,6 @@
      "ev": [
       1
      ]
-    },
-    {
-     "letter": "D",
-     "text": "Hipolipidemiktir",
-     "fact": null,
-     "ev": []
     },
     {
      "letter": "E",
@@ -2502,34 +2208,7 @@
      "slide": 32,
      "title": "5. Prostanoid agonistleri (Epoprostenol)"
     }
-   ],
-   "options": [
-    {
-     "letter": "B",
-     "text": "Mizoprostol",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "C",
-     "text": "Rioprostil (PGE2)",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "D",
-     "text": "Enprostil (PGE2)",
-     "fact": null,
-     "ev": []
-    },
-    {
-     "letter": "E",
-     "text": "Gemeprost (PGE1)",
-     "fact": null,
-     "ev": []
-    }
-   ],
-   "optEvidence": []
+   ]
   }
  ]
 }

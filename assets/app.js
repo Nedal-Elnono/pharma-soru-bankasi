@@ -150,12 +150,12 @@
     const also = (q.also || []).map(a => `<span class="badge also">جه كمان في <b dir="ltr">${esc(a.exam)} · ${esc((examBy[a.exam] || {}).year || '')} · Soru ${a.qno}</b></span>`).join('');
     const ln = typeof q.lesson === 'number' && lessonBy[q.lesson];
     // the other options: what each one really is, from the lesson file, and the slides that say it
-    const opts = q.options ? `<section class="opts"><h3>${q.answer ? 'باقي الاختيارات' : 'الاختيارات'}<span>الصح بتاع كل اختيار من ملف الشرح</span></h3>
+    const opts = q.options && q.options.length ? `<section class="opts"><h3>${q.answer ? 'باقي الاختيارات' : 'الاختيارات'}<span>الصح بتاع كل اختيار من ملف الشرح</span></h3>
       <ol class="orows">${q.options.map(o => {
         const sl = [...new Set(o.ev.map(k => q.optEvidence[k].slide))];
         return `<li><b class="ol" dir="ltr">${esc(o.letter)}</b><div class="ot"><span class="otx" dir="ltr" lang="tr">${esc(o.text)}</span>
           ${sl.length ? `<span class="ref">سلايد ${sl.join('، ')}</span>` : ''}
-          <p class="fact ${o.fact ? '' : 'none'}">${o.fact ? esc(o.fact) : 'مش موجود في ملف الشرح'}</p></div></li>`;
+          ${o.fact ? `<p class="fact">${esc(o.fact)}</p>` : ''}</div></li>`;
       }).join('')}</ol>
       ${q.optEvidence.length ? `<div class="evs ogrid">${q.optEvidence.map(ev => `<figure class="ev"><span class="letters" dir="ltr">${ev.letters.join(' · ')}</span>
         <figcaption><span>${ev.lesson ? `من درس ${ev.lesson}` : 'من الدرس'}</span><b>سلايد ${ev.slide}</b><span class="t" lang="tr">${esc(ev.title)}</span></figcaption>
